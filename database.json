@@ -1,0 +1,7522 @@
+{
+  "BEF01": {
+    "name": "ETICA Y FILOSOFIA POLITICA",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "09:00",
+          "teacher": "CAMPANA AÑASCO, RILDO",
+          "id": 0,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "09:00",
+          "end": "11:00",
+          "teacher": "CAMPANA AÑASCO, RILDO",
+          "id": 1,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "12:00",
+          "end": "13:00",
+          "teacher": "CAMPANA AÑASCO, RILDO",
+          "id": 2,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "13:00",
+          "end": "15:00",
+          "teacher": "CAMPANA AÑASCO, RILDO",
+          "id": 3,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "17:00",
+          "teacher": "AYALA FALCON, ELOY ELADIO",
+          "id": 4,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "17:00",
+          "end": "19:00",
+          "teacher": "AYALA FALCON, ELOY ELADIO",
+          "id": 5,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "09:00",
+          "teacher": "AYALA FALCON, ELOY ELADIO",
+          "id": 6,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "09:00",
+          "end": "11:00",
+          "teacher": "AYALA FALCON, ELOY ELADIO",
+          "id": 7,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "09:00",
+          "teacher": "SANCHEZ HUARINGA, CARLOS",
+          "id": 8,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "09:00",
+          "end": "11:00",
+          "teacher": "SANCHEZ HUARINGA, CARLOS",
+          "id": 9,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "BEG01": {
+    "name": "ECONOMIA GENERAL",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "QUINTEROS CHAVEZ, SILVIO",
+          "id": 10,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "QUINTEROS CHAVEZ, SILVIO",
+          "id": 11,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "MIRANDA TORRES, CESAR AURELIO",
+          "id": 12,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "MIRANDA TORRES, CESAR AURELIO",
+          "id": 13,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "MONDRAGÓN HERNÁNDEZ, MARGARITA DELICIA",
+          "id": 14,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "MONDRAGÓN HERNÁNDEZ, MARGARITA DELICIA",
+          "id": 15,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "MIRANDA TORRES, CESAR AURELIO",
+          "id": 16,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "MIRANDA TORRES, CESAR AURELIO",
+          "id": 17,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "PALACIOS SAMANIEGO, LEONCIO GABRIEL",
+          "id": 18,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "PALACIOS SAMANIEGO, LEONCIO GABRIEL",
+          "id": 19,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "BFI01": {
+    "name": "FISICA I",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ROMERO AQUINO, JUAN CARLOS",
+          "id": 20,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ROMERO AQUINO, JUAN CARLOS",
+          "id": 21,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "SAN BARTOLOME MONTERO, JAIME",
+          "id": 22,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "VALDIVIA MENDOZA, HECTOR GIOVANNY",
+          "id": 23,
+          "type": "Laboratorio"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CAÑOTE FAJARDO, PERCY VICTOR",
+          "id": 24,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CAÑOTE FAJARDO, PERCY VICTOR",
+          "id": 25,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "HUALLPA GUTIERREZ, WALTER ANTONIO",
+          "id": 26,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "MOSQUERA MOLINA, MIGUEL ANGEL",
+          "id": 27,
+          "type": "Laboratorio"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "VALDIVIA MENDOZA, HECTOR GIOVANNY",
+          "id": 28,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "VALDIVIA MENDOZA, HECTOR GIOVANNY",
+          "id": 29,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "PEÑA YALICO, VICENTE",
+          "id": 30,
+          "type": "Práctica"
+        },
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "TAIPE TORRES PATRICIA",
+          "id": 31,
+          "type": "Laboratorio"
+        }
+      ],
+      "X": [
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "VALDIVIA MENDOZA, HECTOR GIOVANNY",
+          "id": 32,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "VALDIVIA MENDOZA, HECTOR GIOVANNY",
+          "id": 33,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "PEÑA YALICO, VICENTE",
+          "id": 34,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "SAN BARTOLOME MONTERO, JAIME",
+          "id": 35,
+          "type": "Laboratorio"
+        }
+      ],
+      "Y": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CAÑOTE FAJARDO, PERCY VICTOR",
+          "id": 36,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CAÑOTE FAJARDO, PERCY VICTOR",
+          "id": 37,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "TAIPE TORRES PATRICIA",
+          "id": 38,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "VALDIVIA MENDOZA, HECTOR GIOVANNY",
+          "id": 39,
+          "type": "Laboratorio"
+        }
+      ],
+      "Z": [
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "MOSQUERA MOLINA, MIGUEL ANGEL",
+          "id": 40,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "MOSQUERA MOLINA, MIGUEL ANGEL",
+          "id": 41,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
+          "id": 42,
+          "type": "Laboratorio"
+        },
+        {
+          "day": 1,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "MOSQUERA MOLINA, MIGUEL ANGEL",
+          "id": 43,
+          "type": "Práctica"
+        }
+      ],
+      "A": [
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "HUALLPA GUTIERREZ, WALTER ANTONIO",
+          "id": 44,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "HUALLPA GUTIERREZ, WALTER ANTONIO",
+          "id": 45,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "TAIPE TORRES PATRICIA",
+          "id": 46,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "HUALLPA GUTIERREZ, WALTER ANTONIO",
+          "id": 47,
+          "type": "Laboratorio"
+        }
+      ]
+    }
+  },
+  "BIC01": {
+    "name": "INTRODUCCIÓN A LA COMPUTACIÓN",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "09:00",
+          "teacher": "HUAROTE ZEGARRA RAUL EDUARDO",
+          "id": 48,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "09:00",
+          "end": "11:00",
+          "teacher": "HUAROTE ZEGARRA RAUL EDUARDO",
+          "id": 49,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "09:00",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "id": 50,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "09:00",
+          "end": "11:00",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "id": 51,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "09:00",
+          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "id": 52,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "09:00",
+          "end": "11:00",
+          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "id": 53,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 2,
+          "start": "13:00",
+          "end": "14:00",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "id": 54,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "id": 55,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 4,
+          "start": "11:00",
+          "end": "12:00",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "id": 56,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "id": 57,
+          "type": "Práctica"
+        }
+      ],
+      "Z": [
+        {
+          "day": 4,
+          "start": "11:00",
+          "end": "12:00",
+          "teacher": "MEDIANERO ACOSTA JORGE",
+          "id": 58,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "MEDIANERO ACOSTA JORGE",
+          "id": 59,
+          "type": "Práctica"
+        }
+      ],
+      "T": [
+        {
+          "day": 5,
+          "start": "11:00",
+          "end": "12:00",
+          "teacher": "MEDIANERO ACOSTA JORGE",
+          "id": 60,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "MEDIANERO ACOSTA JORGE",
+          "id": 61,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "BMA01": {
+    "name": "CALCULO DIFERENCIAL",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "ECHEANDIA CESPEDES, JAVIER FRANCISCO",
+          "id": 62,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ECHEANDIA CESPEDES, JAVIER FRANCISCO",
+          "id": 63,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "CUTIPA COAQUIRA, MIGUEL",
+          "id": 64,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "VASQUEZ DOMINGUEZ, RIQUELMER APOLINARIO",
+          "id": 65,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "VASQUEZ DOMINGUEZ, RIQUELMER APOLINARIO",
+          "id": 66,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "VASQUEZ DOMINGUEZ, RIQUELMER APOLINARIO",
+          "id": 67,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "HUAMAN SANCHEZ, ALEJANDRO APOLINARIO",
+          "id": 68,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "HUAMAN SANCHEZ, ALEJANDRO APOLINARIO",
+          "id": 69,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "HUAMAN SANCHEZ, ALEJANDRO APOLINARIO",
+          "id": 70,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "BERMEO CARRASCO, OSMAR ARNALDO",
+          "id": 71,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "BERMEO CARRASCO, OSMAR ARNALDO",
+          "id": 72,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "BERMEO CARRASCO, OSMAR ARNALDO",
+          "id": 73,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CERNADES GOMEZ, JESUS",
+          "id": 74,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CERNADES GOMEZ, JESUS",
+          "id": 75,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "SALAZAR FLORES ELIZABETH",
+          "id": 76,
+          "type": "Práctica"
+        }
+      ],
+      "Z": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ECHEANDIA CESPEDES, JAVIER FRANCISCO",
+          "id": 77,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ECHEANDIA CESPEDES, JAVIER FRANCISCO",
+          "id": 78,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "CASTILLO JIMENEZ EMILIO MARCELO",
+          "id": 79,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "BMA02": {
+    "name": "CALCULO INTEGRAL",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ARAMBULO OSTOS, CARLOS EDUARDO",
+          "id": 80,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ARAMBULO OSTOS, CARLOS EDUARDO",
+          "id": 81,
+          "type": "Práctica"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ARAMBULO OSTOS, CARLOS EDUARDO",
+          "id": 82,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 4,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "CUTIPA COAQUIRA, MIGUEL",
+          "id": 83,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CUTIPA COAQUIRA, MIGUEL",
+          "id": 84,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CUTIPA COAQUIRA, MIGUEL",
+          "id": 85,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "HUANCA SULLCA, VICTOR",
+          "id": 86,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "HUANCA SULLCA, VICTOR",
+          "id": 87,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "HUANCA SULLCA, VICTOR",
+          "id": 88,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "BRONCANO TORRES, JUAN CARLOS",
+          "id": 89,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "BRONCANO TORRES, JUAN CARLOS",
+          "id": 90,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "BRONCANO TORRES, JUAN CARLOS",
+          "id": 91,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "HUANCA SULLCA, VICTOR",
+          "id": 92,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "HUANCA SULLCA, VICTOR",
+          "id": 93,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "HUANCA SULLCA, VICTOR",
+          "id": 94,
+          "type": "Práctica Dirigida"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "Evaluación",
+          "id": 95,
+          "type": "Práctica Calificada"
+        }
+      ]
+    }
+  },
+  "BMA03": {
+    "name": "ALGEBRA LINEAL",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "13:00",
+          "teacher": "KALA BÉJAR, LOURDES CRISTINA",
+          "id": 96,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "KALA BÉJAR, LOURDES CRISTINA",
+          "id": 97,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "17:00",
+          "teacher": "HUAMAN SANCHEZ, ALEJANDRO APOLINARIO",
+          "id": 98,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "HUAMAN SANCHEZ, ALEJANDRO APOLINARIO",
+          "id": 99,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "13:00",
+          "teacher": "KALA BÉJAR, LOURDES CRISTINA",
+          "id": 100,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "KALA BÉJAR, LOURDES CRISTINA",
+          "id": 101,
+          "type": "Práctica Dirigida"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "Evaluación",
+          "id": 102,
+          "type": "Práctica Calificada"
+        }
+      ],
+      "X": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "13:00",
+          "teacher": "CERNADES GOMEZ, JESUS",
+          "id": 103,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CERNADES GOMEZ, JESUS",
+          "id": 104,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 1,
+          "start": "15:00",
+          "end": "18:00",
+          "teacher": "SINCHE CHOCCA, NILDO",
+          "id": 105,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "SINCHE CHOCCA, NILDO",
+          "id": 106,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "BQU01": {
+    "name": "QUIMICA I",
+    "sections": {
+      "A": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ALCANTARA MALCA, DANIEL ADOLFO",
+          "id": 107,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ALCANTARA MALCA, DANIEL ADOLFO",
+          "id": 108,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "REYES ACOSTA, ROSARIO",
+          "id": 109,
+          "type": "Laboratorio"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
+          "id": 110,
+          "type": "Práctica"
+        }
+      ],
+      "B": [
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
+          "id": 111,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
+          "id": 112,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
+          "id": 113,
+          "type": "Laboratorio"
+        },
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
+          "id": 114,
+          "type": "Práctica"
+        }
+      ],
+      "U": [
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "ALCANTARA MALCA, DANIEL ADOLFO",
+          "id": 115,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ALCANTARA MALCA, DANIEL ADOLFO",
+          "id": 116,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "VALENZUELA GONZALEZ, ERIK OMAR",
+          "id": 117,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "RONDINEL PINEDA, PETRA ELINE",
+          "id": 118,
+          "type": "Laboratorio"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "OSORIO MARUJO, BILMA ELIZABETH",
+          "id": 119,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "OSORIO MARUJO, BILMA ELIZABETH",
+          "id": 120,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "REYES ACOSTA, ROSARIO",
+          "id": 121,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ALCANTARA MALCA, DANIEL ADOLFO",
+          "id": 122,
+          "type": "Laboratorio"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "FUKUDA KAGAMI, NANCY ELENA",
+          "id": 123,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "FUKUDA KAGAMI, NANCY ELENA",
+          "id": 124,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "15:00",
+          "end": "17:00",
+          "teacher": "RONDINEL PINEDA, PETRA ELINE",
+          "id": 125,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "15:00",
+          "end": "17:00",
+          "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
+          "id": 126,
+          "type": "Laboratorio"
+        }
+      ],
+      "X": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CHAFLOQUE ELIAS, CARLOS ALBERTO",
+          "id": 127,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CHAFLOQUE ELIAS, CARLOS ALBERTO",
+          "id": 128,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "RONDINEL PINEDA, PETRA ELINE",
+          "id": 129,
+          "type": "Práctica"
+        },
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "VALENZUELA GONZALEZ, ERIK OMAR",
+          "id": 130,
+          "type": "Laboratorio"
+        }
+      ],
+      "Y": [
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "REYES ACOSTA, ROSARIO",
+          "id": 131,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "REYES ACOSTA, ROSARIO",
+          "id": 132,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "FUKUDA KAGAMI, NANCY ELENA",
+          "id": 133,
+          "type": "Laboratorio"
+        },
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
+          "id": 134,
+          "type": "Práctica"
+        }
+      ],
+      "Z": [
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "FUKUDA KAGAMI, NANCY ELENA",
+          "id": 135,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "FUKUDA KAGAMI, NANCY ELENA",
+          "id": 136,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "13:00",
+          "end": "15:00",
+          "teacher": "VALENZUELA GONZALEZ, ERIK OMAR",
+          "id": 137,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "13:00",
+          "end": "15:00",
+          "teacher": "RONDINEL PINEDA, PETRA ELINE",
+          "id": 138,
+          "type": "Laboratorio"
+        }
+      ]
+    }
+  },
+  "BRC01": {
+    "name": "REDACCION Y COMUNICACION",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "09:00",
+          "teacher": "CHAVARRI ARCE, RAQUEL MARTHA",
+          "id": 139,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "09:00",
+          "end": "11:00",
+          "teacher": "CHAVARRI ARCE, RAQUEL MARTHA",
+          "id": 140,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "13:00",
+          "end": "14:00",
+          "teacher": "ACEVEDO RAYMUNDO, SAUL",
+          "id": 141,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ACEVEDO RAYMUNDO, SAUL",
+          "id": 142,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "09:00",
+          "end": "10:00",
+          "teacher": "ACEVEDO RAYMUNDO, SAUL",
+          "id": 143,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ACEVEDO RAYMUNDO, SAUL",
+          "id": 144,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "09:00",
+          "teacher": "CHAVARRI ARCE, RAQUEL MARTHA",
+          "id": 145,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "09:00",
+          "end": "11:00",
+          "teacher": "CHAVARRI ARCE, RAQUEL MARTHA",
+          "id": 146,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "09:00",
+          "teacher": "CAMPANA AÑASCO, RILDO",
+          "id": 147,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "09:00",
+          "end": "11:00",
+          "teacher": "CAMPANA AÑASCO, RILDO",
+          "id": 148,
+          "type": "Práctica"
+        }
+      ],
+      "Z": [
+        {
+          "day": 4,
+          "start": "15:00",
+          "end": "16:00",
+          "teacher": "CUROTTO CORNEJO, MARIA MERCEDES",
+          "id": 149,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CUROTTO CORNEJO, MARIA MERCEDES",
+          "id": 150,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "BRN01": {
+    "name": "REALIDAD NACIONAL, CONSTITUCION Y DERECHOS HUMANOS",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "HUERTA ORTEGA, JAVIER ARMANDO",
+          "id": 151,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "HUERTA ORTEGA, JAVIER ARMANDO",
+          "id": 152,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MONDRAGÓN HERNÁNDEZ, MARGARITA DELICIA",
+          "id": 153,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MONDRAGÓN HERNÁNDEZ, MARGARITA DELICIA",
+          "id": 154,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "MONDRAGÓN HERNÁNDEZ, MARGARITA DELICIA",
+          "id": 155,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "MONDRAGÓN HERNÁNDEZ, MARGARITA DELICIA",
+          "id": 156,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "LEÓN ZÁRATE, ANA MERCEDES",
+          "id": 157,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "LEÓN ZÁRATE, ANA MERCEDES",
+          "id": 158,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "SANCHEZ HUARINGA, CARLOS",
+          "id": 159,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "SANCHEZ HUARINGA, CARLOS",
+          "id": 160,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "FB101": {
+    "name": "GEOMETRIA ANALITICA",
+    "sections": {
+      "A": [
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "BONIFACIO CASTRO, ALEXANDER ABEL",
+          "id": 161,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "BONIFACIO CASTRO, ALEXANDER ABEL",
+          "id": 162,
+          "type": "Práctica"
+        }
+      ],
+      "B": [
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CASTILLO JIMENEZ EMILIO MARCELO",
+          "id": 163,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CASTILLO JIMENEZ EMILIO MARCELO",
+          "id": 164,
+          "type": "Práctica"
+        }
+      ],
+      "U": [
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ACOSTA DE LA CRUZ, PEDRO RAUL",
+          "id": 165,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ACOSTA DE LA CRUZ, PEDRO RAUL",
+          "id": 166,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "VASQUEZ DOMINGUEZ, RIQUELMER APOLINARIO",
+          "id": 167,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "VASQUEZ DOMINGUEZ, RIQUELMER APOLINARIO",
+          "id": 168,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ACOSTA DE LA CRUZ, PEDRO RAUL",
+          "id": 169,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ACOSTA DE LA CRUZ, PEDRO RAUL",
+          "id": 170,
+          "type": "Práctica Dirigida"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "Evaluación",
+          "id": 171,
+          "type": "Práctica Calificada"
+        }
+      ],
+      "X": [
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "VASQUEZ DOMINGUEZ, RIQUELMER APOLINARIO",
+          "id": 172,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "id": 173,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "BONIFACIO CASTRO, ALEXANDER ABEL",
+          "id": 174,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "BONIFACIO CASTRO, ALEXANDER ABEL",
+          "id": 175,
+          "type": "Práctica Dirigida"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "Evaluación",
+          "id": 176,
+          "type": "Práctica Calificada"
+        }
+      ],
+      "Z": [
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ECHEANDIA CESPEDES, JAVIER FRANCISCO",
+          "id": 177,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "KALA BÉJAR, LOURDES CRISTINA",
+          "id": 178,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "FB202": {
+    "name": "QUIMICA II",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "19:00",
+          "teacher": "LESCANO AVILA, LUIS ALBERTO",
+          "id": 179,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "LESCANO AVILA, LUIS ALBERTO",
+          "id": 180,
+          "type": "Práctica"
+        },
+        {
+          "day": 1,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "FUKUDA KAGAMI, NANCY ELENA",
+          "id": 181,
+          "type": "Laboratorio"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "13:00",
+          "end": "16:00",
+          "teacher": "ALCANTARA MALCA, DANIEL ADOLFO",
+          "id": 182,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
+          "id": 183,
+          "type": "Laboratorio"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "LESCANO AVILA, LUIS ALBERTO",
+          "id": 184,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "11:00",
+          "teacher": "CHAFLOQUE ELIAS, CARLOS ALBERTO",
+          "id": 185,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "LESCANO AVILA, LUIS ALBERTO",
+          "id": 186,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
+          "id": 187,
+          "type": "Laboratorio"
+        }
+      ]
+    }
+  },
+  "FB301": {
+    "name": "MATEMATICA DISCRETA",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "BENITES YARLEQUÉ, JOSÉ VALERIO",
+          "id": 188,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "BENITES YARLEQUÉ, JOSÉ VALERIO",
+          "id": 189,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "TOCTO INGA, PAUL MILLER",
+          "id": 190,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "TOCTO INGA, PAUL MILLER",
+          "id": 191,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "BENITES YARLEQUÉ, JOSÉ VALERIO",
+          "id": 192,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "BENITES YARLEQUÉ, JOSÉ VALERIO",
+          "id": 193,
+          "type": "Práctica Dirigida"
+        },
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "Evaluación",
+          "id": 194,
+          "type": "Práctica Calificada"
+        }
+      ],
+      "X": [
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "BONIFACIO CASTRO, ALEXANDER ABEL",
+          "id": 195,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "BONIFACIO CASTRO, ALEXANDER ABEL",
+          "id": 196,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "TOCTO INGA, PAUL MILLER",
+          "id": 197,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "TOCTO INGA, PAUL MILLER",
+          "id": 198,
+          "type": "Práctica Dirigida"
+        },
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "Evaluación",
+          "id": 199,
+          "type": "Práctica Calificada"
+        }
+      ]
+    }
+  },
+  "FB303": {
+    "name": "CALCULO MULTIVARIABLE",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ALVARADO RODRÍGUEZ, JOSÉ LUIS",
+          "id": 200,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ALVARADO RODRÍGUEZ, JOSÉ LUIS",
+          "id": 201,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ALVARADO RODRÍGUEZ, JOSÉ LUIS",
+          "id": 202,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ECHEANDIA CESPEDES, JAVIER FRANCISCO",
+          "id": 203,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ECHEANDIA CESPEDES, JAVIER FRANCISCO",
+          "id": 204,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ECHEANDIA CESPEDES, JAVIER FRANCISCO",
+          "id": 205,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ALVARADO RODRÍGUEZ, JOSÉ LUIS",
+          "id": 206,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "ALVARADO RODRÍGUEZ, JOSÉ LUIS",
+          "id": 207,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CHUNG CHING, RICARDO ALEJANDRO",
+          "id": 208,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "BERMEO CARRASCO, OSMAR ARNALDO",
+          "id": 209,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "BERMEO CARRASCO, OSMAR ARNALDO",
+          "id": 210,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "BERMEO CARRASCO, OSMAR ARNALDO",
+          "id": 211,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "HERRERA VEGA, HECTOR ALEXIS",
+          "id": 212,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "HERRERA VEGA, HECTOR ALEXIS",
+          "id": 213,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "HERRERA VEGA, HECTOR ALEXIS",
+          "id": 214,
+          "type": "Práctica"
+        }
+      ],
+      "Z": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "SALAZAR FLORES ELIZABETH",
+          "id": 215,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "SALAZAR FLORES ELIZABETH",
+          "id": 216,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "SALAZAR FLORES ELIZABETH",
+          "id": 217,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "FB305": {
+    "name": "ESTADISTICA Y PROBABILIDADES",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "SEGURA GARCÍA, YOLANDA ADRIANA",
+          "id": 218,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "SEGURA GARCÍA, YOLANDA ADRIANA",
+          "id": 219,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CERNA VALDEZ, YARKO ALVARO",
+          "id": 220,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CERNA VALDEZ, YARKO ALVARO",
+          "id": 221,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "SEGURA GARCÍA, YOLANDA ADRIANA",
+          "id": 222,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "SEGURA GARCÍA, YOLANDA ADRIANA",
+          "id": 223,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CERNA VALDEZ, YARKO ALVARO",
+          "id": 224,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CERNA VALDEZ, YARKO ALVARO",
+          "id": 225,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CUTIPA COAQUIRA, MIGUEL",
+          "id": 226,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CUTIPA COAQUIRA, MIGUEL",
+          "id": 227,
+          "type": "Práctica"
+        }
+      ],
+      "Z": [
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CUTIPA COAQUIRA, MIGUEL",
+          "id": 228,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CUTIPA COAQUIRA, MIGUEL",
+          "id": 229,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "FB401": {
+    "name": "FISICA II",
+    "sections": {
+      "A": [
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "SAN BARTOLOME MONTERO, JAIME",
+          "id": 230,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "SAN BARTOLOME MONTERO, JAIME",
+          "id": 231,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "SANCHEZ SOVERO LUIS FRANCSICO",
+          "id": 232,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "SAN BARTOLOME MONTERO, JAIME",
+          "id": 233,
+          "type": "Laboratorio"
+        }
+      ],
+      "U": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
+          "id": 234,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
+          "id": 235,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "PEÑA YALICO, VICENTE",
+          "id": 236,
+          "type": "Laboratorio"
+        },
+        {
+          "day": 4,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "SAN BARTOLOME MONTERO, JAIME",
+          "id": 237,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CAÑOTE FAJARDO, PERCY VICTOR",
+          "id": 238,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CAÑOTE FAJARDO, PERCY VICTOR",
+          "id": 239,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
+          "id": 240,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "TAIPE TORRES PATRICIA",
+          "id": 241,
+          "type": "Laboratorio"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ROMERO AQUINO, JUAN CARLOS",
+          "id": 242,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ROMERO AQUINO, JUAN CARLOS",
+          "id": 243,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "PEÑA YALICO, VICENTE",
+          "id": 244,
+          "type": "Laboratorio"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
+          "id": 245,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "PEÑA YALICO, VICENTE",
+          "id": 246,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "PEÑA YALICO, VICENTE",
+          "id": 247,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MOSQUERA MOLINA, MIGUEL ANGEL",
+          "id": 248,
+          "type": "Práctica"
+        },
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
+          "id": 249,
+          "type": "Laboratorio"
+        }
+      ],
+      "Y": [
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "SAN BARTOLOME MONTERO, JAIME",
+          "id": 250,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "SAN BARTOLOME MONTERO, JAIME",
+          "id": 251,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "HUALLPA GUTIERREZ, WALTER ANTONIO",
+          "id": 252,
+          "type": "Laboratorio"
+        },
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "MOSQUERA MOLINA, MIGUEL ANGEL",
+          "id": 253,
+          "type": "Práctica"
+        }
+      ],
+      "Z": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "SANCHEZ SOVERO LUIS FRANCSICO",
+          "id": 254,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "SANCHEZ SOVERO LUIS FRANCSICO",
+          "id": 255,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "HUALLPA GUTIERREZ, WALTER ANTONIO",
+          "id": 256,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "SANCHEZ SOVERO LUIS FRANCSICO",
+          "id": 257,
+          "type": "Laboratorio"
+        }
+      ]
+    }
+  },
+  "FB402": {
+    "name": "CALCULO NUMERICO",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "SOTOMAYOR ARAMBURU, FERNANDO FORTUNATO",
+          "id": 258,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "SOTOMAYOR ARAMBURU, FERNANDO FORTUNATO",
+          "id": 259,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "HUALLPA GUTIERREZ, WALTER ANTONIO",
+          "id": 260,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "HUALLPA GUTIERREZ, WALTER ANTONIO",
+          "id": 261,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "FB403": {
+    "name": "ECUACIONES DIFERENCIALES",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ARAMBULO OSTOS, CARLOS EDUARDO",
+          "id": 262,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ARAMBULO OSTOS, CARLOS EDUARDO",
+          "id": 263,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "ARAMBULO OSTOS, CARLOS EDUARDO",
+          "id": 264,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "BRONCANO TORRES, JUAN CARLOS",
+          "id": 265,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "BRONCANO TORRES, JUAN CARLOS",
+          "id": 266,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "BRONCANO TORRES, JUAN CARLOS",
+          "id": 267,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CHUNG CHING, RICARDO ALEJANDRO",
+          "id": 268,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CHUNG CHING, RICARDO ALEJANDRO",
+          "id": 269,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "CHUNG CHING, RICARDO ALEJANDRO",
+          "id": 270,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CHUNG CHING, RICARDO ALEJANDRO",
+          "id": 271,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CHUNG CHING, RICARDO ALEJANDRO",
+          "id": 272,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "SALAZAR FLORES ELIZABETH",
+          "id": 273,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "HUANCA SULLCA, VICTOR",
+          "id": 274,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "HUANCA SULLCA, VICTOR",
+          "id": 275,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "HUANCA SULLCA, VICTOR",
+          "id": 276,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "FB405": {
+    "name": "ESTADISTICA APLICADA",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "SEGURA GARCÍA, YOLANDA ADRIANA",
+          "id": 277,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "SEGURA GARCÍA, YOLANDA ADRIANA",
+          "id": 278,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CERNA VALDEZ, YARKO ALVARO",
+          "id": 279,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CERNA VALDEZ, YARKO ALVARO",
+          "id": 280,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CERNA VALDEZ, YARKO ALVARO",
+          "id": 281,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CERNA VALDEZ, YARKO ALVARO",
+          "id": 282,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "Por asignar",
+          "id": 283,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "Por asignar",
+          "id": 284,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "FB501": {
+    "name": "MATEMATICA APLICADA",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "TOCTO INGA, PAUL MILLER",
+          "id": 285,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "TOCTO INGA, PAUL MILLER",
+          "id": 286,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CUEVA HUANUCO, EDDIE DANNY",
+          "id": 287,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CUEVA HUANUCO, EDDIE DANNY",
+          "id": 288,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "SALAZAR FLORES ELIZABETH",
+          "id": 289,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "SALAZAR FLORES ELIZABETH",
+          "id": 290,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE003": {
+    "name": "TALLER DE PROYECTO DE INVESTIGACIÓN",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "EGÚZQUIZA FIGUEROA, MARÍA ENERINA",
+          "id": 291,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "EGÚZQUIZA FIGUEROA, MARÍA ENERINA",
+          "id": 292,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CAICEDO BUSTAMANTE, VICTOR ANTONIO",
+          "id": 293,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CAICEDO BUSTAMANTE, VICTOR ANTONIO",
+          "id": 294,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "VALDIVIA CAMACHO, GLORIA  ESTHER",
+          "id": 295,
+          "type": "Práctica"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "VALDIVIA CAMACHO, GLORIA  ESTHER",
+          "id": 296,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE004": {
+    "name": "TALLER DE INVESTIGACIÓN",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "LAU CARRILLO, CARMEN IVONNE",
+          "id": 297,
+          "type": "Práctica"
+        },
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LAU CARRILLO, CARMEN IVONNE",
+          "id": 298,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ROJAS MENDOZA, DORIS FANNY",
+          "id": 299,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ROJAS MENDOZA, DORIS FANNY",
+          "id": 300,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "LLANCCE MONDRAGON, LUISA",
+          "id": 301,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "LLANCCE MONDRAGON, LUISA",
+          "id": 302,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "HUAMANI HUAMANI, GLORIA TERESITA",
+          "id": 303,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "HUAMANI HUAMANI, GLORIA TERESITA",
+          "id": 304,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "PONCE SÁNCHEZ, CARLOS FIDEL",
+          "id": 305,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "PONCE SÁNCHEZ, CARLOS FIDEL",
+          "id": 306,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE101": {
+    "name": "INTRODUCCION A LA INGENIERIA INDUSTRIAL",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
+          "id": 307,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
+          "id": 308,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MORILLO ROJAS, DANIEL",
+          "id": 309,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MORILLO ROJAS, DANIEL",
+          "id": 310,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE112": {
+    "name": "TEORIA DE JUEGOS Y LA NEGOCIACION",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "PUCCIO QUEVEDO, BRUNO JUAN",
+          "id": 311,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "PUCCIO QUEVEDO, BRUNO JUAN",
+          "id": 312,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE113": {
+    "name": "TALLER DE CONSULTORIA DE EMPRESAS",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "OLIVERA PAYANO, RICARDO RICARDO",
+          "id": 313,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "OLIVERA PAYANO, RICARDO RICARDO",
+          "id": 314,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE122": {
+    "name": "SISTEMA DE COSTOS",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "LEYTON DIAZ, VICTOR ADOLFO",
+          "id": 315,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "LEYTON DIAZ, VICTOR ADOLFO",
+          "id": 316,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE124": {
+    "name": "COMERCIO INTERNACIONAL",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
+          "id": 317,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
+          "id": 318,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE128": {
+    "name": "DIAGNOSTICO DE EMPRESAS",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "PONCE SÁNCHEZ, CARLOS FIDEL",
+          "id": 319,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "PONCE SÁNCHEZ, CARLOS FIDEL",
+          "id": 320,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE501": {
+    "name": "TEORIA ORGANIZACIONAL",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ROJAS MENDOZA, DORIS FANNY",
+          "id": 321,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ROJAS MENDOZA, DORIS FANNY",
+          "id": 322,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "RIZABAL FLORES, ELIANA CECILIA",
+          "id": 323,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "RIZABAL FLORES, ELIANA CECILIA",
+          "id": 324,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE502": {
+    "name": "INGENIERIA DEL TRABAJO I",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "EGÚZQUIZA FIGUEROA, MARÍA ENERINA",
+          "id": 325,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "EGÚZQUIZA FIGUEROA, MARÍA ENERINA",
+          "id": 326,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 4,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "REVILLA LOAYZA, REYNA ROSARIO",
+          "id": 327,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "REVILLA LOAYZA, REYNA ROSARIO",
+          "id": 328,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE602": {
+    "name": "CONTABILIDAD FINANCIERA",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LEYTON DIAZ, VICTOR ADOLFO",
+          "id": 329,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LEYTON DIAZ, VICTOR ADOLFO",
+          "id": 330,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "FALCONI VASQUEZ, RODOLFO ELÍAS",
+          "id": 331,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "FALCONI VASQUEZ, RODOLFO ELÍAS",
+          "id": 332,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "LEÓN ZÁRATE, ANA MERCEDES",
+          "id": 333,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "LEÓN ZÁRATE, ANA MERCEDES",
+          "id": 334,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "GE603": {
+    "name": "INGENIERIA DEL TRABAJO II",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "TORRES CORTEZ, JULIO LORENZO",
+          "id": 335,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "TORRES CORTEZ, JULIO LORENZO",
+          "id": 336,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "DELZO ESTEBAN, CESAR ENRIQUE",
+          "id": 337,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "DELZO ESTEBAN, CESAR ENRIQUE",
+          "id": 338,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE604": {
+    "name": "ADMINISTRACION Y ORGANIZACION",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "LLANCCE MONDRAGON, LUISA",
+          "id": 339,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "LLANCCE MONDRAGON, LUISA",
+          "id": 340,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MORILLO ROJAS, DANIEL",
+          "id": 341,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MORILLO ROJAS, DANIEL",
+          "id": 342,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "QUINTEROS CHAVEZ, SILVIO",
+          "id": 343,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "QUINTEROS CHAVEZ, SILVIO",
+          "id": 344,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE605": {
+    "name": "SISTEMA Y GESTION FINANCIERA",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ORIA CHAVARRIA, WILLIAM",
+          "id": 345,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ORIA CHAVARRIA, WILLIAM",
+          "id": 346,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "VALLE SANTOS, JOHN CLERK",
+          "id": 347,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "VALLE SANTOS, JOHN CLERK",
+          "id": 348,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE701": {
+    "name": "LOGISTICA EMPRESARIAL",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "HUAMANI HUAMANI, GLORIA TERESITA",
+          "id": 349,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "HUAMANI HUAMANI, GLORIA TERESITA",
+          "id": 350,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ZAMORA YANSI RICHARD ISMAEL",
+          "id": 351,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ZAMORA YANSI RICHARD ISMAEL",
+          "id": 352,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE702": {
+    "name": "INGENIERIA ECONOMICA",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MIRANDA TORRES, CESAR AURELIO",
+          "id": 353,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "OLIVERA PAYANO, RICARDO",
+          "id": 354,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "MIRANDA TORRES, CESAR AURELIO",
+          "id": 355,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "OLIVERA PAYANO, RICARDO",
+          "id": 356,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE703": {
+    "name": "SISTEMAS INTEGRADOS EMPRESARIALES",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ESPINOZA ESPINOZA, JOSE ALFREDO",
+          "id": 357,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ESPINOZA ESPINOZA, JOSE ALFREDO",
+          "id": 358,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CHAPARRO MINAYA, ENRIQUE VLADIMIR",
+          "id": 359,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "CHAPARRO MINAYA, ENRIQUE VLADIMIR",
+          "id": 360,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE704": {
+    "name": "CONTABILIDAD DE COSTOS Y PRESUPUESTOS",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "FALCONI VASQUEZ, RODOLFO ELÍAS",
+          "id": 361,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "FALCONI VASQUEZ, RODOLFO ELÍAS",
+          "id": 362,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "LEYTON DIAZ, VICTOR ADOLFO",
+          "id": 363,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "LEYTON DIAZ, VICTOR ADOLFO",
+          "id": 364,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ORIA CHAVARRIA, WILLIAM",
+          "id": 365,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ORIA CHAVARRIA, WILLIAM",
+          "id": 366,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE709": {
+    "name": "SISTEMAS DE CALIDAD",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CALIZAYA NEYRA, PERCY ANGEL",
+          "id": 367,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "CALIZAYA NEYRA, PERCY ANGEL",
+          "id": 368,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "IBAÑEZ SALAZAR, VICTOR MANUEL",
+          "id": 369,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "IBAÑEZ SALAZAR, VICTOR MANUEL",
+          "id": 370,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE801": {
+    "name": "PLANEAMIENTO Y GESTION ESTRATEGICA",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ZARATE OTAROLA, LEONIDAS BENITO",
+          "id": 371,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ZARATE OTAROLA, LEONIDAS BENITO",
+          "id": 372,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LLANCCE MONDRAGON, LUISA",
+          "id": 373,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LLANCCE MONDRAGON, LUISA",
+          "id": 374,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "QUINTEROS CHAVEZ, SILVIO",
+          "id": 375,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "QUINTEROS CHAVEZ, SILVIO",
+          "id": 376,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE802": {
+    "name": "GESTION DE LA CADENA DE SUMINISTRO",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ZARATE OTAROLA, LEONIDAS BENITO",
+          "id": 377,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ZARATE OTAROLA, LEONIDAS BENITO",
+          "id": 378,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ESPINOZA ESPINOZA, JOSE ALFREDO",
+          "id": 379,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ESPINOZA ESPINOZA, JOSE ALFREDO",
+          "id": 380,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE803": {
+    "name": "SISTEMAS ANALITICOS",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ORIA CHAVARRIA, WILLIAM",
+          "id": 381,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ORIA CHAVARRIA, WILLIAM",
+          "id": 382,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ZAMORA YANSI RICHARD ISMAEL",
+          "id": 383,
+          "type": "Práctica"
+        },
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ZAMORA YANSI RICHARD ISMAEL",
+          "id": 384,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE805": {
+    "name": "MERCADOTECNIA",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ESPINOZA ESPINOZA, JOSE ALFREDO",
+          "id": 385,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ESPINOZA ESPINOZA, JOSE ALFREDO",
+          "id": 386,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MALPARTIDA GUTIERREZ JORGE NELSON",
+          "id": 387,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "MALPARTIDA GUTIERREZ JORGE NELSON",
+          "id": 388,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE901": {
+    "name": "INNOVACION Y EMPRENDIMIENTO DE NEGOCIOS",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "PONCE SÁNCHEZ, CARLOS FIDEL",
+          "id": 389,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "PONCE SÁNCHEZ, CARLOS FIDEL",
+          "id": 390,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
+          "id": 391,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
+          "id": 392,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "GE902": {
+    "name": "DISEÑO Y EVALUACION DE PROYECTOS",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "FLORES CISNEROS, ERNESTO ROBINSON",
+          "id": 393,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "FLORES CISNEROS, ERNESTO ROBINSON",
+          "id": 394,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LINARES VALENCIA, JOSE ANTONIO",
+          "id": 395,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LINARES VALENCIA, JOSE ANTONIO",
+          "id": 396,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "TRIGO PÉREZ, CARLOS ALFREDO",
+          "id": 397,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "TRIGO PÉREZ, CARLOS ALFREDO",
+          "id": 398,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE903": {
+    "name": "GESTION DEL TALENTO HUMANO",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CAICEDO BUSTAMANTE, VICTOR ANTONIO",
+          "id": 399,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CAICEDO BUSTAMANTE, VICTOR ANTONIO",
+          "id": 400,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "MORILLO ROJAS, DANIEL",
+          "id": 401,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "MORILLO ROJAS, DANIEL",
+          "id": 402,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "GE905": {
+    "name": "PLANEAMIENTO Y CONTROL DE OPERACIONES",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "VALLE SANTOS, JOHN CLERK",
+          "id": 403,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "VALLE SANTOS, JOHN CLERK",
+          "id": 404,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "LEYVA EUSEBIO, JOSE ALBERTO",
+          "id": 405,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "LEYVA EUSEBIO, JOSE ALBERTO",
+          "id": 406,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "GE906": {
+    "name": "GESTION FINANCIERA",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "FLORES CISNEROS, ERNESTO ROBINSON",
+          "id": 407,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "FLORES CISNEROS, ERNESTO ROBINSON",
+          "id": 408,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ZAMORA MONTERO, WALTER FERNANDO",
+          "id": 409,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ZAMORA MONTERO, WALTER FERNANDO",
+          "id": 410,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LINARES VALENCIA, JOSE ANTONIO",
+          "id": 411,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "LINARES VALENCIA, JOSE ANTONIO",
+          "id": 412,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "HU102": {
+    "name": "DESARROLLO PERSONAL",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "12:00",
+          "teacher": "CHAVARRI ARCE, RAQUEL MARTHA",
+          "id": 413,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "12:00",
+          "teacher": "CAMPANA AÑASCO, RILDO",
+          "id": 414,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "18:00",
+          "teacher": "HIROMOTO HIROMOTO, FELIPE TSUTOMU",
+          "id": 415,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "20:00",
+          "teacher": "ROJAS MENDOZA, DORIS FANNY",
+          "id": 416,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "12:00",
+          "teacher": "GOMEZ ESPINOZA, LUISA VIVIANA",
+          "id": 417,
+          "type": "Práctica"
+        }
+      ],
+      "Z": [
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "12:00",
+          "teacher": "GOMEZ ESPINOZA, LUISA VIVIANA",
+          "id": 418,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "HU111": {
+    "name": "LEGISLACION EMPRESARIAL Y TRIBUTARIA",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "HUERTA ORTEGA, JAVIER ARMANDO",
+          "id": 419,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "HUERTA ORTEGA, JAVIER ARMANDO",
+          "id": 420,
+          "type": "Teoría"
+        }
+      ],
+      "W": [
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "FISFALEN HUERTA, MARIO HEINRICH",
+          "id": 421,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "HU112": {
+    "name": "COMPORTAMIENTO ORGANIZACIONAL",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "17:00",
+          "teacher": "VALDIVIA CAMACHO, GLORIA  ESTHER",
+          "id": 422,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "17:00",
+          "end": "19:00",
+          "teacher": "VALDIVIA CAMACHO, GLORIA  ESTHER",
+          "id": 423,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "HU201": {
+    "name": "SOCIOLOGIA",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CHAVARRI ARCE, RAQUEL MARTHA",
+          "id": 424,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "SANCHEZ HUARINGA, CARLOS",
+          "id": 425,
+          "type": "Teoría"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "AYALA FALCON, ELOY ELADIO",
+          "id": 426,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "HU301": {
+    "name": "METODOLOGIA DE LA INVESTIGACION",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "KRAJNIK STULIN, FRANCO LUCIANO",
+          "id": 427,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "KRAJNIK STULIN, FRANCO LUCIANO",
+          "id": 428,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "FLORES CISNEROS, ERNESTO ROBINSON",
+          "id": 429,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "FLORES CISNEROS, ERNESTO ROBINSON",
+          "id": 430,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "LESCANO AVILA, LUIS ALBERTO",
+          "id": 431,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "LESCANO AVILA, LUIS ALBERTO",
+          "id": 432,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "HUAMANI HUAMANI, GLORIA TERESITA",
+          "id": 433,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "HUAMANI HUAMANI, GLORIA TERESITA",
+          "id": 434,
+          "type": "Teoría"
+        }
+      ],
+      "Y": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "FALCONI VASQUEZ, RODOLFO ELÍAS",
+          "id": 435,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "FALCONI VASQUEZ, RODOLFO ELÍAS",
+          "id": 436,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "HU501": {
+    "name": "TALLER DE EFECTIVIDAD PERSONAL",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "HIROMOTO HIROMOTO, FELIPE TSUTOMU",
+          "id": 437,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "HIROMOTO HIROMOTO, FELIPE TSUTOMU",
+          "id": 438,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI036": {
+    "name": "TALLER DE INVESTIGACION",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "22:00",
+          "teacher": "TOCTO INGA PAUL MILLER",
+          "id": 439,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "22:00",
+          "teacher": "UN JAN LIAU HING, EMILIO ALBERTO",
+          "id": 440,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "22:00",
+          "teacher": "ARADIEL CASTAÑEDA, HILARIO",
+          "id": 441,
+          "type": "Práctica"
+        }
+      ],
+      "Z": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "22:00",
+          "teacher": "RODRIGUEZ RAFAEL, GLEN DARIO",
+          "id": 442,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI055": {
+    "name": "GESTION DE PROYECTOS",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "CANCHANO CARO, JAVIER TOLENTINO",
+          "id": 443,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CANCHANO CARO, JAVIER TOLENTINO",
+          "id": 444,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "GUZMAN YANGATO, JORGE FERNANDO",
+          "id": 445,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "GUZMAN YANGATO, JORGE FERNANDO",
+          "id": 446,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI075": {
+    "name": "AUDITORIA DE SISTEMAS",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ARTEAGA CORTEZ, HUMBERTO URBANO",
+          "id": 447,
+          "type": "Práctica"
+        },
+        {
+          "day": 6,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ARTEAGA CORTEZ, HUMBERTO URBANO",
+          "id": 448,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
+          "id": 449,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
+          "id": 450,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI077": {
+    "name": "INTELIGENCIA ARTIFICIAL",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "AUDANTE RAMOS, NESTOR RAFAEL",
+          "id": 451,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "AUDANTE RAMOS, NESTOR RAFAEL",
+          "id": 452,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI085": {
+    "name": "APLICACION DE NEGOCIOS ELECTRONICOS",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
+          "id": 453,
+          "type": "Práctica"
+        },
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
+          "id": 454,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "RAMOS MORENO, JAIME IGNACIO",
+          "id": 455,
+          "type": "Práctica"
+        },
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "RAMOS MORENO, JAIME IGNACIO",
+          "id": 456,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI095": {
+    "name": "INGENIERIA EMPRESARIAL",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "LLANOS PANDURO, JORGE DANIEL",
+          "id": 457,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "LLANOS PANDURO, JORGE DANIEL",
+          "id": 458,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
+          "id": 459,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
+          "id": 460,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI101": {
+    "name": "INTRODUCCION AL PENSAMIENTO Y A LA INGENIERIA DE SISTEMAS",
+    "sections": {
+      "V": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "GUZMAN YANGATO, JORGE FERNANDO",
+          "id": 461,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "GUZMAN YANGATO, JORGE FERNANDO",
+          "id": 462,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "SALAS CORDERO, ROCIO GUADALUPE",
+          "id": 463,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "SALAS CORDERO, ROCIO GUADALUPE",
+          "id": 464,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI111": {
+    "name": "TEORIA DE DECISIONES",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "id": 465,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "id": 466,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI114": {
+    "name": "BASE DE DATOS",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "id": 467,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "id": 468,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI130": {
+    "name": "GESTION DE LA INFORMACION",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "GUZMAN YANGATO, JORGE FERNANDO",
+          "id": 469,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "08:00",
+          "teacher": "GUZMAN YANGATO, JORGE FERNANDO",
+          "id": 470,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI150": {
+    "name": "ANALITICA DE DATOS",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ARADIEL CASTAÑEDA, HILARIO",
+          "id": 471,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ARADIEL CASTAÑEDA, HILARIO",
+          "id": 472,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "OPORTO DIAZ, SAMUEL ALONSO",
+          "id": 473,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "OPORTO DIAZ, SAMUEL ALONSO",
+          "id": 474,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI155": {
+    "name": "CIBERSEGURIDAD",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "id": 475,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "id": 476,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI201": {
+    "name": "PSICOLOGIA SISTEMICA",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "OCROSPOMA PELLA, MARIA PATRICIA",
+          "id": 477,
+          "type": "Práctica"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "OCROSPOMA PELLA, MARIA PATRICIA",
+          "id": 478,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "OCROSPOMA PELLA, MARIA PATRICIA",
+          "id": 479,
+          "type": "Práctica"
+        },
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "OCROSPOMA PELLA, MARIA PATRICIA",
+          "id": 480,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI203": {
+    "name": "TEORIA Y CIENCIA DE SISTEMAS",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "CANCHANO CARO, JAVIER TOLENTINO",
+          "id": 481,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CANCHANO CARO, JAVIER TOLENTINO",
+          "id": 482,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LLANOS PANDURO, JORGE DANIEL",
+          "id": 483,
+          "type": "Práctica"
+        },
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LLANOS PANDURO, JORGE DANIEL",
+          "id": 484,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI204": {
+    "name": "TEORIA GENERAL DE SISTEMAS",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "FISFALEN HUERTA, MARIO HEINRICH",
+          "id": 485,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "id": 486,
+          "type": "Teoría"
+        }
+      ],
+      "X": [
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "id": 487,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI205": {
+    "name": "ALGORITMIA Y ESTRUCTURA DE DATOS",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "SOTELO VILLENA, JUAN CARLOS",
+          "id": 488,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "SOTELO VILLENA, JUAN CARLOS",
+          "id": 489,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ACOSTA DE LA CRUZ, PEDRO RAUL",
+          "id": 490,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ACOSTA DE LA CRUZ, PEDRO RAUL",
+          "id": 491,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "id": 492,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "id": 493,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "id": 494,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "id": 495,
+          "type": "Práctica"
+        }
+      ],
+      "Y": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "id": 496,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "id": 497,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI207": {
+    "name": "SISTEMAS BIOLOGICOS Y ECOLOGICOS",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "13:00",
+          "teacher": "OBANDO CHAVEZ, PAMELA MARUJA",
+          "id": 498,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "13:00",
+          "end": "15:00",
+          "teacher": "OBANDO CHAVEZ, PAMELA MARUJA",
+          "id": 499,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "15:00",
+          "end": "16:00",
+          "teacher": "OBANDO CHAVEZ, PAMELA MARUJA",
+          "id": 500,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "OBANDO CHAVEZ, PAMELA MARUJA",
+          "id": 501,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI301": {
+    "name": "TEORIA Y CIENCIA DE SISTEMAS APLICADA",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "11:00",
+          "teacher": "FISFALEN HUERTA, MARIO HEINRICH",
+          "id": 502,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "11:00",
+          "end": "13:00",
+          "teacher": "FISFALEN HUERTA, MARIO HEINRICH",
+          "id": 503,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "SALAS CORDERO, ROCIO GUADALUPE",
+          "id": 504,
+          "type": "Práctica"
+        },
+        {
+          "day": 5,
+          "start": "15:00",
+          "end": "16:00",
+          "teacher": "SALAS CORDERO, ROCIO GUADALUPE",
+          "id": 505,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI302": {
+    "name": "PROGRAMACION ORIENTADA A OBJETOS",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "LÓPEZ VILLANUEVA, PABLO EDWIN",
+          "id": 506,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "13:00",
+          "teacher": "LÓPEZ VILLANUEVA, PABLO EDWIN",
+          "id": 507,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "09:00",
+          "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
+          "id": 508,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "09:00",
+          "end": "13:00",
+          "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
+          "id": 509,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 4,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "LÓPEZ VILLANUEVA, PABLO EDWIN",
+          "id": 510,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "13:00",
+          "teacher": "LÓPEZ VILLANUEVA, PABLO EDWIN",
+          "id": 511,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI401": {
+    "name": "LENGUAJE DE PROGRAMACION",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CORDOVA NERI, TEODORO LUCIANO",
+          "id": 512,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CORDOVA NERI, TEODORO LUCIANO",
+          "id": 513,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CORDOVA NERI, TEODORO LUCIANO",
+          "id": 514,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CORDOVA NERI, TEODORO LUCIANO",
+          "id": 515,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
+          "id": 516,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
+          "id": 517,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI403": {
+    "name": "METODOLOGIA DE LOS SISTEMAS BLANDOS",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "FISFALEN HUERTA, MARIO HEINRICH",
+          "id": 518,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "FISFALEN HUERTA, MARIO HEINRICH",
+          "id": 519,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "SALAS COZ, ERWIN ERASMO",
+          "id": 520,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "SALAS COZ, ERWIN ERASMO",
+          "id": 521,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "SALAS CORDERO, ROCIO GUADALUPE",
+          "id": 522,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "SALAS CORDERO, ROCIO GUADALUPE",
+          "id": 523,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI405": {
+    "name": "MODELADO CONCEPTUAL DE DATOS",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "REYNA MONTEVERDE, TINO EDUARDO",
+          "id": 524,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "REYNA MONTEVERDE, TINO EDUARDO",
+          "id": 525,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "RODRIGUEZ RAFAEL, GLEN DARIO",
+          "id": 526,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "RODRIGUEZ RAFAEL, GLEN DARIO",
+          "id": 527,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "REYNA MONTEVERDE, TINO EDUARDO",
+          "id": 528,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "REYNA MONTEVERDE, TINO EDUARDO",
+          "id": 529,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "RODRIGUEZ RAFAEL, GLEN DARIO",
+          "id": 530,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "RODRIGUEZ RAFAEL, GLEN DARIO",
+          "id": 531,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI501": {
+    "name": "INVESTIGACION DE OPERACIONES I",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CANELO SOTELO, CÉSAR ALDO",
+          "id": 532,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CANELO SOTELO, CÉSAR ALDO",
+          "id": 533,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MEDINA AQUINO, LUIS FELIPE",
+          "id": 534,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MEDINA AQUINO, LUIS FELIPE",
+          "id": 535,
+          "type": "Teoría"
+        }
+      ],
+      "W": [
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MEDINA AQUINO, LUIS FELIPE",
+          "id": 536,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MEDINA AQUINO, LUIS FELIPE",
+          "id": 537,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 1,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "OPORTO DIAZ, SAMUEL ALONSO",
+          "id": 538,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "OPORTO DIAZ, SAMUEL ALONSO",
+          "id": 539,
+          "type": "Teoría"
+        }
+      ],
+      "Y": [
+        {
+          "day": 6,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ULFE VEGA, LUIS ALBERTO",
+          "id": 540,
+          "type": "Práctica"
+        },
+        {
+          "day": 6,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ULFE VEGA, LUIS ALBERTO",
+          "id": 541,
+          "type": "Teoría"
+        }
+      ],
+      "Z": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ZAMORA CÓRDOVA JOHN FITZGERALD",
+          "id": 542,
+          "type": "Práctica"
+        },
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ZAMORA CÓRDOVA JOHN FITZGERALD",
+          "id": 543,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI503": {
+    "name": "INGENIERIA DE PROCESOS",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "HUARCAYA JUNES, ALEJANDRINA NELLY",
+          "id": 544,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "HUARCAYA JUNES, ALEJANDRINA NELLY",
+          "id": 545,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "RIZABAL FLORES, ELIANA CECILIA",
+          "id": 546,
+          "type": "Práctica"
+        },
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "RIZABAL FLORES, ELIANA CECILIA",
+          "id": 547,
+          "type": "Teoría"
+        }
+      ],
+      "W": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MOLINA ESTACIO, NINOSKA",
+          "id": 548,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "MOLINA ESTACIO, NINOSKA",
+          "id": 549,
+          "type": "Práctica"
+        }
+      ],
+      "X": [
+        {
+          "day": 5,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "TALAVERANO GARCÍA, JULIO CESAR",
+          "id": 550,
+          "type": "Práctica"
+        },
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "TALAVERANO GARCÍA, JULIO CESAR",
+          "id": 551,
+          "type": "Teoría"
+        }
+      ],
+      "Y": [
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "VENTO GARCIA  OSCAR ARTURO",
+          "id": 552,
+          "type": "Práctica"
+        },
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "VENTO GARCIA  OSCAR ARTURO",
+          "id": 553,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI505": {
+    "name": "DISEÑO DE BASE DE DATOS",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "REYNA MONTEVERDE, TINO EDUARDO",
+          "id": 554,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "REYNA MONTEVERDE, TINO EDUARDO",
+          "id": 555,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
+          "id": 556,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
+          "id": 557,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
+          "id": 558,
+          "type": "Laboratorio"
+        },
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
+          "id": 559,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI601": {
+    "name": "INVESTIGACION DE OPERACIONES II",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CANELO SOTELO, CÉSAR ALDO",
+          "id": 560,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CANELO SOTELO, CÉSAR ALDO",
+          "id": 561,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "id": 562,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "id": 563,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "MEDINA AQUINO, LUIS FELIPE",
+          "id": 564,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "MEDINA AQUINO, LUIS FELIPE",
+          "id": 565,
+          "type": "Teoría"
+        }
+      ],
+      "X": [
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CANELO SOTELO, CÉSAR ALDO",
+          "id": 566,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CANELO SOTELO, CÉSAR ALDO",
+          "id": 567,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI602": {
+    "name": "DINAMICA DE SISTEMAS",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "id": 568,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "id": 569,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "LLANOS PANDURO, JORGE DANIEL",
+          "id": 570,
+          "type": "Práctica"
+        },
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "LLANOS PANDURO, JORGE DANIEL",
+          "id": 571,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "id": 572,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "id": 573,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI603": {
+    "name": "MODELADO DE PROCESOS DE CICLO DE VIDA DE SISTEMAS",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "id": 574,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "id": 575,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "id": 576,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "id": 577,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI604": {
+    "name": "ANALISIS Y DISEÑO DE SISTEMAS",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "id": 578,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "id": 579,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "id": 580,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "15:00",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "id": 581,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "15:00",
+          "end": "18:00",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "id": 582,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "id": 583,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI605": {
+    "name": "ARQUITECTURA EMPRESARIAL",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ALIAGA VILCHEZ, TOBIAS ENRIQUE",
+          "id": 584,
+          "type": "Práctica"
+        },
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ALIAGA VILCHEZ, TOBIAS ENRIQUE",
+          "id": 585,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "MORI LEON, NILTON CESAR",
+          "id": 586,
+          "type": "Práctica"
+        },
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "MORI LEON, NILTON CESAR",
+          "id": 587,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI607": {
+    "name": "ARQUITECTURA COMPUTACIONAL Y REDES",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "id": 588,
+          "type": "Práctica"
+        },
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "id": 589,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "id": 590,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "06:00",
+          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "id": 591,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI701": {
+    "name": "MODELADO SISTEMICO Y SIMULACION",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "SOTELO VILLENA, JUAN CARLOS",
+          "id": 592,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "SOTELO VILLENA, JUAN CARLOS",
+          "id": 593,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ZULOAGA ROTTA, LUIS ALBERTO",
+          "id": 594,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ZULOAGA ROTTA, LUIS ALBERTO",
+          "id": 595,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "id": 596,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "id": 597,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "id": 598,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "id": 599,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI702": {
+    "name": "TALLER DE DINAMICA DE SISTEMAS",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CORDOVA NERI, TEODORO LUCIANO",
+          "id": 600,
+          "type": "Práctica"
+        },
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CORDOVA NERI, TEODORO LUCIANO",
+          "id": 601,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "id": 602,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "id": 603,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI704": {
+    "name": "GESTION DE LA INGENIERIA DE SISTEMAS",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "VALENZUELA POSADAS, JORGE MARTIN",
+          "id": 604,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "VALENZUELA POSADAS, JORGE MARTIN",
+          "id": 605,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ESPINOZA FALCON, LUIS ALBERTO",
+          "id": 606,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ESPINOZA FALCON, LUIS ALBERTO",
+          "id": 607,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI705": {
+    "name": "ESTANDARES DE LA INGENIERIA DE SISTEMAS",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "11:00",
+          "end": "12:00",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "id": 608,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "id": 609,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ALIAGA VILCHEZ, TOBIAS ENRIQUE",
+          "id": 610,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ALIAGA VILCHEZ, TOBIAS ENRIQUE",
+          "id": 611,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI707": {
+    "name": "INGENIERIA DE SOFTWARE",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "id": 612,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "id": 613,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "id": 614,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "id": 615,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI801": {
+    "name": "MODELO DEL SISTEMA VIABLE",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "id": 616,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "id": 617,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "CANCHANO CARO, JAVIER TOLENTINO",
+          "id": 618,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CANCHANO CARO, JAVIER TOLENTINO",
+          "id": 619,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI805": {
+    "name": "INTEGRACION DE SISTEMAS",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "HUAPAYA CIRIACO, ALBERTO JESUS",
+          "id": 620,
+          "type": "Práctica"
+        },
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "HUAPAYA CIRIACO, ALBERTO JESUS",
+          "id": 621,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ESPINAL LAU, MIGUEL EDUARDO",
+          "id": 622,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ESPINAL LAU, MIGUEL EDUARDO",
+          "id": 623,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI806": {
+    "name": "DESARROLLO ADAPTATIVO E INTEGRADO DEL SW",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "JANJACHI TORIBIO, CARLOS ALBERTO",
+          "id": 624,
+          "type": "Práctica"
+        },
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "JANJACHI TORIBIO, CARLOS ALBERTO",
+          "id": 625,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "RAMOS MONTES, CARLOS NELSON",
+          "id": 626,
+          "type": "Práctica"
+        },
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "RAMOS MONTES, CARLOS NELSON",
+          "id": 627,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI807": {
+    "name": "SISTEMAS DE INTELIGENCIA DE NEGOCIO",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ARADIEL CASTAÑEDA, HILARIO",
+          "id": 628,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "ARADIEL CASTAÑEDA, HILARIO",
+          "id": 629,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "RAMOS MONTES, CARLOS NELSON",
+          "id": 630,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "RAMOS MONTES, CARLOS NELSON",
+          "id": 631,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI902": {
+    "name": "INGENIERIA DE SISTEMAS DE SERVICIO",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "VELARDE CARPIO, MANUEL HELARF",
+          "id": 632,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "VELARDE CARPIO, MANUEL HELARF",
+          "id": 633,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
+          "id": 634,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
+          "id": 635,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI903": {
+    "name": "IMPLEMENTACION DE SISTEMAS",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "19:00",
+          "end": "20:00",
+          "teacher": "CALIZAYA NEYRA, PERCY ANGEL",
+          "id": 636,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "CALIZAYA NEYRA, PERCY ANGEL",
+          "id": 637,
+          "type": "Práctica"
+        },
+        {
+          "day": 1,
+          "start": "19:00",
+          "end": "20:00",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
+          "id": 638,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
+          "id": 639,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SI904": {
+    "name": "SEGURIDAD DE SISTEMAS",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "BRINGAS MASGO, ISAAC ERNESTO",
+          "id": 640,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "BRINGAS MASGO, ISAAC ERNESTO",
+          "id": 641,
+          "type": "Teoría"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "BRINGAS MASGO, ISAAC ERNESTO",
+          "id": 642,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "BRINGAS MASGO, ISAAC ERNESTO",
+          "id": 643,
+          "type": "Teoría"
+        }
+      ]
+    }
+  },
+  "SI905": {
+    "name": "TALLER DE PROYECTO DE INVESTIGACION",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "22:00",
+          "teacher": "UN JAN LIAU HING, EMILIO ALBERTO",
+          "id": 644,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "22:00",
+          "teacher": "SOTELO VILLENA, JUAN CARLOS",
+          "id": 645,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "22:00",
+          "teacher": "VILCAPOMA ESCURRA EDGAR SOCRATES",
+          "id": 646,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW101": {
+    "name": "INTRODUCCION A LA INGENIERIA DE SOFTWARE",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "id": 647,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "id": 648,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "id": 649,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "id": 650,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW301": {
+    "name": "ARQUITECTURA DE COMPUTADORAS I",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "14:00",
+          "end": "15:00",
+          "teacher": "LEIVA POVIS, JORGE ZENON",
+          "id": 651,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "15:00",
+          "end": "17:00",
+          "teacher": "LEIVA POVIS, JORGE ZENON",
+          "id": 652,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW303": {
+    "name": "LENGUAJE DE PROGRAMACION I (IMPERATIVO)",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "Por asignar",
+          "id": 653,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "Por asignar",
+          "id": 654,
+          "type": "Práctica"
+        },
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "Por asignar",
+          "id": 655,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW305": {
+    "name": "ALGORITMIA Y ESTRUCTURA DE DATOS AVANZADA",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "Por asignar",
+          "id": 656,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "Por asignar",
+          "id": 657,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW403": {
+    "name": "LENGUAJE DE PROGRAMACION II (ORIENTADA A OBJETOS)",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CISNEROS NAPRAVNIK, JAN EEDUARDO",
+          "id": 658,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CISNEROS NAPRAVNIK, JAN EEDUARDO",
+          "id": 659,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CISNEROS NAPRAVNIK, JAN EEDUARDO",
+          "id": 660,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW405": {
+    "name": "INGENIERIA DE REQUERIMIENTOS I",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "RAMOS MUÑOZ, ALFREDO MARINO",
+          "id": 661,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "RAMOS MUÑOZ, ALFREDO MARINO",
+          "id": 662,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW407": {
+    "name": "SISTEMAS OPERATIVOS",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "RAMOS MONTES, CARLOS NELSON",
+          "id": 663,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "RAMOS MONTES, CARLOS NELSON",
+          "id": 664,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW501": {
+    "name": "ARQUITECTURA DE COMPUTADORAS II",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "LEIVA POVIS, JORGE ZENON",
+          "id": 665,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "LEIVA POVIS, JORGE ZENON",
+          "id": 666,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW503": {
+    "name": "ANALISIS Y MODELAMIENTO DE COMPORTAMIENTO",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "Por asignar",
+          "id": 667,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "Por asignar",
+          "id": 668,
+          "type": "Práctica"
+        },
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "Por asignar",
+          "id": 669,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW505": {
+    "name": "CONSTRUCCION DE SOFTWARE I (FUNDAMENTOS, PRACTICAS)",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "Por asignar",
+          "id": 670,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "Por asignar",
+          "id": 671,
+          "type": "Práctica"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "Por asignar",
+          "id": 672,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW507": {
+    "name": "REDES Y COMUNICACIONES",
+    "sections": {
+      "U": [
+        {
+          "day": 6,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "CANALES ARIAS, FELIX GASPAR",
+          "id": 673,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CANALES ARIAS, FELIX GASPAR",
+          "id": 674,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW-603": {
+    "name": "DISEÑO DE SOFTWARE",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CABALLERO ORTIZ, JOSE ALBERTO",
+          "id": 675,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CABALLERO ORTIZ, JOSE ALBERTO",
+          "id": 676,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW605": {
+    "name": "INGENIERIA DE REQUERIMIENTOS II",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "RAMOS MUÑOZ, ALFREDO MARINO",
+          "id": 677,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "RAMOS MUÑOZ, ALFREDO MARINO",
+          "id": 678,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW-608": {
+    "name": "LENGUAJE DE DOMINIO ESPECIFICO",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "Por asignar",
+          "id": 679,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "Por asignar",
+          "id": 680,
+          "type": "Práctica"
+        },
+        {
+          "day": 2,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "Por asignar",
+          "id": 681,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "SW-609": {
+    "name": "SISTEMAS DE GESTION DE BASE DE DATOS",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
+          "id": 682,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
+          "id": 683,
+          "type": "Práctica"
+        },
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
+          "id": 684,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE101": {
+    "name": "DIBUJO DE INGENIERIA",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CALLO MOSCOSO, LUIS ALBERTO",
+          "id": 685,
+          "type": "Práctica"
+        },
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CALLO MOSCOSO, LUIS ALBERTO",
+          "id": 686,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CALLO MOSCOSO, LUIS ALBERTO",
+          "id": 687,
+          "type": "Práctica"
+        },
+        {
+          "day": 6,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "CALLO MOSCOSO, LUIS ALBERTO",
+          "id": 688,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "id": 689,
+          "type": "Práctica"
+        },
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "id": 690,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE111": {
+    "name": "INNOVACION Y GESTION TECNOLOGICA",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "VILCAPOMA ESCURRA, EDGAR SOCRATES",
+          "id": 691,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "VILCAPOMA ESCURRA, EDGAR SOCRATES",
+          "id": 692,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE121": {
+    "name": "ERGONOMIA",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "KRAJNIK STULIN, FRANCO LUCIANO",
+          "id": 693,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "KRAJNIK STULIN, FRANCO LUCIANO",
+          "id": 694,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE122": {
+    "name": "PROCESOS AGROINDUSTRIALES",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "PARRA OSORIO, HERNAN JULIO",
+          "id": 695,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "PARRA OSORIO, HERNAN JULIO",
+          "id": 696,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE124": {
+    "name": "GESTION DE LA ENERGIA",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "POMA GARCÍA , JOSÉ ANTONIO",
+          "id": 697,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "POMA GARCÍA , JOSÉ ANTONIO",
+          "id": 698,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE126": {
+    "name": "GESTION DEL MANTENIMIENTO",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "VALDIVIA CAMACHO, GLORIA  ESTHER",
+          "id": 699,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "VALDIVIA CAMACHO, GLORIA  ESTHER",
+          "id": 700,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE205": {
+    "name": "DIBUJO Y GEOMETRIA DESCRIPTIVA",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CALLO MOSCOSO, LUIS ALBERTO",
+          "id": 701,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "CALLO MOSCOSO, LUIS ALBERTO",
+          "id": 702,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE301": {
+    "name": "FISICO QUIMICA Y OPERACIONES UNITARIAS",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "11:00",
+          "teacher": "PARRA OSORIO, HERNAN JULIO",
+          "id": 703,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "PARRA OSORIO, HERNAN JULIO",
+          "id": 704,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "17:00",
+          "teacher": "VALENZUELA GONZALEZ, ERIK OMAR",
+          "id": 705,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "VALENZUELA GONZALEZ, ERIK OMAR",
+          "id": 706,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE302": {
+    "name": "DISEÑO ASISTIDO POR COMPUTADOR",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MUÑOZ INGA, CARLOS",
+          "id": 707,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MUÑOZ INGA, CARLOS",
+          "id": 708,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
+          "id": 709,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "id": 710,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 3,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
+          "id": 711,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
+          "id": 712,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE401": {
+    "name": "TERMODINAMICA",
+    "sections": {
+      "U": [
+        {
+          "day": 3,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "TARAZONA PONTE, SANTIAGO",
+          "id": 713,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "TARAZONA PONTE, SANTIAGO",
+          "id": 714,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CHAFLOQUE ELIAS, CARLOS ALBERTO",
+          "id": 715,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "CHAFLOQUE ELIAS, CARLOS ALBERTO",
+          "id": 716,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE501": {
+    "name": "ELECTRICIDAD Y ELECTRONICA INDUSTRIAL",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "08:00",
+          "end": "11:00",
+          "teacher": "TARAZONA PONTE, SANTIAGO",
+          "id": 717,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "TARAZONA PONTE, SANTIAGO",
+          "id": 718,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "21:00",
+          "teacher": "BENITES YARLEQUÉ, JOSÉ VALERIO",
+          "id": 719,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "BENITES YARLEQUÉ, JOSÉ VALERIO",
+          "id": 720,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE503": {
+    "name": "PROCESOS INDUSTRIALES I",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "PARRA OSORIO, HERNAN JULIO",
+          "id": 721,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "08:00",
+          "end": "12:00",
+          "teacher": "RONDINEL PINEDA, PETRA ELINE",
+          "id": 722,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 5,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "OSORIO MARUJO, BILMA ELIZABETH",
+          "id": 723,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "08:00",
+          "end": "12:00",
+          "teacher": "OSORIO MARUJO, BILMA ELIZABETH",
+          "id": 724,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE601": {
+    "name": "INGENIERIA DE MATERIALES",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CRUZ FIGUEROA, GUILLERMO ROLDAN",
+          "id": 725,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "CRUZ FIGUEROA, GUILLERMO ROLDAN",
+          "id": 726,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "AGUERO MAURICIO, ALFREDO ROLANDO",
+          "id": 727,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "AGUERO MAURICIO, ALFREDO ROLANDO",
+          "id": 728,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "CRUZ FIGUEROA, GUILLERMO ROLDAN",
+          "id": 729,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "CRUZ FIGUEROA, GUILLERMO ROLDAN",
+          "id": 730,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE602": {
+    "name": "PROCESOS INDUSTRIALES II",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "MUÑOZ INGA, CARLOS",
+          "id": 731,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "MUÑOZ INGA, CARLOS",
+          "id": 732,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CRUZ FIGUEROA, GUILLERMO ROLDAN",
+          "id": 733,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "CRUZ FIGUEROA, GUILLERMO ROLDAN",
+          "id": 734,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "AGUERO MAURICIO, ALFREDO ROLANDO",
+          "id": 735,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "AGUERO MAURICIO, ALFREDO ROLANDO",
+          "id": 736,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE603": {
+    "name": "CONTROL ESTADISTICO DE PROCESOS",
+    "sections": {
+      "U": [
+        {
+          "day": 5,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "LAU CARRILLO, CARMEN IVONNE",
+          "id": 737,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "12:00",
+          "end": "14:00",
+          "teacher": "LAU CARRILLO, CARMEN IVONNE",
+          "id": 738,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "08:00",
+          "end": "10:00",
+          "teacher": "ZARATE FLORES, MARCEL DARIO",
+          "id": 739,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "10:00",
+          "end": "12:00",
+          "teacher": "ZARATE FLORES, MARCEL DARIO",
+          "id": 740,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE604": {
+    "name": "MAQUINARIA E INSTRUMENTACION INDUSTRIAL",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ZUÑIGA MERCADO, ANTONIO",
+          "id": 741,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "ZUÑIGA MERCADO, ANTONIO",
+          "id": 742,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "Por asignar",
+          "id": 743,
+          "type": "Teoría"
+        },
+        {
+          "day": 3,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "Por asignar",
+          "id": 744,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 5,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "Por asignar",
+          "id": 745,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "Por asignar",
+          "id": 746,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE701": {
+    "name": "ANALISIS DE PROCESOS DE MANUFACTURA",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "AGUERO MAURICIO, ALFREDO ROLANDO",
+          "id": 747,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "AGUERO MAURICIO, ALFREDO ROLANDO",
+          "id": 748,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "Por asignar",
+          "id": 749,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "Por asignar",
+          "id": 750,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE801": {
+    "name": "AUTOMATIZACION Y CONTROL DE PROCESOS",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "MUÑOZ INGA, CARLOS",
+          "id": 751,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "MUÑOZ INGA, CARLOS",
+          "id": 752,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 1,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ZUÑIGA MERCADO, ANTONIO",
+          "id": 753,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ZUÑIGA MERCADO, ANTONIO",
+          "id": 754,
+          "type": "Práctica"
+        }
+      ],
+      "W": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "ZUÑIGA MERCADO, ANTONIO",
+          "id": 755,
+          "type": "Teoría"
+        },
+        {
+          "day": 2,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "ZUÑIGA MERCADO, ANTONIO",
+          "id": 756,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE802": {
+    "name": "INGENIERIA DEL PRODUCTO",
+    "sections": {
+      "U": [
+        {
+          "day": 1,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
+          "id": 757,
+          "type": "Teoría"
+        },
+        {
+          "day": 1,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
+          "id": 758,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "Por asignar",
+          "id": 759,
+          "type": "Teoría"
+        },
+        {
+          "day": 5,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "id": 760,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE803": {
+    "name": "SISTEMAS INTEGRADOS DE CALIDAD",
+    "sections": {
+      "U": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "KRAJNIK STULIN, FRANCO LUCIANO",
+          "id": 761,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "KRAJNIK STULIN, FRANCO LUCIANO",
+          "id": 762,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 2,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "EGÚZQUIZA FIGUEROA, MARÍA ENERINA",
+          "id": 763,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "EGÚZQUIZA FIGUEROA, MARÍA ENERINA",
+          "id": 764,
+          "type": "Práctica"
+        }
+      ]
+    }
+  },
+  "TE901": {
+    "name": "SEGURIDAD Y SALUD OCUPACIONAL",
+    "sections": {
+      "U": [
+        {
+          "day": 4,
+          "start": "14:00",
+          "end": "16:00",
+          "teacher": "Por asignar",
+          "id": 765,
+          "type": "Teoría"
+        },
+        {
+          "day": 4,
+          "start": "16:00",
+          "end": "18:00",
+          "teacher": "Por asignar",
+          "id": 766,
+          "type": "Práctica"
+        }
+      ],
+      "V": [
+        {
+          "day": 6,
+          "start": "18:00",
+          "end": "20:00",
+          "teacher": "GARCIA CORZO, JUAN CARLOS",
+          "id": 767,
+          "type": "Teoría"
+        },
+        {
+          "day": 6,
+          "start": "20:00",
+          "end": "22:00",
+          "teacher": "GARCIA CORZO, JUAN CARLOS",
+          "id": 768,
+          "type": "Práctica"
+        }
+      ]
+    }
+  }
+}
