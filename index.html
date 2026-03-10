@@ -4,8 +4,9 @@
 	data-theme="dark">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Generador de Horario 25-2</title>
+		<title>generador de horario 25-2</title>
 		<style>
+			/* Main */
 			:root {
 				--bg-color: #f9fafc;
 				--surface-color: #ffffff;
@@ -77,6 +78,8 @@
 				border: 1px solid var(--border-color);
 			}
 
+			/* Popup stuff */
+
 			.legend-container {
 				margin-top: 20px;
 				padding-top: 20px;
@@ -123,6 +126,9 @@
 				border: 1px solid var(--border-color);
 				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 			}
+
+			/* Sections */
+
 			.section-block {
 				border-bottom: 1px solid var(--border-color);
 				padding: 10px 0;
@@ -152,6 +158,7 @@
 				font-weight: 600;
 			}
 
+			/* fullcalendar override */
 			.fc-timegrid-slot {
 				height: 70px !important;
 			}
@@ -199,7 +206,7 @@
 				line-height: 1.2;
 			}
 
-			/* --- Theme Switcher Widget --- */
+			/* theme switcher widget thingy */
 			.theme-switch {
 				position: relative;
 				display: inline-block;
@@ -223,7 +230,7 @@
 				background-color: var(--surface-color);
 				border: 2px solid var(--border-color);
 				transition: 0.3s;
-				border-radius: 6px; 
+				border-radius: 6px;
 			}
 
 			.theme-switch .slider:before {
@@ -238,7 +245,7 @@
 				border-radius: 4px;
 			}
 
-			/* Active (Dark Mode) State */
+			/* Active (dark mode) State */
 			.theme-switch input:checked + .slider {
 				background-color: var(--btn-bg);
 				border-color: var(--btn-bg);
@@ -249,7 +256,7 @@
 				background-color: #ffffff;
 			}
 
-			/* --- Custom Color Select Component --- */
+			/* custom color select component */
 			.custom-select {
 				position: relative;
 				width: 100%;
@@ -300,7 +307,7 @@
 				background: var(--bg-color);
 			}
 			.color-dot {
-				display: inline-block; 
+				display: inline-block;
 				width: 14px;
 				height: 14px;
 				border-radius: 50%;
@@ -311,22 +318,32 @@
 				overflow: visible !important;
 			}
 
-			/* --- Notification Toast --- */
+			/* notif toast */
       .notification {
-        margin-left: auto; 
-        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 0px; /* colapsado cuando inicia la pagina */
+        padding: 0px;
+        margin-left: 0px;
         border-radius: 6px;
         font-weight: 600;
         font-size: 0.9em;
         color: white;
         opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.1s ease, visibility 0.3s ease;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        /* refinado muchisimo xd */
+        transition: max-width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                    padding 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                    margin-left 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                    opacity 0.3s ease;
       }
       .notification.show {
+        max-width: 600px; /* numero arbitrario para q exista nomas */
+        padding: 8px 16px;
+        margin-left: 10px;
         opacity: 1;
-        visibility: visible;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
       }
       .notification.success-bg {
         background-color: #28a745;
@@ -347,6 +364,7 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
+				padding-right: 0;
 			">
 			<h2 style="margin: 0">Estructura de Cursos</h2>
 
@@ -433,10 +451,37 @@
 				<button
 					class="success"
 					onclick="copySyncUrl()">
-					🔗 Copiar Link
+					<div style="display: flex; align-items: center; gap: 0.6em">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							fill="currentColor"
+							viewBox="0 0 24 24">
+							<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+							<path
+								d="M5.5 15.5c1.07 0 2.02-.5 2.67-1.26l6.87 3.87c-.01.13-.04.26-.04.39 0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5c-1.07 0-2.02.5-2.67 1.26l-6.87-3.87c.01-.13.04-.26.04-.39s-.02-.26-.04-.39l6.87-3.87C16.47 8.5 17.42 9 18.5 9 20.43 9 22 7.43 22 5.5S20.43 2 18.5 2 15 3.57 15 5.5c0 .13.02.26.04.39L8.17 9.76A3.48 3.48 0 0 0 5.5 8.5C3.57 8.5 2 10.07 2 12s1.57 3.5 3.5 3.5m13 1.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5m0-13c.83 0 1.5.67 1.5 1.5S19.33 7 18.5 7 17 6.33 17 5.5 17.67 4 18.5 4m-13 6.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5S4 12.83 4 12s.67-1.5 1.5-1.5"></path>
+						</svg>
+						<span>Compartir Horario</span>
+					</div>
 				</button>
 				<div style="display: flex; align-items: center; gap: 4px">
-					<button onclick="downloadICS()">📅 Exportar a Google Calendar (.ics)</button>
+					<button onclick="downloadICS()">
+						<div style="display: flex; align-items: center; gap: 0.6em">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								fill="currentColor"
+								viewBox="0 0 24 24">
+								<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+								<path d="M13 10h-2v3H8v2h3v3h2v-3h3v-2h-3z"></path>
+								<path
+									d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2M5 20V8h14V6v14z"></path>
+							</svg>
+							<span>Exportar a Google Calendar (.ics)</span>
+						</div>
+					</button>
 					<button
 						onclick="openHelpModal()"
 						style="
@@ -450,43 +495,52 @@
 						"
 						title="¿Cómo importar a Google Calendar?">
 						<svg
-							viewBox="0 0 24 24"
-							width="18"
-							height="18"
-							stroke="currentColor"
-							stroke-width="2"
-							fill="none"
-							stroke-linecap="round"
-							stroke-linejoin="round">
-							<circle
-								cx="12"
-								cy="12"
-								r="10"></circle>
-							<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-							<line
-								x1="12"
-								y1="17"
-								x2="12.01"
-								y2="17"></line>
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							fill="currentColor"
+							viewBox="0 0 24 24">
+							<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+							<path
+								d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8"></path>
+							<path
+								d="M11 16h2v2h-2zm2.27-9.75c-2.08-.75-4.47.35-5.21 2.41l1.88.68c.18-.5.56-.9 1.07-1.13s1.08-.26 1.58-.08a2.01 2.01 0 0 1 1.32 1.86c0 1.04-1.66 1.86-2.24 2.07-.4.14-.67.52-.67.94v1h2v-.34c1.04-.51 2.91-1.69 2.91-3.68a4.015 4.015 0 0 0-2.64-3.73"></path>
 						</svg>
 					</button>
 				</div>
 			</div>
 		</div>
-		<div class="section" style="display: flex; align-items: center; flex-wrap: wrap;">
-      <input
-        type="text"
-        id="searchBox"
-        style="width: 16rem"
-        placeholder="Buscar curso (Ej: SW603 o FISICA)..."
-        onkeyup="if (event.key === 'Enter') searchCourses();" />
-      <button onclick="searchCourses()">Buscar</button>
-      
-      <div id="notification" class="notification"></div>
-      
-      <div style="flex-basis: 100%; height: 0;"></div>
-      <div id="results" style="margin-top: 0px; width: 100%;"></div>
-    </div>
+		<div
+			class="section"
+			style="display: flex; align-items: center; flex-wrap: wrap">
+			<div class="section-wrapper" style="width: 100%; display: flex; align-items: stretch; overflow: hidden;">
+        
+        <div id="searchComponent" style="display: flex; flex: 1; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+          <input
+            type="text"
+            id="searchBox"
+            style="width: 100%; padding-left: 12px; border-radius: 10px 0 0 10px; border-right-color:var(--btn-bg)"
+						
+            placeholder="Buscar curso (Ej: SW603 o FISICA)..."
+            onkeyup="if (event.key === 'Enter') searchCourses();" />
+          <button
+            onclick="searchCourses()"
+            style="margin: 0px; border-radius: 0 10px 10px 0; flex-shrink: 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="m17.06 14.94-2.8-1.34A6.96 6.96 0 0 0 16 9c0-3.86-3.14-7-7-7S2 5.14 2 9s3.14 7 7 7c1.76 0 3.37-.66 4.6-1.74l1.34 2.8 5 5 2.12-2.12zM9 14c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div id="notification" class="notification"></div>
+        
+      </div>
+
+			<div style="flex-basis: 100%; height: 0"></div>
+			<div
+				id="results"
+				style="margin-top: 0px; width: 100%"></div>
+		</div>
 		<div class="section">
 			<div
 				id="calendar"
@@ -678,8 +732,8 @@
 						1
 					</div>
 					<div>
-						Haz clic en <strong>Exportar a Google Calendar (.ics)</strong> para descargar tu archivo
-						de horario.
+						Haz clic en <strong>Exportar a Google Calendar (.ics)</strong> para
+						descargar tu archivo de horario.
 					</div>
 				</div>
 
@@ -759,7 +813,8 @@
 								x1="12"
 								y1="3"
 								x2="12"
-								y2="15"></line></svg>.
+								y2="15"></line>
+						</svg>
 					</div>
 				</div>
 
@@ -805,8 +860,6 @@
 				localStorage.setItem('theme', target);
 			}
 
-			// Sync the physical switch position with the loaded state
-
 			window.addEventListener('DOMContentLoaded', () => {
 				const themeBox = document.getElementById('themeToggle');
 				if (themeBox) themeBox.checked = savedTheme === 'dark';
@@ -815,23 +868,19 @@
 				if (hourBox) hourBox.checked = use24Hour;
 			});
 
-			// --- NOTIFICATION LOGIC ---
-      let notificationTimeout;
+			let notificationTimeout;
 
-      function showNotification(message, type) {
+			function showNotification(message, type) {
         const notif = document.getElementById('notification');
+
         notif.innerText = message;
-        
-        // Reset classes and apply the requested color state
+
         notif.className = `notification show ${type === 'success' ? 'success-bg' : 'error-bg'}`;
 
-        // Clear any existing fade-out timer to prevent race conditions
         clearTimeout(notificationTimeout);
-
-        // Queue the fade-out
         notificationTimeout = setTimeout(() => {
           notif.classList.remove('show');
-        }, 3000); // Fades out after 3 seconds
+        }, 3000); 
       }
 
 			function handleHourSwitch(checkbox) {
@@ -876,9 +925,7 @@
 			let currentCourseCode = null;
 			let sessionMap = {};
 
-			// --- CUSTOM SELECT LOGIC ---
 			function toggleColorDropdown(event) {
-				// Prevent event from bubbling up to the window click handler
 				event.stopPropagation();
 				document.getElementById('customColorSelect').classList.toggle('open');
 			}
@@ -891,8 +938,7 @@
 				select.classList.remove('open');
 			}
 
-			// Close dropdown if user clicks anywhere outside of it
-			window.addEventListener('click', function (e) {
+			window.addEventListener('click', function (e) { // cerrar el modal si haces click fuera de aquel
 				const select = document.getElementById('customColorSelect');
 				if (select && !select.contains(e.target)) {
 					select.classList.remove('open');
@@ -922,7 +968,7 @@
 						});
 					});
 					loadStateFromURL();
-				} catch (error) {
+				} catch (error) { // no se si poner esto en una notificacion
 					console.error('Failed to load course database:', error);
 					document.getElementById('results').innerHTML =
 						`<span style="color:red">Error: No se pudo cargar database.json. ¿Estás usando un servidor local?</span>`;
@@ -953,7 +999,7 @@
 				if (resDiv.innerHTML === '')
 					resDiv.innerHTML = 'No se encontraron cursos.';
 				else {
-					document.getElementById('results').style.marginTop = '15px'; 	
+					document.getElementById('results').style.marginTop = '15px';
 				}
 			}
 			function openSectionModal(code) {
@@ -1049,16 +1095,16 @@
 			}
 
 			function closePopups() {
-        document.getElementById('overlay').style.display = 'none';
-        document.getElementById('popup').style.display = 'none';
-        document.getElementById('editPopup').style.display = 'none';
-        document.getElementById('helpPopup').style.display = 'none';
-        
-        const customSelect = document.getElementById('customColorSelect');
-        if(customSelect) customSelect.classList.remove('open'); 
-        
-        editingEventId = null;
-      }
+				document.getElementById('overlay').style.display = 'none';
+				document.getElementById('popup').style.display = 'none';
+				document.getElementById('editPopup').style.display = 'none';
+				document.getElementById('helpPopup').style.display = 'none';
+
+				const customSelect = document.getElementById('customColorSelect');
+				if (customSelect) customSelect.classList.remove('open');
+
+				editingEventId = null;
+			}
 
 			function saveStateToURL() {
 				let compressedURL = '';
@@ -1130,10 +1176,13 @@
 				renderLegend();
 			}
 			function copySyncUrl() {
-        saveStateToURL();
-        navigator.clipboard.writeText(window.location.href);
-        showNotification('Enlace copiado, compártelo con otros o abrelo en otro dispositivo', 'success');
-      }
+				saveStateToURL();
+				navigator.clipboard.writeText(window.location.href);
+				showNotification(
+					'Enlace copiado, compártelo con otros o abrelo en otro dispositivo',
+					'success',
+				);
+			}
 
 			let fcCalendar = null;
 			function getMonday() {
@@ -1180,7 +1229,7 @@
                         ${arg.timeText}
                       </div>
                       <div style="font-size: 1.05em; font-weight: 800; text-shadow: 0px 1px 2px rgba(0,0,0,0.3); line-height: 1.1;">
-                        ${courseCode}
+                        ${courseCode} - ${arg.event._def.extendedProps.section}
                       </div>
                       <div style="font-size: 0.7em; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; border-radius: 4px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
                         ${courseType}
@@ -1246,6 +1295,7 @@
 							title: sess.customName || `${sec.code} - ${sess.type}`,
 							start: dStart.toISOString(),
 							end: dEnd.toISOString(),
+							section: sec.section,
 							backgroundColor: displayColor,
 							borderColor: displayColor,
 						});
@@ -1322,9 +1372,9 @@
 			}
 			function downloadICS() {
 				if (selectedSections.length === 0) {
-           showNotification('El horario está vacío.', 'error');
-           return;
-        }
+					showNotification('El horario está vacío.', 'error');
+					return;
+				}
 				let icsMSG =
 					'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//UNI Schedule Architect//ES\n';
 				const monday = getMonday();
