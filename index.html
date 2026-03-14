@@ -174,11 +174,6 @@
 				margin: 0 !important;
 			}
 
-			.fc-timegrid-event-harness {
-				left: 0 !important;
-				right: 0 !important;
-			}
-
 			.fc-timegrid-event {
 				border-radius: 0 !important;
 				margin: 1px 0 0 0 !important;
@@ -319,38 +314,39 @@
 			}
 
 			/* notif toast */
-      .notification {
-        display: flex;
-        align-items: center;
-        white-space: nowrap;
-        overflow: hidden;
-        max-width: 0px; /* colapsado cuando inicia la pagina */
-        padding: 0px;
-        margin-left: 0px;
-        border-radius: 6px;
-        font-weight: 600;
-        font-size: 0.9em;
-        color: white;
-        opacity: 0;
-        /* refinado muchisimo xd */
-        transition: max-width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                    padding 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                    margin-left 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                    opacity 0.3s ease;
-      }
-      .notification.show {
-        max-width: 600px; /* numero arbitrario para q exista nomas */
-        padding: 8px 16px;
-        margin-left: 10px;
-        opacity: 1;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-      }
-      .notification.success-bg {
-        background-color: #28a745;
-      }
-      .notification.error-bg {
-        background-color: #dc3545;
-      }
+			.notification {
+				display: flex;
+				align-items: center;
+				white-space: nowrap;
+				overflow: hidden;
+				max-width: 0px; /* colapsado cuando inicia la pagina */
+				padding: 0px;
+				margin-left: 0px;
+				border-radius: 6px;
+				font-weight: 600;
+				font-size: 0.9em;
+				color: white;
+				opacity: 0;
+				/* refinado muchisimo xd */
+				transition:
+					max-width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+					padding 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+					margin-left 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+					opacity 0.3s ease;
+			}
+			.notification.show {
+				max-width: 600px; /* numero arbitrario para q exista nomas */
+				padding: 8px 16px;
+				margin-left: 10px;
+				opacity: 1;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+			}
+			.notification.success-bg {
+				background-color: #28a745;
+			}
+			.notification.error-bg {
+				background-color: #dc3545;
+			}
 		</style>
 		<link
 			href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css"
@@ -513,28 +509,51 @@
 		<div
 			class="section"
 			style="display: flex; align-items: center; flex-wrap: wrap">
-			<div class="section-wrapper" style="width: 100%; display: flex; align-items: stretch; overflow: hidden;">
-        
-        <div id="searchComponent" style="display: flex; flex: 1; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
-          <input
-            type="text"
-            id="searchBox"
-            style="width: 100%; padding-left: 12px; border-radius: 10px 0 0 10px; border-right-color:var(--btn-bg)"
-						
-            placeholder="Buscar curso (Ej: SW603 o FISICA)..."
-            onkeyup="if (event.key === 'Enter') searchCourses();" />
-          <button
-            onclick="searchCourses()"
-            style="margin: 0px; border-radius: 0 10px 10px 0; flex-shrink: 0;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-              <path d="m17.06 14.94-2.8-1.34A6.96 6.96 0 0 0 16 9c0-3.86-3.14-7-7-7S2 5.14 2 9s3.14 7 7 7c1.76 0 3.37-.66 4.6-1.74l1.34 2.8 5 5 2.12-2.12zM9 14c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5"></path>
-            </svg>
-          </button>
-        </div>
+			<div
+				class="section-wrapper"
+				style="
+					width: 100%;
+					display: flex;
+					align-items: stretch;
+					overflow: hidden;
+				">
+				<div
+					id="searchComponent"
+					style="
+						display: flex;
+						flex: 1;
+						transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+					">
+					<input
+						type="text"
+						id="searchBox"
+						style="
+							width: 100%;
+							padding-left: 12px;
+							border-radius: 10px 0 0 10px;
+							border-right-color: var(--btn-bg);
+						"
+						placeholder="Buscar curso (Ej: SW603 o FISICA)..."
+						onkeyup="if (event.key === 'Enter') searchCourses();" />
+					<button
+						onclick="searchCourses()"
+						style="margin: 0px; border-radius: 0 10px 10px 0; flex-shrink: 0">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							fill="currentColor"
+							viewBox="0 0 24 24">
+							<path
+								d="m17.06 14.94-2.8-1.34A6.96 6.96 0 0 0 16 9c0-3.86-3.14-7-7-7S2 5.14 2 9s3.14 7 7 7c1.76 0 3.37-.66 4.6-1.74l1.34 2.8 5 5 2.12-2.12zM9 14c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5"></path>
+						</svg>
+					</button>
+				</div>
 
-        <div id="notification" class="notification"></div>
-        
-      </div>
+				<div
+					id="notification"
+					class="notification"></div>
+			</div>
 
 			<div style="flex-basis: 100%; height: 0"></div>
 			<div
@@ -871,17 +890,17 @@
 			let notificationTimeout;
 
 			function showNotification(message, type) {
-        const notif = document.getElementById('notification');
+				const notif = document.getElementById('notification');
 
-        notif.innerText = message;
+				notif.innerText = message;
 
-        notif.className = `notification show ${type === 'success' ? 'success-bg' : 'error-bg'}`;
+				notif.className = `notification show ${type === 'success' ? 'success-bg' : 'error-bg'}`;
 
-        clearTimeout(notificationTimeout);
-        notificationTimeout = setTimeout(() => {
-          notif.classList.remove('show');
-        }, 3000); 
-      }
+				clearTimeout(notificationTimeout);
+				notificationTimeout = setTimeout(() => {
+					notif.classList.remove('show');
+				}, 3000);
+			}
 
 			function handleHourSwitch(checkbox) {
 				use24Hour = checkbox.checked;
@@ -938,7 +957,8 @@
 				select.classList.remove('open');
 			}
 
-			window.addEventListener('click', function (e) { // cerrar el modal si haces click fuera de aquel
+			window.addEventListener('click', function (e) {
+				// cerrar el modal si haces click fuera de aquel
 				const select = document.getElementById('customColorSelect');
 				if (select && !select.contains(e.target)) {
 					select.classList.remove('open');
@@ -968,7 +988,8 @@
 						});
 					});
 					loadStateFromURL();
-				} catch (error) { // no se si poner esto en una notificacion
+				} catch (error) {
+					// no se si poner esto en una notificacion
 					console.error('Failed to load course database:', error);
 					document.getElementById('results').innerHTML =
 						`<span style="color:red">Error: No se pudo cargar database.json. ¿Estás usando un servidor local?</span>`;
@@ -1207,7 +1228,7 @@
 						slotDuration: '01:00:00',
 						headerToolbar: false,
 						editable: true,
-
+						slotEventOverlap: false,
 						slotLabelFormat: {
 							hour: 'numeric',
 							minute: '2-digit',
