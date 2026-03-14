@@ -1352,37 +1352,48 @@
 			}
 
 			function renderLegend() {
-				const legendDiv = document.getElementById('legend');
-				legendDiv.innerHTML =
-					'<h3 style="margin-top:0; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">Cursos en Horario</h3>';
-				if (selectedSections.length === 0) {
-					legendDiv.innerHTML +=
-						'<p style="color: #888;">No hay cursos seleccionados.</p>';
-					return;
-				}
-				selectedSections.forEach((sec, i) => {
-					const color =
-						sec.sessions[0]?.color || FC_COLORS[i % FC_COLORS.length];
-					const prof = sec.sessions[0]?.teacher || 'Varios';
-					const item = document.createElement('div');
-					item.style.display = 'flex';
-					item.style.justifyContent = 'space-between';
-					item.style.alignItems = 'center';
-					item.style.padding = '10px 0';
-					item.style.borderBottom = '1px solid var(--border-color)';
-					item.innerHTML = `
+        const legendDiv = document.getElementById('legend');
+        legendDiv.innerHTML =
+          '<h3 style="margin-top:0; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">Cursos en Horario</h3>';
+        
+        if (selectedSections.length === 0) {
+          legendDiv.innerHTML +=
+            '<p style="color: #888;">No hay cursos seleccionados.</p>';
+          return;
+        }
+        
+        selectedSections.forEach((sec, i) => {
+          const color = sec.sessions[0]?.color || FC_COLORS[i % FC_COLORS.length];
+          const prof = sec.sessions[0]?.teacher || 'Varios';
+          // Extract vacantes from the state pointer
+          const vacantes = sec.sessions[0]?.vacantes || '-'; 
+          
+          const item = document.createElement('div');
+          item.style.display = 'flex';
+          item.style.justifyContent = 'space-between';
+          item.style.alignItems = 'center';
+          item.style.padding = '10px 0';
+          item.style.borderBottom = '1px solid var(--border-color)';
+          
+          item.innerHTML = `
             <div style="display: flex; align-items: center; font-size: 0.95em;">
                 <div style="width: 14px; height: 14px; border-radius: 4px; background-color: ${color}; margin-right: 12px; flex-shrink: 0;"></div>
                 <div>
                     <strong>${sec.code} - ${sec.name} (${sec.section})</strong><br>
-                    <span style="color: #666; font-size: 0.85em;">${prof}</span>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-top: 4px;">
+                      <span style="color: #666; font-size: 0.85em;">${prof}</span>
+                      <span style="font-size: 0.75em; font-weight: 700; background: var(--bg-color); border: 1px solid var(--border-color); padding: 2px 6px; border-radius: 4px; color: var(--btn-bg);">
+                        VACANTES: ${vacantes}
+                      </span>
+                    </div>
                 </div>
             </div>
             <button class="danger" style="padding: 6px 12px; font-size: 0.85em; margin: 0;" onclick="removeCourse('${sec.code}')">Eliminar</button>
         `;
-					legendDiv.appendChild(item);
-				});
-			}
+          legendDiv.appendChild(item);
+        });
+      }
+
 			function removeCourse(courseCode) {
 				selectedSections = selectedSections.filter(
 					(s) => s.code !== courseCode,
@@ -1397,7 +1408,7 @@
 					return;
 				}
 				let icsMSG =
-					'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//UNI Schedule Architect//ES\n';
+					'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//xd//ES\n';
 				const monday = getMonday();
 				const fmt = (d) =>
 					d.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
