@@ -442,3 +442,91 @@ input[type="range"] {
     cursor: not-allowed;
     pointer-events: none;
 }
+input[type="range"] {
+  -webkit-appearance: none; /* For Chrome, Opera, Safari, Edge (Chromium) */
+  appearance: none;
+  background: transparent; /* Remove default background */
+  width: 100%; /* Set a desired width */
+  outline: none; /* Remove focus outline */
+}
+
+input[type="range"]:focus {
+  outline: none; /* Ensure no outline on focus */
+}
+
+
+
+/* Webkit Browsers (Chrome, Safari, Edge, Opera) */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #d2d2d2; /* Light gray background for the track */
+  height: 8.4px; /* Track height */
+  border-radius: 1.3px;
+  cursor: pointer;
+}
+
+/* Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+  background: #d2d2d2;
+  height: 8.4px;
+  border-radius: 1.3px;
+  cursor: pointer;
+}
+
+/* Internet Explorer/Old Edge (less common now but good for compatibility) */
+input[type="range"]::-ms-track {
+  background: transparent; /* Must be transparent in IE */
+  border-color: transparent;
+  color: transparent;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+}
+
+/* Webkit Browsers */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default thumb style */
+  appearance: none;
+  height: 20px;
+  width: 16px;
+  background: #1E1E1E; /* The orange thumb color */
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: -6px; /* Vertically center the thumb on the track (36px - 8.4px) / 2 = 13.8px */
+}
+
+/* Mozilla Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 36px;
+  width: 16px;
+  background: #1E1E1E;
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Internet Explorer/Old Edge */
+input[type="range"]::-ms-thumb {
+  height: 36px;
+  width: 16px;
+  background: #1E1E1E   ;
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 0; /* IE centers it differently */
+}
+
+/* Optimizador Layout */
+.opt-layout-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    flex-direction: row; /* Default para PC */
+}
+
+/* Breakpoint para celulares y tablets pequeñas */
+@media (max-width: 768px) {
+    .opt-layout-container {
+        flex-direction: column;
+    }
+}

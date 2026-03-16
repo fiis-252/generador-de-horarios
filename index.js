@@ -243,7 +243,8 @@ function closePopups() {
 	document.getElementById('editPopup').style.display = 'none';
 	document.getElementById('helpPopup').style.display = 'none';
 	document.getElementById('optOverlay').style.display = 'none';
-	document.getElementById('optimizerModal').style.display = 'none';
+    document.getElementById('optimizerModal').style.display = 'none';
+    document.getElementById('teacherModal').style.display = 'none';
 
 	const customSelect = document.getElementById('customColorSelect');
 	if (customSelect) customSelect.classList.remove('open');
@@ -693,7 +694,7 @@ function updateOptCartUI() {
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
                 <label style="cursor: pointer;"><input type="checkbox" onchange="optCartData['${code}'].obligatory = this.checked" ${conf.obligatory ? 'checked' : ''}> Obligatorio</label>
-                <span style="font-weight: 600; opacity: 0.8;">${credits} Cred</span>
+                <span style="font-weight: 600; opacity: 0.8;">${credits} créditos</span>
             </div>
             <div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 2px;">
@@ -741,22 +742,22 @@ function executeOptimizer() {
 	document.getElementById('optResults').innerHTML = '';
 
 	// Sintetizar el tensor de valor de profesores (Curso -> Tipo -> Profesor = 1.0 a 0.1)
-	let synthesizedRatings = {};
+    let synthesizedRatings = {};
 	Object.keys(complexTeacherOrder).forEach((code) => {
-		// Sanity Check 1: Ignorar si el nodo está corrupto
+        // Sanity Check 1: Ignorar si el nodo está corrupto
 		if (
-			typeof complexTeacherOrder[code] !== 'object' ||
+            typeof complexTeacherOrder[code] !== 'object' ||
 			Array.isArray(complexTeacherOrder[code])
 		)
-			return;
-
+        return;
+        
 		synthesizedRatings[code] = {};
 		Object.keys(complexTeacherOrder[code]).forEach((type) => {
-			const list = complexTeacherOrder[code][type];
-
+            const list = complexTeacherOrder[code][type];
+            
 			// Sanity Check 2: Ignorar si la lista final no es un Array real
 			if (!Array.isArray(list)) return;
-
+            
 			synthesizedRatings[code][type] = {};
 			const totalT = list.length;
 			list.forEach((t, i) => {
@@ -765,7 +766,19 @@ function executeOptimizer() {
 				synthesizedRatings[code][type][t] = { rating: normalized };
 			});
 		});
-	});
+    });
+    
+    optWorker.postMessage({
+			database: courseDatabase,
+			creditsDB: optCreditsDB,
+			cart: optCartData,
+			ratings: synthesizedRatings, // El tensor ahora viaja al cerebro
+			config: {
+				creditsMax:
+					parseInt(document.getElementById('optMaxCredits').value) || 24,
+				apathy: parseFloat(document.getElementById('optApathy').value),
+			},
+		});
 }
 
 function renderOptResults(results) {
@@ -953,8 +966,8 @@ function renderTeacherModalUI() {
                         <span style="color:var(--btn-bg); margin-right:5px;">${i + 1}.</span> ${t}
                     </span>
                     <div style="display: flex; gap: 4px;">
-                        <button onclick="moveTeacher('${activeTeacherTab}', '${type}', ${i}, -1)" ${isFirst ? 'disabled style="opacity:0.3"' : ''} style="padding: 2px 8px; margin: 0;">▲</button>
-                        <button onclick="moveTeacher('${activeTeacherTab}', '${type}', ${i}, 1)" ${isLast ? 'disabled style="opacity:0.3"' : ''} style="padding: 2px 8px; margin: 0;">▼</button>
+                        <button onclick="moveTeacher('${activeTeacherTab}', '${type}', ${i}, -1)" ${isFirst ? 'disabled' : ''} style="${isFirst ? 'opacity:0.3;' : ''} padding: 2px 8px; margin: 0;">▲</button>
+                        <button onclick="moveTeacher('${activeTeacherTab}', '${type}', ${i}, 1)" ${isLast ? 'disabled' : ''} style="${isLast ? 'opacity:0.3;' : ''} padding: 2px 8px; margin: 0;">▼</button>
                     </div>
                 </div>
             `;
