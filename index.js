@@ -4,70 +4,70 @@ document.documentElement.setAttribute('data-theme', savedTheme);
 let use24Hour = localStorage.getItem('hourFormat') === '24h';
 
 function handleThemeSwitch(checkbox) {
-    const target = checkbox.checked ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', target);
-    localStorage.setItem('theme', target);
+	const target = checkbox.checked ? 'dark' : 'light';
+	document.documentElement.setAttribute('data-theme', target);
+	localStorage.setItem('theme', target);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    const themeBox = document.getElementById('themeToggle');
-    if (themeBox) themeBox.checked = savedTheme === 'dark';
+	const themeBox = document.getElementById('themeToggle');
+	if (themeBox) themeBox.checked = savedTheme === 'dark';
 
-    const hourBox = document.getElementById('hourToggle');
-    if (hourBox) hourBox.checked = use24Hour;
+	const hourBox = document.getElementById('hourToggle');
+	if (hourBox) hourBox.checked = use24Hour;
 });
 
 let notificationTimeout;
 
 function showNotification(message, type) {
-    const notif = document.getElementById('notification');
+	const notif = document.getElementById('notification');
 
-    notif.innerText = message;
+	notif.innerText = message;
 
-    notif.className = `notification show ${type === 'success' ? 'success-bg' : 'error-bg'}`;
+	notif.className = `notification show ${type === 'success' ? 'success-bg' : 'error-bg'}`;
 
-    clearTimeout(notificationTimeout);
-    notificationTimeout = setTimeout(() => {
-        notif.classList.remove('show');
-    }, 3000);
+	clearTimeout(notificationTimeout);
+	notificationTimeout = setTimeout(() => {
+		notif.classList.remove('show');
+	}, 3000);
 }
 
 function handleHourSwitch(checkbox) {
-    use24Hour = checkbox.checked;
-    localStorage.setItem('hourFormat', use24Hour ? '24h' : '12h');
+	use24Hour = checkbox.checked;
+	localStorage.setItem('hourFormat', use24Hour ? '24h' : '12h');
 
-    if (fcCalendar) {
-        fcCalendar.setOption('slotLabelFormat', {
-            hour: 'numeric',
-            minute: '2-digit',
-            hour12: !use24Hour,
-        });
-        fcCalendar.setOption('eventTimeFormat', {
-            hour: 'numeric',
-            minute: '2-digit',
-            hour12: !use24Hour,
-        });
-    }
+	if (fcCalendar) {
+		fcCalendar.setOption('slotLabelFormat', {
+			hour: 'numeric',
+			minute: '2-digit',
+			hour12: !use24Hour,
+		});
+		fcCalendar.setOption('eventTimeFormat', {
+			hour: 'numeric',
+			minute: '2-digit',
+			hour12: !use24Hour,
+		});
+	}
 }
 
 let courseDatabase = {};
 const FC_COLORS = [
-    '#1E90FF',
-    '#28A745',
-    '#FF8C00',
-    '#6F42C1',
-    '#DC3545',
-    '#20C997',
-    '#E83E8C',
+	'#1E90FF',
+	'#28A745',
+	'#FF8C00',
+	'#6F42C1',
+	'#DC3545',
+	'#20C997',
+	'#E83E8C',
 ];
 const COLOR_NAMES = {
-    '#1E90FF': 'Azul',
-    '#28A745': 'Verde',
-    '#FF8C00': 'Naranja',
-    '#6F42C1': 'Morado',
-    '#DC3545': 'Rojo',
-    '#20C997': 'Turquesa',
-    '#E83E8C': 'Rosa',
+	'#1E90FF': 'Azul',
+	'#28A745': 'Verde',
+	'#FF8C00': 'Naranja',
+	'#6F42C1': 'Morado',
+	'#DC3545': 'Rojo',
+	'#20C997': 'Turquesa',
+	'#E83E8C': 'Rosa',
 };
 let selectedSections = [];
 let editingEventId = null;
@@ -75,117 +75,111 @@ let currentCourseCode = null;
 let sessionMap = {};
 
 function toggleColorDropdown(event) {
-    event.stopPropagation();
-    document.getElementById('customColorSelect').classList.toggle('open');
+	event.stopPropagation();
+	document.getElementById('customColorSelect').classList.toggle('open');
 }
 
 function selectColor(hex, name) {
-    const select = document.getElementById('customColorSelect');
-    select.setAttribute('data-value', hex);
-    document.getElementById('triggerDot').style.backgroundColor = hex;
-    document.getElementById('triggerText').innerText = name;
-    select.classList.remove('open');
+	const select = document.getElementById('customColorSelect');
+	select.setAttribute('data-value', hex);
+	document.getElementById('triggerDot').style.backgroundColor = hex;
+	document.getElementById('triggerText').innerText = name;
+	select.classList.remove('open');
 }
 
 window.addEventListener('click', function (e) {
-    // cerrar el modal si haces click fuera de aquel
-    const select = document.getElementById('customColorSelect');
-    if (select && !select.contains(e.target)) {
-        select.classList.remove('open');
-    }
+	// cerrar el modal si haces click fuera de aquel
+	const select = document.getElementById('customColorSelect');
+	if (select && !select.contains(e.target)) {
+		select.classList.remove('open');
+	}
 });
 
 async function initializeApp() {
-    try {
-        const response = await fetch('./database.json');
-        if (!response.ok)
-            throw new Error(`HTTP error! status: ${response.status}`);
-        courseDatabase = await response.json();
+	try {
+		const response = await fetch('./database.json');
+		if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+		courseDatabase = await response.json();
 
-        let masterIdCounter = 0;
-        Object.keys(courseDatabase).forEach((code) => {
-            Object.keys(courseDatabase[code].sections).forEach((sec) => {
-                courseDatabase[code].sections[sec].forEach((sess) => {
-                    sess.id = masterIdCounter++;
+		let masterIdCounter = 0;
+		Object.keys(courseDatabase).forEach((code) => {
+			Object.keys(courseDatabase[code].sections).forEach((sec) => {
+				courseDatabase[code].sections[sec].forEach((sess) => {
+					sess.id = masterIdCounter++;
 
-                    sessionMap[sess.id] = {
-                        code: code,
-                        name: courseDatabase[code].name,
-                        section: sec,
-                        baseSession: sess,
-                    };
-                });
-            });
-        });
-        loadStateFromURL();
-    } catch (error) {
-        // no se si poner esto en una notificacion
-        console.error('Failed to load course database:', error);
-        document.getElementById('results').innerHTML =
-            `<span style="color:red">Error: No se pudo cargar database.json. ¿Estás usando un servidor local?</span>`;
-    }
+					sessionMap[sess.id] = {
+						code: code,
+						name: courseDatabase[code].name,
+						section: sec,
+						baseSession: sess,
+					};
+				});
+			});
+		});
+		loadStateFromURL();
+	} catch (error) {
+		// no se si poner esto en una notificacion
+		console.error('Failed to load course database:', error);
+		document.getElementById('results').innerHTML =
+			`<span style="color:red">Error: No se pudo cargar database.json. ¿Estás usando un servidor local?</span>`;
+	}
 }
 
 function searchCourses() {
-    const rawQ = document.getElementById('searchBox').value.toUpperCase();
-    const normalizedQ = rawQ.replace(/-/g, '');
-    const resDiv = document.getElementById('results');
-    resDiv.innerHTML = '';
-    if (!normalizedQ) return;
-    Object.keys(courseDatabase).forEach((code) => {
-        const course = courseDatabase[code];
-        const normalizedCode = code.replace(/-/g, '');
+	const rawQ = document.getElementById('searchBox').value.toUpperCase();
+	const normalizedQ = rawQ.replace(/-/g, '');
+	const resDiv = document.getElementById('results');
+	resDiv.innerHTML = '';
+	if (!normalizedQ) return;
+	Object.keys(courseDatabase).forEach((code) => {
+		const course = courseDatabase[code];
+		const normalizedCode = code.replace(/-/g, '');
 
-        if (
-            normalizedCode.includes(normalizedQ) ||
-            course.name.includes(rawQ)
-        ) {
-            const btn = document.createElement('button');
-            btn.className = 'course-btn';
-            btn.innerText = `${code} - ${course.name}`;
-            btn.onclick = () => openSectionModal(code);
-            resDiv.appendChild(btn);
-        }
-    });
-    if (resDiv.innerHTML === '')
-        resDiv.innerHTML = 'No se encontraron cursos.';
-    else {
-        document.getElementById('results').style.marginTop = '15px';
-    }
+		if (normalizedCode.includes(normalizedQ) || course.name.includes(rawQ)) {
+			const btn = document.createElement('button');
+			btn.className = 'course-btn';
+			btn.innerText = `${code} - ${course.name}`;
+			btn.onclick = () => openSectionModal(code);
+			resDiv.appendChild(btn);
+		}
+	});
+	if (resDiv.innerHTML === '') resDiv.innerHTML = 'No se encontraron cursos.';
+	else {
+		document.getElementById('results').style.marginTop = '15px';
+	}
 }
 function openSectionModal(code) {
-    currentCourseCode = code;
-    const course = courseDatabase[code];
-    document.getElementById('popupTitle').innerText =
-        `${code} - ${course.name}`;
-    const list = document.getElementById('sectionsList');
-    list.innerHTML = '';
+	currentCourseCode = code;
+	const course = courseDatabase[code];
+	document.getElementById('popupTitle').innerText = `${code} - ${course.name}`;
+	const list = document.getElementById('sectionsList');
+	list.innerHTML = '';
 
-    const dayNames = [
-        '',
-        'Lunes',
-        'Martes',
-        'Miércoles',
-        'Jueves',
-        'Viernes',
-        'Sábado',
-        'Domingo',
-    ];
-    Object.keys(course.sections).forEach((secName) => {
-        const sessions = course.sections[secName];
+	const dayNames = [
+		'',
+		'Lunes',
+		'Martes',
+		'Miércoles',
+		'Jueves',
+		'Viernes',
+		'Sábado',
+		'Domingo',
+	];
+	Object.keys(course.sections).forEach((secName) => {
+		const sessions = course.sections[secName];
 
-        const isEnrolled = selectedSections.some(
-            (s) => s.code === code && s.section === secName,
-        );
-        const checkedAttr = isEnrolled ? 'checked' : '';
-        const div = document.createElement('div');
-        div.className = 'section-block';
+		const isEnrolled = selectedSections.some(
+			(s) => s.code === code && s.section === secName,
+		);
+		const checkedAttr = isEnrolled ? 'checked' : '';
+		const div = document.createElement('div');
+		div.className = 'section-block';
 
-        div.innerHTML = `<label style="font-weight: bold; cursor: pointer; display: block; margin-bottom: 8px;">
+		div.innerHTML = `<label style="font-weight: bold; cursor: pointer; display: block; margin-bottom: 8px;">
             <input type="radio" name="section-select" value="${secName}" ${checkedAttr}> Sección ${secName}
         </label>`;
 
-        let tableHTML = `<table class="section-table">
+		let tableHTML = `<table class="section-table">
             <thead>
                 <tr>
                     <th>Tipo</th>
@@ -195,192 +189,186 @@ function openSectionModal(code) {
                 </tr>
             </thead>
             <tbody>`;
-        sessions.forEach((sess) => {
-            tableHTML += `<tr>
+		sessions.forEach((sess) => {
+			tableHTML += `<tr>
                 <td>${sess.type}</td>
                 <td>${dayNames[sess.day]}</td>
                 <td style="white-space: nowrap;">${sess.start.slice(0, 5)} - ${sess.end.slice(0, 5)}</td>
                 <td>${sess.teacher}</td>
             </tr>`;
-        });
-        tableHTML += `</tbody></table>`;
-        div.innerHTML += tableHTML;
-        list.appendChild(div);
-    });
-    document.getElementById('overlay').style.display = 'block';
-    document.getElementById('popup').style.display = 'block';
+		});
+		tableHTML += `</tbody></table>`;
+		div.innerHTML += tableHTML;
+		list.appendChild(div);
+	});
+	document.getElementById('overlay').style.display = 'block';
+	document.getElementById('popup').style.display = 'block';
 }
 function addSelectedSections() {
-    const selectedRadio = document.querySelector(
-        'input[name="section-select"]:checked',
-    );
+	const selectedRadio = document.querySelector(
+		'input[name="section-select"]:checked',
+	);
 
-    if (!selectedRadio) {
-        closePopups();
-        return;
-    }
-    const secName = selectedRadio.value;
-    const course = courseDatabase[currentCourseCode];
+	if (!selectedRadio) {
+		closePopups();
+		return;
+	}
+	const secName = selectedRadio.value;
+	const course = courseDatabase[currentCourseCode];
 
-    selectedSections = selectedSections.filter(
-        (s) => s.code !== currentCourseCode,
-    );
+	selectedSections = selectedSections.filter(
+		(s) => s.code !== currentCourseCode,
+	);
 
-    const sessionsCopy = JSON.parse(
-        JSON.stringify(course.sections[secName]),
-    );
-    selectedSections.push({
-        code: currentCourseCode,
-        name: course.name,
-        section: secName,
-        sessions: sessionsCopy,
-    });
-    closePopups();
-    refreshCalendar();
-    saveStateToURL();
+	const sessionsCopy = JSON.parse(JSON.stringify(course.sections[secName]));
+	selectedSections.push({
+		code: currentCourseCode,
+		name: course.name,
+		section: secName,
+		sessions: sessionsCopy,
+	});
+	closePopups();
+	refreshCalendar();
+	saveStateToURL();
 }
 
 function openHelpModal() {
-    document.getElementById('overlay').style.display = 'block';
-    document.getElementById('helpPopup').style.display = 'block';
+	document.getElementById('overlay').style.display = 'block';
+	document.getElementById('helpPopup').style.display = 'block';
 }
 
 function closePopups() {
-    document.getElementById('overlay').style.display = 'none';
-    document.getElementById('popup').style.display = 'none';
-    document.getElementById('editPopup').style.display = 'none';
-    document.getElementById('helpPopup').style.display = 'none';
-    document.getElementById('optOverlay').style.display = 'none';
-    document.getElementById('optimizerModal').style.display = 'none';
+	document.getElementById('overlay').style.display = 'none';
+	document.getElementById('popup').style.display = 'none';
+	document.getElementById('editPopup').style.display = 'none';
+	document.getElementById('helpPopup').style.display = 'none';
+	document.getElementById('optOverlay').style.display = 'none';
+	document.getElementById('optimizerModal').style.display = 'none';
 
-    const customSelect = document.getElementById('customColorSelect');
-    if (customSelect) customSelect.classList.remove('open');
+	const customSelect = document.getElementById('customColorSelect');
+	if (customSelect) customSelect.classList.remove('open');
 
-    editingEventId = null;
+	editingEventId = null;
 }
 
 function saveStateToURL() {
-    let compressedURL = '';
-    selectedSections.forEach((sec, i) => {
-        sec.sessions.forEach((sess) => {
-            const idStr = sess.id.toString(36).padStart(2, '0');
-            const dayStr = sess.day.toString();
-            const startStr = parseInt(sess.start.split(':')[0]).toString(36);
-            const endStr = parseInt(sess.end.split(':')[0]).toString(36);
-            let assignedColor = sess.color || FC_COLORS[i % FC_COLORS.length];
-            let colorIdx = FC_COLORS.indexOf(assignedColor);
+	let compressedURL = '';
+	selectedSections.forEach((sec, i) => {
+		sec.sessions.forEach((sess) => {
+			const idStr = sess.id.toString(36).padStart(2, '0');
+			const dayStr = sess.day.toString();
+			const startStr = parseInt(sess.start.split(':')[0]).toString(36);
+			const endStr = parseInt(sess.end.split(':')[0]).toString(36);
+			let assignedColor = sess.color || FC_COLORS[i % FC_COLORS.length];
+			let colorIdx = FC_COLORS.indexOf(assignedColor);
 
-            if (colorIdx === -1) colorIdx = i % FC_COLORS.length;
-            compressedURL += `${idStr}${dayStr}${startStr}${endStr}${colorIdx.toString(36)}`;
-        });
-    });
-    const newUrl =
-        window.location.protocol +
-        '//' +
-        window.location.host +
-        window.location.pathname +
-        '?s=' +
-        compressedURL;
-    window.history.replaceState({ path: newUrl }, '', newUrl);
-    renderLegend();
+			if (colorIdx === -1) colorIdx = i % FC_COLORS.length;
+			compressedURL += `${idStr}${dayStr}${startStr}${endStr}${colorIdx.toString(36)}`;
+		});
+	});
+	const newUrl =
+		window.location.protocol +
+		'//' +
+		window.location.host +
+		window.location.pathname +
+		'?s=' +
+		compressedURL;
+	window.history.replaceState({ path: newUrl }, '', newUrl);
+	renderLegend();
 }
 function loadStateFromURL() {
-    const state = new URLSearchParams(window.location.search).get('s');
-    if (!state) {
-        refreshCalendar();
-        return;
-    }
-    selectedSections = [];
-    const sectionsBuffer = {};
+	const state = new URLSearchParams(window.location.search).get('s');
+	if (!state) {
+		refreshCalendar();
+		return;
+	}
+	selectedSections = [];
+	const sectionsBuffer = {};
 
-    for (let i = 0; i < state.length; i += 6) {
-        const block = state.slice(i, i + 6);
-        if (block.length < 6) continue;
-        const id = parseInt(block.slice(0, 2), 36);
-        const day = parseInt(block[2], 10);
-        const start =
-            parseInt(block[3], 36).toString().padStart(2, '0') + ':00:00';
-        const end =
-            parseInt(block[4], 36).toString().padStart(2, '0') + ':00:00';
-        const color = FC_COLORS[parseInt(block[5], 10)];
-        const pointerData = sessionMap[id];
-        if (!pointerData) continue;
-        const secKey = `${pointerData.code}-${pointerData.section}`;
-        if (!sectionsBuffer[secKey]) {
-            sectionsBuffer[secKey] = {
-                code: pointerData.code,
-                name: pointerData.name,
-                section: pointerData.section,
-                sessions: [],
-            };
-        }
+	for (let i = 0; i < state.length; i += 6) {
+		const block = state.slice(i, i + 6);
+		if (block.length < 6) continue;
+		const id = parseInt(block.slice(0, 2), 36);
+		const day = parseInt(block[2], 10);
+		const start = parseInt(block[3], 36).toString().padStart(2, '0') + ':00:00';
+		const end = parseInt(block[4], 36).toString().padStart(2, '0') + ':00:00';
+		const color = FC_COLORS[parseInt(block[5], 10)];
+		const pointerData = sessionMap[id];
+		if (!pointerData) continue;
+		const secKey = `${pointerData.code}-${pointerData.section}`;
+		if (!sectionsBuffer[secKey]) {
+			sectionsBuffer[secKey] = {
+				code: pointerData.code,
+				name: pointerData.name,
+				section: pointerData.section,
+				sessions: [],
+			};
+		}
 
-        sectionsBuffer[secKey].sessions.push({
-            ...pointerData.baseSession,
-            id: id,
-            day: day,
-            start: start,
-            end: end,
-            color: color,
-        });
-
-    }
-    selectedSections = Object.values(sectionsBuffer);
-    refreshCalendar();
-    renderLegend();
+		sectionsBuffer[secKey].sessions.push({
+			...pointerData.baseSession,
+			id: id,
+			day: day,
+			start: start,
+			end: end,
+			color: color,
+		});
+	}
+	selectedSections = Object.values(sectionsBuffer);
+	refreshCalendar();
+	renderLegend();
 }
 function copySyncUrl() {
-    saveStateToURL();
-    navigator.clipboard.writeText(window.location.href);
-    showNotification(
-        'Enlace copiado, compártelo con otros o abrelo en otro dispositivo',
-        'success',
-    );
+	saveStateToURL();
+	navigator.clipboard.writeText(window.location.href);
+	showNotification(
+		'Enlace copiado, compártelo con otros o abrelo en otro dispositivo',
+		'success',
+	);
 }
 
 let fcCalendar = null;
 function getMonday() {
-    const d = new Date();
-    const day = (d.getDay() + 6) % 7;
-    d.setHours(0, 0, 0, 0);
-    d.setDate(d.getDate() - day);
-    return d;
+	const d = new Date();
+	const day = (d.getDay() + 6) % 7;
+	d.setHours(0, 0, 0, 0);
+	d.setDate(d.getDate() - day);
+	return d;
 }
 function refreshCalendar() {
-    if (!fcCalendar) {
-        const el = document.getElementById('calendar');
-        fcCalendar = new FullCalendar.Calendar(el, {
-            initialView: 'timeGridWeek',
-            firstDay: 1,
-            locale: 'es',
-            dayHeaderFormat: { weekday: 'long' },
-            allDaySlot: false,
-            slotMinTime: '07:00:00',
-            slotMaxTime: '23:00:00',
-            height: 'auto',
-            slotDuration: '01:00:00',
-            headerToolbar: false,
-            editable: true,
-            slotEventOverlap: false,
-            slotLabelFormat: {
-                hour: 'numeric',
-                minute: '2-digit',
-                hour12: !use24Hour,
-            },
-            eventTimeFormat: {
-                hour: 'numeric',
-                minute: '2-digit',
-                hour12: !use24Hour,
-            },
-            eventContent: function (arg) {
-                console.log(arg.event);
+	if (!fcCalendar) {
+		const el = document.getElementById('calendar');
+		fcCalendar = new FullCalendar.Calendar(el, {
+			initialView: 'timeGridWeek',
+			firstDay: 1,
+			locale: 'es',
+			dayHeaderFormat: { weekday: 'long' },
+			allDaySlot: false,
+			slotMinTime: '07:00:00',
+			slotMaxTime: '23:00:00',
+			height: 'auto',
+			slotDuration: '01:00:00',
+			headerToolbar: false,
+			editable: true,
+			slotEventOverlap: false,
+			slotLabelFormat: {
+				hour: 'numeric',
+				minute: '2-digit',
+				hour12: !use24Hour,
+			},
+			eventTimeFormat: {
+				hour: 'numeric',
+				minute: '2-digit',
+				hour12: !use24Hour,
+			},
+			eventContent: function (arg) {
 
-                const titleParts = arg.event.title.split(' - ');
-                const courseCode = titleParts[0] || '';
-                const courseType = titleParts[1] || '';
-                // const courseRoom = titleParts[1] || '';
-                return {
-                    html: `
+				const titleParts = arg.event.title.split(' - ');
+				const courseCode = titleParts[0] || '';
+				const courseType = titleParts[1] || '';
+				// const courseRoom = titleParts[1] || '';
+				return {
+					html: `
                   <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; width: 100%; text-align: center; padding: 2px; box-sizing: border-box;">
                       <div style="font-size: 0.75em; opacity: 0.9; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 4px;">
                         ${arg.timeText}
@@ -393,125 +381,122 @@ function refreshCalendar() {
                       </div>
                   </div>
                 `,
-                };
-            },
-            eventDrop: function (info) {
-                const evt = info.event;
-                const [secIndex, sessIndex] = evt.id.split('-');
-                const newDay = evt.start.getDay() === 0 ? 7 : evt.start.getDay();
-                const toTimeStr = (date) => date.toTimeString().split(' ')[0];
-                selectedSections[secIndex].sessions[sessIndex].day = newDay;
-                selectedSections[secIndex].sessions[sessIndex].start = toTimeStr(
-                    evt.start,
-                );
-                selectedSections[secIndex].sessions[sessIndex].end = toTimeStr(
-                    evt.end,
-                );
-                saveStateToURL();
-            },
-            eventClick: function (info) {
-                editingEventId = info.event.id;
+				};
+			},
+			eventDrop: function (info) {
+				const evt = info.event;
+				const [secIndex, sessIndex] = evt.id.split('-');
+				const newDay = evt.start.getDay() === 0 ? 7 : evt.start.getDay();
+				const toTimeStr = (date) => date.toTimeString().split(' ')[0];
+				selectedSections[secIndex].sessions[sessIndex].day = newDay;
+				selectedSections[secIndex].sessions[sessIndex].start = toTimeStr(
+					evt.start,
+				);
+				selectedSections[secIndex].sessions[sessIndex].end = toTimeStr(evt.end);
+				saveStateToURL();
+			},
+			eventClick: function (info) {
+				editingEventId = info.event.id;
 
-                let color = info.event.backgroundColor;
-                if (FC_COLORS.indexOf(color) === -1) color = FC_COLORS[0];
+				let color = info.event.backgroundColor;
+				if (FC_COLORS.indexOf(color) === -1) color = FC_COLORS[0];
 
-                // Bind data to our custom component instead of a native input
-                const customSelect = document.getElementById('customColorSelect');
-                customSelect.setAttribute('data-value', color);
-                document.getElementById('triggerDot').style.backgroundColor =
-                    color;
-                document.getElementById('triggerText').innerText =
-                    COLOR_NAMES[color] || 'Color';
+				// Bind data to our custom component instead of a native input
+				const customSelect = document.getElementById('customColorSelect');
+				customSelect.setAttribute('data-value', color);
+				document.getElementById('triggerDot').style.backgroundColor = color;
+				document.getElementById('triggerText').innerText =
+					COLOR_NAMES[color] || 'Color';
 
-                document.getElementById('overlay').style.display = 'block';
-                document.getElementById('editPopup').style.display = 'block';
-            },
-        });
-        fcCalendar.render();
-    }
-    fcCalendar.removeAllEvents();
-    const events = [];
-    const monday = getMonday();
-    selectedSections.forEach((sec, i) => {
-        const defaultColor = FC_COLORS[i % FC_COLORS.length];
-        sec.sessions.forEach((sess, j) => {
-            const dStart = new Date(monday);
-            dStart.setDate(monday.getDate() + (sess.day - 1));
-            const [sh, sm] = sess.start.split(':');
-            dStart.setHours(sh, sm, 0);
-            const dEnd = new Date(monday);
-            dEnd.setDate(monday.getDate() + (sess.day - 1));
-            const [eh, em] = sess.end.split(':');
-            dEnd.setHours(eh, em, 0);
+				document.getElementById('overlay').style.display = 'block';
+				document.getElementById('editPopup').style.display = 'block';
+			},
+		});
+		fcCalendar.render();
+	}
+	fcCalendar.removeAllEvents();
+	const events = [];
+	const monday = getMonday();
+	selectedSections.forEach((sec, i) => {
+		const defaultColor = FC_COLORS[i % FC_COLORS.length];
+		sec.sessions.forEach((sess, j) => {
+			const dStart = new Date(monday);
+			dStart.setDate(monday.getDate() + (sess.day - 1));
+			const [sh, sm] = sess.start.split(':');
+			dStart.setHours(sh, sm, 0);
+			const dEnd = new Date(monday);
+			dEnd.setDate(monday.getDate() + (sess.day - 1));
+			const [eh, em] = sess.end.split(':');
+			dEnd.setHours(eh, em, 0);
 
-            let displayColor = sess.color || defaultColor;
-            if (!sess.color && sess.type === 'Práctica Calificada')
-                displayColor = '#dc3545';
-            events.push({
-                id: `${i}-${j}`,
-                title: sess.customName || `${sec.code} - ${sess.type}`,
-                start: dStart.toISOString(),
-                end: dEnd.toISOString(),
-                section: sec.section,
-                backgroundColor: displayColor,
-                borderColor: displayColor,
-            });
-        });
-    });
-    fcCalendar.addEventSource(events);
+			let displayColor = sess.color || defaultColor;
+			if (!sess.color && sess.type === 'Práctica Calificada')
+				displayColor = '#dc3545';
+			events.push({
+				id: `${i}-${j}`,
+				title: sess.customName || `${sec.code} - ${sess.type}`,
+				start: dStart.toISOString(),
+				end: dEnd.toISOString(),
+				section: sec.section,
+				backgroundColor: displayColor,
+				borderColor: displayColor,
+			});
+		});
+	});
+	fcCalendar.addEventSource(events);
 }
 
 function saveEdit() {
-    if (!editingEventId) return;
-    const [secIndex, sessIndex] = editingEventId.split('-');
+	if (!editingEventId) return;
+	const [secIndex, sessIndex] = editingEventId.split('-');
 
-    // Read the state from the custom component's data-value attribute
-    const selectedColor = document
-        .getElementById('customColorSelect')
-        .getAttribute('data-value');
-    selectedSections[secIndex].sessions[sessIndex].color = selectedColor;
+	// Read the state from the custom component's data-value attribute
+	const selectedColor = document
+		.getElementById('customColorSelect')
+		.getAttribute('data-value');
+	selectedSections[secIndex].sessions[sessIndex].color = selectedColor;
 
-    closePopups();
-    refreshCalendar();
-    saveStateToURL();
+	closePopups();
+	refreshCalendar();
+	saveStateToURL();
 }
 function deleteEvent() {
-    if (!editingEventId) return;
-    const [secIndex, sessIndex] = editingEventId.split('-');
-    selectedSections[secIndex].sessions.splice(sessIndex, 1);
-    if (selectedSections[secIndex].sessions.length === 0) {
-        selectedSections.splice(secIndex, 1);
-    }
-    closePopups();
-    refreshCalendar();
-    saveStateToURL();
+	if (!editingEventId) return;
+	const [secIndex, sessIndex] = editingEventId.split('-');
+	selectedSections[secIndex].sessions.splice(sessIndex, 1);
+	if (selectedSections[secIndex].sessions.length === 0) {
+		selectedSections.splice(secIndex, 1);
+	}
+	closePopups();
+	refreshCalendar();
+	saveStateToURL();
 }
 
 function renderLegend() {
-    const legendDiv = document.getElementById('legend');
-    legendDiv.innerHTML =
-        '<h3 style="margin-top:0; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">Cursos en Horario</h3>';
+	const legendDiv = document.getElementById('legend');
+	legendDiv.innerHTML =
+		'<h3 style="margin-top:0; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">Cursos en Horario</h3>';
 
-    if (selectedSections.length === 0) {
-        legendDiv.innerHTML +=
-            '<p style="color: #888;">No hay cursos seleccionados.</p>';
-        return;
-    }
+	if (selectedSections.length === 0) {
+		legendDiv.innerHTML +=
+			'<p style="color: #888;">No hay cursos seleccionados.</p>';
+		return;
+	}
 
-    selectedSections.forEach((sec, i) => {
-        const color = sec.sessions[0]?.color || FC_COLORS[i % FC_COLORS.length];
-        const prof = sec.sessions[0]?.teacher || 'Varios';
-        // Extract vacantes from the state pointer
-        const vacantes = sec.sessions[0]?.vacantes || '-';
+	selectedSections.forEach((sec, i) => {
+		const color = sec.sessions[0]?.color || FC_COLORS[i % FC_COLORS.length];
+		const prof = sec.sessions[0]?.teacher || 'Varios';
+		// Extract vacantes from the state pointer
+		const vacantes = sec.sessions[0]?.vacantes || '-';
 
-        const item = document.createElement('div');
-        item.style.display = 'flex';
-        item.style.justifyContent = 'space-between';
-        item.style.alignItems = 'center';
-        item.style.padding = '10px 0';
-        item.style.borderBottom = '1px solid var(--border-color)';
+		const item = document.createElement('div');
+		item.style.display = 'flex';
+		item.style.justifyContent = 'space-between';
+		item.style.alignItems = 'center';
+		item.style.padding = '10px 0';
+		item.style.borderBottom = '1px solid var(--border-color)';
 
-        item.innerHTML = `
+		item.innerHTML = `
             <div style="display: flex; align-items: center; font-size: 0.95em;">
                 <div style="width: 14px; height: 14px; border-radius: 4px; background-color: ${color}; margin-right: 12px; flex-shrink: 0;"></div>
                 <div>
@@ -526,150 +511,520 @@ function renderLegend() {
             </div>
             <button class="danger" style="padding: 6px 12px; font-size: 0.85em; margin: 0;" onclick="removeCourse('${sec.code}')">Eliminar</button>
         `;
-        legendDiv.appendChild(item);
-    });
+		legendDiv.appendChild(item);
+	});
 }
 
 function removeCourse(courseCode) {
-    selectedSections = selectedSections.filter(
-        (s) => s.code !== courseCode,
-    );
+	selectedSections = selectedSections.filter((s) => s.code !== courseCode);
 
-    saveStateToURL();
-    refreshCalendar();
+	saveStateToURL();
+	refreshCalendar();
 }
 function downloadICS() {
-    if (selectedSections.length === 0) {
-        showNotification('El horario está vacío.', 'error');
-        return;
-    }
-    let icsMSG =
-        'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//xd//ES\n';
-    const monday = getMonday();
-    const fmt = (d) =>
-        d.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-    selectedSections.forEach((sec) => {
-        sec.sessions.forEach((sess) => {
-            const dStart = new Date(monday);
-            dStart.setDate(monday.getDate() + (sess.day - 1));
-            const [sh, sm] = sess.start.split(':');
-            dStart.setHours(sh, sm, 0);
-            const dEnd = new Date(monday);
-            dEnd.setDate(monday.getDate() + (sess.day - 1));
-            const [eh, em] = sess.end.split(':');
-            dEnd.setHours(eh, em, 0);
-            icsMSG += 'BEGIN:VEVENT\n';
-            icsMSG += `SUMMARY:${sess.customName || sec.code + ' ' + sess.type}\n`;
-            icsMSG += `DESCRIPTION:${sec.name}\\nProfesor: ${sess.teacher}\\nSección: ${sec.section}\n`;
-            icsMSG += `DTSTART:${fmt(dStart)}\n`;
-            icsMSG += `DTEND:${fmt(dEnd)}\n`;
-            icsMSG += `RRULE:FREQ=WEEKLY;UNTIL=20260701T000000Z\n`;
-            icsMSG += 'END:VEVENT\n';
-        });
-    });
-    icsMSG += 'END:VCALENDAR';
-    const blob = new Blob([icsMSG], {
-        type: 'text/calendar;charset=utf-8',
-    });
-    const link = document.createElement('a');
-    link.href = window.URL.createObjectURL(blob);
-    link.download = 'Mi_Horario_UNI.ics';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+	if (selectedSections.length === 0) {
+		showNotification('El horario está vacío.', 'error');
+		return;
+	}
+	let icsMSG = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//xd//ES\n';
+	const monday = getMonday();
+	const fmt = (d) => d.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+	selectedSections.forEach((sec) => {
+		sec.sessions.forEach((sess) => {
+			const dStart = new Date(monday);
+			dStart.setDate(monday.getDate() + (sess.day - 1));
+			const [sh, sm] = sess.start.split(':');
+			dStart.setHours(sh, sm, 0);
+			const dEnd = new Date(monday);
+			dEnd.setDate(monday.getDate() + (sess.day - 1));
+			const [eh, em] = sess.end.split(':');
+			dEnd.setHours(eh, em, 0);
+			icsMSG += 'BEGIN:VEVENT\n';
+			icsMSG += `SUMMARY:${sess.customName || sec.code + ' ' + sess.type}\n`;
+			icsMSG += `DESCRIPTION:${sec.name}\\nProfesor: ${sess.teacher}\\nSección: ${sec.section}\n`;
+			icsMSG += `DTSTART:${fmt(dStart)}\n`;
+			icsMSG += `DTEND:${fmt(dEnd)}\n`;
+			icsMSG += `RRULE:FREQ=WEEKLY;UNTIL=20260701T000000Z\n`;
+			icsMSG += 'END:VEVENT\n';
+		});
+	});
+	icsMSG += 'END:VCALENDAR';
+	const blob = new Blob([icsMSG], {
+		type: 'text/calendar;charset=utf-8',
+	});
+	const link = document.createElement('a');
+	link.href = window.URL.createObjectURL(blob);
+	link.download = 'Mi_Horario_UNI.ics';
+	document.body.appendChild(link);
+	link.click();
+	document.body.removeChild(link);
 }
 
 initializeApp();
 
-// --- OPTIMIZER INTEGRATION ---
-let optimizerWorker;
-let mallaData = null;
-let ratingsData = null;
+// --- OPTIMIZER ENGINE ---
+let optWorker;
+let optCreditsDB = null;
+let optCartData = {}; // Stores { obligatory: bool, importance: int, lockedSection: string }
 
 async function openOptimizerModal() {
-    if (!mallaData) {
-        try {
-            mallaData = await fetch('./malla.json').then(r => r.json());
-            ratingsData = await fetch('./ratings.json').then(r => r.json());
-        } catch (e) {
-            console.error("Faltan los archivos malla.json o ratings.json");
-            mallaData = {}; ratingsData = { "DEFAULT": { rating: 0.5 } };
-        }
-    }
-    document.getElementById('optOverlay').style.display = 'block';
-    document.getElementById('optimizerModal').style.display = 'block';
+	if (!optCreditsDB) {
+		try {
+			optCreditsDB = await fetch('./credits.json').then((r) => r.json());
+		} catch (e) {
+			optCreditsDB = {};
+		}
+	}
+
+	loadOptState(); // Cargamos el disco al abrir
+
+	document.getElementById('optOverlay').style.display = 'block';
+	document.getElementById('optimizerModal').style.display = 'block';
+	updateOptCartUI();
+}
+
+function searchOptCourses() {
+	const q = document
+		.getElementById('optSearchInput')
+		.value.toUpperCase()
+		.replace(/-/g, '');
+	const resDiv = document.getElementById('optSearchResults');
+	resDiv.innerHTML = '';
+	if (!q) return;
+
+	Object.keys(courseDatabase).forEach((code) => {
+		if (
+			code.replace(/-/g, '').includes(q) ||
+			courseDatabase[code].name.includes(q)
+		) {
+			const btn = document.createElement('button');
+			btn.className = 'course-btn';
+			btn.innerText = `${code} - ${courseDatabase[code].name} (${optCreditsDB[code] || 3} cred)`;
+			btn.onclick = () => addCourseToOpt(code);
+			resDiv.appendChild(btn);
+		}
+	});
+}
+
+function addCourseToOpt(code) {
+	if (!optCartData[code]) {
+		// Inicializamos el array de deadSections
+		optCartData[code] = {
+			obligatory: false,
+			importance: 5,
+			lockedSection: '',
+			deadSections: [],
+		};
+		updateOptCartUI();
+	}
+	document.getElementById('optSearchInput').value = '';
+	document.getElementById('optSearchResults').innerHTML = '';
+}
+
+function toggleDeadSection(code, sec, element) {
+	const isDead = element.checked;
+
+	if (isDead) {
+		if (!optCartData[code].deadSections.includes(sec)) {
+			optCartData[code].deadSections.push(sec);
+		}
+		// Si la sección estaba fijada, la desfijamos automáticamente
+		if (optCartData[code].lockedSection === sec) {
+			optCartData[code].lockedSection = '';
+		}
+	} else {
+		optCartData[code].deadSections = optCartData[code].deadSections.filter(
+			(s) => s !== sec,
+		);
+	}
+	updateOptCartUI();
+}
+
+function removeCourseFromOpt(code) {
+	delete optCartData[code];
+	updateOptCartUI();
+}
+
+function updateOptCartUI() {
+	const cartDiv = document.getElementById('optCart');
+	cartDiv.innerHTML = '';
+	let totalCredits = 0;
+	const codes = Object.keys(optCartData);
+	document.getElementById('optCourseCount').innerText = codes.length;
+
+	if (codes.length === 0) {
+		cartDiv.innerHTML =
+			'<p style="color: #888; font-size: 0.9em; text-align: center;">Agrega cursos usando el buscador.</p>';
+	}
+
+	codes.forEach((code) => {
+		const course = courseDatabase[code];
+		const conf = optCartData[code];
+		const credits = optCreditsDB[code] || 3;
+		totalCredits += credits;
+
+		let secOptions = `<option value="">Todas (Automático)</option>`;
+		let deadChips = '';
+
+		Object.keys(course.sections).forEach((sec) => {
+			const isDead = conf.deadSections.includes(sec);
+
+			// Si la sección está muerta, no dejamos que la fije en el dropdown
+			if (!isDead) {
+				secOptions += `<option value="${sec}" ${conf.lockedSection === sec ? 'selected' : ''}>Sec ${sec}</option>`;
+			}
+
+			// Construimos la píldora visual
+			deadChips += `
+                <label class="dead-section-chip ${isDead ? 'dead' : ''}">
+                    <input type="checkbox" ${isDead ? 'checked' : ''} onchange="toggleDeadSection('${code}', '${sec}', this)">
+                    ${sec}
+                </label>
+            `;
+		});
+
+		const card = document.createElement('div');
+		card.style.cssText =
+			'background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 6px; padding: 12px; font-size: 0.85em; display: flex; flex-direction: column; gap: 8px;';
+		card.innerHTML = `
+            <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 1.1em; color: var(--btn-bg);">
+                <span>${code} - ${course.name}</span>
+                <span style="color: #dc3545; cursor: pointer; font-size: 1.2em; line-height: 1;" onclick="removeCourseFromOpt('${code}')">×</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
+                <label style="cursor: pointer;"><input type="checkbox" onchange="optCartData['${code}'].obligatory = this.checked" ${conf.obligatory ? 'checked' : ''}> Obligatorio</label>
+                <span style="font-weight: 600; opacity: 0.8;">${credits} Cred</span>
+            </div>
+            <div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 2px;">
+                    <label>Importancia:</label> <span id="impVal_${code}" style="font-weight:bold;">${conf.importance}</span>
+                </div>
+                <input type="range" min="1" max="10" value="${conf.importance}" oninput="document.getElementById('impVal_${code}').innerText=this.value; optCartData['${code}'].importance=parseInt(this.value);">
+            </div>
+            <div>
+                <label style="display: block; margin-bottom: 2px;">Fijar Sección (Obligar):</label>
+                <select style="width: 100%; padding: 6px; border-radius: 4px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color);" onchange="optCartData['${code}'].lockedSection = this.value">
+                    ${secOptions}
+                </select>
+            </div>
+            <div style="background: rgba(220, 53, 69, 0.1); padding: 8px; border-radius: 4px; border: 1px dashed rgba(220, 53, 69, 0.3);">
+                <label style="font-size: 0.9em; color: #dc3545; display: block; margin-bottom: 6px; font-weight: bold;">🚫 Secciones Llenas (Ignorar):</label>
+                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                    ${deadChips}
+                </div>
+            </div>
+        `;
+		cartDiv.appendChild(card);
+	});
+
+	const creditsEl = document.getElementById('optCurrentCredits');
+	creditsEl.innerText = totalCredits;
+	creditsEl.style.color =
+		totalCredits > parseInt(document.getElementById('optMaxCredits').value)
+			? '#dc3545'
+			: 'var(--success)';
 }
 
 function executeOptimizer() {
-    if (selectedSections.length > 0) {
-        if (!confirm("Esto borrará tu horario actual. ¿Continuar?")) return;
-    }
+	const codes = Object.keys(optCartData);
+	if (codes.length === 0) return alert('Agrega al menos un curso.');
 
-    if (!optimizerWorker) {
-        optimizerWorker = new Worker('optimizer-worker.js');
-        optimizerWorker.onmessage = (e) => {
-            document.getElementById('optLoading').style.display = 'none';
-            renderOptimizerResults(e.data.results);
-        };
-    }
+	if (!optWorker) {
+		optWorker = new Worker('optimizer-worker.js');
+		optWorker.onmessage = (e) => {
+			document.getElementById('optLoading').style.display = 'none';
+			renderOptResults(e.data.results);
+		};
+	}
 
-    document.getElementById('optLoading').style.display = 'block';
-    document.getElementById('optimizerResults').innerHTML = '';
+	document.getElementById('optLoading').style.display = 'block';
+	document.getElementById('optResults').innerHTML = '';
 
-    optimizerWorker.postMessage({
-        database: courseDatabase,
-        malla: mallaData,
-        ratings: ratingsData,
-        config: {
-            creditsMax: parseInt(document.getElementById('optCredits').value) || 24,
-            obligatory: ["BQU01"], // Química I quemado en el sistema
-            desired: ["BMA02", "BMA03", "BFI01", "SI205", "FB301", "TE205"],
-            apathy: parseFloat(document.getElementById('apathySlider').value),
-            gapPref: 0 // Reservado para futura lógica de huecos
-        }
-    });
+	// Sintetizar el tensor de valor de profesores (Curso -> Tipo -> Profesor = 1.0 a 0.1)
+	let synthesizedRatings = {};
+	Object.keys(complexTeacherOrder).forEach((code) => {
+		// Sanity Check 1: Ignorar si el nodo está corrupto
+		if (
+			typeof complexTeacherOrder[code] !== 'object' ||
+			Array.isArray(complexTeacherOrder[code])
+		)
+			return;
+
+		synthesizedRatings[code] = {};
+		Object.keys(complexTeacherOrder[code]).forEach((type) => {
+			const list = complexTeacherOrder[code][type];
+
+			// Sanity Check 2: Ignorar si la lista final no es un Array real
+			if (!Array.isArray(list)) return;
+
+			synthesizedRatings[code][type] = {};
+			const totalT = list.length;
+			list.forEach((t, i) => {
+				let normalized = 1.0;
+				if (totalT > 1) normalized = 1.0 - (i / (totalT - 1)) * 0.9;
+				synthesizedRatings[code][type][t] = { rating: normalized };
+			});
+		});
+	});
 }
 
-function renderOptimizerResults(results) {
-    const container = document.getElementById('optimizerResults');
-    container.innerHTML = '';
+function renderOptResults(results) {
+	const container = document.getElementById('optResults');
+	if (results.length === 0) {
+		container.innerHTML =
+			'<p style="color:#dc3545; text-align:center;">No se encontró ninguna combinación válida que cumpla los créditos y cruces requeridos.</p>';
+		return;
+	}
 
-    if(results.length === 0) {
-        container.innerHTML = '<p style="color:red; grid-column: 1/-1;">No hay combinaciones posibles con estos parámetros.</p>';
-        return;
-    }
+	results.forEach((res, i) => {
+		const div = document.createElement('div');
+		div.style.cssText =
+			'border: 1px solid var(--border-color); padding: 10px; border-radius: 6px; background: var(--surface-color); display:flex; flex-direction:column; gap:5px;';
 
-    results.forEach((res, i) => {
-        const div = document.createElement('div');
-        div.style.cssText = "border: 1px solid var(--border-color); padding: 10px; border-radius: 6px; background: var(--surface-color);";
-        div.innerHTML = `
-            <h4 style="margin: 0 0 5px 0; color: #6f42c1;">Top ${i + 1}</h4>
-            <div style="font-size: 0.85em; opacity: 0.8; margin-bottom: 10px;">
-                Créditos: ${res.credits}<br>
-                Puntaje: ${Math.round(res.score)}
+		let gapWarning =
+			res.maxGap >= 3
+				? `<span style="color:#ff8c00; font-weight:bold;">⚠ Hueco Max: ${res.maxGap}h</span>`
+				: `<span style="color:#28a745;">Hueco Max: ${res.maxGap}h</span>`;
+		let overlapWarning =
+			res.overlaps > 0
+				? `<span style="color:#dc3545; font-weight:bold;">❌ Cruces: ${res.overlaps}</span>`
+				: `<span style="color:#28a745;">✓ Cero Cruces</span>`;
+
+		div.innerHTML = `
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <h4 style="margin: 0; color: var(--btn-bg);">Opción ${i + 1}</h4>
+                <button onclick='loadOptimized(${JSON.stringify(res.schedule)})' style="padding: 4px 10px;">Cargar</button>
             </div>
-            <button onclick='loadOptimized(${JSON.stringify(res.schedule)})' style="width: 100%; font-size: 0.8em; padding: 6px;">Aplicar</button>
+            <div style="font-size: 0.85em; opacity: 0.9; display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-top: 5px;">
+                <span>Créditos: <strong>${res.credits}</strong></span>
+                <span>Puntaje: <strong>${Math.round(res.score)}</strong></span>
+                ${overlapWarning}
+                ${gapWarning}
+            </div>
         `;
-        container.appendChild(div);
-    });
+		container.appendChild(div);
+	});
 }
 
 function loadOptimized(scheduleArray) {
-    selectedSections = [];
-    scheduleArray.forEach(sec => {
-        const course = courseDatabase[sec.courseCode];
-        if(course && course.sections[sec.id]) {
-            selectedSections.push({
-                code: sec.courseCode,
-                name: course.name,
-                section: sec.id,
-                sessions: JSON.parse(JSON.stringify(course.sections[sec.id]))
-            });
-        }
-    });
+	if (
+		selectedSections.length > 0 &&
+		!confirm('Esto borrará tu horario actual. ¿Continuar?')
+	)
+		return;
 
-    closePopups();
-    refreshCalendar();
-    saveStateToURL();
-    showNotification('¡Horario cargado desde el optimizador!', 'success');
+	selectedSections = [];
+	scheduleArray.forEach((sec) => {
+		const course = courseDatabase[sec.courseCode];
+		if (course && course.sections[sec.id]) {
+			selectedSections.push({
+				code: sec.courseCode,
+				name: course.name,
+				section: sec.id,
+				sessions: JSON.parse(JSON.stringify(course.sections[sec.id])),
+			});
+		}
+	});
+
+	closePopups();
+	refreshCalendar();
+	saveStateToURL();
+	showNotification('Horario generado aplicado con éxito.', 'success');
+}
+
+function saveOptState() {
+	const state = {
+		cart: optCartData,
+		credits: document.getElementById('optMaxCredits').value,
+		apathy: document.getElementById('optApathy').value,
+		teacherOrder: complexTeacherOrder, // Apunta a la nueva matriz 3D
+	};
+	localStorage.setItem('fiisOptimizerState', JSON.stringify(state));
+}
+
+function loadOptState() {
+    const saved = localStorage.getItem('fiisOptimizerState');
+    if (saved) {
+        try {
+            const state = JSON.parse(saved);
+            optCartData = state.cart || {};
+            if (state.credits)
+                document.getElementById('optMaxCredits').value = state.credits;
+            if (state.apathy)
+                document.getElementById('optApathy').value = state.apathy;
+            
+            // --- DEFENSE MECHANISM ---
+            // Solo carga si es un Objeto puro (el Tensor 3D). Si es un Array antiguo, lo purga.
+            if (state.teacherOrder && typeof state.teacherOrder === 'object' && !Array.isArray(state.teacherOrder)) {
+                complexTeacherOrder = state.teacherOrder;
+            } else {
+                complexTeacherOrder = {};
+            }
+        } catch (e) {
+            console.error('Estado local corrupto. Reiniciando...');
+            complexTeacherOrder = {};
+        }
+    }
+}
+
+// --- MOTOR TENSORIAL DE RANKING DE PROFESORES ---
+let complexTeacherOrder = {}; // { BMA01: { T: [], P: [], LAB: [] } }
+let activeTeacherTab = null;
+let copySrc = null;
+let copyDst = null;
+
+function openTeacherModal() {
+	const codes = Object.keys(optCartData);
+	if (codes.length === 0) return alert('Agrega cursos primero.');
+
+	codes.forEach((code) => {
+		if (!complexTeacherOrder[code]) complexTeacherOrder[code] = {};
+		const course = courseDatabase[code];
+
+		let types = {};
+		Object.values(course.sections).forEach((sessions) => {
+			sessions.forEach((s) => {
+				if (!types[s.type]) types[s.type] = new Set();
+				if (s.teacher !== 'NN' && !s.teacher.includes('Solo para PC')) {
+					types[s.type].add(s.teacher);
+				}
+			});
+		});
+
+		Object.keys(types).forEach((type) => {
+			const currentList = Array.from(types[type]);
+			let existingOrder = complexTeacherOrder[code][type] || [];
+			let merged = existingOrder.filter((t) => currentList.includes(t));
+			currentList.forEach((t) => {
+				if (!merged.includes(t)) merged.push(t);
+			});
+			complexTeacherOrder[code][type] = merged;
+		});
+	});
+
+	if (!activeTeacherTab || !codes.includes(activeTeacherTab)) {
+		activeTeacherTab = codes[0];
+	}
+
+	document.getElementById('teacherModal').style.display = 'block';
+	renderTeacherModalUI();
+}
+
+function renderTeacherModalUI() {
+	// Render Tabs
+	const tabsContainer = document.getElementById('teacherTabs');
+	tabsContainer.innerHTML = '';
+	Object.keys(optCartData).forEach((code) => {
+		const tab = document.createElement('div');
+		tab.className = `opt-tab ${code === activeTeacherTab ? 'active' : ''}`;
+		tab.innerText = code;
+		tab.onclick = () => {
+			activeTeacherTab = code;
+			renderTeacherModalUI();
+		};
+		tabsContainer.appendChild(tab);
+	});
+
+	const contentContainer = document.getElementById('teacherTabContent');
+	contentContainer.innerHTML = '';
+
+	const activeTypes = Object.keys(complexTeacherOrder[activeTeacherTab] || {});
+
+	// Render Lists per Type
+	activeTypes.forEach((type) => {
+		const typeBlock = document.createElement('div');
+		typeBlock.style.marginBottom = '15px';
+
+		let typeName =
+			type === 'T'
+				? 'Teoría (T)'
+				: type === 'P'
+					? 'Práctica (P)'
+					: 'Laboratorio (LAB)';
+		let listHTML = `<h4 style="margin: 0 0 8px 0; color: var(--text-color); border-bottom: 1px solid var(--border-color); padding-bottom: 4px;">${typeName}</h4>`;
+
+		complexTeacherOrder[activeTeacherTab][type].forEach((t, i) => {
+			const isFirst = i === 0;
+			const isLast =
+				i === complexTeacherOrder[activeTeacherTab][type].length - 1;
+			listHTML += `
+                <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-color); padding: 6px 10px; border: 1px solid var(--border-color); border-radius: 4px; margin-bottom: 4px;">
+                    <span style="font-size: 0.85em; font-weight: 600; width: 75%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                        <span style="color:var(--btn-bg); margin-right:5px;">${i + 1}.</span> ${t}
+                    </span>
+                    <div style="display: flex; gap: 4px;">
+                        <button onclick="moveTeacher('${activeTeacherTab}', '${type}', ${i}, -1)" ${isFirst ? 'disabled style="opacity:0.3"' : ''} style="padding: 2px 8px; margin: 0;">▲</button>
+                        <button onclick="moveTeacher('${activeTeacherTab}', '${type}', ${i}, 1)" ${isLast ? 'disabled style="opacity:0.3"' : ''} style="padding: 2px 8px; margin: 0;">▼</button>
+                    </div>
+                </div>
+            `;
+		});
+		typeBlock.innerHTML = listHTML;
+		contentContainer.appendChild(typeBlock);
+	});
+
+	// Render Copy Utility Engine
+	renderCopyUtility(activeTypes);
+}
+
+function moveTeacher(code, type, idx, dir) {
+	const temp = complexTeacherOrder[code][type][idx];
+	complexTeacherOrder[code][type][idx] =
+		complexTeacherOrder[code][type][idx + dir];
+	complexTeacherOrder[code][type][idx + dir] = temp;
+	renderTeacherModalUI();
+	saveOptState();
+}
+
+function renderCopyUtility(types) {
+	const srcContainer = document.getElementById('copySrcChips');
+	const dstContainer = document.getElementById('copyDstChips');
+	srcContainer.innerHTML = '';
+	dstContainer.innerHTML = '';
+
+	if (types.length < 2) {
+		document.getElementById('btnExecuteCopy').disabled = true;
+		document.getElementById('btnExecuteCopy').style.opacity = '0.3';
+		return;
+	}
+
+	if (!types.includes(copySrc)) copySrc = types[0];
+	let availableDst = types.filter((t) => t !== copySrc);
+	if (!availableDst.includes(copyDst)) copyDst = availableDst[0];
+
+	types.forEach((t) => {
+		srcContainer.innerHTML += `<div class="copy-chip ${t === copySrc ? 'selected' : ''}" onclick="copySrc='${t}'; renderTeacherModalUI();">${t}</div>`;
+	});
+
+	types.forEach((t) => {
+		const isSrc = t === copySrc;
+		dstContainer.innerHTML += `<div class="copy-chip ${t === copyDst ? 'selected' : ''} ${isSrc ? 'disabled' : ''}" onclick="if(!${isSrc}){ copyDst='${t}'; renderTeacherModalUI(); }">${t}</div>`;
+	});
+
+	const btn = document.getElementById('btnExecuteCopy');
+	btn.disabled = false;
+	btn.style.opacity = '1';
+	btn.innerHTML = `Copiar de <b>${copySrc}</b> a <b>${copyDst}</b>`;
+}
+
+function closeTeacherModal() {
+	document.getElementById('teacherModal').style.display = 'none';
+}
+
+function executeTeacherCopy() {
+	if (!copySrc || !copyDst) return;
+	const srcList = complexTeacherOrder[activeTeacherTab][copySrc];
+	let dstList = complexTeacherOrder[activeTeacherTab][copyDst];
+
+	// Sort logic: match source index. If not in source, sink to bottom (999).
+	dstList.sort((a, b) => {
+		let idxA = srcList.indexOf(a);
+		let idxB = srcList.indexOf(b);
+		if (idxA === -1) idxA = 999;
+		if (idxB === -1) idxB = 999;
+		return idxA - idxB;
+	});
+
+	renderTeacherModalUI();
+	saveOptState();
 }
