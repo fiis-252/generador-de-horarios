@@ -1,0 +1,30 @@
+{
+  "BMA02": {
+    "credits": 5,
+    "weight": 15
+  },
+  "BMA03": {
+    "credits": 4,
+    "weight": 12
+  },
+  "BFI01": {
+    "credits": 5,
+    "weight": 8
+  },
+  "BQU01": {
+    "credits": 5,
+    "weight": 5
+  },
+  "SI205": {
+    "credits": 3,
+    "weight": 20
+  },
+  "FB301": {
+    "credits": 3,
+    "weight": 18
+  },
+  "TE205": {
+    "credits": 2,
+    "weight": 2
+  }
+}

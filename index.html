@@ -217,6 +217,9 @@
 			<div
 				id="results"
 				style="margin-top: 0px; width: 100%"></div>
+            <button onclick="openOptimizerModal()" style="background: #6f42c1; width: 100%; margin-top: 15px; border-radius: 8px;">
+                ✨ Autogenerador de Horario Ideal
+            </button>
 		</div>
 		<div class="section">
 			<div
@@ -525,6 +528,35 @@
 				Entendido
 			</button>
 		</div>
-		<script src="index.js"></script>
+        <div class="overlay" id="optOverlay" onclick="closePopups()"></div>
+        <div class="popup" id="optimizerModal" style="width: 90%; max-width: 800px; top: 5%;">
+            <h3 style="color: #6f42c1;">⚡ Optimizador Heurístico (Turno 10)</h3>
+            <p style="font-size: 0.85em; opacity: 0.8;">Calcula millones de combinaciones priorizando tu malla y evaluando cruces.</p>
+
+            <div class="opt-controls" style="display: flex; gap: 15px; background: var(--bg-color); padding: 15px; border-radius: 8px; margin-bottom: 15px; align-items: center; flex-wrap: wrap;">
+                <div>
+                    <label style="font-size: 0.8em; font-weight: bold;">Créditos Max:</label><br>
+                    <input type="number" id="optCredits" value="24" style="width: 70px; padding: 4px;">
+                </div>
+                <div style="flex: 1;">
+                    <label style="font-size: 0.8em; font-weight: bold;">Apatía a cruces (0 = estricto, 1 = me da igual):</label><br>
+                    <input type="range" id="apathySlider" min="0" max="1" step="0.1" value="0" style="width: 100%;">
+                </div>
+            </div>
+
+            <button onclick="executeOptimizer()" style="width: 100%; font-weight: bold; background: #28a745;">
+                INICIAR CÁLCULO
+            </button>
+
+            <div id="optLoading" style="display:none; text-align: center; margin: 20px 0;">
+                <span style="font-weight: bold; color: var(--btn-bg);">Calculando rutas posibles...</span>
+            </div>
+
+            <div id="optimizerResults" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; max-height: 350px; overflow-y: auto; margin-top: 15px;"></div>
+
+            <button onclick="closePopups()" style="width: 100%; background: #aaa; margin-top: 15px;">Cerrar</button>
+        </div>
+        <script src="index.js"></script>
+
 	</body>
 </html>

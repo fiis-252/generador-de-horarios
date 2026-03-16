@@ -250,6 +250,8 @@ function closePopups() {
     document.getElementById('popup').style.display = 'none';
     document.getElementById('editPopup').style.display = 'none';
     document.getElementById('helpPopup').style.display = 'none';
+    document.getElementById('optOverlay').style.display = 'none';
+    document.getElementById('optimizerModal').style.display = 'none';
 
     const customSelect = document.getElementById('customColorSelect');
     if (customSelect) customSelect.classList.remove('open');
@@ -371,9 +373,12 @@ function refreshCalendar() {
                 hour12: !use24Hour,
             },
             eventContent: function (arg) {
+                console.log(arg.event);
+
                 const titleParts = arg.event.title.split(' - ');
                 const courseCode = titleParts[0] || '';
                 const courseType = titleParts[1] || '';
+                // const courseRoom = titleParts[1] || '';
                 return {
                     html: `
                   <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; width: 100%; text-align: center; padding: 2px; box-sizing: border-box;">
@@ -575,3 +580,96 @@ function downloadICS() {
 }
 
 initializeApp();
+
+// --- OPTIMIZER INTEGRATION ---
+let optimizerWorker;
+let mallaData = null;
+let ratingsData = null;
+
+async function openOptimizerModal() {
+    if (!mallaData) {
+        try {
+            mallaData = await fetch('./malla.json').then(r => r.json());
+            ratingsData = await fetch('./ratings.json').then(r => r.json());
+        } catch (e) {
+            console.error("Faltan los archivos malla.json o ratings.json");
+            mallaData = {}; ratingsData = { "DEFAULT": { rating: 0.5 } };
+        }
+    }
+    document.getElementById('optOverlay').style.display = 'block';
+    document.getElementById('optimizerModal').style.display = 'block';
+}
+
+function executeOptimizer() {
+    if (selectedSections.length > 0) {
+        if (!confirm("Esto borrará tu horario actual. ¿Continuar?")) return;
+    }
+
+    if (!optimizerWorker) {
+        optimizerWorker = new Worker('optimizer-worker.js');
+        optimizerWorker.onmessage = (e) => {
+            document.getElementById('optLoading').style.display = 'none';
+            renderOptimizerResults(e.data.results);
+        };
+    }
+
+    document.getElementById('optLoading').style.display = 'block';
+    document.getElementById('optimizerResults').innerHTML = '';
+
+    optimizerWorker.postMessage({
+        database: courseDatabase,
+        malla: mallaData,
+        ratings: ratingsData,
+        config: {
+            creditsMax: parseInt(document.getElementById('optCredits').value) || 24,
+            obligatory: ["BQU01"], // Química I quemado en el sistema
+            desired: ["BMA02", "BMA03", "BFI01", "SI205", "FB301", "TE205"],
+            apathy: parseFloat(document.getElementById('apathySlider').value),
+            gapPref: 0 // Reservado para futura lógica de huecos
+        }
+    });
+}
+
+function renderOptimizerResults(results) {
+    const container = document.getElementById('optimizerResults');
+    container.innerHTML = '';
+
+    if(results.length === 0) {
+        container.innerHTML = '<p style="color:red; grid-column: 1/-1;">No hay combinaciones posibles con estos parámetros.</p>';
+        return;
+    }
+
+    results.forEach((res, i) => {
+        const div = document.createElement('div');
+        div.style.cssText = "border: 1px solid var(--border-color); padding: 10px; border-radius: 6px; background: var(--surface-color);";
+        div.innerHTML = `
+            <h4 style="margin: 0 0 5px 0; color: #6f42c1;">Top ${i + 1}</h4>
+            <div style="font-size: 0.85em; opacity: 0.8; margin-bottom: 10px;">
+                Créditos: ${res.credits}<br>
+                Puntaje: ${Math.round(res.score)}
+            </div>
+            <button onclick='loadOptimized(${JSON.stringify(res.schedule)})' style="width: 100%; font-size: 0.8em; padding: 6px;">Aplicar</button>
+        `;
+        container.appendChild(div);
+    });
+}
+
+function loadOptimized(scheduleArray) {
+    selectedSections = [];
+    scheduleArray.forEach(sec => {
+        const course = courseDatabase[sec.courseCode];
+        if(course && course.sections[sec.id]) {
+            selectedSections.push({
+                code: sec.courseCode,
+                name: course.name,
+                section: sec.id,
+                sessions: JSON.parse(JSON.stringify(course.sections[sec.id]))
+            });
+        }
+    });
+
+    closePopups();
+    refreshCalendar();
+    saveStateToURL();
+    showNotification('¡Horario cargado desde el optimizador!', 'success');
+}
