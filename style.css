@@ -7,6 +7,7 @@
     --btn-bg: #3788d8;
     --btn-hover: #2c6faf;
     --fc-bg: #ffffff;
+    --max-height-opt: 425px;
 }
 [data-theme='dark'] {
     --bg-color: #121212;

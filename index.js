@@ -73,6 +73,7 @@ let selectedSections = [];
 let editingEventId = null;
 let currentCourseCode = null;
 let sessionMap = {};
+let courseMap = {};
 
 function toggleColorDropdown(event) {
 	event.stopPropagation();
@@ -102,11 +103,11 @@ async function initializeApp() {
 		courseDatabase = await response.json();
 
 		let masterIdCounter = 0;
+		let secIDCounter = 0;
 		Object.keys(courseDatabase).forEach((code) => {
 			Object.keys(courseDatabase[code].sections).forEach((sec) => {
 				courseDatabase[code].sections[sec].forEach((sess) => {
 					sess.id = masterIdCounter++;
-
 					sessionMap[sess.id] = {
 						code: code,
 						name: courseDatabase[code].name,
@@ -115,7 +116,10 @@ async function initializeApp() {
 					};
 				});
 			});
-		});
+			courseMap[secIDCounter++] = {
+				[code]: courseDatabase[code].sections,
+            };
+        });
 		loadStateFromURL();
 	} catch (error) {
 		// no se si poner esto en una notificacion
@@ -243,8 +247,8 @@ function closePopups() {
 	document.getElementById('editPopup').style.display = 'none';
 	document.getElementById('helpPopup').style.display = 'none';
 	document.getElementById('optOverlay').style.display = 'none';
-    document.getElementById('optimizerModal').style.display = 'none';
-    document.getElementById('teacherModal').style.display = 'none';
+	document.getElementById('optimizerModal').style.display = 'none';
+	document.getElementById('teacherModal').style.display = 'none';
 
 	const customSelect = document.getElementById('customColorSelect');
 	if (customSelect) customSelect.classList.remove('open');
@@ -278,42 +282,73 @@ function saveStateToURL() {
 	renderLegend();
 }
 function loadStateFromURL() {
+	// 6 character decoding is now deprecated
 	const state = new URLSearchParams(window.location.search).get('s');
 	if (!state) {
 		refreshCalendar();
 		return;
 	}
-	selectedSections = [];
+	selectedSections = []; 
 	const sectionsBuffer = {};
+	if (state.slice(0, 1) === '#') {
+		for (let i = 0; i < state.length; i += 4) {
+			const block = state.slice(i, i + 4);
+			if (block.length < 4) continue;
+            const id = parseInt(block.slice(0, 2), 36);
+            const section = block
+			const color = FC_COLORS[parseInt(block[5], 10)];
+			const pointerData = courseMap[id];
+			if (!pointerData) continue;
+			const secKey = `${pointerData.code}-${pointerData.section}`;
+			if (!sectionsBuffer[secKey]) {
+				sectionsBuffer[secKey] = {
+					code: pointerData.code,
+					name: pointerData.name,
+					section: pointerData.section,
+					sessions: [],
+				};
+			}
 
-	for (let i = 0; i < state.length; i += 6) {
-		const block = state.slice(i, i + 6);
-		if (block.length < 6) continue;
-		const id = parseInt(block.slice(0, 2), 36);
-		const day = parseInt(block[2], 10);
-		const start = parseInt(block[3], 36).toString().padStart(2, '0') + ':00:00';
-		const end = parseInt(block[4], 36).toString().padStart(2, '0') + ':00:00';
-		const color = FC_COLORS[parseInt(block[5], 10)];
-		const pointerData = sessionMap[id];
-		if (!pointerData) continue;
-		const secKey = `${pointerData.code}-${pointerData.section}`;
-		if (!sectionsBuffer[secKey]) {
-			sectionsBuffer[secKey] = {
-				code: pointerData.code,
-				name: pointerData.name,
-				section: pointerData.section,
-				sessions: [],
-			};
+			sectionsBuffer[secKey].sessions.push({
+				...pointerData.baseSession,
+				id: id,
+				day: day,
+				start: start,
+				end: end,
+				color: color,
+			});
 		}
+	} else {
+		for (let i = 0; i < state.length; i += 6) {
+			const block = state.slice(i, i + 6);
+			if (block.length < 6) continue;
+			const id = parseInt(block.slice(0, 2), 36);
+			const day = parseInt(block[2], 10);
+			const start =
+				parseInt(block[3], 36).toString().padStart(2, '0') + ':00:00';
+			const end = parseInt(block[4], 36).toString().padStart(2, '0') + ':00:00';
+			const color = FC_COLORS[parseInt(block[5], 10)];
+			const pointerData = sessionMap[id];
+			if (!pointerData) continue;
+			const secKey = `${pointerData.code}-${pointerData.section}`;
+			if (!sectionsBuffer[secKey]) {
+				sectionsBuffer[secKey] = {
+					code: pointerData.code,
+					name: pointerData.name,
+					section: pointerData.section,
+					sessions: [],
+				};
+			}
 
-		sectionsBuffer[secKey].sessions.push({
-			...pointerData.baseSession,
-			id: id,
-			day: day,
-			start: start,
-			end: end,
-			color: color,
-		});
+			sectionsBuffer[secKey].sessions.push({
+				...pointerData.baseSession,
+				id: id,
+				day: day,
+				start: start,
+				end: end,
+				color: color,
+			});
+		}
 	}
 	selectedSections = Object.values(sectionsBuffer);
 	refreshCalendar();
@@ -363,7 +398,6 @@ function refreshCalendar() {
 				hour12: !use24Hour,
 			},
 			eventContent: function (arg) {
-
 				const titleParts = arg.event.title.split(' - ');
 				const courseCode = titleParts[0] || '';
 				const courseType = titleParts[1] || '';
@@ -566,18 +600,31 @@ initializeApp();
 // --- OPTIMIZER ENGINE ---
 let optWorker;
 let optCreditsDB = null;
+let mallaData = null;
 let optCartData = {}; // Stores { obligatory: bool, importance: int, lockedSection: string }
 
 async function openOptimizerModal() {
+	// cargar el diccionario de créditos
 	if (!optCreditsDB) {
 		try {
 			optCreditsDB = await fetch('./credits.json').then((r) => r.json());
 		} catch (e) {
+			console.error('Missing credits.json');
 			optCreditsDB = {};
 		}
 	}
 
-	loadOptState(); // Cargamos el disco al abrir
+	// cargar el grafo de mallas
+	if (!mallaData) {
+		try {
+			mallaData = await fetch('./mallas.json').then((r) => r.json());
+		} catch (e) {
+			console.error('Missing mallas.json');
+			mallaData = {};
+		}
+	}
+
+	loadOptState(); // restaurar memoria de localStorage
 
 	document.getElementById('optOverlay').style.display = 'block';
 	document.getElementById('optimizerModal').style.display = 'block';
@@ -664,6 +711,26 @@ function updateOptCartUI() {
 		const credits = optCreditsDB[code] || 3;
 		totalCredits += credits;
 
+		// --- MOTOR DE PESOS DINÁMICOS POR ESPECIALIDAD ---
+		const selectedCareer =
+			document.getElementById('optCareer')?.value || 'SOFTWARE';
+		let defaultImp = 5;
+
+		// Buscar si el curso es un cuello de botella en la carrera actual
+		if (
+			mallaData &&
+			mallaData[selectedCareer] &&
+			mallaData[selectedCareer][code]
+		) {
+			defaultImp = mallaData[selectedCareer][code];
+		}
+
+		// Si el usuario no ha tocado el slider manualmente, usar la matemática de la malla
+		if (!conf.userModifiedImportance) {
+			conf.importance = defaultImp;
+		}
+		// --------------------------------------------------
+
 		let secOptions = `<option value="">Todas (Automático)</option>`;
 		let deadChips = '';
 
@@ -693,18 +760,18 @@ function updateOptCartUI() {
                 <span style="color: #dc3545; cursor: pointer; font-size: 1.2em; line-height: 1;" onclick="removeCourseFromOpt('${code}')">×</span>
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
-                <label style="cursor: pointer;"><input type="checkbox" onchange="optCartData['${code}'].obligatory = this.checked" ${conf.obligatory ? 'checked' : ''}> Obligatorio</label>
+                <label style="cursor: pointer;"><input type="checkbox" onchange="optCartData['${code}'].obligatory = this.checked; saveOptState();" ${conf.obligatory ? 'checked' : ''}> Obligatorio</label>
                 <span style="font-weight: 600; opacity: 0.8;">${credits} créditos</span>
             </div>
             <div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 2px;">
-                    <label>Importancia:</label> <span id="impVal_${code}" style="font-weight:bold;">${conf.importance}</span>
+                    <label>Importancia (1-20):</label> <span id="impVal_${code}" style="font-weight:bold; color: var(--btn-bg);">${conf.importance}</span>
                 </div>
-                <input type="range" min="1" max="10" value="${conf.importance}" oninput="document.getElementById('impVal_${code}').innerText=this.value; optCartData['${code}'].importance=parseInt(this.value);">
+                <input type="range" min="1" max="20" value="${conf.importance}" onchange="optCartData['${code}'].userModifiedImportance = true; saveOptState();" oninput="document.getElementById('impVal_${code}').innerText=this.value; optCartData['${code}'].importance=parseInt(this.value);">
             </div>
             <div>
                 <label style="display: block; margin-bottom: 2px;">Fijar Sección (Obligar):</label>
-                <select style="width: 100%; padding: 6px; border-radius: 4px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color);" onchange="optCartData['${code}'].lockedSection = this.value">
+                <select style="width: 100%; padding: 6px; border-radius: 4px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color);" onchange="optCartData['${code}'].lockedSection = this.value; saveOptState();">
                     ${secOptions}
                 </select>
             </div>
@@ -742,22 +809,22 @@ function executeOptimizer() {
 	document.getElementById('optResults').innerHTML = '';
 
 	// Sintetizar el tensor de valor de profesores (Curso -> Tipo -> Profesor = 1.0 a 0.1)
-    let synthesizedRatings = {};
+	let synthesizedRatings = {};
 	Object.keys(complexTeacherOrder).forEach((code) => {
-        // Sanity Check 1: Ignorar si el nodo está corrupto
+		// Sanity Check 1: Ignorar si el nodo está corrupto
 		if (
-            typeof complexTeacherOrder[code] !== 'object' ||
+			typeof complexTeacherOrder[code] !== 'object' ||
 			Array.isArray(complexTeacherOrder[code])
 		)
-        return;
-        
+			return;
+
 		synthesizedRatings[code] = {};
 		Object.keys(complexTeacherOrder[code]).forEach((type) => {
-            const list = complexTeacherOrder[code][type];
-            
+			const list = complexTeacherOrder[code][type];
+
 			// Sanity Check 2: Ignorar si la lista final no es un Array real
 			if (!Array.isArray(list)) return;
-            
+
 			synthesizedRatings[code][type] = {};
 			const totalT = list.length;
 			list.forEach((t, i) => {
@@ -766,19 +833,20 @@ function executeOptimizer() {
 				synthesizedRatings[code][type][t] = { rating: normalized };
 			});
 		});
-    });
-    
-    optWorker.postMessage({
-			database: courseDatabase,
-			creditsDB: optCreditsDB,
-			cart: optCartData,
-			ratings: synthesizedRatings, // El tensor ahora viaja al cerebro
-			config: {
-				creditsMax:
-					parseInt(document.getElementById('optMaxCredits').value) || 24,
-				apathy: parseFloat(document.getElementById('optApathy').value),
-			},
-		});
+	});
+
+	optWorker.postMessage({
+		database: courseDatabase,
+		creditsDB: optCreditsDB,
+		cart: optCartData,
+		ratings: synthesizedRatings, // El tensor ahora viaja al cerebro
+		config: {
+			creditsMax:
+				parseInt(document.getElementById('optMaxCredits').value) || 24,
+			apathy: parseFloat(document.getElementById('optApathy').value),
+			busyBlocks: optBusyBlocks,
+		},
+	});
 }
 
 function renderOptResults(results) {
@@ -845,39 +913,115 @@ function loadOptimized(scheduleArray) {
 	showNotification('Horario generado aplicado con éxito.', 'success');
 }
 
+let optBusyBlocks = [];
+
 function saveOptState() {
 	const state = {
 		cart: optCartData,
 		credits: document.getElementById('optMaxCredits').value,
 		apathy: document.getElementById('optApathy').value,
-		teacherOrder: complexTeacherOrder, // Apunta a la nueva matriz 3D
+		teacherOrder: complexTeacherOrder,
+		busyBlocks: optBusyBlocks,
+		career: document.getElementById('optCareer').value,
 	};
 	localStorage.setItem('fiisOptimizerState', JSON.stringify(state));
 }
 
 function loadOptState() {
-    const saved = localStorage.getItem('fiisOptimizerState');
-    if (saved) {
-        try {
-            const state = JSON.parse(saved);
-            optCartData = state.cart || {};
-            if (state.credits)
-                document.getElementById('optMaxCredits').value = state.credits;
-            if (state.apathy)
-                document.getElementById('optApathy').value = state.apathy;
-            
-            // --- DEFENSE MECHANISM ---
-            // Solo carga si es un Objeto puro (el Tensor 3D). Si es un Array antiguo, lo purga.
-            if (state.teacherOrder && typeof state.teacherOrder === 'object' && !Array.isArray(state.teacherOrder)) {
-                complexTeacherOrder = state.teacherOrder;
-            } else {
-                complexTeacherOrder = {};
-            }
-        } catch (e) {
-            console.error('Estado local corrupto. Reiniciando...');
-            complexTeacherOrder = {};
-        }
-    }
+	const saved = localStorage.getItem('fiisOptimizerState');
+	if (saved) {
+		try {
+			const state = JSON.parse(saved);
+			optCartData = state.cart || {};
+			if (state.credits)
+				document.getElementById('optMaxCredits').value = state.credits;
+			if (state.apathy)
+				document.getElementById('optApathy').value = state.apathy;
+			optBusyBlocks = state.busyBlocks || [];
+			if (state.career)
+				document.getElementById('optCareer').value = state.career;
+			renderBusyBlocks();
+			updateDynamicHeight();
+
+			if (
+				state.teacherOrder &&
+				typeof state.teacherOrder === 'object' &&
+				!Array.isArray(state.teacherOrder)
+			) {
+				complexTeacherOrder = state.teacherOrder;
+			} else {
+				complexTeacherOrder = {};
+			}
+		} catch (e) {
+			console.error('Estado local corrupto. Reiniciando...');
+			complexTeacherOrder = {};
+		}
+	}
+}
+
+function addBusyBlock() {
+	const day = parseInt(document.getElementById('busyDay').value);
+	const start = document.getElementById('busyStart').value;
+	const end = document.getElementById('busyEnd').value;
+
+	if (!start || !end || start >= end) return alert('Rango de horas inválido.');
+
+	const dayNames = [
+		'',
+		'Lunes',
+		'Martes',
+		'Miércoles',
+		'Jueves',
+		'Viernes',
+		'Sábado',
+	];
+
+	optBusyBlocks.push({
+		day,
+		start,
+		end,
+		label: `${dayNames[day]} de ${start} a ${end}`,
+	});
+
+	renderBusyBlocks();
+	updateDynamicHeight();
+	saveOptState();
+}
+
+function removeBusyBlock(idx) {
+	optBusyBlocks.splice(idx, 1);
+
+	renderBusyBlocks();
+	updateDynamicHeight();
+	saveOptState();
+}
+
+function renderBusyBlocks() {
+	const container = document.getElementById('busyBlocksContainer');
+	container.innerHTML = '';
+	optBusyBlocks.forEach((block, idx) => {
+		container.innerHTML += `
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(220, 53, 69, 0.1); border: 1px solid #dc3545; padding: 6px 10px; border-radius: 4px; font-size: 0.85em; color: var(--text-color);">
+                <span style="font-weight: bold;">⛔ ${block.label}</span>
+                <span style="color: #dc3545; cursor: pointer; font-size: 1.2em; font-weight: bold;" onclick="removeBusyBlock(${idx})">×</span>
+            </div>
+        `;
+	});
+}
+
+function updateDynamicHeight() {
+	// Base height minus the space consumed by the busy blocks
+	// Assuming each busy block takes roughly 35px of vertical space
+	const baseHeight = 425;
+	const offset = optBusyBlocks.length * 40.5;
+	const newHeight = baseHeight + offset;
+
+	// The Critical DOM API Call
+	// NOTE: You must concatenate the unit (e.g., 'px') if your CSS expects a length
+	document.documentElement.style.setProperty(
+		'--max-height-opt',
+		`${newHeight}px`,
+	);
 }
 
 // --- MOTOR TENSORIAL DE RANKING DE PROFESORES ---

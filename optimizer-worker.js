@@ -1,6 +1,6 @@
 self.onmessage = function (e) {
-	const { database, creditsDB, cart, config, ratings } = e.data;
-	const { creditsMax, apathy } = config;
+	const { database, creditsDB, cart, config, ratings, mallaData } = e.data;
+	const { creditsMax, apathy, busyBlocks } = config;
 
 	// Convert time string to half-hour index (e.g., 08:00 = 16)
 	const timeToSlot = (t) =>
@@ -14,7 +14,6 @@ self.onmessage = function (e) {
 		let validSections = Object.entries(database[code].sections);
 
 		// --- PRUNING LAYER 1: Dead Sections ---
-		// Completely eradicate sections the user marked as full
 		if (conf.deadSections && conf.deadSections.length > 0) {
 			validSections = validSections.filter(
 				([id]) => !conf.deadSections.includes(id),
@@ -36,7 +35,6 @@ self.onmessage = function (e) {
 				let ratedCount = 0;
 
 				const processedSlots = sessions.map((s) => {
-					// Extract granular rating per session type
 					let tRating = 0.5;
 					if (
 						ratings[code] &&
@@ -76,6 +74,24 @@ self.onmessage = function (e) {
 
 	// --- STATELESS VALIDATOR ---
 	function checkConflict(newSec, currentSchedule) {
+		// 1. FATAL CHECK: Personal Busy Blocks
+		if (busyBlocks && busyBlocks.length > 0) {
+			for (const block of busyBlocks) {
+				const bStart = timeToSlot(block.start);
+				const bEnd = timeToSlot(block.end);
+				for (const slot of newSec.slots) {
+					if (slot.day === block.day) {
+						const overlapStart = Math.max(bStart, slot.start);
+						const overlapEnd = Math.min(bEnd, slot.end);
+						if (overlapStart < overlapEnd) {
+							return { penalty: -1, overlaps: -1 }; // Death to this branch
+						}
+					}
+				}
+			}
+		}
+
+		// 2. STANDARD CHECK: Course Overlaps
 		let penalty = 0;
 		let overlapCount = 0;
 
@@ -85,20 +101,16 @@ self.onmessage = function (e) {
 			for (const slotA of existingSec.slots) {
 				for (const slotB of newSec.slots) {
 					if (slotA.day === slotB.day) {
-						// Math: Intervals [a, b) and [c, d) overlap if max(a,c) < min(b,d)
 						const start = Math.max(slotA.start, slotB.start);
 						const end = Math.min(slotA.end, slotB.end);
 
 						if (start < end) {
-							// P-P (Practice/Exam vs Practice/Exam) Overlap -> Fatal Error
 							if (slotA.type !== 'T' && slotB.type !== 'T') {
 								return { penalty: -1, overlaps: -1 };
 							}
 
 							triggeredOverlapForThisCourse = true;
 							const overlappedSlots = end - start;
-
-							// Base penalties are massive to ensure sorting works natively
 							const basePenalty =
 								slotA.type === 'T' && slotB.type === 'T' ? 20000 : 80000;
 							penalty += basePenalty * overlappedSlots;
@@ -109,12 +121,10 @@ self.onmessage = function (e) {
 			if (triggeredOverlapForThisCourse) overlapCount++;
 		}
 
-		// Apathy reduction: If apathy is 1 (Ghost mode), penalty becomes 0.
 		return { penalty: penalty * (1 - apathy), overlaps: overlapCount };
 	}
 
 	function calculateMaxGap(schedule) {
-		// Build an isolated boolean array just for gap counting
 		let days = Array.from({ length: 7 }, () => new Array(48).fill(false));
 		schedule.forEach((sec) => {
 			sec.slots.forEach((slot) => {
@@ -142,7 +152,7 @@ self.onmessage = function (e) {
 				}
 			}
 		}
-		return maxGap / 2; // Return in Hours
+		return maxGap / 2;
 	}
 
 	// --- RECURSIVE BACKTRACKING ENGINE ---
@@ -153,7 +163,6 @@ self.onmessage = function (e) {
 		currentScore,
 		currentOverlaps,
 	) {
-		// Base Case: Reached the end of the course list
 		if (idx === availableCourses.length) {
 			const hasAllObligatory = availableCourses
 				.filter((c) => c.obligatory)
@@ -168,7 +177,6 @@ self.onmessage = function (e) {
 					maxGap: calculateMaxGap(currentSchedule),
 				});
 
-				// Sort descending by score, prune array to top 50 to save memory
 				bestSchedules.sort((a, b) => b.score - a.score);
 				if (bestSchedules.length > MAX_RESULTS) bestSchedules.pop();
 			}
@@ -177,12 +185,10 @@ self.onmessage = function (e) {
 
 		const course = availableCourses[idx];
 
-		// Branch 1: Try adding the course
 		for (const sec of course.sections) {
 			if (currentCredits + sec.credits <= creditsMax) {
 				const { penalty, overlaps } = checkConflict(sec, currentSchedule);
 
-				// Proceed only if it's not a Fatal P-P overlap
 				if (penalty !== -1) {
 					const importanceBoost = course.weight * 5000;
 					const newScore = currentScore + importanceBoost - penalty;
@@ -198,7 +204,6 @@ self.onmessage = function (e) {
 			}
 		}
 
-		// Branch 2: Don't take the course (Only valid if it's not obligatory)
 		if (!course.obligatory) {
 			solve(
 				idx + 1,
@@ -210,9 +215,6 @@ self.onmessage = function (e) {
 		}
 	}
 
-	// Initialize with 0 state
 	solve(0, [], 0, 0, 0);
-
-	// Transmit payload back to main UI thread
 	self.postMessage({ results: bestSchedules });
 };

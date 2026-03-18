@@ -555,6 +555,15 @@
 				<h3 style="margin: 0; color: var(--btn-bg)">
 						Autogenerador de horarios
 				</h3>
+				<div style="font-weight: bold; color: var(--text-color); margin-right: 15px;">
+            Especialidad: 
+            <select id="optCareer" onchange="saveOptState(); updateOptCartUI();" style="font-weight: 600; padding: 6px; border-radius: 4px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color);">
+                <option value="I1">Ing. Industrial</option>
+                <option value="I2">Ing. de Sistemas</option>
+                <option value="I3">Ing. de Software</option>
+                <option value="I4">Ing. de Inteligencia Artificial</option>
+            </select>
+        </div>
 				<div style="font-weight: bold; color: var(--text-color)">
 					Créditos: <span id="optCurrentCredits">0</span> /
 					<select id="optMaxCredits" onchange="saveOptState()" style="font-weight: 600; width: 50px; padding: 6px; border-radius: 4px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color);">
@@ -579,7 +588,23 @@
               overflow-y: auto;
               margin-bottom: 15px;
             "></div>
-
+					<div style="background: var(--surface-color); padding: 12px; border-radius: 8px; margin-bottom: 15px; border: 1px solid var(--border-color);">
+              <h5 style="margin: 0 0 10px 0; color: var(--btn-bg); font-size: 0.9em;">🚫 Bloquear Horas (Trabajo, etc.)</h5>
+              <div style="display: flex; gap: 5px; margin-bottom: 8px;">
+                  <select id="busyDay" style="flex: 1; padding: 6px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px;">
+                      <option value="1">Lun</option>
+                      <option value="2">Mar</option>
+                      <option value="3">Mié</option>
+                      <option value="4">Jue</option>
+                      <option value="5">Vie</option>
+                      <option value="6">Sáb</option>
+                  </select>
+                  <input type="time" id="busyStart" value="16:00" style="flex: 1; padding: 6px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px;">
+                  <input type="time" id="busyEnd" value="18:00" style="flex: 1; padding: 6px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px;">
+              </div>
+              <button onclick="addBusyBlock()" style="width: 100%; padding: 8px; background: transparent; border: 1px dashed var(--btn-bg); color: var(--btn-bg); font-weight: bold; border-radius: 4px;">Añadir Bloqueo</button>
+              <div id="busyBlocksContainer" style="display: flex; flex-direction: column; gap: 5px; margin-top: 10px;"></div>
+          </div>
           <h4 style="margin-bottom: 5px">
             Cursos en Lista (<span id="optCourseCount">0</span>)
           </h4>
@@ -610,7 +635,7 @@
               border-radius: 6px;
               box-sizing: border-box;
             ">
-            🧑‍🏫 Ordenar Preferencia de Profesores
+            Ordenar Preferencia de Profesores
           </button>
         </div>
 
@@ -641,7 +666,7 @@
                 color: #888;
               ">
               <span>Estricto (0 Cruces)</span>
-              <span style="text-align: right;">Ghost (Ignorar cruces)</span>
+              <span style="text-align: right;">me da igual ir a clase xd (Ignorar cruces)</span>
             </div>
           </div>
 
@@ -675,7 +700,7 @@
               display: flex;
               flex-direction: column;
               gap: 10px;
-              max-height: 252px;
+              max-height: var(--max-height-opt);
               overflow-y: auto;
               margin-top: 15px;
               padding-right: 5px;
