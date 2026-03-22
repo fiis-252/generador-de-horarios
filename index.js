@@ -73,7 +73,89 @@ let selectedSections = [];
 let editingEventId = null;
 let currentCourseCode = null;
 let sessionMap = {};
-let courseMap = {};
+let pointerMatrix = [];
+
+function buildPointerMatrix(db) {
+	let rawList = [];
+	Object.keys(db).forEach((courseCode) => {
+		Object.keys(db[courseCode].sections).forEach((sec) => {
+			rawList.push(`${courseCode}_${sec}`);
+		});
+	});
+
+	pointerMatrix = rawList.sort();
+}
+
+const BASE62_CHARSET =
+	'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+
+function toBase62(num) {
+	if (num === 0n) return '0';
+	let str = '';
+	while (num > 0n) {
+		str = BASE62_CHARSET[Number(num % 62n)] + str;
+		num /= 62n;
+	}
+	return str;
+}
+
+function fromBase62(str) {
+	let num = 0n;
+	for (let i = 0; i < str.length; i++) {
+		num = num * 62n + BigInt(BASE62_CHARSET.indexOf(str[i]));
+	}
+	return num;
+}
+
+const BITS_PER_CLASS = 13n;
+const MASK_13_BIT = (1n << BITS_PER_CLASS) - 1n; // 0x1FFF
+const COLOR_MASK = 15n; // 0x0F (4 bits)
+
+function encodeSchedule(scheduleArray) {
+	let payload = 0n;
+
+	scheduleArray.forEach((item, i) => {
+		const classKey = `${item.code}_${item.section}`;
+		let classId = pointerMatrix.indexOf(classKey);
+
+		if (classId === -1) return; // Failsafe para cursos fantasma
+
+		const colorId = item.colorIndex || 0; // 0 a 15
+
+		// Empaquetar: [ClassId: 9 bits] [ColorId: 4 bits]
+		const packedBlock = (BigInt(classId) << 4n) | BigInt(colorId);
+
+		// Desplazar el bloque a su posicion en la carga util principal y fusionar (OR)
+		payload |= packedBlock << (BigInt(i) * BITS_PER_CLASS);
+	});
+
+	return toBase62(payload);
+}
+
+function decodeSchedule(base62Str) {
+	let payload = fromBase62(base62Str);
+	const decoded = [];
+
+	while (payload > 0n) {
+		// Extraer los primeros 13 bits usando la mascara (AND)
+		const block = payload & MASK_13_BIT;
+
+		// Desempaquetar
+		const colorId = Number(block & COLOR_MASK);
+		const classId = Number(block >> 4n);
+
+		const classKey = pointerMatrix[classId];
+		if (classKey) {
+			const [code, section] = classKey.split('_');
+			decoded.push({ code, section, colorIndex: colorId });
+		}
+
+		// Mover la carga util 13 bits a la derecha para leer el siguiente bloque
+		payload >>= BITS_PER_CLASS;
+	}
+
+	return decoded;
+}
 
 function toggleColorDropdown(event) {
 	event.stopPropagation();
@@ -103,7 +185,6 @@ async function initializeApp() {
 		courseDatabase = await response.json();
 
 		let masterIdCounter = 0;
-		let secIDCounter = 0;
 		Object.keys(courseDatabase).forEach((code) => {
 			Object.keys(courseDatabase[code].sections).forEach((sec) => {
 				courseDatabase[code].sections[sec].forEach((sess) => {
@@ -116,13 +197,13 @@ async function initializeApp() {
 					};
 				});
 			});
-			courseMap[secIDCounter++] = {
-				[code]: courseDatabase[code].sections,
-            };
-        });
+		});
+
+		// Compilar la matriz determinista en memoria ANTES de leer/escribir el link
+		buildPointerMatrix(courseDatabase);
+
 		loadStateFromURL();
 	} catch (error) {
-		// no se si poner esto en una notificacion
 		console.error('Failed to load course database:', error);
 		document.getElementById('results').innerHTML =
 			`<span style="color:red">Error: No se pudo cargar database.json. ¿Estás usando un servidor local?</span>`;
@@ -257,48 +338,95 @@ function closePopups() {
 }
 
 function saveStateToURL() {
-	let compressedURL = '';
-	selectedSections.forEach((sec, i) => {
-		sec.sessions.forEach((sess) => {
-			const idStr = sess.id.toString(36).padStart(2, '0');
-			const dayStr = sess.day.toString();
-			const startStr = parseInt(sess.start.split(':')[0]).toString(36);
-			const endStr = parseInt(sess.end.split(':')[0]).toString(36);
-			let assignedColor = sess.color || FC_COLORS[i % FC_COLORS.length];
-			let colorIdx = FC_COLORS.indexOf(assignedColor);
+	// 1. mapear el estado actual de la ui al formato del empaquetador de bits
+	const schedulePayload = selectedSections.map((sec, i) => {
+		// tomamos el color de la primera sesion (toda la seccion comparte el mismo color)
+		let assignedColor =
+			sec.sessions[0]?.color || FC_COLORS[i % FC_COLORS.length];
+		let colorIdx = FC_COLORS.indexOf(assignedColor);
 
-			if (colorIdx === -1) colorIdx = i % FC_COLORS.length;
-			compressedURL += `${idStr}${dayStr}${startStr}${endStr}${colorIdx.toString(36)}`;
-		});
+		// failsafe por si el color se corrompe o no existe en la paleta xd
+		if (colorIdx === -1) colorIdx = i % FC_COLORS.length;
+
+		return {
+			code: sec.code,
+			section: sec.section,
+			colorIndex: colorIdx,
+		};
 	});
+
+	// 2. Ejecutar compresion
+	const compressedPayload = encodeSchedule(schedulePayload);
+
+	// 3. Actualizar el url usando ?c=
 	const newUrl =
 		window.location.protocol +
 		'//' +
 		window.location.host +
 		window.location.pathname +
-		'?s=' +
-		compressedURL;
+		'?c=' +
+		compressedPayload;
+
 	window.history.replaceState({ path: newUrl }, '', newUrl);
 	renderLegend();
 }
+
 function loadStateFromURL() {
-	// 6 character decoding is now deprecated
-	const state = new URLSearchParams(window.location.search).get('s');
-	if (!state) {
-		refreshCalendar();
-		return;
-	}
-	selectedSections = []; 
+	const urlParams = new URLSearchParams(window.location.search);
+	selectedSections = [];
 	const sectionsBuffer = {};
-	if (state.slice(0, 1) === '#') {
-		for (let i = 0; i < state.length; i += 4) {
-			const block = state.slice(i, i + 4);
-			if (block.length < 4) continue;
-            const id = parseInt(block.slice(0, 2), 36);
-            const section = block
+
+	// --- Descompresion en base62 (con punteros 13bit) ---
+	if (urlParams.has('c')) {
+		const payload = urlParams.get('c');
+		const decodedClasses = decodeSchedule(payload);
+
+		decodedClasses.forEach((item) => {
+			const { code, section, colorIndex } = item;
+
+			const course = courseDatabase[code];
+			if (!course || !course.sections || !course.sections[section]) return;
+
+			const secKey = `${code}-${section}`;
+			// Usar la paleta de colores de la interfaz, fallback al indice 0
+			const color = FC_COLORS[colorIndex] || FC_COLORS[0];
+
+			if (!sectionsBuffer[secKey]) {
+				sectionsBuffer[secKey] = {
+					code: code,
+					name: course.name,
+					section: section,
+					sessions: [],
+				};
+			}
+
+			// Expandir el puntero: Agregar todas las sesiones de esta seccion
+			course.sections[section].forEach((sessionData, index) => {
+				sectionsBuffer[secKey].sessions.push({
+					...sessionData,
+					// Reconstruir un ID pseudo-unico si tu calendario lo requiere para eventos
+					id: `${code}-${section}-${index}`,
+					color: color,
+				});
+			});
+		});
+
+		// --- Descompresion de 6-Chars ---
+	} else if (urlParams.has('s')) {
+		const state = urlParams.get('s');
+		for (let i = 0; i < state.length; i += 6) {
+			const block = state.slice(i, i + 6);
+			if (block.length < 6) continue;
+			const id = parseInt(block.slice(0, 2), 36);
+			const day = parseInt(block[2], 10);
+			const start =
+				parseInt(block[3], 36).toString().padStart(2, '0') + ':00:00';
+			const end = parseInt(block[4], 36).toString().padStart(2, '0') + ':00:00';
 			const color = FC_COLORS[parseInt(block[5], 10)];
-			const pointerData = courseMap[id];
+
+			const pointerData = sessionMap[id];
 			if (!pointerData) continue;
+
 			const secKey = `${pointerData.code}-${pointerData.section}`;
 			if (!sectionsBuffer[secKey]) {
 				sectionsBuffer[secKey] = {
@@ -319,41 +447,16 @@ function loadStateFromURL() {
 			});
 		}
 	} else {
-		for (let i = 0; i < state.length; i += 6) {
-			const block = state.slice(i, i + 6);
-			if (block.length < 6) continue;
-			const id = parseInt(block.slice(0, 2), 36);
-			const day = parseInt(block[2], 10);
-			const start =
-				parseInt(block[3], 36).toString().padStart(2, '0') + ':00:00';
-			const end = parseInt(block[4], 36).toString().padStart(2, '0') + ':00:00';
-			const color = FC_COLORS[parseInt(block[5], 10)];
-			const pointerData = sessionMap[id];
-			if (!pointerData) continue;
-			const secKey = `${pointerData.code}-${pointerData.section}`;
-			if (!sectionsBuffer[secKey]) {
-				sectionsBuffer[secKey] = {
-					code: pointerData.code,
-					name: pointerData.name,
-					section: pointerData.section,
-					sessions: [],
-				};
-			}
-
-			sectionsBuffer[secKey].sessions.push({
-				...pointerData.baseSession,
-				id: id,
-				day: day,
-				start: start,
-				end: end,
-				color: color,
-			});
-		}
+		refreshCalendar();
+		return;
 	}
+
+	// --- renderizado final ---
 	selectedSections = Object.values(sectionsBuffer);
 	refreshCalendar();
 	renderLegend();
 }
+
 function copySyncUrl() {
 	saveStateToURL();
 	navigator.clipboard.writeText(window.location.href);
@@ -484,17 +587,20 @@ function refreshCalendar() {
 function saveEdit() {
 	if (!editingEventId) return;
 	const [secIndex, sessIndex] = editingEventId.split('-');
-
-	// Read the state from the custom component's data-value attribute
+	//xd
 	const selectedColor = document
 		.getElementById('customColorSelect')
 		.getAttribute('data-value');
-	selectedSections[secIndex].sessions[sessIndex].color = selectedColor;
+
+	selectedSections[secIndex].sessions.forEach((sess) => {
+		sess.color = selectedColor;
+	});
 
 	closePopups();
 	refreshCalendar();
 	saveStateToURL();
 }
+
 function deleteEvent() {
 	if (!editingEventId) return;
 	const [secIndex, sessIndex] = editingEventId.split('-');
@@ -597,14 +703,14 @@ function downloadICS() {
 
 initializeApp();
 
-// --- OPTIMIZER ENGINE ---
+// --- optimizacion ---
 let optWorker;
 let optCreditsDB = null;
 let mallaData = null;
 let optCartData = {}; // Stores { obligatory: bool, importance: int, lockedSection: string }
 
 async function openOptimizerModal() {
-	// cargar el diccionario de créditos
+	// cargar el diccionario de creditos
 	if (!optCreditsDB) {
 		try {
 			optCreditsDB = await fetch('./credits.json').then((r) => r.json());
@@ -676,7 +782,7 @@ function toggleDeadSection(code, sec, element) {
 		if (!optCartData[code].deadSections.includes(sec)) {
 			optCartData[code].deadSections.push(sec);
 		}
-		// Si la sección estaba fijada, la desfijamos automáticamente
+		// Si la seccion estaba fijada, la desfijamos automaticamente
 		if (optCartData[code].lockedSection === sec) {
 			optCartData[code].lockedSection = '';
 		}
@@ -711,7 +817,7 @@ function updateOptCartUI() {
 		const credits = optCreditsDB[code] || 3;
 		totalCredits += credits;
 
-		// --- MOTOR DE PESOS DINÁMICOS POR ESPECIALIDAD ---
+		// --- pesos dinamicos por especialidad ---
 		const selectedCareer =
 			document.getElementById('optCareer')?.value || 'SOFTWARE';
 		let defaultImp = 5;
@@ -725,7 +831,7 @@ function updateOptCartUI() {
 			defaultImp = mallaData[selectedCareer][code];
 		}
 
-		// Si el usuario no ha tocado el slider manualmente, usar la matemática de la malla
+		// Si el usuario no ha tocado el slider manualmente, usar la matematica de la malla
 		if (!conf.userModifiedImportance) {
 			conf.importance = defaultImp;
 		}
@@ -737,12 +843,12 @@ function updateOptCartUI() {
 		Object.keys(course.sections).forEach((sec) => {
 			const isDead = conf.deadSections.includes(sec);
 
-			// Si la sección está muerta, no dejamos que la fije en el dropdown
+			// Si la seccion esta muerta, no dejamos que la fije en el dropdown
 			if (!isDead) {
 				secOptions += `<option value="${sec}" ${conf.lockedSection === sec ? 'selected' : ''}>Sec ${sec}</option>`;
 			}
 
-			// Construimos la píldora visual
+			// Construimos el chip
 			deadChips += `
                 <label class="dead-section-chip ${isDead ? 'dead' : ''}">
                     <input type="checkbox" ${isDead ? 'checked' : ''} onchange="toggleDeadSection('${code}', '${sec}', this)">
@@ -811,7 +917,7 @@ function executeOptimizer() {
 	// Sintetizar el tensor de valor de profesores (Curso -> Tipo -> Profesor = 1.0 a 0.1)
 	let synthesizedRatings = {};
 	Object.keys(complexTeacherOrder).forEach((code) => {
-		// Sanity Check 1: Ignorar si el nodo está corrupto
+		// Sanity Check 1: Ignorar si el nodo esta corrupto
 		if (
 			typeof complexTeacherOrder[code] !== 'object' ||
 			Array.isArray(complexTeacherOrder[code])
@@ -839,7 +945,7 @@ function executeOptimizer() {
 		database: courseDatabase,
 		creditsDB: optCreditsDB,
 		cart: optCartData,
-		ratings: synthesizedRatings, // El tensor ahora viaja al cerebro
+		ratings: synthesizedRatings,
 		config: {
 			creditsMax:
 				parseInt(document.getElementById('optMaxCredits').value) || 24,
@@ -1010,21 +1116,17 @@ function renderBusyBlocks() {
 }
 
 function updateDynamicHeight() {
-	// Base height minus the space consumed by the busy blocks
-	// Assuming each busy block takes roughly 35px of vertical space
 	const baseHeight = 425;
 	const offset = optBusyBlocks.length * 40.5;
 	const newHeight = baseHeight + offset;
 
-	// The Critical DOM API Call
-	// NOTE: You must concatenate the unit (e.g., 'px') if your CSS expects a length
 	document.documentElement.style.setProperty(
 		'--max-height-opt',
 		`${newHeight}px`,
 	);
 }
 
-// --- MOTOR TENSORIAL DE RANKING DE PROFESORES ---
+// --- tensor de ranking de profes ---
 let complexTeacherOrder = {}; // { BMA01: { T: [], P: [], LAB: [] } }
 let activeTeacherTab = null;
 let copySrc = null;
