@@ -1287,3 +1287,42 @@ function executeTeacherCopy() {
 	renderTeacherModalUI();
 	saveOptState();
 }
+
+
+async function copyScheduleImage() {
+    const calendarEl = document.getElementById('calendar');
+    if (!calendarEl) return;
+
+    showNotification('Renderizando imagen...', 'success');
+
+    try {
+        const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-color').trim() || '#121212';
+
+        const canvas = await html2canvas(calendarEl, {
+            scale: 2, // Multiplicador de resolución (evita que se vea borroso)
+            useCORS: true,
+            backgroundColor: bgColor, 
+            logging: false // Apagar logs en consola
+        });
+
+        canvas.toBlob(async (blob) => {
+            if (!blob) throw new Error("Fallo en la compresión del Blob.");
+
+            try {
+                
+                const item = new ClipboardItem({ 'image/png': blob });
+                await navigator.clipboard.write([item]);
+                
+                showNotification('¡Horario copiado al portapapeles!', 'success');
+            } catch (clipboardErr) {
+                // failsafe pq quiere https el muy m..
+                console.error('Error de permisos del portapapeles:', clipboardErr);
+                showNotification('Tu navegador bloqueó el acceso al portapapeles.', 'error');
+            }
+        }, 'image/png');
+
+    } catch (err) {
+        console.error('Fallo crítico en el renderizado del DOM:', err);
+        showNotification('Fallo al generar la imagen.', 'error');
+    }
+}
