@@ -1323,6 +1323,6 @@ async function copyScheduleImage() {
 
     } catch (err) {
         console.error('Fallo crítico en el renderizado del DOM:', err);
-        showNotification('Fallo al generar la imagen.', 'error');
+        showNotification(err, 'error'); // debugging reasons, I'm programming on phone and testing on live prod, fucking kill me
     }
 }
