@@ -5,11 +5,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>generador de horario 25-2</title>
-		<link href="style.css" rel="stylesheet" />
+		<link
+			href="style.css"
+			rel="stylesheet" />
 		<link
 			href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css"
 			rel="stylesheet" />
 		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 	</head>
 	<body>
 		<div
@@ -29,6 +32,17 @@
 					gap: 8px;
 					margin-right: 15px;
 				">
+
+<div class="controls" style="display: flex; align-items: center; gap: 15px;">
+    <button onclick="copyScheduleImage()" title="Copiar horario como imagen" style="background: transparent; border: none; cursor: pointer; color: var(--text-color); padding: 5px; display: flex; align-items: center; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+fill="currentColor" viewBox="0 0 24 24" >
+<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+<path d="M20 2H10c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 12H10V4h10z"></path><path d="M14 20H4V10h2V8H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-2h-2z"></path>
+</svg>
+    </button>
+</div>
+
 				<div
 					style="
 						display: flex;
@@ -217,6 +231,16 @@
 			<div
 				id="results"
 				style="margin-top: 0px; width: 100%"></div>
+			<button
+				onclick="openOptimizerModal()"
+				style="
+					background: #6f42c1;
+					width: 100%;
+					margin-top: 15px;
+					border-radius: 8px;
+				">
+				Autogenerador de Horario Ideal
+			</button>
 		</div>
 		<div class="section">
 			<div
@@ -525,6 +549,210 @@
 				Entendido
 			</button>
 		</div>
+		<div
+			class="overlay"
+			id="optOverlay"
+			onclick="closePopups()"></div>
+		<div
+			class="popup"
+			id="optimizerModal"
+			style="width: 95%; max-width: 900px; top: 5%">
+			<div
+				style="
+					display: flex;
+					justify-content: space-between;
+					border-bottom: 1px solid var(--border-color);
+					padding-bottom: 10px;
+				">
+				<h3 style="margin: 0; color: var(--btn-bg)">
+						Autogenerador de horarios
+				</h3>
+				<div style="font-weight: bold; color: var(--text-color); margin-right: 15px;">
+            Especialidad: 
+            <select id="optCareer" onchange="saveOptState(); updateOptCartUI();" style="font-weight: 600; padding: 6px; border-radius: 4px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color);">
+                <option value="I1">Ing. Industrial</option>
+                <option value="I2">Ing. de Sistemas</option>
+                <option value="I3">Ing. de Software</option>
+                <option value="I4">Ing. de Inteligencia Artificial</option>
+            </select>
+        </div>
+				<div style="font-weight: bold; color: var(--text-color)">
+					Créditos: <span id="optCurrentCredits">0</span> /
+					<select id="optMaxCredits" onchange="saveOptState()" style="font-weight: 600; width: 50px; padding: 6px; border-radius: 4px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color);">
+						<option>24</option>
+					</select>
+				</div>
+			</div> 
+			<!-- top section -->
+
+			<div class="opt-layout-container">
+        <div style="flex: 1; min-width: 0;">
+          <input
+            type="text"
+            id="optSearchInput"
+            placeholder="Buscar curso para añadir al optimizador..."
+            style="margin: 0; width: 100%; box-sizing: border-box;"
+            onkeyup="searchOptCourses()" />
+          <div
+            id="optSearchResults"
+            style="
+              max-height: 120px;
+              overflow-y: auto;
+              margin-bottom: 15px;
+            "></div>
+					<div style="background: var(--surface-color); padding: 12px; border-radius: 8px; margin-bottom: 15px; border: 1px solid var(--border-color);">
+              <h5 style="margin: 0 0 10px 0; color: var(--btn-bg); font-size: 0.9em;">🚫 Bloquear Horas (Trabajo, etc.)</h5>
+              <div style="display: flex; gap: 5px; margin-bottom: 8px;">
+                  <select id="busyDay" style="flex: 1; padding: 6px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px;">
+                      <option value="1">Lun</option>
+                      <option value="2">Mar</option>
+                      <option value="3">Mié</option>
+                      <option value="4">Jue</option>
+                      <option value="5">Vie</option>
+                      <option value="6">Sáb</option>
+                  </select>
+                  <input type="time" id="busyStart" value="16:00" style="flex: 1; padding: 6px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px;">
+                  <input type="time" id="busyEnd" value="18:00" style="flex: 1; padding: 6px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px;">
+              </div>
+              <button onclick="addBusyBlock()" style="width: 100%; padding: 8px; background: transparent; border: 1px dashed var(--btn-bg); color: var(--btn-bg); font-weight: bold; border-radius: 4px;">Añadir Bloqueo</button>
+              <div id="busyBlocksContainer" style="display: flex; flex-direction: column; gap: 5px; margin-top: 10px;"></div>
+          </div>
+          <h4 style="margin-bottom: 5px">
+            Cursos en Lista (<span id="optCourseCount">0</span>)
+          </h4>
+          <div
+            id="optCart"
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              max-height: 300px;
+              overflow-y: auto;
+              padding-right: 5px;
+            ">
+            <p style="color: #888; font-size: 0.9em; text-align: center">
+              Agrega cursos usando el buscador de arriba.
+            </p>
+          </div>
+          <button
+            onclick="openTeacherModal()"
+            style="
+              width: 100%;
+              padding: 10px;
+              margin: 15px 0 0 0;
+              background: transparent;
+              border: 2px solid var(--btn-bg);
+              color: var(--btn-bg);
+              font-weight: bold;
+              border-radius: 6px;
+              box-sizing: border-box;
+            ">
+            Ordenar Preferencia de Profesores
+          </button>
+        </div>
+
+        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column;">
+          <div
+            style="
+              background: var(--bg-color);
+              padding: 15px;
+              border-radius: 8px;
+              margin-bottom: 15px;
+            ">
+            <label style="font-size: 0.85em; font-weight: bold"
+              >Tolerancia a cruces:</label>
+            <input
+              type="range"
+              id="optApathy"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0"
+              onchange="saveOptState()"
+              style="width: 100%; box-sizing: border-box;" />
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.7em;
+                color: #888;
+              ">
+              <span>Estricto (0 Cruces)</span>
+              <span style="text-align: right;">me da igual ir a clase xd (Ignorar cruces)</span>
+            </div>
+          </div>
+
+          <button
+            onclick="executeOptimizer()"
+            style="
+              width: 100%;
+              margin: 0;
+              padding: 12px;
+              font-weight: bold;
+              background: #28a745;
+              font-size: 1.1em;
+              letter-spacing: 1px;
+              box-sizing: border-box;
+            ">
+            GENERAR HORARIOS
+          </button>
+
+          <div
+            id="optLoading"
+            style="display: none; text-align: center; margin: 20px 0">
+            <div class="spinner"></div>
+            <p style="font-weight: bold; color: var(--btn-bg)">
+              Calculando rutas óptimas...
+            </p>
+          </div>
+
+          <div
+            id="optResults"
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              max-height: var(--max-height-opt);
+              overflow-y: auto;
+              margin-top: 15px;
+              padding-right: 5px;
+            "></div>
+        </div>
+      </div>
+		</div>
+		<div class="popup" id="teacherModal" style="width: 95%; max-width: 600px; top: 5%; z-index: 1002;">
+    <h3 style="color: var(--btn-bg); margin-top: 0;">Ranking Dimensional de Docentes</h3>
+    
+    <div class="opt-tabs" id="teacherTabs"></div>
+
+    <div id="teacherTabContent" style="max-height: 45vh; overflow-y: auto; padding-right: 5px; margin-bottom: 15px;">
+        </div>
+
+    <div style="background: var(--surface-color); padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 15px;">
+        <h5 style="margin: 0 0 10px 0; font-size: 0.9em;">Herramienta de Clonación de Orden</h5>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;">
+            <div style="display: flex; flex-direction: column; gap: 5px; align-items: center;">
+                <span style="font-size: 0.75em; opacity: 0.8; font-weight: bold;">ORIGEN</span>
+                <div id="copySrcChips" style="display: flex; flex-direction: column; gap: 4px;"></div>
+            </div>
+            
+            <span style="font-size: 1.5em; color: var(--btn-bg);">➔</span>
+            
+            <div style="display: flex; flex-direction: column; gap: 5px; align-items: center;">
+                <span style="font-size: 0.75em; opacity: 0.8; font-weight: bold;">DESTINO</span>
+                <div id="copyDstChips" style="display: flex; flex-direction: column; gap: 4px;"></div>
+            </div>
+
+            <button id="btnExecuteCopy" onclick="executeTeacherCopy()" style="background: #6f42c1; font-weight: bold; font-size: 0.85em; padding: 10px;">
+                Copiar orden
+            </button>
+        </div>
+    </div>
+    
+    <button onclick="closeTeacherModal()" style="width: 100%; background: #28a745; font-weight: bold; padding: 12px;">
+        Guardar Configuración
+    </button>
+</div>
 		<script src="index.js"></script>
 	</body>
 </html>

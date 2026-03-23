@@ -7,6 +7,7 @@
     --btn-bg: #3788d8;
     --btn-hover: #2c6faf;
     --fc-bg: #ffffff;
+    --max-height-opt: 425px;
 }
 [data-theme='dark'] {
     --bg-color: #121212;
@@ -338,4 +339,195 @@ input {
 }
 .notification.error-bg {
     background-color: #dc3545;
+}
+
+/* --- OPTIMIZER UI FIXES & SCROLLBAR ENGINEERING --- */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--btn-bg);
+}
+
+/* Kill horizontal scroll on the cart */
+#optCart {
+    overflow-x: hidden; 
+    padding-right: 8px; 
+}
+
+/* Ensure sliders never break their containers */
+input[type="range"] {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* The Dead Section Chips */
+.dead-section-chip {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: bold;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s;
+}
+.dead-section-chip input {
+    display: none; /* Hide the native checkbox, the label is the button */
+}
+.dead-section-chip.dead {
+    background: #dc3545;
+    color: white;
+    border-color: #dc3545;
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+/* --- TEACHER RANKING TABS & CHIPS --- */
+.opt-tabs {
+    display: flex;
+    overflow-x: auto;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 15px;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+.opt-tab {
+    padding: 6px 12px;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0.7;
+}
+.opt-tab.active {
+    background: var(--btn-bg);
+    color: white;
+    border-color: var(--btn-bg);
+    opacity: 1;
+}
+.copy-chip {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s;
+    display: inline-block;
+}
+.copy-chip.selected {
+    background: #6f42c1;
+    color: white;
+    border-color: #6f42c1;
+}
+.copy-chip.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+input[type="range"] {
+  -webkit-appearance: none; /* For Chrome, Opera, Safari, Edge (Chromium) */
+  appearance: none;
+  background: transparent; /* Remove default background */
+  width: 100%; /* Set a desired width */
+  outline: none; /* Remove focus outline */
+}
+
+input[type="range"]:focus {
+  outline: none; /* Ensure no outline on focus */
+}
+
+
+
+/* Webkit Browsers (Chrome, Safari, Edge, Opera) */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #d2d2d2; /* Light gray background for the track */
+  height: 8.4px; /* Track height */
+  border-radius: 1.3px;
+  cursor: pointer;
+}
+
+/* Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+  background: #d2d2d2;
+  height: 8.4px;
+  border-radius: 1.3px;
+  cursor: pointer;
+}
+
+/* Internet Explorer/Old Edge (less common now but good for compatibility) */
+input[type="range"]::-ms-track {
+  background: transparent; /* Must be transparent in IE */
+  border-color: transparent;
+  color: transparent;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+}
+
+/* Webkit Browsers */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default thumb style */
+  appearance: none;
+  height: 20px;
+  width: 16px;
+  background: #1E1E1E; /* The orange thumb color */
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: -6px; /* Vertically center the thumb on the track (36px - 8.4px) / 2 = 13.8px */
+}
+
+/* Mozilla Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 36px;
+  width: 16px;
+  background: #1E1E1E;
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Internet Explorer/Old Edge */
+input[type="range"]::-ms-thumb {
+  height: 36px;
+  width: 16px;
+  background: #1E1E1E   ;
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 0; /* IE centers it differently */
+}
+
+/* Optimizador Layout */
+.opt-layout-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    flex-direction: row; /* Default para PC */
+}
+
+/* Breakpoint para celulares y tablets pequeñas */
+@media (max-width: 768px) {
+    .opt-layout-container {
+        flex-direction: column;
+    }
 }
