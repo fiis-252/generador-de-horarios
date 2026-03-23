@@ -189,6 +189,7 @@ async function initializeApp() {
 			Object.keys(courseDatabase[code].sections).forEach((sec) => {
 				courseDatabase[code].sections[sec].forEach((sess) => {
 					sess.id = masterIdCounter++;
+
 					sessionMap[sess.id] = {
 						code: code,
 						name: courseDatabase[code].name,
@@ -338,7 +339,7 @@ function closePopups() {
 }
 
 function saveStateToURL() {
-	// 1. mapear el estado actual de la ui al formato del empaquetador de bits
+  // 1. mapear el estado actual de la ui al formato del empaquetador de bits
 	const schedulePayload = selectedSections.map((sec, i) => {
 		// tomamos el color de la primera sesion (toda la seccion comparte el mismo color)
 		let assignedColor =
@@ -501,10 +502,11 @@ function refreshCalendar() {
 				hour12: !use24Hour,
 			},
 			eventContent: function (arg) {
-				const titleParts = arg.event.title.split(' - ');
+				const titleParts = arg.event.title.split('|');
 				const courseCode = titleParts[0] || '';
 				const courseType = titleParts[1] || '';
-				// const courseRoom = titleParts[1] || '';
+				const courseSection = titleParts[2] || '';
+				const courseRoom = titleParts[3] || '';
 				return {
 					html: `
                   <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; width: 100%; text-align: center; padding: 2px; box-sizing: border-box;">
@@ -512,11 +514,16 @@ function refreshCalendar() {
                         ${arg.timeText}
                       </div>
                       <div style="font-size: 1.05em; font-weight: 800; text-shadow: 0px 1px 2px rgba(0,0,0,0.3); line-height: 1.1;">
-                        ${courseCode} - ${arg.event._def.extendedProps.section}
+                        ${courseCode} - ${courseSection}
                       </div>
-                      <div style="font-size: 0.7em; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; border-radius: 4px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
-                        ${courseType}
-                      </div>
+                      <div style="display: flex; gap: 2px">
+												<div style="font-size: 0.7em; display: flex; align-items: center; border-radius: 10px 0px 0px 10px; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
+													${courseRoom}
+                      	</div>
+												<div style="font-size: 0.7em; display: flex; align-items: center; border-radius: 0px 10px 10px 0px; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
+													${courseType}
+                      	</div>
+											</div>
                   </div>
                 `,
 				};
@@ -572,7 +579,9 @@ function refreshCalendar() {
 				displayColor = '#dc3545';
 			events.push({
 				id: `${i}-${j}`,
-				title: sess.customName || `${sec.code} - ${sess.type}`,
+				title:
+					sess.customName ||
+					`${sec.code}|${sess.type}|${sec.section}|${sess.room}`,
 				start: dStart.toISOString(),
 				end: dEnd.toISOString(),
 				section: sec.section,
