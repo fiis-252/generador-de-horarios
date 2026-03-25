@@ -691,7 +691,7 @@ function downloadICS() {
 			const [eh, em] = sess.end.split(':');
 			dEnd.setHours(eh, em, 0);
 			icsMSG += 'BEGIN:VEVENT\n';
-			icsMSG += `SUMMARY:${sec.name} | ${sess.customName || sec.code}-${sec.section} (${sess.room}\n`; // Física I | BFI01-W (LAB-FISI)
+			icsMSG += `SUMMARY:${sec.name} | ${sess.customName || sec.code}-${sec.section} (${sess.room})\n`; // Física I | BFI01-W (LAB-FISI)
 			icsMSG += `DESCRIPTION:${sec.name}\\nProfesor: ${sess.teacher}\\nSección: ${sec.section}\n`;
 			icsMSG += `DTSTART:${fmt(dStart)}\n`;
 			icsMSG += `DTEND:${fmt(dEnd)}\n`;
