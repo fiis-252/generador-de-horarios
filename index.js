@@ -183,6 +183,7 @@ async function initializeApp() {
 		const response = await fetch('./database.json');
 		if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 		courseDatabase = await response.json();
+		console.log(courseDatabase.BFI01)
 
 		let masterIdCounter = 0;
 		Object.keys(courseDatabase).forEach((code) => {
@@ -200,7 +201,6 @@ async function initializeApp() {
 			});
 		});
 
-		// Compilar la matriz determinista en memoria ANTES de leer/escribir el link
 		buildPointerMatrix(courseDatabase);
 
 		loadStateFromURL();
@@ -672,6 +672,7 @@ function removeCourse(courseCode) {
 	refreshCalendar();
 }
 function downloadICS() {
+
 	if (selectedSections.length === 0) {
 		showNotification('El horario está vacío.', 'error');
 		return;
@@ -690,7 +691,7 @@ function downloadICS() {
 			const [eh, em] = sess.end.split(':');
 			dEnd.setHours(eh, em, 0);
 			icsMSG += 'BEGIN:VEVENT\n';
-			icsMSG += `SUMMARY:${sess.customName || sec.code + ' ' + sess.type}\n`;
+			icsMSG += `SUMMARY:${sec.name} | ${sess.customName || sec.code}-${sec.section} (${sess.room})\n`; // Física I | BFI01-W (LAB-FISI)
 			icsMSG += `DESCRIPTION:${sec.name}\\nProfesor: ${sess.teacher}\\nSección: ${sec.section}\n`;
 			icsMSG += `DTSTART:${fmt(dStart)}\n`;
 			icsMSG += `DTEND:${fmt(dEnd)}\n`;
