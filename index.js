@@ -339,14 +339,11 @@ function closePopups() {
 }
 
 function saveStateToURL() {
-  // 1. mapear el estado actual de la ui al formato del empaquetador de bits
 	const schedulePayload = selectedSections.map((sec, i) => {
-		// tomamos el color de la primera sesion (toda la seccion comparte el mismo color)
 		let assignedColor =
 			sec.sessions[0]?.color || FC_COLORS[i % FC_COLORS.length];
 		let colorIdx = FC_COLORS.indexOf(assignedColor);
 
-		// failsafe por si el color se corrompe o no existe en la paleta xd
 		if (colorIdx === -1) colorIdx = i % FC_COLORS.length;
 
 		return {
@@ -356,10 +353,8 @@ function saveStateToURL() {
 		};
 	});
 
-	// 2. Ejecutar compresion
 	const compressedPayload = encodeSchedule(schedulePayload);
 
-	// 3. Actualizar el url usando ?c=
 	const newUrl =
 		window.location.protocol +
 		'//' +
@@ -377,7 +372,6 @@ function loadStateFromURL() {
 	selectedSections = [];
 	const sectionsBuffer = {};
 
-	// --- Descompresion en base62 (con punteros 13bit) ---
 	if (urlParams.has('c')) {
 		const payload = urlParams.get('c');
 		const decodedClasses = decodeSchedule(payload);
@@ -389,7 +383,6 @@ function loadStateFromURL() {
 			if (!course || !course.sections || !course.sections[section]) return;
 
 			const secKey = `${code}-${section}`;
-			// Usar la paleta de colores de la interfaz, fallback al indice 0
 			const color = FC_COLORS[colorIndex] || FC_COLORS[0];
 
 			if (!sectionsBuffer[secKey]) {
@@ -401,11 +394,9 @@ function loadStateFromURL() {
 				};
 			}
 
-			// Expandir el puntero: Agregar todas las sesiones de esta seccion
 			course.sections[section].forEach((sessionData, index) => {
 				sectionsBuffer[secKey].sessions.push({
 					...sessionData,
-					// Reconstruir un ID pseudo-unico si tu calendario lo requiere para eventos
 					id: `${code}-${section}-${index}`,
 					color: color,
 				});
@@ -484,8 +475,8 @@ function refreshCalendar() {
 			locale: 'es',
 			dayHeaderFormat: { weekday: 'long' },
 			allDaySlot: false,
-			slotMinTime: '07:00:00',
-			slotMaxTime: '23:00:00',
+			slotMinTime: '08:00:00',
+			slotMaxTime: '22:00:00',
 			height: 'auto',
 			slotDuration: '01:00:00',
 			headerToolbar: false,
@@ -507,6 +498,9 @@ function refreshCalendar() {
 				const courseType = titleParts[1] || '';
 				const courseSection = titleParts[2] || '';
 				const courseRoom = titleParts[3] || '';
+				/* <div style="font-size: 0.7em; display: flex; align-items: center; border-radius: 10px 0px 0px 10px; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
+				${courseRoom}
+			</div>*/
 				return {
 					html: `
                   <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; width: 100%; text-align: center; padding: 2px; box-sizing: border-box;">
@@ -517,10 +511,8 @@ function refreshCalendar() {
                         ${courseCode} - ${courseSection}
                       </div>
                       <div style="display: flex; gap: 2px">
-												<div style="font-size: 0.7em; display: flex; align-items: center; border-radius: 10px 0px 0px 10px; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
-													${courseRoom}
-                      	</div>
-												<div style="font-size: 0.7em; display: flex; align-items: center; border-radius: 0px 10px 10px 0px; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
+												
+												<div style="font-size: 0.7em; display: flex; align-items: center; border-radius: 10px; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
 													${courseType}
                       	</div>
 											</div>
@@ -645,6 +637,9 @@ function renderLegend() {
 		item.style.alignItems = 'center';
 		item.style.padding = '10px 0';
 		item.style.borderBottom = '1px solid var(--border-color)';
+		/*<span style="font-size: 0.75em; font-weight: 700; background: var(--bg-color); border: 1px solid var(--border-color); padding: 2px 6px; border-radius: 4px; color: var(--btn-bg);">
+		VACANTES: ${vacantes}
+	</span>*/
 
 		item.innerHTML = `
             <div style="display: flex; align-items: center; font-size: 0.95em;">
@@ -653,9 +648,7 @@ function renderLegend() {
                     <strong>${sec.code} - ${sec.name} (${sec.section})</strong><br>
                     <div style="display: flex; align-items: center; gap: 10px; margin-top: 4px;">
                       <span style="color: #666; font-size: 0.85em;">${prof}</span>
-                      <span style="font-size: 0.75em; font-weight: 700; background: var(--bg-color); border: 1px solid var(--border-color); padding: 2px 6px; border-radius: 4px; color: var(--btn-bg);">
-                        VACANTES: ${vacantes}
-                      </span>
+                      
                     </div>
                 </div>
             </div>
