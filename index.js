@@ -182,7 +182,8 @@ async function initializeApp() {
 	try {
 		const response = await fetch('./database.json');
 		if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-		courseDatabase = await response.json();
+		// courseDatabase = await response.json();
+		console.log(courseDatabase.BFI01)
 
 		let masterIdCounter = 0;
 		Object.keys(courseDatabase).forEach((code) => {
