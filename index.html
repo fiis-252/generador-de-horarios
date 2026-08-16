@@ -161,7 +161,7 @@ fill="currentColor" viewBox="0 0 24 24" >
 							border: 1px solid var(--border-color);
 							color: var(--text-color);
 						"
-						title="¿Cómo importar a Google Calendar?">
+						title="¿Como importar a Google Calendar?">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="24"
@@ -271,7 +271,7 @@ fill="currentColor" viewBox="0 0 24 24" >
 		<div
 			class="popup"
 			id="editPopup">
-			<h3 id="editTitle">Editar Sesión</h3>
+			<h3 id="editTitle">Editar Sesion</h3>
 			<label style="font-size: 0.9em; margin-bottom: 5px; display: block"
 				>Color del curso</label>
 
@@ -320,7 +320,7 @@ fill="currentColor" viewBox="0 0 24 24" >
 						>Naranja
 					</div>
 					<div
-						class="option"
+					class="option"
 						onclick="selectColor('#6F42C1', 'Morado')">
 						<span
 							class="color-dot"
@@ -333,11 +333,11 @@ fill="currentColor" viewBox="0 0 24 24" >
 						<span
 							class="color-dot"
 							style="background-color: #dc3545"></span
-						>Rojo
+							>Rojo
 					</div>
 					<div
-						class="option"
-						onclick="selectColor('#20C997', 'Turquesa')">
+					class="option"
+					onclick="selectColor('#20C997', 'Turquesa')">
 						<span
 							class="color-dot"
 							style="background-color: #20c997"></span
@@ -350,6 +350,30 @@ fill="currentColor" viewBox="0 0 24 24" >
 							class="color-dot"
 							style="background-color: #e83e8c"></span
 						>Rosa
+					</div>
+					<div
+						class="option"
+						onclick="selectColor('#dfca0e', 'Amarillo')">
+						<span
+							class="color-dot"
+							style="background-color: #dfca0e"></span
+						>Amarillo
+					</div>
+					<div
+						class="option"
+						onclick="selectColor('#C8A2C8', 'Lila')">
+						<span
+							class="color-dot"
+							style="background-color: #C8A2C8"></span
+						>Lila
+					</div>
+					<div
+						class="option"
+						onclick="selectColor('#36454F', 'Carbon')">
+						<span
+							class="color-dot"
+							style="background-color: #36454F"></span
+						>Carbon
 					</div>
 				</div>
 			</div>
@@ -404,7 +428,7 @@ fill="currentColor" viewBox="0 0 24 24" >
 						x2="21"
 						y2="10"></line>
 				</svg>
-				Guía de Google Calendar
+				Guia de Google Calendar
 			</h3>
 
 			<div
@@ -455,7 +479,7 @@ fill="currentColor" viewBox="0 0 24 24" >
 						2
 					</div>
 					<div>
-						Abre Google Calendar en tu PC. Ve al ícono de engranaje
+						Abre Google Calendar en tu PC. Ve al icono de engranaje
 						<svg
 							viewBox="0 0 24 24"
 							width="16"
@@ -473,7 +497,7 @@ fill="currentColor" viewBox="0 0 24 24" >
 							<path
 								d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
 						</svg>
-						arriba a la derecha y selecciona <strong>Configuración</strong>.
+						arriba a la derecha y selecciona <strong>Configuracion</strong>.
 					</div>
 				</div>
 
@@ -537,7 +561,7 @@ fill="currentColor" viewBox="0 0 24 24" >
 					</div>
 					<div>
 						Sube el archivo <code>.ics</code> que acabas de descargar, elige a
-						qué calendario añadirlo y haz clic en <strong>Importar</strong>.
+						que calendario añadirlo y haz clic en <strong>Importar</strong>.
 					</div>
 				</div>
 			</div>
@@ -576,9 +600,13 @@ fill="currentColor" viewBox="0 0 24 24" >
             </select>
         </div>
 				<div style="font-weight: bold; color: var(--text-color)">
-					Créditos: <span id="optCurrentCredits">0</span> /
+					Creditos: <span id="optCurrentCredits">0</span> /
 					<select id="optMaxCredits" onchange="saveOptState()" style="font-weight: 600; width: 50px; padding: 6px; border-radius: 4px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color);">
+						<option>15</option>
+						<option>18</option>
 						<option>24</option>
+						<option>26</option>
+						<option>28</option>
 					</select>
 				</div>
 			</div> 
@@ -605,10 +633,10 @@ fill="currentColor" viewBox="0 0 24 24" >
                   <select id="busyDay" style="flex: 1; padding: 6px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px;">
                       <option value="1">Lun</option>
                       <option value="2">Mar</option>
-                      <option value="3">Mié</option>
+                      <option value="3">Mie</option>
                       <option value="4">Jue</option>
                       <option value="5">Vie</option>
-                      <option value="6">Sáb</option>
+                      <option value="6">Sab</option>
                   </select>
                   <input type="time" id="busyStart" value="16:00" style="flex: 1; padding: 6px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px;">
                   <input type="time" id="busyEnd" value="18:00" style="flex: 1; padding: 6px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px;">
@@ -701,7 +729,7 @@ fill="currentColor" viewBox="0 0 24 24" >
             style="display: none; text-align: center; margin: 20px 0">
             <div class="spinner"></div>
             <p style="font-weight: bold; color: var(--btn-bg)">
-              Calculando rutas óptimas...
+              Calculando rutas optimas...
             </p>
           </div>
 
@@ -728,7 +756,7 @@ fill="currentColor" viewBox="0 0 24 24" >
         </div>
 
     <div style="background: var(--surface-color); padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 15px;">
-        <h5 style="margin: 0 0 10px 0; font-size: 0.9em;">Herramienta de Clonación de Orden</h5>
+        <h5 style="margin: 0 0 10px 0; font-size: 0.9em;">Herramienta de Clonacion de Orden</h5>
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;">
             <div style="display: flex; flex-direction: column; gap: 5px; align-items: center;">
                 <span style="font-size: 0.75em; opacity: 0.8; font-weight: bold;">ORIGEN</span>
@@ -749,7 +777,7 @@ fill="currentColor" viewBox="0 0 24 24" >
     </div>
     
     <button onclick="closeTeacherModal()" style="width: 100%; background: #28a745; font-weight: bold; padding: 12px;">
-        Guardar Configuración
+        Guardar Configuracion
     </button>
 </div>
 		<script src="index.js"></script>

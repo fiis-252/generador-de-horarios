@@ -59,6 +59,9 @@ const FC_COLORS = [
   "#DC3545",
   "#20C997",
   "#E83E8C",
+  "#dfca0e",
+  "#C8A2C8",
+  "#36454F",
 ];
 const COLOR_NAMES = {
   "#1E90FF": "Azul",
@@ -68,6 +71,9 @@ const COLOR_NAMES = {
   "#DC3545": "Rojo",
   "#20C997": "Turquesa",
   "#E83E8C": "Rosa",
+  "#dfca0e": "Amarillo",
+  "#C8A2C8": "Lila",
+  "#36454F": "Carbon",
 };
 let selectedSections = [];
 let editingEventId = null;
@@ -207,7 +213,7 @@ async function initializeApp() {
   } catch (error) {
     console.error("Failed to load course database:", error);
     document.getElementById("results").innerHTML =
-      `<span style="color:red">Error: No se pudo cargar database.json. ¿Estás usando un servidor local?</span>`;
+      `<span style="color:red">Error: No se pudo cargar database.json. ¿Estas usando un servidor local?</span>`;
   }
 }
 
@@ -248,7 +254,7 @@ function openSectionModal(code) {
     "Miércoles",
     "Jueves",
     "Viernes",
-    "Sábado",
+    "Sabado",
     "Domingo",
   ];
   Object.keys(course.sections).forEach((secName) => {
@@ -453,7 +459,7 @@ function copySyncUrl() {
   saveStateToURL();
   navigator.clipboard.writeText(window.location.href);
   showNotification(
-    "Enlace copiado, compártelo con otros o abrelo en otro dispositivo",
+    "Enlace copiado, compartelo con otros o abrelo en otro dispositivo",
     "success",
   );
 }
@@ -493,11 +499,13 @@ function refreshCalendar() {
         hour12: !use24Hour,
       },
       eventContent: function (arg) {
+        // console.log(arg.event)
         const titleParts = arg.event.title.split("|");
         const courseCode = titleParts[0] || "";
         const courseType = titleParts[1] || "";
         const courseSection = titleParts[2] || "";
         const courseRoom = titleParts[3] || "";
+        const courseTitle = titleParts[4] || "";
         /* <div style="font-size: 0.7em; display: flex; align-items: center; border-radius: 10px 0px 0px 10px; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
 				${courseRoom}
 			</div>*/
@@ -505,10 +513,10 @@ function refreshCalendar() {
           html: `
                   <div data-tag="${courseCode}" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; width: 100%; text-align: center; padding: 2px; box-sizing: border-box; cursor: pointer;">
                       <div data-tag="${courseCode}" style="font-size: 0.75em; opacity: 0.9; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 4px;">
-                        ${arg.timeText}
-                      </div>
-                      <div data-tag="${courseCode}" style="font-size: 1.05em; font-weight: 800; text-shadow: 0px 1px 2px rgba(0,0,0,0.3); line-height: 1.1;">
                         ${courseCode} - ${courseSection}
+                      </div>
+                      <div data-tag="${courseCode}" style="font-size: 0.75rem; font-weight: 800; text-shadow: 0px 1px 2px rgba(0,0,0,0.3); line-height: 1.1;">
+                      ${courseTitle}
                       </div>
                       <div data-tag="${courseCode}" style="display: flex; gap: 2px">
 												
@@ -535,8 +543,8 @@ function refreshCalendar() {
       eventClick: function (info) {
 				editingEventId = info.event.id;
 				let courseCode = info.jsEvent.srcElement.attributes[0].value;
-				console.log(courseCode)
-				console.log(info)
+				// console.log(courseCode)
+				// console.log(info)
 
         let color = info.event.backgroundColor;
         if (FC_COLORS.indexOf(color) === -1) color = FC_COLORS[0];
@@ -575,13 +583,14 @@ function refreshCalendar() {
       dEnd.setHours(eh, em, 0);
 
       let displayColor = sess.color || defaultColor;
-      if (!sess.color && sess.type === "Práctica Calificada")
+      if (!sess.color && sess.type === "Practica Calificada")
         displayColor = "#dc3545";
+      // console.log(sec)
       events.push({
         id: `${i}-${j}`,
         title:
           sess.customName ||
-          `${sec.code}|${sess.type}|${sec.section}|${sess.room}`,
+          `${sec.code}|${sess.type}|${sec.section}|${sess.room}|${sec.name}`,
         start: dStart.toISOString(),
         end: dEnd.toISOString(),
         section: sec.section,
@@ -688,7 +697,7 @@ function removeCourse(courseCode) {
 
 function downloadICS() {
   if (selectedSections.length === 0) {
-    showNotification("El horario está vacío.", "error");
+    showNotification("El horario esta vacío.", "error");
     return;
   }
   let icsMSG = "BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//xd//ES\n";
@@ -861,7 +870,7 @@ function updateOptCartUI() {
     }
     // --------------------------------------------------
 
-    let secOptions = `<option value="">Todas (Automático)</option>`;
+    let secOptions = `<option value="">Todas (Automatico)</option>`;
     let deadChips = "";
 
     Object.keys(course.sections).forEach((sec) => {
@@ -983,7 +992,7 @@ function renderOptResults(results) {
   const container = document.getElementById("optResults");
   if (results.length === 0) {
     container.innerHTML =
-      '<p style="color:#dc3545; text-align:center;">No se encontró ninguna combinación válida que cumpla los créditos y cruces requeridos.</p>';
+      '<p style="color:#dc3545; text-align:center;">No se encontró ninguna combinación valida que cumpla los créditos y cruces requeridos.</p>';
     return;
   }
 
@@ -1020,7 +1029,7 @@ function renderOptResults(results) {
 function loadOptimized(scheduleArray) {
   if (
     selectedSections.length > 0 &&
-    !confirm("Esto borrará tu horario actual. ¿Continuar?")
+    !confirm("Esto borrara tu horario actual. ¿Continuar?")
   )
     return;
 
@@ -1094,7 +1103,7 @@ function addBusyBlock() {
   const start = document.getElementById("busyStart").value;
   const end = document.getElementById("busyEnd").value;
 
-  if (!start || !end || start >= end) return alert("Rango de horas inválido.");
+  if (!start || !end || start >= end) return alert("Rango de horas invalido.");
 
   const dayNames = [
     "",
@@ -1103,7 +1112,7 @@ function addBusyBlock() {
     "Miércoles",
     "Jueves",
     "Viernes",
-    "Sábado",
+    "Sabado",
   ];
 
   optBusyBlocks.push({
@@ -1132,7 +1141,7 @@ function renderBusyBlocks() {
   optBusyBlocks.forEach((block, idx) => {
     container.innerHTML += `
             <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(220, 53, 69, 0.1); border: 1px solid #dc3545; padding: 6px 10px; border-radius: 4px; font-size: 0.85em; color: var(--text-color);">
-                <span style="font-weight: bold;">⛔ ${block.label}</span>
+                <span style="font-weight: bold;">${block.label}</span>
                 <span style="color: #dc3545; cursor: pointer; font-size: 1.2em; font-weight: bold;" onclick="removeBusyBlock(${idx})">×</span>
             </div>
         `;
@@ -1222,7 +1231,7 @@ function renderTeacherModalUI() {
       type === "T"
         ? "Teoría (T)"
         : type === "P"
-          ? "Práctica (P)"
+          ? "Practica (P)"
           : "Laboratorio (LAB)";
     let listHTML = `<h4 style="margin: 0 0 8px 0; color: var(--text-color); border-bottom: 1px solid var(--border-color); padding-bottom: 4px;">${typeName}</h4>`;
 
@@ -1325,10 +1334,10 @@ async function copyScheduleImage() {
         .trim() || "#121212";
 
     const canvas = await html2canvas(calendarEl, {
-      scale: 2, // Multiplicador de resolución (evita que se vea borroso)
+      scale: 2,
       useCORS: true,
       backgroundColor: bgColor,
-      logging: false, // Apagar logs en consola
+      logging: false,
     });
 
     canvas.toBlob(async (blob) => {
