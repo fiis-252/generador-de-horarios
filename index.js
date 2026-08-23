@@ -213,7 +213,7 @@ async function initializeApp() {
   } catch (error) {
     console.error("Failed to load course database:", error);
     document.getElementById("results").innerHTML =
-      `<span style="color:red">Error: No se pudo cargar database.json. ¿Estas usando un servidor local?</span>`;
+      `<span style="color:red">error, algo salio mal</span>`;
   }
 }
 
@@ -506,9 +506,6 @@ function refreshCalendar() {
         const courseSection = titleParts[2] || "";
         const courseRoom = titleParts[3] || "";
         const courseTitle = titleParts[4] || "";
-        /* <div style="font-size: 0.7em; display: flex; align-items: center; border-radius: 10px 0px 0px 10px; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
-				${courseRoom}
-			</div>*/
         return {
           html: `
                   <div data-tag="${courseCode}" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; width: 100%; text-align: center; padding: 2px; box-sizing: border-box; cursor: pointer;">
@@ -519,8 +516,10 @@ function refreshCalendar() {
                       ${courseTitle}
                       </div>
                       <div data-tag="${courseCode}" style="display: flex; gap: 2px">
-												
-												<div data-tag="${courseCode}" style="font-size: 0.7em; display: flex; align-items: center; border-radius: 10px; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
+                      <div style="font-size: 0.7em; display: flex; align-items: center; border-radius: 10px 0px 0px 10px; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
+                      ${courseRoom}
+                    </div>
+												<div data-tag="${courseCode}" style="font-size: 0.7em; display: flex; align-items: center; border-radius: 0px 10px 10px 0px; margin-top: 4px; font-weight: 600; text-transform: uppercase; background: rgba(0,0,0,0.2); padding: 2px 6px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);">
 													${courseType}
                       	</div>
 											</div>
@@ -541,10 +540,10 @@ function refreshCalendar() {
         saveStateToURL();
       },
       eventClick: function (info) {
-				editingEventId = info.event.id;
-				let courseCode = info.jsEvent.srcElement.attributes[0].value;
-				// console.log(courseCode)
-				// console.log(info)
+        editingEventId = info.event.id;
+        let courseCode = info.jsEvent.srcElement.attributes[0].value;
+        // console.log(courseCode)
+        // console.log(info)
 
         let color = info.event.backgroundColor;
         if (FC_COLORS.indexOf(color) === -1) color = FC_COLORS[0];
@@ -554,12 +553,11 @@ function refreshCalendar() {
         document.getElementById("triggerDot").style.backgroundColor = color;
         document.getElementById("triggerText").innerText =
           COLOR_NAMES[color] || "Color";
-				document.getElementById("removeCourseBtn").onclick = () => {
-					removeCourse(courseCode)
-					document.getElementById("overlay").style.display = "none";
-					document.getElementById("editPopup").style.display = "none";
-					
-					}
+        document.getElementById("removeCourseBtn").onclick = () => {
+          removeCourse(courseCode);
+          document.getElementById("overlay").style.display = "none";
+          document.getElementById("editPopup").style.display = "none";
+        };
 
         document.getElementById("overlay").style.display = "block";
         document.getElementById("editPopup").style.display = "block";
@@ -663,15 +661,15 @@ function renderLegend() {
     item.style.alignItems = "center";
     item.style.padding = "10px 0";
     item.style.borderBottom = "1px solid var(--border-color)";
-    /*<span style="font-size: 0.75em; font-weight: 700; background: var(--bg-color); border: 1px solid var(--border-color); padding: 2px 6px; border-radius: 4px; color: var(--btn-bg);">
-		VACANTES: ${vacantes}
-	</span>*/
 
     item.innerHTML = `
             <div style="display: flex; align-items: center; font-size: 0.95em;">
                 <div style="width: 14px; height: stretch; border-radius: 4px; background-color: ${color}; margin-right: 12px; flex-shrink: 0;"></div>
                 <div>
-                    <strong>${sec.code} - ${sec.name} (${sec.section})</strong><br>
+                    <strong>${sec.code} - ${sec.name} (${sec.section})</strong>
+                    <span style="font-size: 0.75em; font-weight: 700; background: var(--bg-color); border: 1px solid var(--border-color); padding: 2px 6px; border-radius: 4px; color: var(--btn-bg);">
+		VACANTES: ${vacantes}
+	</span>
                     <div style="display: flex; align-items: start; gap: 10px; margin-top: 4px; flex-direction: column;">
                       ${prof
                         .map((p) => {
@@ -680,6 +678,7 @@ function renderLegend() {
                         .join("\n")}
                     </div>
                 </div>
+                
             </div>
             <button class="danger" style="padding: 6px 12px; font-size: 0.85em; margin: 0;" onclick="removeCourse('${sec.code}')">Eliminar</button>
         `;
@@ -688,7 +687,7 @@ function renderLegend() {
 }
 
 function removeCourse(courseCode) {
-	console.log(courseCode)
+  console.log(courseCode);
   selectedSections = selectedSections.filter((s) => s.code !== courseCode);
 
   saveStateToURL();

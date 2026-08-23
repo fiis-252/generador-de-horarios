@@ -3,3 +3,9 @@ carga.tsv
 package-lock.json
 package.json
 quick-parse.js
+
+database_preeliminar.json
+database2.json
+past.tsv
+scrape-courses.js
+translate-scrapped.js
