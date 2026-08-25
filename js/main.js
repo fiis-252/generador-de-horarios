@@ -137,7 +137,7 @@ const bindevents = () => {
         const matches = Object.keys(appstate.database).filter(
             (code) =>
                 code.replace(/-/g, "").includes(query) ||
-                appstate.database[code].name.toUpperCase().includes(query),
+                appstate.database[code]["short-name"].toUpperCase().includes(query),
         );
 
         rendersearchresults(matches, appstate.database, (code) => {

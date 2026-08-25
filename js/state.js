@@ -22,7 +22,7 @@ export const parsetimestr = (timestr) => {
 export const timetogridrow = (timestr, basehour = 8) => {
   const [hours, minutes] = timestr.split(":").map(Number);
   const houroffset = hours - basehour;
-  return houroffset * (window.innerWidth <= 800 ? 2 : 4) + Math.floor(minutes / 15) + 2; // +2 cause +1 is the header, so we need to account for that
+  return houroffset * 4 + Math.floor(minutes / 15) + 2;
 };
 
 const catppuccin_palette = [
@@ -129,7 +129,7 @@ export const addcourse = (currentschedule, db, coursecode, sectionid) => {
     ...sess,
     code: coursecode,
     section: sectionid,
-    name: db[coursecode].name,
+    name: db[coursecode]["short-name"],
     color: color,
   }));
 
@@ -137,7 +137,7 @@ export const addcourse = (currentschedule, db, coursecode, sectionid) => {
     ...filtered,
     {
       code: coursecode,
-      name: db[coursecode].name,
+      name: db[coursecode]["short-name"],
       section: sectionid,
       color: color,
       sessions: mappedsessions,

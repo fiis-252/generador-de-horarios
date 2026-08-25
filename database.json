@@ -1,6 +1,7 @@
 {
   "BEF01": {
     "name": "ETICA Y FILOSOFIA POLITICA",
+    "short-name": "ETICA",
     "sections": {
       "U": [
         {
@@ -106,6 +107,7 @@
   },
   "BEG01": {
     "name": "ECONOMIA GENERAL",
+    "short-name": "ECONOMIA",
     "sections": {
       "U": [
         {
@@ -153,7 +155,7 @@
           "day": 2,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "MONDRAGÓN HERNÁNDEZ, MARGARITA DELICIA",
+          "teacher": "MONDRAGON HERNANDEZ, MARGARITA DELICIA",
           "room": "S7-106",
           "vacantes": 40
         },
@@ -162,7 +164,7 @@
           "day": 3,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "MONDRAGÓN HERNÁNDEZ, MARGARITA DELICIA",
+          "teacher": "MONDRAGON HERNANDEZ, MARGARITA DELICIA",
           "room": "S7-106",
           "vacantes": 40
         }
@@ -193,7 +195,7 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MONDRAGÓN HERNÁNDEZ, MARGARITA DELICIA",
+          "teacher": "MONDRAGON HERNANDEZ, MARGARITA DELICIA",
           "room": "S7-106",
           "vacantes": 40
         },
@@ -202,7 +204,7 @@
           "day": 3,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MONDRAGÓN HERNÁNDEZ, MARGARITA DELICIA",
+          "teacher": "MONDRAGON HERNANDEZ, MARGARITA DELICIA",
           "room": "S7-106",
           "vacantes": 40
         }
@@ -213,7 +215,7 @@
           "day": 2,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "MONDRAGÓN HERNÁNDEZ, MARGARITA DELICIA",
+          "teacher": "MONDRAGON HERNANDEZ, MARGARITA DELICIA",
           "room": "S7-106",
           "vacantes": 40
         },
@@ -222,7 +224,7 @@
           "day": 3,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "MONDRAGÓN HERNÁNDEZ, MARGARITA DELICIA",
+          "teacher": "MONDRAGON HERNANDEZ, MARGARITA DELICIA",
           "room": "S7-106",
           "vacantes": 40
         }
@@ -622,10 +624,12 @@
           "vacantes": 32
         }
       ]
-    }
+    },
+    "short-name": "FISICA I"
   },
   "BIC01": {
-    "name": "INTRODUCCIÓN A LA COMPUTACIÓN",
+    "name": "INTRODUCCION A LA COMPUTACION",
+    "short-name": "INTRO. COMP.",
     "sections": {
       "U": [
         {
@@ -677,7 +681,7 @@
           "day": 2,
           "start": "17:00:00",
           "end": "18:00:00",
-          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "teacher": "RODRIGUEZ ULLOA, RICARDO AURELIO",
           "room": "S1-226",
           "short-room": "LAB E",
           "vacantes": 26
@@ -687,7 +691,7 @@
           "day": 2,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "teacher": "RODRIGUEZ ULLOA, RICARDO AURELIO",
           "room": "S1-226",
           "short-room": "LAB E",
           "vacantes": 26
@@ -787,7 +791,7 @@
           "day": 6,
           "start": "10:00:00",
           "end": "11:00:00",
-          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "teacher": "ANTAURCO TRUJILLO, JESUS WALTER",
           "room": "S1-129",
           "short-room": "LAB A",
           "vacantes": 39
@@ -797,7 +801,7 @@
           "day": 6,
           "start": "11:00:00",
           "end": "13:00:00",
-          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "teacher": "ANTAURCO TRUJILLO, JESUS WALTER",
           "room": "S1-129",
           "short-room": "LAB A",
           "vacantes": 39
@@ -829,6 +833,7 @@
   },
   "BMA01": {
     "name": "CALCULO DIFERENCIAL",
+    "short-name": "DIFERENCIAL",
     "sections": {
       "U": [
         {
@@ -1008,6 +1013,7 @@
   },
   "BMA02": {
     "name": "CALCULO INTEGRAL",
+    "short-name": "INTEGRAL",
     "sections": {
       "U": [
         {
@@ -1167,6 +1173,7 @@
   },
   "BMA03": {
     "name": "ALGEBRA LINEAL",
+    "short-name": "LINEAL",
     "sections": {
       "U": [
         {
@@ -1174,7 +1181,7 @@
           "day": 2,
           "start": "10:00:00",
           "end": "13:00:00",
-          "teacher": "KALA BÉJAR, LOURDES CRISTINA",
+          "teacher": "KALA BEJAR, LOURDES CRISTINA",
           "room": "S4-110",
           "vacantes": 43
         },
@@ -1183,7 +1190,7 @@
           "day": 4,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "KALA BÉJAR, LOURDES CRISTINA",
+          "teacher": "KALA BEJAR, LOURDES CRISTINA",
           "room": "S4-110",
           "vacantes": 43
         }
@@ -1214,7 +1221,7 @@
           "day": 1,
           "start": "10:00:00",
           "end": "13:00:00",
-          "teacher": "KALA BÉJAR, LOURDES CRISTINA",
+          "teacher": "KALA BEJAR, LOURDES CRISTINA",
           "room": "S4-110",
           "vacantes": 42
         },
@@ -1223,7 +1230,7 @@
           "day": 5,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "KALA BÉJAR, LOURDES CRISTINA",
+          "teacher": "KALA BEJAR, LOURDES CRISTINA",
           "room": "S4-110",
           "vacantes": 42
         },
@@ -1661,10 +1668,12 @@
           "vacantes": 28
         }
       ]
-    }
+    },
+    "short-name": "QUIMICA I"
   },
   "BRC01": {
     "name": "REDACCION Y COMUNICACION",
+    "short-name": "REDACCION",
     "sections": {
       "U": [
         {
@@ -1770,6 +1779,7 @@
   },
   "BRN01": {
     "name": "REALIDAD NACIONAL, CONSTITUCION Y DERECHOS HUMANOS",
+    "short-name": "REALIDAD NACIONAL",
     "sections": {
       "U": [
         {
@@ -1797,7 +1807,7 @@
           "day": 4,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "LEÓN ZÁRATE, ANA MERCEDES",
+          "teacher": "LEON ZARATE, ANA MERCEDES",
           "room": "S7-105",
           "vacantes": 42
         },
@@ -1806,7 +1816,7 @@
           "day": 4,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "LEÓN ZÁRATE, ANA MERCEDES",
+          "teacher": "LEON ZARATE, ANA MERCEDES",
           "room": "S7-105",
           "vacantes": 42
         }
@@ -1855,6 +1865,7 @@
   },
   "FB101": {
     "name": "GEOMETRIA ANALITICA",
+    "short-name": "ANALITICA",
     "sections": {
       "U": [
         {
@@ -1940,7 +1951,7 @@
           "day": 5,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSE",
           "room": "S4-207",
           "vacantes": 42
         }
@@ -1989,7 +2000,7 @@
           "day": 5,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "KALA BÉJAR, LOURDES CRISTINA",
+          "teacher": "KALA BEJAR, LOURDES CRISTINA",
           "room": "S4-110",
           "vacantes": 42
         }
@@ -2112,10 +2123,12 @@
           "vacantes": 28
         }
       ]
-    }
+    },
+    "short-name": "QUIMICA II"
   },
   "FB301": {
     "name": "MATEMATICA DISCRETA",
+    "short-name": "DISCRETA",
     "sections": {
       "U": [
         {
@@ -2123,7 +2136,7 @@
           "day": 4,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "BENITES YARLEQUÉ, JOSÉ VALERIO",
+          "teacher": "BENITES YARLEQUE, JOSE VALERIO",
           "room": "S4-209",
           "vacantes": 41
         },
@@ -2132,7 +2145,7 @@
           "day": 1,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "BENITES YARLEQUÉ, JOSÉ VALERIO",
+          "teacher": "BENITES YARLEQUE, JOSE VALERIO",
           "room": "S4-205",
           "vacantes": 41
         }
@@ -2163,7 +2176,7 @@
           "day": 2,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "BENITES YARLEQUÉ, JOSÉ VALERIO",
+          "teacher": "BENITES YARLEQUE, JOSE VALERIO",
           "room": "S4-201",
           "vacantes": 41
         },
@@ -2181,7 +2194,7 @@
           "day": 5,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "BENITES YARLEQUÉ, JOSÉ VALERIO",
+          "teacher": "BENITES YARLEQUE, JOSE VALERIO",
           "room": "S4-203",
           "vacantes": 41
         }
@@ -2239,6 +2252,7 @@
   },
   "FB303": {
     "name": "CALCULO MULTIVARIABLE",
+    "short-name": "MULTIVARIABLE",
     "sections": {
       "U": [
         {
@@ -2246,7 +2260,7 @@
           "day": 6,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "ALVARADO RODRÍGUEZ, JOSÉ LUIS",
+          "teacher": "ALVARADO RODRIGUEZ, JOSE LUIS",
           "room": "S4-204",
           "vacantes": 45
         },
@@ -2255,7 +2269,7 @@
           "day": 6,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "ALVARADO RODRÍGUEZ, JOSÉ LUIS",
+          "teacher": "ALVARADO RODRIGUEZ, JOSE LUIS",
           "room": "S4-204",
           "vacantes": 45
         },
@@ -2264,7 +2278,7 @@
           "day": 5,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "ALVARADO RODRÍGUEZ, JOSÉ LUIS",
+          "teacher": "ALVARADO RODRIGUEZ, JOSE LUIS",
           "room": "S4-207",
           "vacantes": 45
         }
@@ -2304,7 +2318,7 @@
           "day": 5,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "ALVARADO RODRÍGUEZ, JOSÉ LUIS",
+          "teacher": "ALVARADO RODRIGUEZ, JOSE LUIS",
           "room": "S4-215",
           "vacantes": 45
         },
@@ -2313,7 +2327,7 @@
           "day": 6,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "ALVARADO RODRÍGUEZ, JOSÉ LUIS",
+          "teacher": "ALVARADO RODRIGUEZ, JOSE LUIS",
           "room": "S4-213",
           "vacantes": 45
         },
@@ -2360,6 +2374,7 @@
   },
   "FB305": {
     "name": "ESTADISTICA Y PROBABILIDADES",
+    "short-name": "ESTADISTICA",
     "sections": {
       "U": [
         {
@@ -2367,7 +2382,7 @@
           "day": 5,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "SEGURA GARCÍA, YOLANDA ADRIANA",
+          "teacher": "SEGURA GARCIA, YOLANDA ADRIANA",
           "room": "S4-212",
           "vacantes": 44
         },
@@ -2376,7 +2391,7 @@
           "day": 6,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "SEGURA GARCÍA, YOLANDA ADRIANA",
+          "teacher": "SEGURA GARCIA, YOLANDA ADRIANA",
           "room": "S4-202",
           "vacantes": 44
         }
@@ -2407,7 +2422,7 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "SEGURA GARCÍA, YOLANDA ADRIANA",
+          "teacher": "SEGURA GARCIA, YOLANDA ADRIANA",
           "room": "S4-211",
           "vacantes": 44
         },
@@ -2416,7 +2431,7 @@
           "day": 6,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "SEGURA GARCÍA, YOLANDA ADRIANA",
+          "teacher": "SEGURA GARCIA, YOLANDA ADRIANA",
           "room": "S4-111",
           "vacantes": 44
         }
@@ -2736,10 +2751,12 @@
           "vacantes": 31
         }
       ]
-    }
+    },
+    "short-name": "FISICA II"
   },
   "FB402": {
     "name": "CALCULO NUMERICO",
+    "short-name": "CALC. NUMERICO",
     "sections": {
       "U": [
         {
@@ -2765,6 +2782,7 @@
   },
   "FB403": {
     "name": "ECUACIONES DIFERENCIALES",
+    "short-name": "EC. DIFERENCIAL",
     "sections": {
       "U": [
         {
@@ -2931,7 +2949,7 @@
           "day": 5,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "SEGURA GARCÍA, YOLANDA ADRIANA",
+          "teacher": "SEGURA GARCIA, YOLANDA ADRIANA",
           "room": "S4-211",
           "vacantes": 42
         },
@@ -2940,7 +2958,7 @@
           "day": 6,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "SEGURA GARCÍA, YOLANDA ADRIANA",
+          "teacher": "SEGURA GARCIA, YOLANDA ADRIANA",
           "room": "S4-216",
           "vacantes": 42
         }
@@ -2985,10 +3003,12 @@
           "vacantes": 41
         }
       ]
-    }
+    },
+    "short-name": "ESTAD. APLICADA"
   },
   "FB501": {
     "name": "MATEMATICA APLICADA",
+    "short-name": "MATE. APLICADA",
     "sections": {
       "U": [
         {
@@ -3035,7 +3055,8 @@
     }
   },
   "GE003": {
-    "name": "TALLER DE PROYECTO DE INVESTIGACIÓN",
+    "name": "TALLER DE PROYECTO DE INVESTIGACION",
+    "short-name": "PROYECTO DE INVESTIGACION",
     "sections": {
       "U": [
         {
@@ -3043,7 +3064,7 @@
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "EGÚZQUIZA FIGUEROA, MARÍA ENERINA",
+          "teacher": "EGUZQUIZA FIGUEROA, MARIA ENERINA",
           "room": "S4-202",
           "vacantes": 18
         },
@@ -3052,7 +3073,7 @@
           "day": 3,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "EGÚZQUIZA FIGUEROA, MARÍA ENERINA",
+          "teacher": "EGUZQUIZA FIGUEROA, MARIA ENERINA",
           "room": "S4-112",
           "vacantes": 18
         }
@@ -3103,7 +3124,7 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "FALCONI VASQUEZ, RODOLFO ELÍAS",
+          "teacher": "FALCONI VASQUEZ, RODOLFO ELIAS",
           "room": "AUDIOVI",
           "vacantes": 18
         },
@@ -3112,7 +3133,7 @@
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "FALCONI VASQUEZ, RODOLFO ELÍAS",
+          "teacher": "FALCONI VASQUEZ, RODOLFO ELIAS",
           "room": "S4-105",
           "vacantes": 18
         }
@@ -3120,7 +3141,8 @@
     }
   },
   "GE004": {
-    "name": "TALLER DE INVESTIGACIÓN",
+    "name": "TALLER DE INVESTIGACION",
+    "short-name": "TALLER INV.",
     "sections": {
       "U": [
         {
@@ -3208,7 +3230,7 @@
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "PONCE SÁNCHEZ, CARLOS FIDEL",
+          "teacher": "PONCE SANCHEZ, CARLOS FIDEL",
           "room": "S4-202",
           "vacantes": 14
         },
@@ -3217,7 +3239,7 @@
           "day": 4,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "PONCE SÁNCHEZ, CARLOS FIDEL",
+          "teacher": "PONCE SANCHEZ, CARLOS FIDEL",
           "room": "S4-202",
           "vacantes": 14
         }
@@ -3226,6 +3248,7 @@
   },
   "GE101": {
     "name": "INTRODUCCION A LA INGENIERIA INDUSTRIAL",
+    "short-name": "INTRO. I1",
     "sections": {
       "U": [
         {
@@ -3233,7 +3256,7 @@
           "day": 1,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
+          "teacher": "VILLANUEVA HERRERA, JOSE ALBERTO",
           "room": "S4-201",
           "vacantes": 35
         },
@@ -3242,7 +3265,7 @@
           "day": 2,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
+          "teacher": "VILLANUEVA HERRERA, JOSE ALBERTO",
           "room": "S4-201",
           "vacantes": 35
         }
@@ -3271,6 +3294,7 @@
   },
   "GE112": {
     "name": "TEORIA DE JUEGOS Y LA NEGOCIACION",
+    "short-name": "TEORIA DE JUEGOS",
     "sections": {
       "U": [
         {
@@ -3296,6 +3320,7 @@
   },
   "GE113": {
     "name": "TALLER DE CONSULTORIA DE EMPRESAS",
+    "short-name": "TALLER DE CONSUL. EMP.",
     "sections": {
       "U": [
         {
@@ -3344,7 +3369,8 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "SISTEMA DE COSTOS"
   },
   "GE124": {
     "name": "COMERCIO INTERNACIONAL",
@@ -3355,7 +3381,7 @@
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
+          "teacher": "VILLANUEVA HERRERA, JOSE ALBERTO",
           "room": "S1-227",
           "short-room": "LAB A1",
           "vacantes": 21
@@ -3365,13 +3391,14 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
+          "teacher": "VILLANUEVA HERRERA, JOSE ALBERTO",
           "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 21
         }
       ]
-    }
+    },
+    "short-name": "COMERCIO INT."
   },
   "GE128": {
     "name": "DIAGNOSTICO DE EMPRESAS",
@@ -3382,7 +3409,7 @@
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "PONCE SÁNCHEZ, CARLOS FIDEL",
+          "teacher": "PONCE SANCHEZ, CARLOS FIDEL",
           "room": "S4-204",
           "vacantes": 45
         },
@@ -3391,12 +3418,13 @@
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "PONCE SÁNCHEZ, CARLOS FIDEL",
+          "teacher": "PONCE SANCHEZ, CARLOS FIDEL",
           "room": "S4-204",
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "DIAGNOSTICO EMP."
   },
   "GE501": {
     "name": "TEORIA ORGANIZACIONAL",
@@ -3441,10 +3469,12 @@
           "vacantes": 38
         }
       ]
-    }
+    },
+    "short-name": "TEORIA ORG."
   },
   "GE502": {
     "name": "INGENIERIA DEL TRABAJO I",
+    "short-name": "ING. DEL TRABAJO I",
     "sections": {
       "U": [
         {
@@ -3452,7 +3482,7 @@
           "day": 1,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "EGÚZQUIZA FIGUEROA, MARÍA ENERINA",
+          "teacher": "EGUZQUIZA FIGUEROA, MARIA ENERINA",
           "room": "S4-206",
           "vacantes": 38
         },
@@ -3461,7 +3491,7 @@
           "day": 4,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "EGÚZQUIZA FIGUEROA, MARÍA ENERINA",
+          "teacher": "EGUZQUIZA FIGUEROA, MARIA ENERINA",
           "room": "S4-201",
           "vacantes": 38
         }
@@ -3490,6 +3520,7 @@
   },
   "GE602": {
     "name": "CONTABILIDAD FINANCIERA",
+    "short-name": "CONTABILIDAD",
     "sections": {
       "U": [
         {
@@ -3517,7 +3548,7 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "FALCONI VASQUEZ, RODOLFO ELÍAS",
+          "teacher": "FALCONI VASQUEZ, RODOLFO ELIAS",
           "room": "S4-215",
           "vacantes": 29
         },
@@ -3526,7 +3557,7 @@
           "day": 4,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "FALCONI VASQUEZ, RODOLFO ELÍAS",
+          "teacher": "FALCONI VASQUEZ, RODOLFO ELIAS",
           "room": "S4-211",
           "vacantes": 29
         }
@@ -3537,7 +3568,7 @@
           "day": 4,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "LEÓN ZÁRATE, ANA MERCEDES",
+          "teacher": "LEON ZARATE, ANA MERCEDES",
           "room": "S4-204",
           "vacantes": 29
         },
@@ -3546,7 +3577,7 @@
           "day": 4,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "LEÓN ZÁRATE, ANA MERCEDES",
+          "teacher": "LEON ZARATE, ANA MERCEDES",
           "room": "S4-204",
           "vacantes": 29
         }
@@ -3555,6 +3586,7 @@
   },
   "GE603": {
     "name": "INGENIERIA DEL TRABAJO II",
+    "short-name": "ING. DEL TRABAJO II",
     "sections": {
       "U": [
         {
@@ -3600,6 +3632,7 @@
   },
   "GE604": {
     "name": "ADMINISTRACION Y ORGANIZACION",
+    "short-name": "ADMINISTRACION",
     "sections": {
       "U": [
         {
@@ -3645,6 +3678,7 @@
   },
   "GE605": {
     "name": "SISTEMA Y GESTION FINANCIERA",
+    "short-name": "SIST. Y GEST. FINANCIERA",
     "sections": {
       "U": [
         {
@@ -3690,6 +3724,7 @@
   },
   "GE701": {
     "name": "LOGISTICA EMPRESARIAL",
+    "short-name": "LOGISTICA",
     "sections": {
       "U": [
         {
@@ -3735,6 +3770,7 @@
   },
   "GE702": {
     "name": "INGENIERIA ECONOMICA",
+    "short-name": "ING. ECONOMICA",
     "sections": {
       "U": [
         {
@@ -3821,7 +3857,8 @@
           "vacantes": 38
         }
       ]
-    }
+    },
+    "short-name": "SISTEMAS INT. EMP."
   },
   "GE704": {
     "name": "CONTABILIDAD DE COSTOS Y PRESUPUESTOS",
@@ -3832,7 +3869,7 @@
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "FALCONI VASQUEZ, RODOLFO ELÍAS",
+          "teacher": "FALCONI VASQUEZ, RODOLFO ELIAS",
           "room": "S4-109",
           "vacantes": 29
         },
@@ -3841,7 +3878,7 @@
           "day": 5,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "FALCONI VASQUEZ, RODOLFO ELÍAS",
+          "teacher": "FALCONI VASQUEZ, RODOLFO ELIAS",
           "room": "S4-206",
           "vacantes": 29
         }
@@ -3886,7 +3923,8 @@
           "vacantes": 28
         }
       ]
-    }
+    },
+    "short-name": "CONTABILIDAD"
   },
   "GE709": {
     "name": "SISTEMAS DE CALIDAD",
@@ -3931,7 +3969,8 @@
           "vacantes": 31
         }
       ]
-    }
+    },
+    "short-name": "SIST. DE CALIDAD"
   },
   "GE801": {
     "name": "PLANEAMIENTO Y GESTION ESTRATEGICA",
@@ -4016,7 +4055,8 @@
           "vacantes": 20
         }
       ]
-    }
+    },
+    "short-name": "PLANEAMIENTO Y GESTION"
   },
   "GE802": {
     "name": "GESTION DE LA CADENA DE SUMINISTRO",
@@ -4061,7 +4101,8 @@
           "vacantes": 28
         }
       ]
-    }
+    },
+    "short-name": "GEST. CADENA SUMIN."
   },
   "GE803": {
     "name": "SISTEMAS ANALITICOS",
@@ -4106,7 +4147,8 @@
           "vacantes": 23
         }
       ]
-    }
+    },
+    "short-name": "SIST. ANALITICOS"
   },
   "GE805": {
     "name": "MERCADOTECNIA",
@@ -4151,7 +4193,8 @@
           "vacantes": 25
         }
       ]
-    }
+    },
+    "short-name": "MERCADOTECNIA"
   },
   "GE901": {
     "name": "INNOVACION Y EMPRENDIMIENTO DE NEGOCIOS",
@@ -4162,7 +4205,7 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "PONCE SÁNCHEZ, CARLOS FIDEL",
+          "teacher": "PONCE SANCHEZ, CARLOS FIDEL",
           "room": "S4-203",
           "vacantes": 37
         },
@@ -4171,7 +4214,7 @@
           "day": 2,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "PONCE SÁNCHEZ, CARLOS FIDEL",
+          "teacher": "PONCE SANCHEZ, CARLOS FIDEL",
           "room": "S4-203",
           "vacantes": 37
         }
@@ -4182,7 +4225,7 @@
           "day": 2,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
+          "teacher": "VILLANUEVA HERRERA, JOSE ALBERTO",
           "room": "S4-202",
           "vacantes": 37
         },
@@ -4191,12 +4234,13 @@
           "day": 3,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
+          "teacher": "VILLANUEVA HERRERA, JOSE ALBERTO",
           "room": "S4-208",
           "vacantes": 37
         }
       ]
-    }
+    },
+    "short-name": "INNOVACION Y EMP."
   },
   "GE902": {
     "name": "DISEÑO Y EVALUACION DE PROYECTOS",
@@ -4247,7 +4291,7 @@
           "day": 3,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "TRIGO PÉREZ, CARLOS ALFREDO",
+          "teacher": "TRIGO PEREZ, CARLOS ALFREDO",
           "room": "S1-129",
           "short-room": "LAB A",
           "vacantes": 39
@@ -4257,13 +4301,14 @@
           "day": 3,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "TRIGO PÉREZ, CARLOS ALFREDO",
+          "teacher": "TRIGO PEREZ, CARLOS ALFREDO",
           "room": "S1-129",
           "short-room": "LAB A",
           "vacantes": 39
         }
       ]
-    }
+    },
+    "short-name": "DISEÑO Y EVALUACION"
   },
   "GE903": {
     "name": "GESTION DEL TALENTO HUMANO",
@@ -4308,7 +4353,8 @@
           "vacantes": 26
         }
       ]
-    }
+    },
+    "short-name": "GEST. DEL TALENTO HUMANO"
   },
   "GE905": {
     "name": "PLANEAMIENTO Y CONTROL DE OPERACIONES",
@@ -4357,7 +4403,8 @@
           "vacantes": 39
         }
       ]
-    }
+    },
+    "short-name": "PLANEAMIENTO"
   },
   "GE906": {
     "name": "GESTION FINANCIERA",
@@ -4402,7 +4449,8 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "GEST. FINAN."
   },
   "HU102": {
     "name": "DESARROLLO PERSONAL",
@@ -4484,7 +4532,8 @@
           "vacantes": 40
         }
       ]
-    }
+    },
+    "short-name": "DESARROLLO"
   },
   "HU111": {
     "name": "LEGISLACION EMPRESARIAL Y TRIBUTARIA",
@@ -4522,7 +4571,8 @@
           "vacantes": 40
         }
       ]
-    }
+    },
+    "short-name": "LEGISLACION"
   },
   "HU112": {
     "name": "COMPORTAMIENTO ORGANIZACIONAL",
@@ -4547,7 +4597,8 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "COMPORTAMIENTO ORG."
   },
   "HU201": {
     "name": "SOCIOLOGIA",
@@ -4574,7 +4625,8 @@
           "vacantes": 35
         }
       ]
-    }
+    },
+    "short-name": "SOCIOLOGIA"
   },
   "HU301": {
     "name": "METODOLOGIA DE LA INVESTIGACION",
@@ -4599,7 +4651,8 @@
           "vacantes": 14
         }
       ]
-    }
+    },
+    "short-name": "METODOLOGIA DE LA INV."
   },
   "HU501": {
     "name": "TALLER DE EFECTIVIDAD PERSONAL",
@@ -4624,10 +4677,11 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "EFECTIVIDAD PERSONAL"
   },
   "IA001": {
-    "name": "INTRODUCCIÓN A LA INGENIERÍA INTELIGENCIA ARTIFICIAL",
+    "name": "INTRODUCCION A LA INGENIERIA INTELIGENCIA ARTIFICIAL",
     "sections": {
       "U": [
         {
@@ -4651,10 +4705,11 @@
           "vacantes": 32
         }
       ]
-    }
+    },
+    "short-name": "INTRO. I4"
   },
   "SI036": {
-    "name": "TALLER DE INVESTIGACIÓN",
+    "name": "TALLER DE INVESTIGACION",
     "sections": {
       "U": [
         {
@@ -4700,7 +4755,8 @@
           "vacantes": 14
         }
       ]
-    }
+    },
+    "short-name": "TALLER INV."
   },
   "SI055": {
     "name": "GESTION DE PROYECTOS",
@@ -4765,7 +4821,8 @@
           "vacantes": 19
         }
       ]
-    }
+    },
+    "short-name": "GEST. DE PROY."
   },
   "SI075": {
     "name": "AUDITORIA DE SISTEMAS",
@@ -4790,7 +4847,8 @@
           "vacantes": 42
         }
       ]
-    }
+    },
+    "short-name": "AUDITORIA"
   },
   "SI077": {
     "name": "INTELIGENCIA ARTIFICIAL",
@@ -4817,7 +4875,8 @@
           "vacantes": 40
         }
       ]
-    }
+    },
+    "short-name": "IA"
   },
   "SI085": {
     "name": "APLICACION DE NEGOCIOS ELECTRONICOS",
@@ -4862,7 +4921,8 @@
           "vacantes": 33
         }
       ]
-    }
+    },
+    "short-name": "APLIC. NEGOCIOS ELEC."
   },
   "SI095": {
     "name": "INGENIERIA EMPRESARIAL",
@@ -4907,7 +4967,8 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "ING. EMP."
   },
   "SI111": {
     "name": "TEORIA DE DECISIONES",
@@ -4918,7 +4979,7 @@
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "teacher": "LUJAN CAMPOS, LUIS ALBERTO",
           "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
@@ -4928,13 +4989,14 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "teacher": "LUJAN CAMPOS, LUIS ALBERTO",
           "room": "CIBER",
           "short-room": "LAB O",
           "vacantes": 40
         }
       ]
-    }
+    },
+    "short-name": "TEORIA DE DECISIONES"
   },
   "SI114": {
     "name": "BASE DE DATOS",
@@ -4945,7 +5007,7 @@
           "day": 1,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCION",
           "room": "S1-126",
           "short-room": "LAB B",
           "vacantes": 32
@@ -4955,13 +5017,14 @@
           "day": 3,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCION",
           "room": "S1-126",
           "short-room": "LAB B",
           "vacantes": 32
         }
       ]
-    }
+    },
+    "short-name": "BASE DE DATOS"
   },
   "SI121": {
     "name": "INTRODUCCION A LA INGENIERIA  DE SISTEMAS",
@@ -5006,7 +5069,8 @@
           "vacantes": 39
         }
       ]
-    }
+    },
+    "short-name": "INTRO. I2"
   },
   "SI150": {
     "name": "ANALITICA DE DATOS",
@@ -5055,7 +5119,8 @@
           "vacantes": 40
         }
       ]
-    }
+    },
+    "short-name": "ANALITICA DE DATOS"
   },
   "SI155": {
     "name": "CIBERSEGURIDAD",
@@ -5066,7 +5131,7 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "teacher": "BORJA ROSALES, RUBEN ARTURO",
           "room": "S1-129",
           "short-room": "LAB A",
           "vacantes": 39
@@ -5076,13 +5141,14 @@
           "day": 4,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "teacher": "BORJA ROSALES, RUBEN ARTURO",
           "room": "S1-129",
           "short-room": "LAB A",
           "vacantes": 39
         }
       ]
-    }
+    },
+    "short-name": "CIBERSEGURIDAD"
   },
   "SI205": {
     "name": "ALGORITMIA Y ESTRUCTURA DE DATOS",
@@ -5263,7 +5329,8 @@
           "vacantes": 39
         }
       ]
-    }
+    },
+    "short-name": "ALGORITMIA"
   },
   "SI302": {
     "name": "PROGRAMACION ORIENTADA A OBJETOS",
@@ -5274,7 +5341,7 @@
           "day": 2,
           "start": "08:00:00",
           "end": "09:00:00",
-          "teacher": "LÓPEZ VILLANUEVA, PABLO EDWIN",
+          "teacher": "LOPEZ VILLANUEVA, PABLO EDWIN",
           "room": "S1-229",
           "short-room": "LAB D",
           "vacantes": 26
@@ -5284,7 +5351,7 @@
           "day": 2,
           "start": "09:00:00",
           "end": "13:00:00",
-          "teacher": "LÓPEZ VILLANUEVA, PABLO EDWIN",
+          "teacher": "LOPEZ VILLANUEVA, PABLO EDWIN",
           "room": "S1-229",
           "short-room": "LAB D",
           "vacantes": 26
@@ -5312,10 +5379,11 @@
           "vacantes": 48
         }
       ]
-    }
+    },
+    "short-name": "POO"
   },
   "SI130": {
-    "name": "GESTIÓN DE LA INFORMACIÓN",
+    "name": "GESTION DE LA INFORMACION",
     "sections": {
       "U": [
         {
@@ -5337,10 +5405,11 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "GEST. INFO."
   },
   "SI322": {
-    "name": "INGENIERÍA DE REQUISITOS",
+    "name": "INGENIERIA DE REQUISITOS",
     "sections": {
       "U": [
         {
@@ -5402,7 +5471,8 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "ING. DE REQUISITOS"
   },
   "SI401": {
     "name": "LENGUAJE DE PROGRAMACION",
@@ -5451,7 +5521,8 @@
           "vacantes": 40
         }
       ]
-    }
+    },
+    "short-name": "LP"
   },
   "SI403": {
     "name": "METODOLOGIA DE LOS SISTEMAS BLANDOS",
@@ -5476,7 +5547,8 @@
           "vacantes": 40
         }
       ]
-    }
+    },
+    "short-name": "METODOLOGIA DE SIST BLANDOS"
   },
   "SI405": {
     "name": "MODELADO CONCEPTUAL DE DATOS",
@@ -5521,10 +5593,11 @@
           "vacantes": 39
         }
       ]
-    }
+    },
+    "short-name": "MODEL. CONCEPTUAL DE DATOS"
   },
   "SI421": {
-    "name": "Arquitectura de computador y sistemas operativos",
+    "name": "ARQUITECTURA DE COMPUTADOR Y SISTEMAS OPERATIVOS",
     "sections": {
       "U": [
         {
@@ -5548,7 +5621,8 @@
           "vacantes": 39
         }
       ]
-    }
+    },
+    "short-name": "ARQ. DE COMP. Y SO"
   },
   "SI422": {
     "name": "CIENCIA INTEGRATIVA DE SISTEMAS",
@@ -5573,7 +5647,8 @@
           "vacantes": 40
         }
       ]
-    }
+    },
+    "short-name": "CIENCIA INT. DE SIST."
   },
   "SI501": {
     "name": "INVESTIGACION DE OPERACIONES I",
@@ -5584,7 +5659,7 @@
           "day": 3,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "CANELO SOTELO, CÉSAR ALDO",
+          "teacher": "CANELO SOTELO, CESAR ALDO",
           "room": "S4-110",
           "vacantes": 42
         },
@@ -5593,7 +5668,7 @@
           "day": 2,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "CANELO SOTELO, CÉSAR ALDO",
+          "teacher": "CANELO SOTELO, CESAR ALDO",
           "room": "S4-210",
           "vacantes": 42
         }
@@ -5678,7 +5753,8 @@
           "vacantes": 41
         }
       ]
-    }
+    },
+    "short-name": "INV. DE OPERACIONES I"
   },
   "SI503": {
     "name": "INGENIERIA DE PROCESOS",
@@ -5749,7 +5825,7 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "TALAVERANO GARCÍA, JULIO CESAR",
+          "teacher": "TALAVERANO GARCIA, JULIO CESAR",
           "room": "S4-206",
           "vacantes": 35
         },
@@ -5758,12 +5834,13 @@
           "day": 5,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "TALAVERANO GARCÍA, JULIO CESAR",
+          "teacher": "TALAVERANO GARCIA, JULIO CESAR",
           "room": "S4-206",
           "vacantes": 35
         }
       ]
-    }
+    },
+    "short-name": "ING. DE PROCESOS"
   },
   "SI505": {
     "name": "DISEÑO DE BASE DE DATOS",
@@ -5828,7 +5905,8 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "DISEÑO DE BD"
   },
   "SI601": {
     "name": "INVESTIGACION DE OPERACIONES II",
@@ -5839,7 +5917,7 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "CANELO SOTELO, CÉSAR ALDO",
+          "teacher": "CANELO SOTELO, CESAR ALDO",
           "room": "S4-202",
           "vacantes": 39
         },
@@ -5848,7 +5926,7 @@
           "day": 4,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "CANELO SOTELO, CÉSAR ALDO",
+          "teacher": "CANELO SOTELO, CESAR ALDO",
           "room": "S4-105",
           "vacantes": 39
         }
@@ -5859,7 +5937,7 @@
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "teacher": "LUJAN CAMPOS, LUIS ALBERTO",
           "room": "S4-216",
           "vacantes": 23
         },
@@ -5868,7 +5946,7 @@
           "day": 5,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "teacher": "LUJAN CAMPOS, LUIS ALBERTO",
           "room": "S4-208",
           "vacantes": 23
         }
@@ -5879,7 +5957,7 @@
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "teacher": "LUJAN CAMPOS, LUIS ALBERTO",
           "room": "S4-216",
           "vacantes": 22
         },
@@ -5888,7 +5966,7 @@
           "day": 5,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "teacher": "LUJAN CAMPOS, LUIS ALBERTO",
           "room": "S4-208",
           "vacantes": 22
         }
@@ -5919,7 +5997,7 @@
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "CANELO SOTELO, CÉSAR ALDO",
+          "teacher": "CANELO SOTELO, CESAR ALDO",
           "room": "S4-206",
           "vacantes": 38
         },
@@ -5928,12 +6006,13 @@
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "CANELO SOTELO, CÉSAR ALDO",
+          "teacher": "CANELO SOTELO, CESAR ALDO",
           "room": "S4-110",
           "vacantes": 38
         }
       ]
-    }
+    },
+    "short-name": "INV. DE OPERACIONES II"
   },
   "SI602": {
     "name": "DINAMICA DE SISTEMAS",
@@ -5944,7 +6023,7 @@
           "day": 4,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "teacher": "MENDEZ VALDIVIA, CELEDONIO",
           "room": "CIBER",
           "short-room": "LAB O",
           "vacantes": 48
@@ -5954,7 +6033,7 @@
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "teacher": "MENDEZ VALDIVIA, CELEDONIO",
           "room": "CIBER",
           "short-room": "LAB O",
           "vacantes": 48
@@ -6000,7 +6079,8 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "DINAMICA DE SIST."
   },
   "SI603": {
     "name": "MODELADO DE PROCESOS DE CICLO DE VIDA DE SISTEMAS",
@@ -6031,7 +6111,7 @@
           "day": 1,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "teacher": "RODRIGUEZ ULLOA, RICARDO AURELIO",
           "room": "S4-211",
           "vacantes": 42
         },
@@ -6040,12 +6120,13 @@
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "teacher": "RODRIGUEZ ULLOA, RICARDO AURELIO",
           "room": "S4-211",
           "vacantes": 42
         }
       ]
-    }
+    },
+    "short-name": "MODELADO DE CICLO DE VIDA"
   },
   "SI604": {
     "name": "ANALISIS Y DISEÑO DE SISTEMAS",
@@ -6056,7 +6137,7 @@
           "day": 1,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "teacher": "ANTAURCO TRUJILLO, JESUS WALTER",
           "room": "S4-111",
           "vacantes": 26
         },
@@ -6065,7 +6146,7 @@
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "teacher": "ANTAURCO TRUJILLO, JESUS WALTER",
           "room": "S1-226",
           "short-room": "LAB E",
           "vacantes": 26
@@ -6075,7 +6156,7 @@
           "day": 3,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "teacher": "ANTAURCO TRUJILLO, JESUS WALTER",
           "room": "S1-226",
           "short-room": "LAB E",
           "vacantes": 26
@@ -6113,7 +6194,8 @@
           "vacantes": 48
         }
       ]
-    }
+    },
+    "short-name": "ANALISIS Y DISEÑO DE SIST."
   },
   "SI605": {
     "name": "ARQUITECTURA EMPRESARIAL",
@@ -6158,7 +6240,8 @@
           "vacantes": 41
         }
       ]
-    }
+    },
+    "short-name": "ARQ. EMPRESARIAL"
   },
   "SI607": {
     "name": "ARQUITECTURA COMPUTACIONAL Y REDES",
@@ -6169,7 +6252,7 @@
           "day": 1,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "teacher": "BORJA ROSALES, RUBEN ARTURO",
           "room": "S1-126",
           "short-room": "LAB B",
           "vacantes": 32
@@ -6179,7 +6262,7 @@
           "day": 4,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "teacher": "BORJA ROSALES, RUBEN ARTURO",
           "room": "S1-129",
           "short-room": "LAB A",
           "vacantes": 32
@@ -6191,7 +6274,7 @@
           "day": 3,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "teacher": "BORJA ROSALES, RUBEN ARTURO",
           "room": "S1-129",
           "short-room": "LAB A",
           "vacantes": 39
@@ -6201,13 +6284,14 @@
           "day": 5,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "teacher": "BORJA ROSALES, RUBEN ARTURO",
           "room": "S1-129",
           "short-room": "LAB A",
           "vacantes": 39
         }
       ]
-    }
+    },
+    "short-name": "ARQ. COMP. Y REDES"
   },
   "SI701": {
     "name": "MODELADO SISTEMICO Y SIMULACION",
@@ -6300,7 +6384,8 @@
           "vacantes": 40
         }
       ]
-    }
+    },
+    "short-name": "MODEL. SIST. Y SIM."
   },
   "SI702": {
     "name": "TALLER DE DINAMICA DE SISTEMAS",
@@ -6333,7 +6418,7 @@
           "day": 3,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "teacher": "MENDEZ VALDIVIA, CELEDONIO",
           "room": "S1-124",
           "short-room": "LAB C",
           "vacantes": 23
@@ -6343,13 +6428,14 @@
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "teacher": "MENDEZ VALDIVIA, CELEDONIO",
           "room": "S1-124",
           "short-room": "LAB C",
           "vacantes": 23
         }
       ]
-    }
+    },
+    "short-name": "DINAMICA DE SISTEMAS"
   },
   "SI704": {
     "name": "GESTION DE LA INGENIERIA DE SISTEMAS",
@@ -6394,7 +6480,8 @@
           "vacantes": 36
         }
       ]
-    }
+    },
+    "short-name": "GEST. DE ING. DE SIST."
   },
   "SI705": {
     "name": "ESTANDARES DE LA INGENIERIA DE SISTEMAS",
@@ -6439,7 +6526,8 @@
           "vacantes": 30
         }
       ]
-    }
+    },
+    "short-name": "ESTANDAR. ING. SIST."
   },
   "SI707": {
     "name": "INGENIERIA DE SOFTWARE",
@@ -6450,7 +6538,7 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCION",
           "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 37
@@ -6460,7 +6548,7 @@
           "day": 5,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCION",
           "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 37
@@ -6488,7 +6576,8 @@
           "vacantes": 26
         }
       ]
-    }
+    },
+    "short-name": "ING. DE SOFTWARE"
   },
   "SI801": {
     "name": "MODELO DEL SISTEMA VIABLE",
@@ -6499,7 +6588,7 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "teacher": "RODRIGUEZ ULLOA, RICARDO AURELIO",
           "room": "S4-110",
           "vacantes": 30
         },
@@ -6508,7 +6597,7 @@
           "day": 5,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "teacher": "RODRIGUEZ ULLOA, RICARDO AURELIO",
           "room": "S4-110",
           "vacantes": 30
         }
@@ -6533,7 +6622,8 @@
           "vacantes": 30
         }
       ]
-    }
+    },
+    "short-name": "MODELO DEL SISTEMA VIABLE"
   },
   "SI805": {
     "name": "INTEGRACION DE SISTEMAS",
@@ -6578,7 +6668,8 @@
           "vacantes": 23
         }
       ]
-    }
+    },
+    "short-name": "INTEGRACION DE SISTEMAS"
   },
   "SI806": {
     "name": "DESARROLLO ADAPTATIVO E INTEGRADO DEL SW",
@@ -6627,7 +6718,8 @@
           "vacantes": 26
         }
       ]
-    }
+    },
+    "short-name": "DESARROLLO ADAPTIVO"
   },
   "SI807": {
     "name": "SISTEMAS DE INTELIGENCIA DE NEGOCIO",
@@ -6653,7 +6745,8 @@
           "vacantes": 40
         }
       ]
-    }
+    },
+    "short-name": "SIST. DE INTELIGENCIA DE NEGOCIO"
   },
   "SI902": {
     "name": "INGENIERIA DE SISTEMAS DE SERVICIO",
@@ -6678,7 +6771,8 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "ING. DE SIST. DE SERVICIO"
   },
   "SI903": {
     "name": "IMPLEMENTACION DE SISTEMAS",
@@ -6723,7 +6817,8 @@
           "vacantes": 33
         }
       ]
-    }
+    },
+    "short-name": "IMPLEMENTACION DE SIST."
   },
   "SI904": {
     "name": "SEGURIDAD DE SISTEMAS",
@@ -6772,7 +6867,8 @@
           "vacantes": 41
         }
       ]
-    }
+    },
+    "short-name": "SEGURIDAD DE SIST."
   },
   "SI905": {
     "name": "TALLER DE PROYECTO DE INVESTIGACION",
@@ -6816,12 +6912,13 @@
           "day": 2,
           "start": "18:00:00",
           "end": "22:00:00",
-          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCION",
           "room": "S4-215",
           "vacantes": 23
         }
       ]
-    }
+    },
+    "short-name": "PROYECTO DE INVESTIGACION"
   },
   "SW101": {
     "name": "INTRODUCCION A LA INGENIERIA DE SOFTWARE",
@@ -6832,7 +6929,7 @@
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "teacher": "ANTAURCO TRUJILLO, JESUS WALTER",
           "room": "S4-111",
           "vacantes": 40
         },
@@ -6841,15 +6938,16 @@
           "day": 6,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "teacher": "ANTAURCO TRUJILLO, JESUS WALTER",
           "room": "S4-211",
           "vacantes": 40
         }
       ]
-    }
+    },
+    "short-name": "INTRO. I3"
   },
   "SW112": {
-    "name": "COMPUTACIÓN GRÁFICA",
+    "name": "COMPUTACION GRAFICA",
     "sections": {
       "U": [
         {
@@ -6871,7 +6969,8 @@
           "vacantes": 20
         }
       ]
-    }
+    },
+    "short-name": "COMP. GRAFICA"
   },
   "SW301": {
     "name": "ARQUITECTURA DE COMPUTADORAS I",
@@ -6898,7 +6997,8 @@
           "vacantes": 39
         }
       ]
-    }
+    },
+    "short-name": "ARQ. DE COMP. I"
   },
   "SW303": {
     "name": "LENGUAJES DE PROGRAMACION I (IMPERATIVO)",
@@ -6935,7 +7035,8 @@
           "vacantes": 32
         }
       ]
-    }
+    },
+    "short-name": "LP1 (IMP)"
   },
   "SW305": {
     "name": "ALGORITMIA Y ESTRUCTURA DE DATOS AVANZADA",
@@ -6984,7 +7085,8 @@
           "vacantes": 28
         }
       ]
-    }
+    },
+    "short-name": "ALGORITMIA AVANZADA"
   },
   "SW403": {
     "name": "LENGUAJE DE PROGRAMACION II (ORIENTADA A OBJETOS)",
@@ -7011,7 +7113,8 @@
           "vacantes": 39
         }
       ]
-    }
+    },
+    "short-name": "LP2 (OO)"
   },
   "SW405": {
     "name": "INGENIERIA DE REQUERIMIENTOS I",
@@ -7038,7 +7141,8 @@
           "vacantes": 48
         }
       ]
-    }
+    },
+    "short-name": "ING. DE REQ I"
   },
   "SW407": {
     "name": "SISTEMAS OPERATIVOS",
@@ -7071,7 +7175,7 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "GARCÍA LA RIVA, JOSE CARLOS",
+          "teacher": "GARCIA LA RIVA, JOSE CARLOS",
           "room": "S1-124",
           "short-room": "LAB C",
           "vacantes": 23
@@ -7081,13 +7185,14 @@
           "day": 2,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "GARCÍA LA RIVA, JOSE CARLOS",
+          "teacher": "GARCIA LA RIVA, JOSE CARLOS",
           "room": "S1-124",
           "short-room": "LAB C",
           "vacantes": 23
         }
       ]
-    }
+    },
+    "short-name": "SISTEMAS OPERATIVOS"
   },
   "SW501": {
     "name": "ARQUITECTURA DE COMPUTADORAS II",
@@ -7114,7 +7219,8 @@
           "vacantes": 48
         }
       ]
-    }
+    },
+    "short-name": "ARQ. DE COMP. II"
   },
   "SW503": {
     "name": "ANALISIS Y MODELAMIENTO DE COMPORTAMIENTO",
@@ -7151,7 +7257,8 @@
           "vacantes": 39
         }
       ]
-    }
+    },
+    "short-name": "ANALISIS Y MODEL. DE COMPORTAMIENTO"
   },
   "SW505": {
     "name": "CONSTRUCCION DE SOFTWARE I (FUNDAMENTOS, PRACTICAS)",
@@ -7188,7 +7295,8 @@
           "vacantes": 23
         }
       ]
-    }
+    },
+    "short-name": "CONSTRUCCION DE SW I"
   },
   "SW507": {
     "name": "REDES Y COMUNICACIONES",
@@ -7215,7 +7323,8 @@
           "vacantes": 26
         }
       ]
-    }
+    },
+    "short-name": "REDES Y COMUNICACIONES"
   },
   "SW-603": {
     "name": "DISEÑO DE SOFTWARE",
@@ -7242,7 +7351,8 @@
           "vacantes": 32
         }
       ]
-    }
+    },
+    "short-name": "DISEÑO DE SOFTWARE"
   },
   "SW605": {
     "name": "INGENIERIA DE REQUERIMIENTOS II",
@@ -7269,7 +7379,8 @@
           "vacantes": 26
         }
       ]
-    }
+    },
+    "short-name": "ING. DE REQ II"
   },
   "SW-608": {
     "name": "LENGUAJE DE DOMINIO ESPECIFICO",
@@ -7306,7 +7417,8 @@
           "vacantes": 32
         }
       ]
-    }
+    },
+    "short-name": "LENGUAJE DE DOMINIO ESPECIFICO"
   },
   "SW-609": {
     "name": "SISTEMAS DE GESTION DE BASE DE DATOS",
@@ -7343,10 +7455,11 @@
           "vacantes": 32
         }
       ]
-    }
+    },
+    "short-name": "SIST. DE GEST. DE BD"
   },
   "SW701": {
-    "name": "GESTIÓN DEL MANTENIMIENTO, CONFIGURACIÓN Y CAMBIOS DEL SOFTWARE",
+    "name": "GESTION DEL MANTENIMIENTO, CONFIGURACION Y CAMBIOS DEL SOFTWARE",
     "sections": {
       "U": [
         {
@@ -7368,7 +7481,8 @@
           "vacantes": 20
         }
       ]
-    }
+    },
+    "short-name": "GEST. DEL MANT. CONFIG. Y CAMBIOS DEL SW"
   },
   "SW703": {
     "name": "SISTEMAS EMBEBIDOS Y EN TIEMPO REAL",
@@ -7393,10 +7507,11 @@
           "vacantes": 20
         }
       ]
-    }
+    },
+    "short-name": "SIST. EMBEDIDOS"
   },
   "SW705": {
-    "name": "TALLER DE INGENIERÍA DE SOFTWARE I",
+    "name": "TALLER DE INGENIERIA DE SOFTWARE I",
     "sections": {
       "U": [
         {
@@ -7404,7 +7519,7 @@
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "GARCÍA LA RIVA, JOSE",
+          "teacher": "GARCIA LA RIVA, JOSE",
           "room": "S1-324",
           "vacantes": 20
         },
@@ -7413,15 +7528,16 @@
           "day": 4,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "GARCÍA LA RIVA, JOSE",
+          "teacher": "GARCIA LA RIVA, JOSE",
           "room": "S1-324",
           "vacantes": 20
         }
       ]
-    }
+    },
+    "short-name": "TALLER DE ING. DE SW I"
   },
   "SW707": {
-    "name": "CONSTRUCCIÓN DE SOFTWARE II (HERRAMIENTAS Y TECNOLOGÍAS)",
+    "name": "CONSTRUCCION DE SOFTWARE II (HERRAMIENTAS Y TECNOLOGIAS)",
     "sections": {
       "U": [
         {
@@ -7443,7 +7559,8 @@
           "vacantes": 20
         }
       ]
-    }
+    },
+    "short-name": "CONSTRUCCION DE SW II"
   },
   "SW708": {
     "name": "ARQUITECTURA DE SOLUCIONES DE SOFTWARE",
@@ -7468,10 +7585,11 @@
           "vacantes": 20
         }
       ]
-    }
+    },
+    "short-name": "ARQ DE SOLUCIONES DE SW"
   },
   "SW709": {
-    "name": "VERIFICACIÓN Y VALIDACIÓN DEL SOFTWARE",
+    "name": "VERIFICACION Y VALIDACION DEL SOFTWARE",
     "sections": {
       "U": [
         {
@@ -7479,7 +7597,7 @@
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "RODRÍGUEZ RAFAEL, GLEN DARÍO",
+          "teacher": "RODRIGUEZ RAFAEL, GLEN DARIO",
           "room": "S1-324",
           "vacantes": 20
         },
@@ -7488,12 +7606,13 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "RODRÍGUEZ RAFAEL, GLEN DARÍO",
+          "teacher": "RODRIGUEZ RAFAEL, GLEN DARIO",
           "room": "S1-324",
           "vacantes": 20
         }
       ]
-    }
+    },
+    "short-name": "VERIF. Y VALID. DEL SW"
   },
   "TE111": {
     "name": "INNOVACION Y GESTION TECNOLOGICA",
@@ -7518,7 +7637,8 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "INNOVACION"
   },
   "TE121": {
     "name": "ERGONOMIA",
@@ -7543,7 +7663,8 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "ERGONOMIA"
   },
   "TE122": {
     "name": "PROCESOS AGROINDUSTRIALES",
@@ -7568,7 +7689,8 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "PROCESOS AGROINDUSTRIALES"
   },
   "TE124": {
     "name": "GESTION DE LA ENERGIA",
@@ -7579,7 +7701,7 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "POMA GARCÍA , JOSÉ ANTONIO",
+          "teacher": "POMA GARCIA , JOSE ANTONIO",
           "room": "S4-210",
           "vacantes": 45
         },
@@ -7588,12 +7710,13 @@
           "day": 3,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "POMA GARCÍA , JOSÉ ANTONIO",
+          "teacher": "POMA GARCIA , JOSE ANTONIO",
           "room": "S4-204",
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "GESTION DE LA ENERGIA"
   },
   "TE126": {
     "name": "GESTION DEL MANTENIMIENTO",
@@ -7618,7 +7741,8 @@
           "vacantes": 45
         }
       ]
-    }
+    },
+    "short-name": "GEST. DEL MANTENIMIENTO"
   },
   "TE205": {
     "name": "DIBUJO Y GEOMETRIA DESCRIPTIVA",
@@ -7669,7 +7793,7 @@
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSE",
           "room": "S4-110",
           "vacantes": 32
         },
@@ -7678,7 +7802,7 @@
           "day": 3,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSE",
           "room": "S4-202",
           "vacantes": 32
         }
@@ -7709,7 +7833,7 @@
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSE",
           "room": "S4-214",
           "vacantes": 32
         },
@@ -7718,12 +7842,13 @@
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSE",
           "room": "S4-213",
           "vacantes": 32
         }
       ]
-    }
+    },
+    "short-name": "DIBUJO"
   },
   "TE301": {
     "name": "FISICO QUIMICA Y OPERACIONES UNITARIAS",
@@ -7768,7 +7893,8 @@
           "vacantes": 35
         }
       ]
-    }
+    },
+    "short-name": "FISICOQUIMICA"
   },
   "TE302": {
     "name": "DISEÑO ASISTIDO POR COMPUTADOR",
@@ -7801,7 +7927,7 @@
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
+          "teacher": "CIEZA DE LEON TUESTA, EDUARDO JOSE",
           "room": "S1-229",
           "short-room": "LAB D",
           "vacantes": 26
@@ -7811,7 +7937,7 @@
           "day": 5,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSE",
           "room": "S1-229",
           "short-room": "LAB D",
           "vacantes": 26
@@ -7823,7 +7949,7 @@
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
+          "teacher": "CIEZA DE LEON TUESTA, EDUARDO JOSE",
           "room": "CIBER",
           "short-room": "LAB O",
           "vacantes": 30
@@ -7833,7 +7959,7 @@
           "day": 3,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
+          "teacher": "CIEZA DE LEON TUESTA, EDUARDO JOSE",
           "room": "CIBER",
           "short-room": "LAB O",
           "vacantes": 30
@@ -7845,7 +7971,7 @@
           "day": 1,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSE",
           "room": "S1-226",
           "short-room": "LAB E",
           "vacantes": 26
@@ -7855,13 +7981,14 @@
           "day": 3,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSE",
           "room": "S1-226",
           "short-room": "LAB E",
           "vacantes": 26
         }
       ]
-    }
+    },
+    "short-name": "DISEÑO ASISTIDO POR COMP"
   },
   "TE401": {
     "name": "TERMODINAMICA",
@@ -7926,7 +8053,8 @@
           "vacantes": 27
         }
       ]
-    }
+    },
+    "short-name": "TERMODINAMICA"
   },
   "TE501": {
     "name": "ELECTRICIDAD Y ELECTRONICA INDUSTRIAL",
@@ -7957,7 +8085,7 @@
           "day": 5,
           "start": "18:00:00",
           "end": "21:00:00",
-          "teacher": "BENITES YARLEQUÉ, JOSÉ VALERIO",
+          "teacher": "BENITES YARLEQUE, JOSE VALERIO",
           "room": "S4-212",
           "vacantes": 31
         },
@@ -7966,12 +8094,13 @@
           "day": 2,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "BENITES YARLEQUÉ, JOSÉ VALERIO",
+          "teacher": "BENITES YARLEQUE, JOSE VALERIO",
           "room": "S4-203",
           "vacantes": 31
         }
       ]
-    }
+    },
+    "short-name": "ELEC. Y ELECTRONICA IND."
   },
   "TE503": {
     "name": "PROCESOS INDUSTRIALES I",
@@ -8016,7 +8145,8 @@
           "vacantes": 29
         }
       ]
-    }
+    },
+    "short-name": "PROCESOS INDUSTRIALES I"
   },
   "TE601": {
     "name": "INGENIERIA DE MATERIALES",
@@ -8081,7 +8211,8 @@
           "vacantes": 22
         }
       ]
-    }
+    },
+    "short-name": "INGENIERIA DE MATERIALES"
   },
   "TE602": {
     "name": "PROCESOS INDUSTRIALES II",
@@ -8146,7 +8277,8 @@
           "vacantes": 29
         }
       ]
-    }
+    },
+    "short-name": "PROCESOS INDUSTRIALES II"
   },
   "TE603": {
     "name": "CONTROL ESTADISTICO DE PROCESOS",
@@ -8191,7 +8323,8 @@
           "vacantes": 31
         }
       ]
-    }
+    },
+    "short-name": "CONTROL ESTAD. DE PROCESOS"
   },
   "TE604": {
     "name": "MAQUINARIA E INSTRUMENTACION INDUSTRIAL",
@@ -8222,7 +8355,7 @@
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "POMA GARCÍA , JOSÉ ANTONIO",
+          "teacher": "POMA GARCIA , JOSE ANTONIO",
           "room": "AUTOMAT",
           "vacantes": 35
         },
@@ -8231,12 +8364,13 @@
           "day": 3,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "POMA GARCÍA , JOSÉ ANTONIO",
+          "teacher": "POMA GARCIA , JOSE ANTONIO",
           "room": "AUTOMAT",
           "vacantes": 35
         }
       ]
-    }
+    },
+    "short-name": "MAQUINARIA E INSTRUM. INDUS."
   },
   "TE701": {
     "name": "ANALISIS DE PROCESOS DE MANUFACTURA",
@@ -8281,7 +8415,8 @@
           "vacantes": 37
         }
       ]
-    }
+    },
+    "short-name": "ANALISIS DE PROCESOS"
   },
   "TE801": {
     "name": "AUTOMATIZACION Y CONTROL DE PROCESOS",
@@ -8346,7 +8481,8 @@
           "vacantes": 26
         }
       ]
-    }
+    },
+    "short-name": "AUTOMATIZACION"
   },
   "TE802": {
     "name": "INGENIERIA DEL PRODUCTO",
@@ -8357,7 +8493,7 @@
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
+          "teacher": "CIEZA DE LEON TUESTA, EDUARDO JOSE",
           "room": "CIBER",
           "short-room": "LAB O",
           "vacantes": 46
@@ -8367,7 +8503,7 @@
           "day": 1,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
+          "teacher": "CIEZA DE LEON TUESTA, EDUARDO JOSE",
           "room": "CIBER",
           "short-room": "LAB O",
           "vacantes": 46
@@ -8388,13 +8524,14 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
+          "teacher": "MONCADA CAJAVILCA, VICTOR JOSE",
           "room": "S1-226",
           "short-room": "LAB E",
           "vacantes": 26
         }
       ]
-    }
+    },
+    "short-name": "ING. DEL PRODUCTO"
   },
   "TE803": {
     "name": "SISTEMAS INTEGRADOS DE CALIDAD",
@@ -8425,7 +8562,7 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "EGÚZQUIZA FIGUEROA, MARÍA ENERINA",
+          "teacher": "EGUZQUIZA FIGUEROA, MARIA ENERINA",
           "room": "S4-216",
           "vacantes": 25
         },
@@ -8434,7 +8571,7 @@
           "day": 4,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "EGÚZQUIZA FIGUEROA, MARÍA ENERINA",
+          "teacher": "EGUZQUIZA FIGUEROA, MARIA ENERINA",
           "room": "S4-202",
           "vacantes": 25
         }
@@ -8459,7 +8596,8 @@
           "vacantes": 25
         }
       ]
-    }
+    },
+    "short-name": "SIST. INTEGRADOS DE CALIDAD"
   },
   "TE901": {
     "name": "SEGURIDAD Y SALUD OCUPACIONAL",
@@ -8504,6 +8642,7 @@
           "vacantes": 37
         }
       ]
-    }
+    },
+    "short-name": "SEGURIDAD Y SALUD OCUPACIONAL"
   }
 }
