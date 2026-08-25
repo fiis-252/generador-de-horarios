@@ -252,21 +252,13 @@
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 3,
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "VALDIVIA MENDOZA, HECTOR GIOVANNY",
-          "room": "LAB-FISI/S4-216",
-          "vacantes": 33
-        },
-        {
-          "type": "LAB",
-          "day": 3,
-          "start": "16:00:00",
-          "end": "18:00:00",
-          "teacher": "VALDIVIA MENDOZA, HECTOR GIOVANNY",
-          "room": "LAB-FISI/S4-216",
+          "room": "LAB-FISI",
+          "short-room": "S4-216",
           "vacantes": 33
         }
       ],
@@ -290,21 +282,13 @@
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 3,
           "start": "12:00:00",
           "end": "14:00:00",
           "teacher": "MOSQUERA MOLINA, MIGUEL ANGEL",
-          "room": "LAB-FISI/S4-205",
-          "vacantes": 33
-        },
-        {
-          "type": "LAB",
-          "day": 3,
-          "start": "12:00:00",
-          "end": "14:00:00",
-          "teacher": "MOSQUERA MOLINA, MIGUEL ANGEL",
-          "room": "LAB-FISI/S4-205",
+          "room": "LAB-FISI",
+          "short-room": "S4-205",
           "vacantes": 33
         }
       ],
@@ -328,21 +312,13 @@
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 1,
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "PEÑA YALICO, VICENTE",
-          "room": "LAB-FISI/S4-203",
-          "vacantes": 33
-        },
-        {
-          "type": "LAB",
-          "day": 1,
-          "start": "10:00:00",
-          "end": "12:00:00",
-          "teacher": "PEÑA YALICO, VICENTE",
-          "room": "LAB-FISI/S4-203",
+          "room": "LAB-FISI",
+          "short-room": "S4-203",
           "vacantes": 33
         }
       ],
@@ -366,21 +342,13 @@
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 3,
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "PEÑA YALICO, VICENTE",
-          "room": "LAB-FISI/S4-112",
-          "vacantes": 33
-        },
-        {
-          "type": "LAB",
-          "day": 3,
-          "start": "10:00:00",
-          "end": "12:00:00",
-          "teacher": "PEÑA YALICO, VICENTE",
-          "room": "LAB-FISI/S4-112",
+          "room": "LAB-FISI",
+          "short-room": "S4-112",
           "vacantes": 33
         }
       ],
@@ -404,21 +372,13 @@
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "SANCHEZ SOVERO LUIS FRANCISCO",
-          "room": "LAB-FISI/S4-211",
-          "vacantes": 33
-        },
-        {
-          "type": "LAB",
-          "day": 2,
-          "start": "16:00:00",
-          "end": "18:00:00",
-          "teacher": "SANCHEZ SOVERO LUIS FRANCISCO",
-          "room": "LAB-FISI/S4-211",
+          "room": "LAB-FISI",
+          "short-room": "S4-211",
           "vacantes": 33
         }
       ],
@@ -442,21 +402,13 @@
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 1,
           "start": "12:00:00",
           "end": "14:00:00",
           "teacher": "MOSQUERA MOLINA, MIGUEL ANGEL",
-          "room": "LAB-FISI/S4-212",
-          "vacantes": 33
-        },
-        {
-          "type": "LAB",
-          "day": 1,
-          "start": "12:00:00",
-          "end": "14:00:00",
-          "teacher": "MOSQUERA MOLINA, MIGUEL ANGEL",
-          "room": "LAB-FISI/S4-212",
+          "room": "LAB-FISI",
+          "short-room": "S4-212",
           "vacantes": 33
         }
       ],
@@ -480,21 +432,13 @@
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 5,
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "SANCHEZ SOVERO LUIS FRANCISCO",
-          "room": "LAB-FIIS/S4-212",
-          "vacantes": 33
-        },
-        {
-          "type": "LAB",
-          "day": 5,
-          "start": "10:00:00",
-          "end": "12:00:00",
-          "teacher": "SANCHEZ SOVERO LUIS FRANCISCO",
-          "room": "LAB-FIIS/S4-212",
+          "room": "LAB-FIIS",
+          "short-room": "S4-212",
           "vacantes": 33
         }
       ],
@@ -518,21 +462,13 @@
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 1,
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
-          "room": "LAB-FISI/S4-212",
-          "vacantes": 33
-        },
-        {
-          "type": "LAB",
-          "day": 1,
-          "start": "14:00:00",
-          "end": "16:00:00",
-          "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
-          "room": "LAB-FISI/S4-212",
+          "room": "LAB-FISI",
+          "short-room": "S4-212",
           "vacantes": 33
         }
       ],
@@ -556,21 +492,13 @@
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "SAN BARTOLOME MONTERO, JAIME",
-          "room": "LAB-FISI/S4-111",
-          "vacantes": 33
-        },
-        {
-          "type": "LAB",
-          "day": 3,
-          "start": "18:00:00",
-          "end": "20:00:00",
-          "teacher": "SAN BARTOLOME MONTERO, JAIME",
-          "room": "LAB-FISI/S4-111",
+          "room": "LAB-FISI",
+          "short-room": "S4-111",
           "vacantes": 33
         }
       ],
@@ -594,21 +522,13 @@
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 4,
           "start": "12:00:00",
           "end": "14:00:00",
           "teacher": "TAIPE TORRES PATRICIA KELLY",
-          "room": "LAB-FISI/S4-105",
-          "vacantes": 33
-        },
-        {
-          "type": "LAB",
-          "day": 4,
-          "start": "12:00:00",
-          "end": "14:00:00",
-          "teacher": "TAIPE TORRES PATRICIA KELLY",
-          "room": "LAB-FISI/S4-105",
+          "room": "S4-105",
+          "short-room": "LAB-FISI",
           "vacantes": 33
         }
       ],
@@ -632,21 +552,13 @@
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 4,
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "VALDIVIA MENDOZA, HECTOR GIOVANNY",
-          "room": "LAB-FISI/S4-109",
-          "vacantes": 33
-        },
-        {
-          "type": "LAB",
-          "day": 4,
-          "start": "16:00:00",
-          "end": "18:00:00",
-          "teacher": "VALDIVIA MENDOZA, HECTOR GIOVANNY",
-          "room": "LAB-FISI/S4-109",
+          "room": "LAB-FISI",
+          "short-room": "S4-109",
           "vacantes": 33
         }
       ],
@@ -670,21 +582,13 @@
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 5,
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
-          "room": "LAB-FISI/S4-202",
-          "vacantes": 32
-        },
-        {
-          "type": "LAB",
-          "day": 5,
-          "start": "14:00:00",
-          "end": "16:00:00",
-          "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
-          "room": "LAB-FISI/S4-202",
+          "room": "LAB-FISI",
+          "short-room": "S4-202",
           "vacantes": 32
         }
       ],
@@ -708,21 +612,13 @@
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 4,
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "TAIPE TORRES PATRICIA KELLY",
-          "room": "LAB-FISI/S4-213",
-          "vacantes": 32
-        },
-        {
-          "type": "LAB",
-          "day": 4,
-          "start": "14:00:00",
-          "end": "16:00:00",
-          "teacher": "TAIPE TORRES PATRICIA KELLY",
-          "room": "LAB-FISI/S4-213",
+          "room": "LAB-FISI",
+          "short-room": "S4-213",
           "vacantes": 32
         }
       ]
@@ -738,16 +634,18 @@
           "start": "08:00:00",
           "end": "09:00:00",
           "teacher": "HUAROTE ZEGARRA RAUL EDUARDO",
-          "room": "S1-226 (LAB E)",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "09:00:00",
           "end": "11:00:00",
           "teacher": "HUAROTE ZEGARRA RAUL EDUARDO",
-          "room": "S1-226 (LAB E)",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         }
       ],
@@ -757,17 +655,19 @@
           "day": 6,
           "start": "08:00:00",
           "end": "09:00:00",
-          "teacher": "TORRE CAMONES,  ANIVAL ALFREDO",
-          "room": "S1-229 (LAB D)",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "09:00:00",
           "end": "11:00:00",
-          "teacher": "TORRE CAMONES,  ANIVAL ALFREDO",
-          "room": "S1-229 (LAB D)",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         }
       ],
@@ -777,17 +677,19 @@
           "day": 2,
           "start": "17:00:00",
           "end": "18:00:00",
-          "teacher": "RODRÍGUEZ ULLOA,  RICARDO AURELIO",
-          "room": "S1-226 (LAB E)",
+          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "RODRÍGUEZ ULLOA,  RICARDO AURELIO",
-          "room": "S1-226 (LAB E)",
+          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         }
       ],
@@ -797,17 +699,19 @@
           "day": 2,
           "start": "12:00:00",
           "end": "13:00:00",
-          "teacher": "JANJACHI TORIBIO,  CARLOS ALBERTO",
-          "room": "S1-126 (LAB B)",
+          "teacher": "JANJACHI TORIBIO, CARLOS ALBERTO",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "13:00:00",
           "end": "15:00:00",
-          "teacher": "JANJACHI TORIBIO,  CARLOS ALBERTO",
-          "room": "S1-126 (LAB B)",
+          "teacher": "JANJACHI TORIBIO, CARLOS ALBERTO",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         }
       ],
@@ -817,17 +721,19 @@
           "day": 4,
           "start": "11:00:00",
           "end": "12:00:00",
-          "teacher": "NAVARRO NEYRA,  MIGUEL ANGEL",
-          "room": "CIBER (LAB O)",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "NAVARRO NEYRA,  MIGUEL ANGEL",
-          "room": "CIBER (LAB O)",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         }
       ],
@@ -837,17 +743,19 @@
           "day": 6,
           "start": "11:00:00",
           "end": "12:00:00",
-          "teacher": "JANJACHI TORIBIO,  CARLOS ALBERTO",
-          "room": "S1-126 (LAB B)",
+          "teacher": "JANJACHI TORIBIO, CARLOS ALBERTO",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "JANJACHI TORIBIO,  CARLOS ALBERTO",
-          "room": "S1-126 (LAB B)",
+          "teacher": "JANJACHI TORIBIO, CARLOS ALBERTO",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         }
       ],
@@ -858,16 +766,18 @@
           "start": "08:00:00",
           "end": "10:00:00",
           "teacher": "RUIZ ADARMES, MIGUEL",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "10:00:00",
           "end": "11:00:00",
           "teacher": "RUIZ ADARMES, MIGUEL",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         }
       ],
@@ -877,17 +787,19 @@
           "day": 6,
           "start": "10:00:00",
           "end": "11:00:00",
-          "teacher": "ANTAURCO TRUJILLO,  JESÚS WALTER",
-          "room": "S1-129 (LAB A)",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "11:00:00",
           "end": "13:00:00",
-          "teacher": "ANTAURCO TRUJILLO,  JESÚS WALTER",
-          "room": "S1-129 (LAB A)",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         }
       ],
@@ -897,17 +809,19 @@
           "day": 4,
           "start": "08:00:00",
           "end": "09:00:00",
-          "teacher": "COSSA CABANILLAS,  JESUS ALBERTO",
-          "room": "CIBER (LAB O)",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "09:00:00",
           "end": "11:00:00",
-          "teacher": "COSSA CABANILLAS,  JESUS ALBERTO",
-          "room": "CIBER (LAB O)",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         }
       ]
@@ -1244,7 +1158,7 @@
           "day": 3,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "NN",
+          "teacher": "NN (Solo para PC)",
           "room": "S4-109",
           "vacantes": 40
         }
@@ -1314,11 +1228,11 @@
           "vacantes": 42
         },
         {
-          "type": "P",
+          "type": "LAB",
           "day": 4,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "NN",
+          "teacher": "NN (Solo para PC)",
           "room": "S4-111",
           "vacantes": 42
         }
@@ -1408,12 +1322,13 @@
           "vacantes": 29
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 2,
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "VALENZUELA GONZALEZ, ERIK OMAR",
-          "room": "LAB-QUIM/S4-206",
+          "room": "LAB-QUIM",
+          "short-room": "S4-206",
           "vacantes": 29
         },
         {
@@ -1422,7 +1337,8 @@
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "RONDINEL PINEDA, PETRA ELINE",
-          "room": "LAB-QUIM/S4-212",
+          "room": "LAB-QUIM",
+          "short-room": "S4-212",
           "vacantes": 29
         }
       ],
@@ -1446,12 +1362,13 @@
           "vacantes": 29
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "VALENZUELA GONZALEZ, ERIK OMAR",
-          "room": "LAB-QUIM/S4-209",
+          "room": "LAB-QUIM",
+          "short-room": "S4-209",
           "vacantes": 29
         },
         {
@@ -1460,7 +1377,8 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "REYES ACOSTA, ROSARIO",
-          "room": "LAB-QUIM/S4-207",
+          "room": "LAB-QUIM",
+          "short-room": "S4-207",
           "vacantes": 29
         }
       ],
@@ -1484,12 +1402,13 @@
           "vacantes": 29
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 4,
           "start": "15:00:00",
           "end": "17:00:00",
           "teacher": "RONDINEL PINEDA, PETRA ELINE",
-          "room": "LAB-QUIM/S4-208",
+          "room": "LAB-QUIM",
+          "short-room": "S4-208",
           "vacantes": 29
         },
         {
@@ -1498,7 +1417,8 @@
           "start": "15:00:00",
           "end": "17:00:00",
           "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
-          "room": "LAB-QUIM/S4-111",
+          "room": "LAB-QUIM",
+          "short-room": "S4-111",
           "vacantes": 29
         }
       ],
@@ -1527,16 +1447,18 @@
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "RONDINEL PINEDA, PETRA ELINE",
-          "room": "LAB-QUIM/S4-201",
+          "room": "LAB-QUIM",
+          "short-room": "S4-201",
           "vacantes": 29
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 1,
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "CHAFLOQUE ELIAS, CARLOS ALBERTO",
-          "room": "LAB-QUIM/S4-213",
+          "room": "LAB-QUIM",
+          "short-room": "S4-213",
           "vacantes": 29
         }
       ],
@@ -1560,12 +1482,13 @@
           "vacantes": 29
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 1,
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
-          "room": "LAB-QUIM/S4-210",
+          "room": "LAB-QUIM",
+          "short-room": "S4-210",
           "vacantes": 29
         },
         {
@@ -1574,7 +1497,8 @@
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "FUKUDA KAGAMI, NANCY ELENA",
-          "room": "LAB-QUIM/S4-204",
+          "room": "LAB-QUIM",
+          "short-room": "S4-204",
           "vacantes": 29
         }
       ],
@@ -1598,12 +1522,13 @@
           "vacantes": 29
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 4,
           "start": "13:00:00",
           "end": "15:00:00",
           "teacher": "VALENZUELA GONZALEZ, ERIK OMAR",
-          "room": "LAB-QUIM/S4-201",
+          "room": "LAB-QUIM",
+          "short-room": "S4-201",
           "vacantes": 29
         },
         {
@@ -1612,7 +1537,8 @@
           "start": "13:00:00",
           "end": "15:00:00",
           "teacher": "RONDINEL PINEDA, PETRA ELINE",
-          "room": "LAB-QUIM/S4-208",
+          "room": "LAB-QUIM",
+          "short-room": "S4-208",
           "vacantes": 29
         }
       ],
@@ -1636,12 +1562,13 @@
           "vacantes": 28
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 3,
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
-          "room": "LAB-QUIM/S4-210",
+          "room": "LAB-QUIM",
+          "short-room": "S4-210",
           "vacantes": 28
         },
         {
@@ -1650,7 +1577,8 @@
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "VALENZUELA GONZALEZ, ERIK OMAR",
-          "room": "LAB-QUIM/S4-214",
+          "room": "LAB-QUIM",
+          "short-room": "S4-214",
           "vacantes": 28
         }
       ],
@@ -1674,12 +1602,13 @@
           "vacantes": 28
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 3,
           "start": "08:00:00",
           "end": "10:00:00",
           "teacher": "VALENZUELA GONZALEZ, ERIK OMAR",
-          "room": "LAB-QUIM/S4-208",
+          "room": "LAB-QUIM",
+          "short-room": "S4-208",
           "vacantes": 28
         },
         {
@@ -1688,7 +1617,8 @@
           "start": "08:00:00",
           "end": "10:00:00",
           "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
-          "room": "LAB-QUIM/S4-203",
+          "room": "LAB-QUIM",
+          "short-room": "S4-203",
           "vacantes": 28
         }
       ],
@@ -1712,7 +1642,7 @@
           "vacantes": 28
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 5,
           "start": "08:00:00",
           "end": "10:00:00",
@@ -1726,7 +1656,8 @@
           "start": "08:00:00",
           "end": "10:00:00",
           "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
-          "room": "LAB-QUIM/S4-210",
+          "room": "LAB-QUIM",
+          "short-room": "S4-210",
           "vacantes": 28
         }
       ]
@@ -1936,7 +1867,7 @@
           "vacantes": 43
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 5,
           "start": "10:00:00",
           "end": "12:00:00",
@@ -1956,7 +1887,7 @@
           "vacantes": 43
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 5,
           "start": "10:00:00",
           "end": "12:00:00",
@@ -1985,11 +1916,11 @@
           "vacantes": 42
         },
         {
-          "type": "P",
+          "type": "LAB",
           "day": 5,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "NN",
+          "teacher": "NN (Solo para PC)",
           "room": "S4-105",
           "vacantes": 42
         }
@@ -2005,7 +1936,7 @@
           "vacantes": 42
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 5,
           "start": "10:00:00",
           "end": "12:00:00",
@@ -2034,11 +1965,11 @@
           "vacantes": 42
         },
         {
-          "type": "P",
+          "type": "LAB",
           "day": 5,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "NN",
+          "teacher": "NN (Solo para PC)",
           "room": "S4-214",
           "vacantes": 42
         }
@@ -2054,7 +1985,7 @@
           "vacantes": 42
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 5,
           "start": "10:00:00",
           "end": "12:00:00",
@@ -2074,7 +2005,7 @@
           "vacantes": 42
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 5,
           "start": "10:00:00",
           "end": "12:00:00",
@@ -2099,12 +2030,13 @@
           "vacantes": 28
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 1,
           "start": "12:00:00",
           "end": "14:00:00",
           "teacher": "LESCANO AVILA, LUIS ALBERTO",
-          "room": "LAB-QUIM/S4-112",
+          "room": "LAB-QUIM",
+          "short-room": "S4-112",
           "vacantes": 28
         },
         {
@@ -2113,7 +2045,8 @@
           "start": "12:00:00",
           "end": "14:00:00",
           "teacher": "FUKUDA KAGAMI, NANCY ELENA",
-          "room": "LAB-QUIM/S4-111",
+          "room": "LAB-QUIM",
+          "short-room": "S4-111",
           "vacantes": 28
         }
       ],
@@ -2128,12 +2061,13 @@
           "vacantes": 28
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 3,
           "start": "12:00:00",
           "end": "14:00:00",
           "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
-          "room": "LAB-QUIM/S4-213",
+          "room": "LAB-QUIM",
+          "short-room": "S4-213",
           "vacantes": 28
         },
         {
@@ -2142,7 +2076,8 @@
           "start": "12:00:00",
           "end": "14:00:00",
           "teacher": "LESCANO AVILA, LUIS ALBERTO",
-          "room": "LAB-QUIM/S4-203",
+          "room": "LAB-QUIM",
+          "short-room": "S4-203",
           "vacantes": 28
         }
       ],
@@ -2157,12 +2092,13 @@
           "vacantes": 28
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 3,
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "LESCANO AVILA, LUIS ALBERTO",
-          "room": "LAB-QUIM/S4-212",
+          "room": "LAB-QUIM",
+          "short-room": "S4-212",
           "vacantes": 28
         },
         {
@@ -2171,7 +2107,8 @@
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "GOMEZ GALVEZ, SUSANA TERESA",
-          "room": "LAB-QUIM/S4-213",
+          "room": "LAB-QUIM",
+          "short-room": "S4-213",
           "vacantes": 28
         }
       ]
@@ -2231,11 +2168,11 @@
           "vacantes": 41
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 1,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "NN",
+          "teacher": "NN (Solo para PC)",
           "room": "S4-203",
           "vacantes": 41
         },
@@ -2280,11 +2217,11 @@
           "vacantes": 41
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 1,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "NN",
+          "teacher": "NN (Solo para PC)",
           "room": "S4-211",
           "vacantes": 41
         },
@@ -2609,21 +2546,13 @@
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 4,
           "start": "12:00:00",
           "end": "14:00:00",
           "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
-          "room": "LAB-FISI/S4-206",
-          "vacantes": 32
-        },
-        {
-          "type": "LAB",
-          "day": 4,
-          "start": "12:00:00",
-          "end": "14:00:00",
-          "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
-          "room": "LAB-FISI/S4-206",
+          "room": "LAB-FISI",
+          "short-room": "S4-206",
           "vacantes": 32
         }
       ],
@@ -2647,21 +2576,13 @@
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 4,
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
-          "room": "LAB-FISI/S4-214",
-          "vacantes": 32
-        },
-        {
-          "type": "LAB",
-          "day": 4,
-          "start": "16:00:00",
-          "end": "18:00:00",
-          "teacher": "SALCEDO TORRES, JOAQUIN MAGNOT",
-          "room": "LAB-FISI/S4-214",
+          "room": "LAB-FISI",
+          "short-room": "S4-214",
           "vacantes": 32
         }
       ],
@@ -2685,21 +2606,13 @@
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 4,
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "PEÑA YALICO, VICENTE",
-          "room": "LAB-FISI/S4-213",
-          "vacantes": 32
-        },
-        {
-          "type": "LAB",
-          "day": 4,
-          "start": "10:00:00",
-          "end": "12:00:00",
-          "teacher": "PEÑA YALICO, VICENTE",
-          "room": "LAB-FISI/S4-213",
+          "room": "LAB-FISI",
+          "short-room": "S4-213",
           "vacantes": 32
         }
       ],
@@ -2723,21 +2636,13 @@
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "PEÑA YALICO, VICENTE",
-          "room": "LAB-FISI/S4-111",
-          "vacantes": 32
-        },
-        {
-          "type": "LAB",
-          "day": 1,
-          "start": "16:00:00",
-          "end": "18:00:00",
-          "teacher": "PEÑA YALICO, VICENTE",
-          "room": "LAB-FISI/S4-111",
+          "room": "LAB-FISI",
+          "short-room": "S4-111",
           "vacantes": 32
         }
       ],
@@ -2761,21 +2666,13 @@
           "vacantes": 31
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 1,
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "HUALLPA GUTIERREZ, WALTER ANTONIO",
-          "room": "LAB-FISI/S4-208",
-          "vacantes": 31
-        },
-        {
-          "type": "LAB",
-          "day": 1,
-          "start": "14:00:00",
-          "end": "16:00:00",
-          "teacher": "HUALLPA GUTIERREZ, WALTER ANTONIO",
-          "room": "LAB-FISI/S4-208",
+          "room": "LAB-FISI",
+          "short-room": "S4-208",
           "vacantes": 31
         }
       ],
@@ -2799,21 +2696,13 @@
           "vacantes": 31
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 2,
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "SANCHEZ SOVERO LUIS FRANCISCO",
-          "room": "LAB-FISI/S4-201",
-          "vacantes": 31
-        },
-        {
-          "type": "LAB",
-          "day": 2,
-          "start": "14:00:00",
-          "end": "16:00:00",
-          "teacher": "SANCHEZ SOVERO LUIS FRANCISCO",
-          "room": "LAB-FISI/S4-201",
+          "room": "LAB-FISI",
+          "short-room": "S4-201",
           "vacantes": 31
         }
       ],
@@ -2837,21 +2726,13 @@
           "vacantes": 31
         },
         {
-          "type": "P",
+          "type": "PC / LAB",
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "SAN BARTOLOME MONTERO, JAIME",
-          "room": "LAB-FISI/S4-210",
-          "vacantes": 31
-        },
-        {
-          "type": "LAB",
-          "day": 4,
-          "start": "18:00:00",
-          "end": "20:00:00",
-          "teacher": "SAN BARTOLOME MONTERO, JAIME",
-          "room": "LAB-FISI/S4-210",
+          "room": "LAB-FISI",
+          "short-room": "S4-210",
           "vacantes": 31
         }
       ]
@@ -3021,11 +2902,11 @@
           "vacantes": 39
         },
         {
-          "type": "P",
+          "type": "PC",
           "day": 5,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "NN",
+          "teacher": "NN (Solo para PC)",
           "room": "S4-203",
           "vacantes": 39
         },
@@ -3116,7 +2997,9 @@
           "start": "08:00:00",
           "end": "10:00:00",
           "teacher": "CUEVA HUANUCO, EDDIE DANNY",
-          "room": "S1-327/329 (LAB G)",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         },
         {
@@ -3136,7 +3019,8 @@
           "start": "08:00:00",
           "end": "10:00:00",
           "teacher": "SALAZAR FLORES ELIZABETH",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
@@ -3421,7 +3305,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "OLIVERA PAYANO, RICARDO RICARDO",
-          "room": "S1-226 (LAB E)",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         },
         {
@@ -3430,7 +3315,8 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "OLIVERA PAYANO, RICARDO RICARDO",
-          "room": "S1-226 (LAB E)",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         }
       ]
@@ -3471,7 +3357,8 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
-          "room": "S1-227 (LAB A1)",
+          "room": "S1-227",
+          "short-room": "LAB A1",
           "vacantes": 21
         },
         {
@@ -3480,7 +3367,9 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
-          "room": "S1-327/329 (LAB G)",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 21
         }
       ]
@@ -4361,7 +4250,8 @@
           "start": "08:00:00",
           "end": "10:00:00",
           "teacher": "TRIGO PÉREZ, CARLOS ALFREDO",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
@@ -4370,7 +4260,8 @@
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "TRIGO PÉREZ, CARLOS ALFREDO",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         }
       ]
@@ -4431,7 +4322,9 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "VALLE SANTOS, JOHN CLERK",
-          "room": "S1-327/329 (LAB G)",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         },
         {
@@ -4440,7 +4333,9 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "VALLE SANTOS, JOHN CLERK",
-          "room": "S1-327/329 (LAB G)",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         }
       ],
@@ -4451,7 +4346,8 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "LEYVA EUSEBIO, JOSE ALBERTO",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
@@ -4460,7 +4356,8 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "LEYVA EUSEBIO, JOSE ALBERTO",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         }
       ]
@@ -4742,8 +4639,9 @@
           "day": 1,
           "start": "08:00:00",
           "end": "09:00:00",
-          "teacher": "OPORTO DIAZ,  SAMUEL ALONSO",
-          "room": "S1-126 (LAB B)",
+          "teacher": "OPORTO DIAZ, SAMUEL ALONSO",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
@@ -4751,8 +4649,9 @@
           "day": 1,
           "start": "09:00:00",
           "end": "11:00:00",
-          "teacher": "OPORTO DIAZ,  SAMUEL ALONSO",
-          "room": "S1-126 (LAB B)",
+          "teacher": "OPORTO DIAZ, SAMUEL ALONSO",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         }
       ]
@@ -4763,7 +4662,7 @@
     "sections": {
       "U": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "18:00:00",
           "end": "22:00:00",
@@ -4774,33 +4673,33 @@
       ],
       "V": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "18:00:00",
           "end": "22:00:00",
-          "teacher": "UN JAN LIAU HING,  EMILIO ALBERTO",
+          "teacher": "UN JAN LIAU HING, EMILIO ALBERTO",
           "room": "S4-203",
           "vacantes": 14
         }
       ],
       "W": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "18:00:00",
           "end": "22:00:00",
-          "teacher": "ARADIEL CASTAÑEDA,  HILARIO",
+          "teacher": "ARADIEL CASTAÑEDA, HILARIO",
           "room": "S4-204",
           "vacantes": 14
         }
       ],
       "X": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "18:00:00",
           "end": "22:00:00",
-          "teacher": "RODRIGUEZ RAFAEL,  GLEN DARIO",
+          "teacher": "RODRIGUEZ RAFAEL, GLEN DARIO",
           "room": "S4-206",
           "vacantes": 14
         }
@@ -4812,60 +4711,60 @@
     "sections": {
       "U": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "CANCHANO CARO,  JAVIER TOLENTINO",
+          "teacher": "CANCHANO CARO, JAVIER TOLENTINO",
           "room": "S4-105",
           "vacantes": 20
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "CANCHANO CARO,  JAVIER TOLENTINO",
+          "teacher": "CANCHANO CARO, JAVIER TOLENTINO",
           "room": "S4-105",
           "vacantes": 20
         }
       ],
       "V": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "GUZMAN YANGATO,  JORGE FERNANDO",
+          "teacher": "GUZMAN YANGATO, JORGE FERNANDO",
           "room": "S4-208",
           "vacantes": 20
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "GUZMAN YANGATO,  JORGE FERNANDO",
+          "teacher": "GUZMAN YANGATO, JORGE FERNANDO",
           "room": "S4-208",
           "vacantes": 20
         }
       ],
       "W": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "CANCHANO CARO,  JAVIER TOLENTINO",
+          "teacher": "CANCHANO CARO, JAVIER TOLENTINO",
           "room": "S4-206",
           "vacantes": 19
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "CANCHANO CARO,  JAVIER TOLENTINO",
+          "teacher": "CANCHANO CARO, JAVIER TOLENTINO",
           "room": "S4-206",
           "vacantes": 19
         }
@@ -4881,16 +4780,16 @@
           "day": 6,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "ARTEAGA CORTEZ,  HUMBERTO URBANO",
+          "teacher": "ARTEAGA CORTEZ, HUMBERTO URBANO",
           "room": "S7-101",
           "vacantes": 42
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "ARTEAGA CORTEZ,  HUMBERTO URBANO",
+          "teacher": "ARTEAGA CORTEZ, HUMBERTO URBANO",
           "room": "S7-101",
           "vacantes": 42
         }
@@ -4906,17 +4805,21 @@
           "day": 6,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "AUDANTE RAMOS,  NESTOR RAFAEL",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "AUDANTE RAMOS, NESTOR RAFAEL",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "AUDANTE RAMOS,  NESTOR RAFAEL",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "AUDANTE RAMOS, NESTOR RAFAEL",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         }
       ]
@@ -4931,16 +4834,16 @@
           "day": 6,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "LINAREZ COLOMA,  HUMBERTO VICTOR",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
           "room": "S4-105",
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "LINAREZ COLOMA,  HUMBERTO VICTOR",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
           "room": "S4-105",
           "vacantes": 33
         }
@@ -4951,16 +4854,16 @@
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "RAMOS MORENO,  JAIME IGNACIO",
+          "teacher": "RAMOS MORENO, JAIME IGNACIO",
           "room": "S4-212",
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "RAMOS MORENO,  JAIME IGNACIO",
+          "teacher": "RAMOS MORENO, JAIME IGNACIO",
           "room": "S4-212",
           "vacantes": 33
         }
@@ -4976,16 +4879,16 @@
           "day": 2,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "LLANOS PANDURO,  JORGE DANIEL",
+          "teacher": "LLANOS PANDURO, JORGE DANIEL",
           "room": "S7-101",
           "vacantes": 42
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "LLANOS PANDURO,  JORGE DANIEL",
+          "teacher": "LLANOS PANDURO, JORGE DANIEL",
           "room": "S7-101",
           "vacantes": 42
         }
@@ -4996,16 +4899,16 @@
           "day": 4,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "MELGAREJO SOLIS,  RONALD ALFONSO",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
           "room": "S4-109",
           "vacantes": 45
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "MELGAREJO SOLIS,  RONALD ALFONSO",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
           "room": "S4-109",
           "vacantes": 45
         }
@@ -5021,17 +4924,20 @@
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "LUJÁN CAMPOS,  LUIS ALBERTO",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "LUJÁN CAMPOS,  LUIS ALBERTO",
-          "room": "CIBER (LAB O)",
+          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 40
         }
       ]
@@ -5046,17 +4952,19 @@
           "day": 1,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "SANCHEZ ESPINOZA,  JAVIER CONCEPCIÓN",
-          "room": "S1-126 (LAB B)",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "SANCHEZ ESPINOZA,  JAVIER CONCEPCIÓN",
-          "room": "S1-126 (LAB B)",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         }
       ]
@@ -5071,16 +4979,16 @@
           "day": 2,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "GUZMAN YANGATO,  JORGE FERNANDO",
+          "teacher": "GUZMAN YANGATO, JORGE FERNANDO",
           "room": "S4-206",
           "vacantes": 40
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "GUZMAN YANGATO,  JORGE FERNANDO",
+          "teacher": "GUZMAN YANGATO, JORGE FERNANDO",
           "room": "S4-206",
           "vacantes": 40
         }
@@ -5091,16 +4999,16 @@
           "day": 2,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "SALAS CORDERO,  ROCIO GUADALUPE",
+          "teacher": "SALAS CORDERO, ROCIO GUADALUPE",
           "room": "S4-214",
           "vacantes": 39
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "SALAS CORDERO,  ROCIO GUADALUPE",
+          "teacher": "SALAS CORDERO, ROCIO GUADALUPE",
           "room": "S4-214",
           "vacantes": 39
         }
@@ -5116,17 +5024,19 @@
           "day": 2,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "ARADIEL CASTAÑEDA,  HILARIO",
-          "room": "S1-124 (LAB C)",
+          "teacher": "ARADIEL CASTAÑEDA, HILARIO",
+          "room": "S1-124",
+          "short-room": "LAB C",
           "vacantes": 23
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "ARADIEL CASTAÑEDA,  HILARIO",
-          "room": "S1-124 (LAB C)",
+          "teacher": "ARADIEL CASTAÑEDA, HILARIO",
+          "room": "S1-124",
+          "short-room": "LAB C",
           "vacantes": 23
         }
       ],
@@ -5136,17 +5046,19 @@
           "day": 2,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "OPORTO DIAZ,  SAMUEL ALONSO",
-          "room": "CIBER (LAB O)",
+          "teacher": "OPORTO DIAZ, SAMUEL ALONSO",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 40
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "OPORTO DIAZ,  SAMUEL ALONSO",
-          "room": "CIBER (LAB O)",
+          "teacher": "OPORTO DIAZ, SAMUEL ALONSO",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 40
         }
       ]
@@ -5161,8 +5073,9 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "BORJA ROSALES,  RUBÉN ARTURO",
-          "room": "S1-129 (LAB A)",
+          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
@@ -5170,8 +5083,9 @@
           "day": 4,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "BORJA ROSALES,  RUBÉN ARTURO",
-          "room": "S1-129 (LAB A)",
+          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         }
       ]
@@ -5186,17 +5100,19 @@
           "day": 2,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "SOTELO VILLENA,  JUAN CARLOS",
-          "room": "CIBER (LAB O)",
+          "teacher": "SOTELO VILLENA, JUAN CARLOS",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "SOTELO VILLENA,  JUAN CARLOS",
-          "room": "CIBER (LAB O)",
+          "teacher": "SOTELO VILLENA, JUAN CARLOS",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         }
       ],
@@ -5206,17 +5122,19 @@
           "day": 5,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "ACOSTA DE LA CRUZ, PEDRO RAUL",
-          "room": "S1-226 (LAB E)",
+          "teacher": "ACOSTA DE LA CRUZ,PEDRO RAUL",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "ACOSTA DE LA CRUZ, PEDRO RAUL",
-          "room": "S1-226 (LAB E)",
+          "teacher": "ACOSTA DE LA CRUZ,PEDRO RAUL",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         }
       ],
@@ -5226,17 +5144,21 @@
           "day": 2,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "COSSA CABANILLAS,  JESUS ALBERTO",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "COSSA CABANILLAS,  JESUS ALBERTO",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         }
       ],
@@ -5246,17 +5168,19 @@
           "day": 2,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "CORDOVA NERI,  TEODORO LUCIANO",
-          "room": "S1-126 (LAB B)",
+          "teacher": "CORDOVA NERI, TEODORO LUCIANO",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "CORDOVA NERI,  TEODORO LUCIANO",
-          "room": "S1-126 (LAB B)",
+          "teacher": "CORDOVA NERI, TEODORO LUCIANO",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         }
       ],
@@ -5266,17 +5190,19 @@
           "day": 2,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "TORRE CAMONES,  ANIVAL ALFREDO",
-          "room": "S1-227 (LAB A1)",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "room": "S1-227",
+          "short-room": "LAB A1",
           "vacantes": 21
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "TORRE CAMONES,  ANIVAL ALFREDO",
-          "room": "S1-227 (LAB A1)",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "room": "S1-227",
+          "short-room": "LAB A1",
           "vacantes": 21
         }
       ],
@@ -5286,17 +5212,19 @@
           "day": 2,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "JANJACHI TORIBIO,  CARLOS ALBERTO",
-          "room": "S1-224 (LAB A2)",
+          "teacher": "JANJACHI TORIBIO, CARLOS ALBERTO",
+          "room": "S1-224",
+          "short-room": "LAB A2",
           "vacantes": 20
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "JANJACHI TORIBIO,  CARLOS ALBERTO",
-          "room": "S1-224 (LAB A2)",
+          "teacher": "JANJACHI TORIBIO, CARLOS ALBERTO",
+          "room": "S1-224",
+          "short-room": "LAB A2",
           "vacantes": 20
         }
       ],
@@ -5306,17 +5234,19 @@
           "day": 2,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "LINAREZ COLOMA,  HUMBERTO VICTOR",
-          "room": "S1-124 (LAB C)",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
+          "room": "S1-124",
+          "short-room": "LAB C",
           "vacantes": 23
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "LINAREZ COLOMA,  HUMBERTO VICTOR",
-          "room": "S1-124 (LAB C)",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
+          "room": "S1-124",
+          "short-room": "LAB C",
           "vacantes": 23
         }
       ],
@@ -5327,16 +5257,18 @@
           "start": "08:00:00",
           "end": "10:00:00",
           "teacher": "RUIZ ADARMES, MIGUEL",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "RUIZ ADARMES, MIGUEL",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         }
       ]
@@ -5351,17 +5283,19 @@
           "day": 2,
           "start": "08:00:00",
           "end": "09:00:00",
-          "teacher": "LÓPEZ VILLANUEVA,  PABLO EDWIN",
-          "room": "S1-229 (LAB D)",
+          "teacher": "LÓPEZ VILLANUEVA, PABLO EDWIN",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "09:00:00",
           "end": "13:00:00",
-          "teacher": "LÓPEZ VILLANUEVA,  PABLO EDWIN",
-          "room": "S1-229 (LAB D)",
+          "teacher": "LÓPEZ VILLANUEVA, PABLO EDWIN",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         }
       ],
@@ -5371,17 +5305,19 @@
           "day": 1,
           "start": "08:00:00",
           "end": "09:00:00",
-          "teacher": "CORONEL CASTILLO,  ERIC GUSTAVO",
-          "room": "CIBER (LAB O)",
+          "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "09:00:00",
           "end": "13:00:00",
-          "teacher": "CORONEL CASTILLO,  ERIC GUSTAVO",
-          "room": "CIBER (LAB O)",
+          "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         }
       ]
@@ -5396,16 +5332,16 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "GUZMAN YANGATO,  JORGE FERNANDO",
+          "teacher": "GUZMAN YANGATO, JORGE FERNANDO",
           "room": "S4-204",
           "vacantes": 45
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "GUZMAN YANGATO,  JORGE FERNANDO",
+          "teacher": "GUZMAN YANGATO, JORGE FERNANDO",
           "room": "S4-203",
           "vacantes": 45
         }
@@ -5421,16 +5357,16 @@
           "day": 1,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "NAVARRO NEYRA,  MIGUEL ANGEL",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
           "room": "S4-207",
           "vacantes": 45
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "NAVARRO NEYRA,  MIGUEL ANGEL",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
           "room": "S4-207",
           "vacantes": 45
         }
@@ -5446,7 +5382,7 @@
           "vacantes": 45
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "16:00:00",
           "end": "18:00:00",
@@ -5466,7 +5402,7 @@
           "vacantes": 45
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "20:00:00",
           "end": "22:00:00",
@@ -5486,17 +5422,20 @@
           "day": 1,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "CORDOVA NERI,  TEODORO LUCIANO",
-          "room": "S1-129 (LAB A)",
+          "teacher": "CORDOVA NERI, TEODORO LUCIANO",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "CORDOVA NERI,  TEODORO LUCIANO",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "CORDOVA NERI, TEODORO LUCIANO",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 39
         }
       ],
@@ -5506,17 +5445,21 @@
           "day": 1,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "CORONEL CASTILLO,  ERIC GUSTAVO",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "CORONEL CASTILLO,  ERIC GUSTAVO",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         }
       ]
@@ -5531,18 +5474,18 @@
           "day": 6,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "SALAS COZ,  ERWIN ERASMO",
+          "teacher": "SALAS COZ, ERWIN ERASMO",
           "room": "S4-205",
-          "vacantes": 0
+          "vacantes": 40
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "SALAS COZ,  ERWIN ERASMO",
+          "teacher": "SALAS COZ, ERWIN ERASMO",
           "room": "S4-205",
-          "vacantes": 0
+          "vacantes": 40
         }
       ]
     }
@@ -5556,16 +5499,16 @@
           "day": 2,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "REYNA MONTEVERDE,  TINO EDUARDO",
+          "teacher": "REYNA MONTEVERDE, TINO EDUARDO",
           "room": "S4-201",
           "vacantes": 39
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "REYNA MONTEVERDE,  TINO EDUARDO",
+          "teacher": "REYNA MONTEVERDE, TINO EDUARDO",
           "room": "S4-201",
           "vacantes": 39
         }
@@ -5576,16 +5519,16 @@
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "RODRIGUEZ RAFAEL,  GLEN DARIO",
+          "teacher": "RODRIGUEZ RAFAEL, GLEN DARIO",
           "room": "S4-202",
           "vacantes": 39
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "RODRIGUEZ RAFAEL,  GLEN DARIO",
+          "teacher": "RODRIGUEZ RAFAEL, GLEN DARIO",
           "room": "S4-202",
           "vacantes": 39
         }
@@ -5601,17 +5544,19 @@
           "day": 1,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "RAMOS MONTES,  CARLOS NELSON",
-          "room": "S1-129 (LAB A)",
+          "teacher": "RAMOS MONTES, CARLOS NELSON",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "RAMOS MONTES,  CARLOS NELSON",
-          "room": "S1-129 (LAB A)",
+          "teacher": "RAMOS MONTES, CARLOS NELSON",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         }
       ]
@@ -5626,18 +5571,18 @@
           "day": 3,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "SALAS CORDERO,  ROCIO GUADALUPE",
+          "teacher": "SALAS CORDERO, ROCIO GUADALUPE",
           "room": "S4-212",
-          "vacantes": 0
+          "vacantes": 40
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "SALAS CORDERO,  ROCIO GUADALUPE",
+          "teacher": "SALAS CORDERO, ROCIO GUADALUPE",
           "room": "S4-212",
-          "vacantes": 0
+          "vacantes": 40
         }
       ]
     }
@@ -5651,16 +5596,16 @@
           "day": 3,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "CANELO SOTELO,  CÉSAR ALDO",
+          "teacher": "CANELO SOTELO, CÉSAR ALDO",
           "room": "S4-110",
           "vacantes": 42
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "CANELO SOTELO,  CÉSAR ALDO",
+          "teacher": "CANELO SOTELO, CÉSAR ALDO",
           "room": "S4-210",
           "vacantes": 42
         }
@@ -5671,16 +5616,16 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MEDINA AQUINO,  LUIS FELIPE",
+          "teacher": "MEDINA AQUINO, LUIS FELIPE",
           "room": "S4-206",
           "vacantes": 41
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MEDINA AQUINO,  LUIS FELIPE",
+          "teacher": "MEDINA AQUINO, LUIS FELIPE",
           "room": "S4-206",
           "vacantes": 41
         }
@@ -5691,16 +5636,16 @@
           "day": 3,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MEDINA AQUINO,  LUIS FELIPE",
+          "teacher": "MEDINA AQUINO, LUIS FELIPE",
           "room": "S4-111",
           "vacantes": 41
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "MEDINA AQUINO,  LUIS FELIPE",
+          "teacher": "MEDINA AQUINO, LUIS FELIPE",
           "room": "S4-213",
           "vacantes": 41
         }
@@ -5711,16 +5656,16 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "OPORTO DIAZ,  SAMUEL ALONSO",
+          "teacher": "OPORTO DIAZ, SAMUEL ALONSO",
           "room": "S4-109",
           "vacantes": 41
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "OPORTO DIAZ,  SAMUEL ALONSO",
+          "teacher": "OPORTO DIAZ, SAMUEL ALONSO",
           "room": "S4-202",
           "vacantes": 41
         }
@@ -5731,16 +5676,16 @@
           "day": 6,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "ULFE VEGA,  LUIS ALBERTO",
+          "teacher": "ULFE VEGA, LUIS ALBERTO",
           "room": "S4-205",
           "vacantes": 41
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "ULFE VEGA,  LUIS ALBERTO",
+          "teacher": "ULFE VEGA, LUIS ALBERTO",
           "room": "S4-205",
           "vacantes": 41
         }
@@ -5756,16 +5701,16 @@
           "day": 1,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "HUARCAYA JUNES,  ALEJANDRINA NELLY",
+          "teacher": "HUARCAYA JUNES, ALEJANDRINA NELLY",
           "room": "S4-209",
           "vacantes": 36
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "HUARCAYA JUNES,  ALEJANDRINA NELLY",
+          "teacher": "HUARCAYA JUNES, ALEJANDRINA NELLY",
           "room": "S4-209",
           "vacantes": 36
         }
@@ -5776,16 +5721,16 @@
           "day": 6,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "RIZABAL FLORES,  ELIANA CECILIA",
+          "teacher": "RIZABAL FLORES, ELIANA CECILIA",
           "room": "S4-112",
           "vacantes": 35
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "RIZABAL FLORES,  ELIANA CECILIA",
+          "teacher": "RIZABAL FLORES, ELIANA CECILIA",
           "room": "S4-112",
           "vacantes": 35
         }
@@ -5796,16 +5741,16 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "MOLINA ESTACIO,  NINOSKA",
+          "teacher": "MOLINA ESTACIO, NINOSKA",
           "room": "S4-210",
           "vacantes": 35
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "MOLINA ESTACIO,  NINOSKA",
+          "teacher": "MOLINA ESTACIO, NINOSKA",
           "room": "S4-210",
           "vacantes": 35
         }
@@ -5816,16 +5761,16 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "TALAVERANO GARCÍA,  JULIO CESAR",
+          "teacher": "TALAVERANO GARCÍA, JULIO CESAR",
           "room": "S4-206",
           "vacantes": 35
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "TALAVERANO GARCÍA,  JULIO CESAR",
+          "teacher": "TALAVERANO GARCÍA, JULIO CESAR",
           "room": "S4-206",
           "vacantes": 35
         }
@@ -5841,16 +5786,16 @@
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "REYNA MONTEVERDE,  TINO EDUARDO",
+          "teacher": "REYNA MONTEVERDE, TINO EDUARDO",
           "room": "S4-109",
           "vacantes": 45
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "REYNA MONTEVERDE,  TINO EDUARDO",
+          "teacher": "REYNA MONTEVERDE, TINO EDUARDO",
           "room": "S4-109",
           "vacantes": 45
         }
@@ -5861,16 +5806,16 @@
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "LINAREZ COLOMA,  HUMBERTO VICTOR",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
           "room": "S4-206",
           "vacantes": 45
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "LINAREZ COLOMA,  HUMBERTO VICTOR",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
           "room": "S4-216",
           "vacantes": 45
         }
@@ -5881,7 +5826,7 @@
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "REYNA MONTEVERDE,  TINO EDUARDO",
+          "teacher": "REYNA MONTEVERDE, TINO EDUARDO",
           "room": "S4-208",
           "vacantes": 45
         },
@@ -5890,7 +5835,7 @@
           "day": 4,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "REYNA MONTEVERDE,  TINO EDUARDO",
+          "teacher": "REYNA MONTEVERDE, TINO EDUARDO",
           "room": "S4-208",
           "vacantes": 45
         }
@@ -5906,16 +5851,16 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "CANELO SOTELO,  CÉSAR ALDO",
+          "teacher": "CANELO SOTELO, CÉSAR ALDO",
           "room": "S4-202",
           "vacantes": 39
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "CANELO SOTELO,  CÉSAR ALDO",
+          "teacher": "CANELO SOTELO, CÉSAR ALDO",
           "room": "S4-105",
           "vacantes": 39
         }
@@ -5926,16 +5871,16 @@
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "LUJÁN CAMPOS,  LUIS ALBERTO",
+          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
           "room": "S4-216",
           "vacantes": 23
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "LUJÁN CAMPOS,  LUIS ALBERTO",
+          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
           "room": "S4-208",
           "vacantes": 23
         }
@@ -5946,16 +5891,16 @@
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "LUJÁN CAMPOS,  LUIS ALBERTO",
+          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
           "room": "S4-216",
           "vacantes": 22
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "LUJÁN CAMPOS,  LUIS ALBERTO",
+          "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
           "room": "S4-208",
           "vacantes": 22
         }
@@ -5966,16 +5911,16 @@
           "day": 2,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "MEDINA AQUINO,  LUIS FELIPE",
+          "teacher": "MEDINA AQUINO, LUIS FELIPE",
           "room": "S4-212",
           "vacantes": 38
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "MEDINA AQUINO,  LUIS FELIPE",
+          "teacher": "MEDINA AQUINO, LUIS FELIPE",
           "room": "S4-210",
           "vacantes": 38
         }
@@ -5986,16 +5931,16 @@
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "CANELO SOTELO,  CÉSAR ALDO",
+          "teacher": "CANELO SOTELO, CÉSAR ALDO",
           "room": "S4-206",
           "vacantes": 38
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "CANELO SOTELO,  CÉSAR ALDO",
+          "teacher": "CANELO SOTELO, CÉSAR ALDO",
           "room": "S4-110",
           "vacantes": 38
         }
@@ -6011,17 +5956,19 @@
           "day": 4,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MÉNDEZ VALDIVIA,  CELEDONIO",
-          "room": "CIBER (LAB O)",
+          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "MÉNDEZ VALDIVIA,  CELEDONIO",
-          "room": "CIBER (LAB O)",
+          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         }
       ],
@@ -6031,16 +5978,16 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "LLANOS PANDURO,  JORGE DANIEL",
+          "teacher": "LLANOS PANDURO, JORGE DANIEL",
           "room": "S4-212",
           "vacantes": 45
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "LLANOS PANDURO,  JORGE DANIEL",
+          "teacher": "LLANOS PANDURO, JORGE DANIEL",
           "room": "S4-207",
           "vacantes": 45
         }
@@ -6051,16 +5998,16 @@
           "day": 2,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "LLANOS PANDURO,  JORGE DANIEL",
+          "teacher": "LLANOS PANDURO, JORGE DANIEL",
           "room": "S4-203",
           "vacantes": 45
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "LLANOS PANDURO,  JORGE DANIEL",
+          "teacher": "LLANOS PANDURO, JORGE DANIEL",
           "room": "S4-209",
           "vacantes": 45
         }
@@ -6076,16 +6023,16 @@
           "day": 5,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "SALAS CORDERO,  ROCIO GUADALUPE",
+          "teacher": "SALAS CORDERO, ROCIO GUADALUPE",
           "room": "S4-202",
           "vacantes": 43
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "SALAS CORDERO,  ROCIO GUADALUPE",
+          "teacher": "SALAS CORDERO, ROCIO GUADALUPE",
           "room": "S4-202",
           "vacantes": 43
         }
@@ -6096,16 +6043,16 @@
           "day": 1,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "RODRÍGUEZ ULLOA,  RICARDO AURELIO",
+          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
           "room": "S4-211",
           "vacantes": 42
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "RODRÍGUEZ ULLOA,  RICARDO AURELIO",
+          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
           "room": "S4-211",
           "vacantes": 42
         }
@@ -6121,26 +6068,28 @@
           "day": 1,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "ANTAURCO TRUJILLO,  JESÚS WALTER",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
           "room": "S4-111",
           "vacantes": 26
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "ANTAURCO TRUJILLO,  JESÚS WALTER",
-          "room": "S1-226 (LAB E)",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "ANTAURCO TRUJILLO,  JESÚS WALTER",
-          "room": "S1-226 (LAB E)",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         }
       ],
@@ -6150,26 +6099,29 @@
           "day": 1,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "NAVARRO NEYRA,  MIGUEL ANGEL",
-          "room": "CIBER (LAB O)",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "NAVARRO NEYRA,  MIGUEL ANGEL",
-          "room": "CIBER (LAB O)",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "NAVARRO NEYRA,  MIGUEL ANGEL",
-          "room": "CIBER (LAB O)",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         }
       ]
@@ -6184,16 +6136,16 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "ALIAGA VILCHEZ,  TOBIAS ENRIQUE",
+          "teacher": "ALIAGA VILCHEZ, TOBIAS ENRIQUE",
           "room": "S4-207",
           "vacantes": 42
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "ALIAGA VILCHEZ,  TOBIAS ENRIQUE",
+          "teacher": "ALIAGA VILCHEZ, TOBIAS ENRIQUE",
           "room": "S4-207",
           "vacantes": 42
         }
@@ -6204,16 +6156,16 @@
           "day": 6,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "MORI LEON,  NILTON CESAR",
+          "teacher": "MORI LEON, NILTON CESAR",
           "room": "S4-216",
           "vacantes": 41
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "MORI LEON,  NILTON CESAR",
+          "teacher": "MORI LEON, NILTON CESAR",
           "room": "S4-216",
           "vacantes": 41
         }
@@ -6229,17 +6181,19 @@
           "day": 1,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "BORJA ROSALES,  RUBÉN ARTURO",
-          "room": "S1-126 (LAB B)",
+          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "BORJA ROSALES,  RUBÉN ARTURO",
-          "room": "S1-129 (LAB A)",
+          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 32
         }
       ],
@@ -6249,17 +6203,19 @@
           "day": 3,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "BORJA ROSALES,  RUBÉN ARTURO",
-          "room": "S1-129 (LAB A)",
+          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "BORJA ROSALES,  RUBÉN ARTURO",
-          "room": "S1-129 (LAB A)",
+          "teacher": "BORJA ROSALES, RUBÉN ARTURO",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         }
       ]
@@ -6274,17 +6230,19 @@
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "SOTELO VILLENA,  JUAN CARLOS",
-          "room": "S1-226 (LAB E)",
+          "teacher": "SOTELO VILLENA, JUAN CARLOS",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "SOTELO VILLENA,  JUAN CARLOS",
-          "room": "S1-226 (LAB E)",
+          "teacher": "SOTELO VILLENA, JUAN CARLOS",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         }
       ],
@@ -6294,17 +6252,19 @@
           "day": 2,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "ZULOAGA ROTTA,  LUIS ALBERTO",
-          "room": "S1-229 (LAB D)",
+          "teacher": "ZULOAGA ROTTA, LUIS ALBERTO",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "ZULOAGA ROTTA,  LUIS ALBERTO",
-          "room": "S1-229 (LAB D)",
+          "teacher": "ZULOAGA ROTTA, LUIS ALBERTO",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         }
       ],
@@ -6314,37 +6274,45 @@
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "TORRE CAMONES,  ANIVAL ALFREDO",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "TORRE CAMONES,  ANIVAL ALFREDO",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         }
       ],
       "X": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "COSSA CABANILLAS,  JESUS ALBERTO",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "COSSA CABANILLAS,  JESUS ALBERTO",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         }
       ]
@@ -6355,41 +6323,45 @@
     "sections": {
       "U": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "CORDOVA NERI,  TEODORO LUCIANO",
-          "room": "CIBER (LAB O)",
+          "teacher": "CORDOVA NERI, TEODORO LUCIANO",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 43
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "CORDOVA NERI,  TEODORO LUCIANO",
-          "room": "CIBER (LAB O)",
+          "teacher": "CORDOVA NERI, TEODORO LUCIANO",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 43
         }
       ],
       "V": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MÉNDEZ VALDIVIA,  CELEDONIO",
-          "room": "S1-124 (LAB C)",
+          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "room": "S1-124",
+          "short-room": "LAB C",
           "vacantes": 23
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "MÉNDEZ VALDIVIA,  CELEDONIO",
-          "room": "S1-124 (LAB C)",
+          "teacher": "MÉNDEZ VALDIVIA, CELEDONIO",
+          "room": "S1-124",
+          "short-room": "LAB C",
           "vacantes": 23
         }
       ]
@@ -6404,16 +6376,16 @@
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "VALENZUELA POSADAS,  JORGE MARTIN",
+          "teacher": "VALENZUELA POSADAS, JORGE MARTIN",
           "room": "S4-205",
           "vacantes": 36
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "VALENZUELA POSADAS,  JORGE MARTIN",
+          "teacher": "VALENZUELA POSADAS, JORGE MARTIN",
           "room": "S4-205",
           "vacantes": 36
         }
@@ -6424,16 +6396,16 @@
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "ESPINOZA FALCON,  LUIS ALBERTO",
+          "teacher": "ESPINOZA FALCON, LUIS ALBERTO",
           "room": "S4-207",
           "vacantes": 36
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "ESPINOZA FALCON,  LUIS ALBERTO",
+          "teacher": "ESPINOZA FALCON, LUIS ALBERTO",
           "room": "S4-207",
           "vacantes": 36
         }
@@ -6449,16 +6421,16 @@
           "day": 1,
           "start": "18:00:00",
           "end": "19:00:00",
-          "teacher": "NAVARRO NEYRA,  MIGUEL ANGEL",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
           "room": "S4-105",
           "vacantes": 30
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "19:00:00",
           "end": "21:00:00",
-          "teacher": "NAVARRO NEYRA,  MIGUEL ANGEL",
+          "teacher": "NAVARRO NEYRA, MIGUEL ANGEL",
           "room": "S4-105",
           "vacantes": 30
         }
@@ -6469,16 +6441,16 @@
           "day": 2,
           "start": "16:00:00",
           "end": "17:00:00",
-          "teacher": "MELGAREJO SOLIS,  RONALD ALFONSO",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
           "room": "S4-111",
           "vacantes": 30
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "17:00:00",
           "end": "19:00:00",
-          "teacher": "MELGAREJO SOLIS,  RONALD ALFONSO",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
           "room": "S4-111",
           "vacantes": 30
         }
@@ -6494,17 +6466,21 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "SANCHEZ ESPINOZA,  JAVIER CONCEPCIÓN",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 37
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "SANCHEZ ESPINOZA,  JAVIER CONCEPCIÓN",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 37
         }
       ],
@@ -6514,17 +6490,19 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "COSSA CABANILLAS,  JESUS ALBERTO",
-          "room": "S1-229 (LAB D)",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "COSSA CABANILLAS,  JESUS ALBERTO",
-          "room": "S1-229 (LAB D)",
+          "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         }
       ]
@@ -6539,16 +6517,16 @@
           "day": 5,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "RODRÍGUEZ ULLOA,  RICARDO AURELIO",
+          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
           "room": "S4-110",
           "vacantes": 30
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "RODRÍGUEZ ULLOA,  RICARDO AURELIO",
+          "teacher": "RODRÍGUEZ ULLOA, RICARDO AURELIO",
           "room": "S4-110",
           "vacantes": 30
         }
@@ -6559,16 +6537,16 @@
           "day": 2,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "CANCHANO CARO,  JAVIER TOLENTINO",
+          "teacher": "CANCHANO CARO, JAVIER TOLENTINO",
           "room": "AUDIOVI",
           "vacantes": 30
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "CANCHANO CARO,  JAVIER TOLENTINO",
+          "teacher": "CANCHANO CARO, JAVIER TOLENTINO",
           "room": "AUDIOVI",
           "vacantes": 30
         }
@@ -6584,36 +6562,36 @@
           "day": 6,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "HUAPAYA CIRIACO,  ALBERTO JESUS",
+          "teacher": "HUAPAYA CIRIACO, ALBERTO JESUS",
           "room": "S4-110",
           "vacantes": 24
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "10:00:00",
           "end": "12:00:00",
-          "teacher": "HUAPAYA CIRIACO,  ALBERTO JESUS",
+          "teacher": "HUAPAYA CIRIACO, ALBERTO JESUS",
           "room": "S4-110",
           "vacantes": 24
         }
       ],
       "V": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "ESPINAL LAU,  MIGUEL EDUARDO",
+          "teacher": "ESPINAL LAU, MIGUEL EDUARDO",
           "room": "AUDIOVI",
           "vacantes": 23
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "ESPINAL LAU,  MIGUEL EDUARDO",
+          "teacher": "ESPINAL LAU, MIGUEL EDUARDO",
           "room": "AUDIOVI",
           "vacantes": 23
         }
@@ -6625,41 +6603,45 @@
     "sections": {
       "U": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "JANJACHI TORIBIO,  CARLOS ALBERTO",
-          "room": "S1-126 (LAB B)",
+          "teacher": "JANJACHI TORIBIO, CARLOS ALBERTO",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "JANJACHI TORIBIO,  CARLOS ALBERTO",
-          "room": "S1-126 (LAB B)",
+          "teacher": "JANJACHI TORIBIO, CARLOS ALBERTO",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         }
       ],
       "V": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "RAMOS MONTES,  CARLOS NELSON",
-          "room": "S1-229 (LAB D)",
+          "teacher": "RAMOS MONTES, CARLOS NELSON",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "RAMOS MONTES,  CARLOS NELSON",
-          "room": "S1-229 (LAB D)",
+          "teacher": "RAMOS MONTES, CARLOS NELSON",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         }
       ]
@@ -6674,17 +6656,19 @@
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "ARADIEL CASTAÑEDA,  HILARIO",
+          "teacher": "ARADIEL CASTAÑEDA, HILARIO",
           "room": "S4-209",
           "vacantes": 40
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "ARADIEL CASTAÑEDA,  HILARIO",
-          "room": "S1-327/329 (LAB G)",
+          "teacher": "ARADIEL CASTAÑEDA, HILARIO",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 40
         }
       ]
@@ -6699,7 +6683,7 @@
           "day": 4,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "MELGAREJO SOLIS,  RONALD ALFONSO",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
           "room": "S4-112",
           "vacantes": 45
         },
@@ -6708,7 +6692,7 @@
           "day": 4,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "MELGAREJO SOLIS,  RONALD ALFONSO",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
           "room": "S4-112",
           "vacantes": 45
         }
@@ -6724,16 +6708,16 @@
           "day": 3,
           "start": "19:00:00",
           "end": "20:00:00",
-          "teacher": "CALIZAYA NEYRA,  PERCY ANGEL",
+          "teacher": "CALIZAYA NEYRA, PERCY ANGEL",
           "room": "S4-214",
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 3,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "CALIZAYA NEYRA,  PERCY ANGEL",
+          "teacher": "CALIZAYA NEYRA, PERCY ANGEL",
           "room": "S4-214",
           "vacantes": 33
         }
@@ -6744,16 +6728,16 @@
           "day": 2,
           "start": "19:00:00",
           "end": "20:00:00",
-          "teacher": "MELGAREJO SOLIS,  RONALD ALFONSO",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
           "room": "S4-207",
           "vacantes": 33
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "MELGAREJO SOLIS,  RONALD ALFONSO",
+          "teacher": "MELGAREJO SOLIS, RONALD ALFONSO",
           "room": "S4-207",
           "vacantes": 33
         }
@@ -6769,17 +6753,19 @@
           "day": 2,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "BRINGAS MASGO,  ISAAC ERNESTO",
-          "room": "S1-226 (LAB E)",
+          "teacher": "BRINGAS MASGO, ISAAC ERNESTO",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 4,
           "start": "20:00:00",
           "end": "22:00:00",
-          "teacher": "BRINGAS MASGO,  ISAAC ERNESTO",
-          "room": "S1-229 (LAB D)",
+          "teacher": "BRINGAS MASGO, ISAAC ERNESTO",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         }
       ],
@@ -6789,17 +6775,19 @@
           "day": 6,
           "start": "12:00:00",
           "end": "14:00:00",
-          "teacher": "MORI LEON,  NILTON CESAR",
-          "room": "CIBER (LAB O)",
+          "teacher": "MORI LEON, NILTON CESAR",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 41
         },
         {
-          "type": "P",
+          "type": "PRA",
           "day": 6,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "MORI LEON,  NILTON CESAR",
-          "room": "CIBER (LAB O)",
+          "teacher": "MORI LEON, NILTON CESAR",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 41
         }
       ]
@@ -6810,44 +6798,44 @@
     "sections": {
       "U": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "18:00:00",
           "end": "22:00:00",
-          "teacher": "UN JAN LIAU HING,  EMILIO ALBERTO",
+          "teacher": "UN JAN LIAU HING, EMILIO ALBERTO",
           "room": "S4-216",
           "vacantes": 23
         }
       ],
       "V": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 5,
           "start": "18:00:00",
           "end": "22:00:00",
-          "teacher": "SOTELO VILLENA,  JUAN CARLOS",
+          "teacher": "SOTELO VILLENA, JUAN CARLOS",
           "room": "S4-214",
           "vacantes": 23
         }
       ],
       "W": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 1,
           "start": "18:00:00",
           "end": "22:00:00",
-          "teacher": "LINAREZ COLOMA,  HUMBERTO VICTOR",
+          "teacher": "LINAREZ COLOMA, HUMBERTO VICTOR",
           "room": "S4-208",
           "vacantes": 23
         }
       ],
       "X": [
         {
-          "type": "P",
+          "type": "PRA",
           "day": 2,
           "start": "18:00:00",
           "end": "22:00:00",
-          "teacher": "SANCHEZ ESPINOZA,  JAVIER CONCEPCIÓN",
+          "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
           "room": "S4-215",
           "vacantes": 23
         }
@@ -6863,7 +6851,7 @@
           "day": 1,
           "start": "18:00:00",
           "end": "20:00:00",
-          "teacher": "ANTAURCO TRUJILLO,  JESÚS WALTER",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
           "room": "S4-111",
           "vacantes": 40
         },
@@ -6872,7 +6860,7 @@
           "day": 6,
           "start": "08:00:00",
           "end": "10:00:00",
-          "teacher": "ANTAURCO TRUJILLO,  JESÚS WALTER",
+          "teacher": "ANTAURCO TRUJILLO, JESÚS WALTER",
           "room": "S4-211",
           "vacantes": 40
         }
@@ -6914,7 +6902,8 @@
           "start": "14:00:00",
           "end": "15:00:00",
           "teacher": "LEIVA POVIS, JORGE ZENON",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
@@ -6923,7 +6912,8 @@
           "start": "15:00:00",
           "end": "17:00:00",
           "teacher": "LEIVA POVIS, JORGE ZENON",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         }
       ]
@@ -6939,7 +6929,8 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "HERENCIA GUERRA JUAN LUIS",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
@@ -6948,7 +6939,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "HERENCIA GUERRA JUAN LUIS",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
@@ -6957,7 +6949,8 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "HERENCIA GUERRA JUAN LUIS",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         }
       ]
@@ -6973,7 +6966,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "MARTINEZ CHUNGA, RONALD RICARDO",
-          "room": "S1-229 (LAB D)",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         },
         {
@@ -6982,7 +6976,8 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "MARTINEZ CHUNGA, RONALD RICARDO",
-          "room": "S1-229 (LAB D)",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         }
       ],
@@ -6993,7 +6988,9 @@
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "MEDIANERO ACOSTA, JORGE",
-          "room": "S1-327/329 (LAB G)",
+          "room": "S1-327",
+          "short-room": "329",
+          "short-room": "LAB G",
           "vacantes": 28
         },
         {
@@ -7002,7 +6999,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "MEDIANERO ACOSTA, JORGE",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 28
         }
       ]
@@ -7018,7 +7016,8 @@
           "start": "19:00:00",
           "end": "22:00:00",
           "teacher": "CISNEROS NAPRAVNIK, JAN EDUARDO",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
@@ -7027,7 +7026,8 @@
           "start": "19:00:00",
           "end": "22:00:00",
           "teacher": "CISNEROS NAPRAVNIK, JAN EDUARDO",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         }
       ]
@@ -7043,7 +7043,8 @@
           "start": "12:00:00",
           "end": "14:00:00",
           "teacher": "RAMOS MUÑOZ, ALFREDO MARINO",
-          "room": "CIBER (LAB O)",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         },
         {
@@ -7052,7 +7053,8 @@
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "RAMOS MUÑOZ, ALFREDO MARINO",
-          "room": "CIBER (LAB O)",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         }
       ]
@@ -7067,8 +7069,9 @@
           "day": 2,
           "start": "16:00:00",
           "end": "18:00:00",
-          "teacher": "RAMOS MONTES,  CARLOS NELSON",
-          "room": "CIBER (LAB O)",
+          "teacher": "RAMOS MONTES, CARLOS NELSON",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 32
         },
         {
@@ -7076,8 +7079,9 @@
           "day": 2,
           "start": "14:00:00",
           "end": "16:00:00",
-          "teacher": "RAMOS MONTES,  CARLOS NELSON",
-          "room": "CIBER (LAB O)",
+          "teacher": "RAMOS MONTES, CARLOS NELSON",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 32
         }
       ],
@@ -7088,7 +7092,8 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "GARCÍA LA RIVA, JOSE CARLOS",
-          "room": "S1-124 (LAB C)",
+          "room": "S1-124",
+          "short-room": "LAB C",
           "vacantes": 23
         },
         {
@@ -7097,7 +7102,8 @@
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "GARCÍA LA RIVA, JOSE CARLOS",
-          "room": "S1-124 (LAB C)",
+          "room": "S1-124",
+          "short-room": "LAB C",
           "vacantes": 23
         }
       ]
@@ -7113,7 +7119,8 @@
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "LEIVA POVIS, JORGE ZENON",
-          "room": "CIBER (LAB O)",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         },
         {
@@ -7122,7 +7129,8 @@
           "start": "08:00:00",
           "end": "10:00:00",
           "teacher": "LEIVA POVIS, JORGE ZENON",
-          "room": "CIBER (LAB O)",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 48
         }
       ]
@@ -7138,7 +7146,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "CASTRO VERAMENDI, RAFAEL OSWALDO",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
@@ -7147,7 +7156,8 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "CASTRO VERAMENDI, RAFAEL OSWALDO",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         },
         {
@@ -7156,7 +7166,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "CASTRO VERAMENDI, RAFAEL OSWALDO",
-          "room": "S1-129 (LAB A)",
+          "room": "S1-129",
+          "short-room": "LAB A",
           "vacantes": 39
         }
       ]
@@ -7172,7 +7183,8 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "HERENCIA GUERRA JUAN LUIS",
-          "room": "S1-124 (LAB C)",
+          "room": "S1-124",
+          "short-room": "LAB C",
           "vacantes": 23
         },
         {
@@ -7181,7 +7193,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "HERENCIA GUERRA JUAN LUIS",
-          "room": "S1-124 (LAB C)",
+          "room": "S1-124",
+          "short-room": "LAB C",
           "vacantes": 23
         },
         {
@@ -7190,7 +7203,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "HERENCIA GUERRA JUAN LUIS",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 23
         }
       ]
@@ -7206,7 +7220,8 @@
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "CANALES ARIAS, FELIX GASPAR",
-          "room": "S1-229 (LAB D)",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         },
         {
@@ -7215,13 +7230,14 @@
           "start": "12:00:00",
           "end": "14:00:00",
           "teacher": "CANALES ARIAS, FELIX GASPAR",
-          "room": "S1-229 (LAB D)",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         }
       ]
     }
   },
-  "SW603": {
+  "SW-603": {
     "name": "DISEÑO DE SOFTWARE",
     "sections": {
       "U": [
@@ -7231,7 +7247,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "CABALLERO ORTIZ, JOSE ALBERTO",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
@@ -7240,7 +7257,8 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "CABALLERO ORTIZ, JOSE ALBERTO",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         }
       ]
@@ -7256,7 +7274,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "RAMOS MUÑOZ, ALFREDO MARINO",
-          "room": "S1-229 (LAB D)",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         },
         {
@@ -7265,13 +7284,14 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "RAMOS MUÑOZ, ALFREDO MARINO",
-          "room": "S1-229 (LAB D)",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         }
       ]
     }
   },
-  "SW608": {
+  "SW-608": {
     "name": "LENGUAJE DE DOMINIO ESPECIFICO",
     "sections": {
       "U": [
@@ -7281,7 +7301,8 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "MEDIANERO ACOSTA, JORGE",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
@@ -7290,7 +7311,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "MEDIANERO ACOSTA, JORGE",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
@@ -7299,13 +7321,14 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "MEDIANERO ACOSTA, JORGE",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         }
       ]
     }
   },
-  "SW609": {
+  "SW-609": {
     "name": "SISTEMAS DE GESTION DE BASE DE DATOS",
     "sections": {
       "U": [
@@ -7315,7 +7338,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "BERROCAL NAVARRO, RICHARD LEONARDO",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
@@ -7324,7 +7348,8 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "BERROCAL NAVARRO, RICHARD LEONARDO",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         },
         {
@@ -7333,7 +7358,8 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "BERROCAL NAVARRO, RICHARD LEONARDO",
-          "room": "S1-126 (LAB B)",
+          "room": "S1-126",
+          "short-room": "LAB B",
           "vacantes": 32
         }
       ]
@@ -7774,7 +7800,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "MUÑOZ INGA, CARLOS",
-          "room": "S1-227 (LAB A1)",
+          "room": "S1-227",
+          "short-room": "LAB A1",
           "vacantes": 21
         },
         {
@@ -7783,7 +7810,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "MUÑOZ INGA, CARLOS",
-          "room": "S1-227 (LAB A1)",
+          "room": "S1-227",
+          "short-room": "LAB A1",
           "vacantes": 21
         }
       ],
@@ -7794,7 +7822,8 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
-          "room": "S1-229 (LAB D)",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         },
         {
@@ -7803,7 +7832,8 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
-          "room": "S1-229 (LAB D)",
+          "room": "S1-229",
+          "short-room": "LAB D",
           "vacantes": 26
         }
       ],
@@ -7814,7 +7844,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
-          "room": "CIBER (LAB O)",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 30
         },
         {
@@ -7823,7 +7854,8 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
-          "room": "CIBER (LAB O)",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 30
         }
       ],
@@ -7834,7 +7866,8 @@
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
-          "room": "S1-226 (LAB E)",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         },
         {
@@ -7843,7 +7876,8 @@
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
-          "room": "S1-226 (LAB E)",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         }
       ]
@@ -8344,7 +8378,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
-          "room": "CIBER (LAB O)",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 46
         },
         {
@@ -8353,7 +8388,8 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "CIEZA DE LEÓN TUESTA, EDUARDO JOSÉ",
-          "room": "CIBER (LAB O)",
+          "room": "CIBER",
+          "short-room": "LAB O",
           "vacantes": 46
         }
       ],
@@ -8373,7 +8409,8 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "MONCADA CAJAVILCA, VICTOR JOSÉ",
-          "room": "S1-226 (LAB E)",
+          "room": "S1-226",
+          "short-room": "LAB E",
           "vacantes": 26
         }
       ]
