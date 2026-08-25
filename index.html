@@ -1,785 +1,149 @@
 <!doctype html>
-<html
-	lang="es"
-	data-theme="dark">
-	<head>
-		<meta charset="UTF-8" />
-		<title>generador de horario 25-2</title>
-		<link
-			href="style.css"
-			rel="stylesheet" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css"
-			rel="stylesheet" />
-		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-	</head>
-	<body>
-		<div
-			class="section"
-			style="
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding-right: 0;
-			">
-			<h2 style="margin: 0">Estructura de Cursos</h2>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>generador de horario</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <header class="top-nav">
+      <div style="display: flex; align-items: center; gap: 1rem">
+        <button id="btn-menu-toggle" class="hamburger-btn">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            stroke="currentColor"
+            stroke-width="2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <h1>Estructura de Cursos</h1>
+      </div>
+      <div class="controls">
+        <button id="btn-export-img" title="exportar como imagen">
+          <svg
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            stroke="currentColor"
+            stroke-width="2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <polyline points="21 15 16 10 5 21"></polyline>
+          </svg>
+        </button>
+        <button id="btn-export-url" class="success">
+          <span class="desktop-btn">Compartir Horario</span
+          ><span class="mobile-btn">Compartir</span>
+        </button>
+        <button id="btn-export-ics">
+          <span class="desktop-btn">Exportar a Google Calendar (.ics)</span
+          ><span class="mobile-btn">Exportar</span>
+        </button>
+        <button id="btn-theme-toggle" title="cambiar tema">
+          <svg
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            stroke="currentColor"
+            stroke-width="2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
 
-			<div
-				style="
-					display: flex;
-					align-items: center;
-					gap: 8px;
-					margin-right: 15px;
-				">
-
-<div class="controls" style="display: flex; align-items: center; gap: 15px;">
-    <button onclick="copyScheduleImage()" title="Copiar horario como imagen" style="background: transparent; border: none; cursor: pointer; color: var(--text-color); padding: 5px; display: flex; align-items: center; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
-        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
-fill="currentColor" viewBox="0 0 24 24" >
-<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-<path d="M20 2H10c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 12H10V4h10z"></path><path d="M14 20H4V10h2V8H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-2h-2z"></path>
-</svg>
-    </button>
-</div>
-
-				<div
-					style="
-						display: flex;
-						align-items: center;
-						gap: 8px;
-						margin-right: 15px;
-					">
-					<span style="font-size: 1.1em; display: flex; align-items: center"
-						><svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							fill="currentColor"
-							viewBox="0 0 24 24">
-							<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-							<path
-								d="M19 8.59V6c0-.55-.45-1-1-1h-2.59L12.7 2.29a.996.996 0 0 0-1.41 0L8.58 5H5.99c-.55 0-1 .45-1 1v2.59L2.28 11.3a.996.996 0 0 0 0 1.41l2.71 2.71v2.59c0 .55.45 1 1 1h2.59l2.71 2.71c.2.2.45.29.71.29s.51-.1.71-.29l2.71-2.71h2.59c.55 0 1-.45 1-1v-2.59l2.71-2.71a.996.996 0 0 0 0-1.41l-2.71-2.71Zm-1.71 5.71a1 1 0 0 0-.29.71v2h-2c-.27 0-.52.11-.71.29L12 19.59 9.71 17.3a1 1 0 0 0-.71-.29H7v-2c0-.27-.11-.52-.29-.71l-2.29-2.29 2.29-2.29A1 1 0 0 0 7 9.01v-2h2c.27 0 .52-.11.71-.29L12 4.43l2.29 2.29c.19.19.44.29.71.29h2v2c0 .27.11.52.29.71l2.29 2.29z"></path>
-							<path d="M12 8a4 4 0 1 0 0 8 4 4 0 1 0 0-8"></path>
-						</svg>
-					</span>
-					<label class="theme-switch">
-						<input
-							type="checkbox"
-							id="themeToggle"
-							onchange="handleThemeSwitch(this)" />
-						<span class="slider"></span>
-					</label>
-					<span style="font-size: 1.1em; display: flex; align-items: center"
-						><svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							fill="currentColor"
-							viewBox="0 0 24 24">
-							<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-							<path
-								d="M12.2 22c4.53 0 8.45-2.91 9.76-7.24a1.002 1.002 0 0 0-1.25-1.25c-.78.23-1.58.35-2.38.35-4.52 0-8.2-3.68-8.2-8.2 0-.8.12-1.6.35-2.38.11-.35.01-.74-.25-1s-.64-.36-1-.25A10.17 10.17 0 0 0 2 11.8C2 17.42 6.57 22 12.2 22M8.18 4.65c-.03.34-.05.68-.05 1.02 0 5.62 4.57 10.2 10.2 10.2.34 0 .68-.02 1.02-.05C17.93 18.38 15.23 20 12.2 20 7.68 20 4 16.32 4 11.8a8.15 8.15 0 0 1 4.18-7.15"></path>
-						</svg>
-					</span>
-				</div>
-				<div
-					style="
-						display: flex;
-						align-items: center;
-						gap: 8px;
-						margin-right: 15px;
-					">
-					<span
-						style="
-							font-size: 0.85em;
-							font-weight: 700;
-							opacity: 0.8;
-							letter-spacing: 0.5px;
-						"
-						>12H</span
-					>
-					<label class="theme-switch">
-						<input
-							type="checkbox"
-							id="hourToggle"
-							onchange="handleHourSwitch(this)" />
-						<span class="slider"></span>
-					</label>
-					<span
-						style="
-							font-size: 0.85em;
-							font-weight: 700;
-							opacity: 0.8;
-							letter-spacing: 0.5px;
-						"
-						>24H</span
-					>
-				</div>
-				<button
-					class="success"
-					onclick="copySyncUrl()">
-					<div style="display: flex; align-items: center; gap: 0.6em">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							fill="currentColor"
-							viewBox="0 0 24 24">
-							<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-							<path
-								d="M5.5 15.5c1.07 0 2.02-.5 2.67-1.26l6.87 3.87c-.01.13-.04.26-.04.39 0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5c-1.07 0-2.02.5-2.67 1.26l-6.87-3.87c.01-.13.04-.26.04-.39s-.02-.26-.04-.39l6.87-3.87C16.47 8.5 17.42 9 18.5 9 20.43 9 22 7.43 22 5.5S20.43 2 18.5 2 15 3.57 15 5.5c0 .13.02.26.04.39L8.17 9.76A3.48 3.48 0 0 0 5.5 8.5C3.57 8.5 2 10.07 2 12s1.57 3.5 3.5 3.5m13 1.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5m0-13c.83 0 1.5.67 1.5 1.5S19.33 7 18.5 7 17 6.33 17 5.5 17.67 4 18.5 4m-13 6.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5S4 12.83 4 12s.67-1.5 1.5-1.5"></path>
-						</svg>
-						<span>Compartir Horario</span>
-					</div>
-				</button>
-				<div style="display: flex; align-items: center; gap: 4px">
-					<button onclick="downloadICS()">
-						<div style="display: flex; align-items: center; gap: 0.6em">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								fill="currentColor"
-								viewBox="0 0 24 24">
-								<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-								<path d="M13 10h-2v3H8v2h3v3h2v-3h3v-2h-3z"></path>
-								<path
-									d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2M5 20V8h14V6v14z"></path>
-							</svg>
-							<span>Exportar a Google Calendar (.ics)</span>
-						</div>
-					</button>
-					<button
-						onclick="openHelpModal()"
-						style="
-							padding: 10px;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							background: transparent;
-							border: 1px solid var(--border-color);
-							color: var(--text-color);
-						"
-						title="¿Como importar a Google Calendar?">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							fill="currentColor"
-							viewBox="0 0 24 24">
-							<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-							<path
-								d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8"></path>
-							<path
-								d="M11 16h2v2h-2zm2.27-9.75c-2.08-.75-4.47.35-5.21 2.41l1.88.68c.18-.5.56-.9 1.07-1.13s1.08-.26 1.58-.08a2.01 2.01 0 0 1 1.32 1.86c0 1.04-1.66 1.86-2.24 2.07-.4.14-.67.52-.67.94v1h2v-.34c1.04-.51 2.91-1.69 2.91-3.68a4.015 4.015 0 0 0-2.64-3.73"></path>
-						</svg>
-					</button>
-				</div>
-			</div>
-		</div>
-		<div
-			class="section"
-			style="display: flex; align-items: center; flex-wrap: wrap">
-			<div
-				class="section-wrapper"
-				style="
-					width: 100%;
-					display: flex;
-					align-items: stretch;
-					overflow: hidden;
-				">
-				<div
-					id="searchComponent"
-					style="
-						display: flex;
-						flex: 1;
-						transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-					">
-					<input
-						type="text"
-						id="searchBox"
-						style="
-							width: 100%;
-							padding-left: 12px;
-							border-radius: 10px 0 0 10px;
-							border-right-color: var(--btn-bg);
-						"
-						placeholder="Buscar curso (Ej: SW603 o FISICA)..."
-						onkeyup="if (event.key === 'Enter') searchCourses();" />
-					<button
-						onclick="searchCourses()"
-						style="margin: 0px; border-radius: 0 10px 10px 0; flex-shrink: 0">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							fill="currentColor"
-							viewBox="0 0 24 24">
-							<path
-								d="m17.06 14.94-2.8-1.34A6.96 6.96 0 0 0 16 9c0-3.86-3.14-7-7-7S2 5.14 2 9s3.14 7 7 7c1.76 0 3.37-.66 4.6-1.74l1.34 2.8 5 5 2.12-2.12zM9 14c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5"></path>
-						</svg>
-					</button>
-				</div>
-
-				<div
-					id="notification"
-					class="notification"></div>
-			</div>
-
-			<div style="flex-basis: 100%; height: 0"></div>
-			<div
-				id="results"
-				style="margin-top: 0px; width: 100%"></div>
-			<button
-				onclick="openOptimizerModal()"
-				style="
-					background: #6f42c1;
-					width: 100%;
-					margin-top: 15px;
-					border-radius: 8px;
-				">
-				Autogenerador de Horario Ideal
-			</button>
-		</div>
-		<div class="section">
-			<div
-				id="calendar"
-				style="width: 100%"></div>
-			<div
-				class="legend-container"
-				id="legend"></div>
-		</div>
-		<div
-			class="overlay"
-			id="overlay"
-			onclick="closePopups()"></div>
-		<div
-			class="popup"
-			id="popup">
-			<h3 id="popupTitle"></h3>
-			<div id="sectionsList"></div>
-			<div style="margin-top: 15px">
-				<button onclick="addSelectedSections()">Añadir al Horario</button>
-				<button
-					onclick="closePopups()"
-					style="background: #aaa">
-					Cancelar
-				</button>
-			</div>
-		</div>
-		<div
-			class="popup"
-			id="editPopup">
-			<h3 id="editTitle">Editar Sesion</h3>
-			<label style="font-size: 0.9em; margin-bottom: 5px; display: block"
-				>Color del curso</label>
-
-			<div
-				class="custom-select"
-				id="customColorSelect"
-				data-value="#1E90FF">
-				<div
-					class="select-trigger"
-					onclick="toggleColorDropdown(event)">
-					<div style="display: flex; align-items: center">
-						<span
-							class="color-dot"
-							id="triggerDot"
-							style="background-color: #1e90ff"></span>
-						<span id="triggerText">Azul</span>
-					</div>
-					<span style="font-size: 0.8em; opacity: 0.6">▼</span>
-				</div>
-
-				<div
-					class="select-options"
-					id="colorOptions">
-					<div
-						class="option"
-						onclick="selectColor('#1E90FF', 'Azul')">
-						<span
-							class="color-dot"
-							style="background-color: #1e90ff"></span
-						>Azul
-					</div>
-					<div
-						class="option"
-						onclick="selectColor('#28A745', 'Verde')">
-						<span
-							class="color-dot"
-							style="background-color: #28a745"></span
-						>Verde
-					</div>
-					<div
-						class="option"
-						onclick="selectColor('#FF8C00', 'Naranja')">
-						<span
-							class="color-dot"
-							style="background-color: #ff8c00"></span
-						>Naranja
-					</div>
-					<div
-					class="option"
-						onclick="selectColor('#6F42C1', 'Morado')">
-						<span
-							class="color-dot"
-							style="background-color: #6f42c1"></span
-						>Morado
-					</div>
-					<div
-						class="option"
-						onclick="selectColor('#DC3545', 'Rojo')">
-						<span
-							class="color-dot"
-							style="background-color: #dc3545"></span
-							>Rojo
-					</div>
-					<div
-					class="option"
-					onclick="selectColor('#20C997', 'Turquesa')">
-						<span
-							class="color-dot"
-							style="background-color: #20c997"></span
-						>Turquesa
-					</div>
-					<div
-						class="option"
-						onclick="selectColor('#E83E8C', 'Rosa')">
-						<span
-							class="color-dot"
-							style="background-color: #e83e8c"></span
-						>Rosa
-					</div>
-					<div
-						class="option"
-						onclick="selectColor('#dfca0e', 'Amarillo')">
-						<span
-							class="color-dot"
-							style="background-color: #dfca0e"></span
-						>Amarillo
-					</div>
-					<div
-						class="option"
-						onclick="selectColor('#C8A2C8', 'Lila')">
-						<span
-							class="color-dot"
-							style="background-color: #C8A2C8"></span
-						>Lila
-					</div>
-					<div
-						class="option"
-						onclick="selectColor('#36454F', 'Carbon')">
-						<span
-							class="color-dot"
-							style="background-color: #36454F"></span
-						>Carbon
-					</div>
-				</div>
-			</div>
-			<div
-				style="display: flex; justify-content: space-between; margin-top: 15px">
-				<button onclick="saveEdit()">Guardar</button>
-				<button
-					class="danger"
-					id="removeCourseBtn">
-					Eliminar Curso
-				</button>
-				<button
-					onclick="closePopups()"
-					style="background: #aaa">
-					Cancelar
-				</button>
-			</div>
-		</div>
-		<div
-			class="popup"
-			id="helpPopup">
-			<h3 style="margin-top: 0; display: flex; align-items: center; gap: 8px">
-				<svg
-					viewBox="0 0 24 24"
-					width="22"
-					height="22"
-					stroke="currentColor"
-					stroke-width="2"
-					fill="none"
-					stroke-linecap="round"
-					stroke-linejoin="round">
-					<rect
-						x="3"
-						y="4"
-						width="18"
-						height="18"
-						rx="2"
-						ry="2"></rect>
-					<line
-						x1="16"
-						y1="2"
-						x2="16"
-						y2="6"></line>
-					<line
-						x1="8"
-						y1="2"
-						x2="8"
-						y2="6"></line>
-					<line
-						x1="3"
-						y1="10"
-						x2="21"
-						y2="10"></line>
-				</svg>
-				Guia de Google Calendar
-			</h3>
-
-			<div
-				style="
-					display: flex;
-					flex-direction: column;
-					gap: 15px;
-					font-size: 0.95em;
-				">
-				<div style="display: flex; gap: 12px; align-items: flex-start">
-					<div
-						style="
-							background: var(--btn-bg);
-							color: white;
-							border-radius: 50%;
-							width: 24px;
-							height: 24px;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							flex-shrink: 0;
-							font-weight: bold;
-							font-size: 0.85em;
-						">
-						1
-					</div>
-					<div>
-						Haz clic en <strong>Exportar a Google Calendar (.ics)</strong> para
-						descargar tu archivo de horario.
-					</div>
-				</div>
-
-				<div style="display: flex; gap: 12px; align-items: flex-start">
-					<div
-						style="
-							background: var(--btn-bg);
-							color: white;
-							border-radius: 50%;
-							width: 24px;
-							height: 24px;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							flex-shrink: 0;
-							font-weight: bold;
-							font-size: 0.85em;
-						">
-						2
-					</div>
-					<div>
-						Abre Google Calendar en tu PC. Ve al icono de engranaje
-						<svg
-							viewBox="0 0 24 24"
-							width="16"
-							height="16"
-							stroke="currentColor"
-							stroke-width="2"
-							fill="none"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							style="vertical-align: middle">
-							<circle
-								cx="12"
-								cy="12"
-								r="3"></circle>
-							<path
-								d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-						</svg>
-						arriba a la derecha y selecciona <strong>Configuracion</strong>.
-					</div>
-				</div>
-
-				<div style="display: flex; gap: 12px; align-items: center">
-					<div
-						style="
-							background: var(--btn-bg);
-							color: white;
-							border-radius: 50%;
-							width: 24px;
-							height: 24px;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							flex-shrink: 0;
-							font-weight: bold;
-							font-size: 0.85em;
-						">
-						3
-					</div>
-					<div>
-						En el menú izquierdo, haz clic en
-						<strong>Importar y exportar</strong>
-						<svg
-							viewBox="0 0 24 24"
-							width="16"
-							height="16"
-							stroke="currentColor"
-							stroke-width="2"
-							fill="none"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							style="vertical-align: middle">
-							<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-							<polyline points="17 8 12 3 7 8"></polyline>
-							<line
-								x1="12"
-								y1="3"
-								x2="12"
-								y2="15"></line>
-						</svg>
-					</div>
-				</div>
-
-				<div style="display: flex; gap: 12px; align-items: flex-start">
-					<div
-						style="
-							background: var(--btn-bg);
-							color: white;
-							border-radius: 50%;
-							width: 24px;
-							height: 24px;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							flex-shrink: 0;
-							font-weight: bold;
-							font-size: 0.85em;
-						">
-						4
-					</div>
-					<div>
-						Sube el archivo <code>.ics</code> que acabas de descargar, elige a
-						que calendario añadirlo y haz clic en <strong>Importar</strong>.
-					</div>
-				</div>
-			</div>
-
-			<button
-				onclick="closePopups()"
-				style="margin-top: 20px; width: 100%">
-				Entendido
-			</button>
-		</div>
-		<div
-			class="overlay"
-			id="optOverlay"
-			onclick="closePopups()"></div>
-		<div
-			class="popup"
-			id="optimizerModal"
-			style="width: 95%; max-width: 900px; top: 5%">
-			<div
-				style="
-					display: flex;
-					justify-content: space-between;
-					border-bottom: 1px solid var(--border-color);
-					padding-bottom: 10px;
-				">
-				<h3 style="margin: 0; color: var(--btn-bg)">
-						Autogenerador de horarios
-				</h3>
-				<div style="font-weight: bold; color: var(--text-color); margin-right: 15px;">
-            Especialidad: 
-            <select id="optCareer" onchange="saveOptState(); updateOptCartUI();" style="font-weight: 600; padding: 6px; border-radius: 4px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color);">
-                <option value="I1">Ing. Industrial</option>
-                <option value="I2">Ing. de Sistemas</option>
-                <option value="I3">Ing. de Software</option>
-                <option value="I4">Ing. de Inteligencia Artificial</option>
-            </select>
-        </div>
-				<div style="font-weight: bold; color: var(--text-color)">
-					Creditos: <span id="optCurrentCredits">0</span> /
-					<select id="optMaxCredits" onchange="saveOptState()" style="font-weight: 600; width: 50px; padding: 6px; border-radius: 4px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color);">
-						<option>15</option>
-						<option>18</option>
-						<option>24</option>
-						<option>26</option>
-						<option>28</option>
-					</select>
-				</div>
-			</div> 
-			<!-- top section -->
-
-			<div class="opt-layout-container">
-        <div style="flex: 1; min-width: 0;">
+    <main class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="search-container">
           <input
             type="text"
-            id="optSearchInput"
-            placeholder="Buscar curso para añadir al optimizador..."
-            style="margin: 0; width: 100%; box-sizing: border-box;"
-            onkeyup="searchOptCourses()" />
-          <div
-            id="optSearchResults"
-            style="
-              max-height: 120px;
-              overflow-y: auto;
-              margin-bottom: 15px;
-            "></div>
-					<div style="background: var(--surface-color); padding: 12px; border-radius: 8px; margin-bottom: 15px; border: 1px solid var(--border-color);">
-              <h5 style="margin: 0 0 10px 0; color: var(--btn-bg); font-size: 0.9em;">Bloquear Horas (Trabajo, etc.)</h5>
-              <div style="display: flex; gap: 5px; margin-bottom: 8px;">
-                  <select id="busyDay" style="flex: 1; padding: 6px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px;">
-                      <option value="1">Lun</option>
-                      <option value="2">Mar</option>
-                      <option value="3">Mie</option>
-                      <option value="4">Jue</option>
-                      <option value="5">Vie</option>
-                      <option value="6">Sab</option>
-                  </select>
-                  <input type="time" id="busyStart" value="16:00" style="flex: 1; padding: 6px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px;">
-                  <input type="time" id="busyEnd" value="18:00" style="flex: 1; padding: 6px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px;">
-              </div>
-              <button onclick="addBusyBlock()" style="width: 100%; padding: 8px; background: transparent; border: 1px dashed var(--btn-bg); color: var(--btn-bg); font-weight: bold; border-radius: 4px;">Añadir Bloqueo</button>
-              <div id="busyBlocksContainer" style="display: flex; flex-direction: column; gap: 5px; margin-top: 10px;"></div>
-          </div>
-          <h4 style="margin-bottom: 5px">
-            Cursos en Lista (<span id="optCourseCount">0</span>)
-          </h4>
-          <div
-            id="optCart"
-            style="
-              display: flex;
-              flex-direction: column;
-              gap: 10px;
-              max-height: 300px;
-              overflow-y: auto;
-              padding-right: 5px;
-            ">
-            <p style="color: #888; font-size: 0.9em; text-align: center">
-              Agrega cursos usando el buscador de arriba.
-            </p>
-          </div>
-          <button
-            onclick="openTeacherModal()"
-            style="
-              width: 100%;
-              padding: 10px;
-              margin: 15px 0 0 0;
-              background: transparent;
-              border: 2px solid var(--btn-bg);
-              color: var(--btn-bg);
-              font-weight: bold;
-              border-radius: 6px;
-              box-sizing: border-box;
-            ">
-            Ordenar Preferencia de Profesores
-          </button>
+            id="search-input"
+            placeholder="buscar curso (ej: sw603)..."
+          />
+          <div id="search-results" class="results-box"></div>
         </div>
 
-        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column;">
-          <div
-            style="
-              background: var(--bg-color);
-              padding: 15px;
-              border-radius: 8px;
-              margin-bottom: 15px;
-            ">
-            <label style="font-size: 0.85em; font-weight: bold"
-              >Tolerancia a cruces:</label>
-            <input
-              type="range"
-              id="optApathy"
-              min="0"
-              max="1"
-              step="0.1"
-              value="0"
-              onchange="saveOptState()"
-              style="width: 100%; box-sizing: border-box;" />
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                font-size: 0.7em;
-                color: #888;
-              ">
-              <span>Estricto (0 Cruces)</span>
-              <span style="text-align: right;">me da igual ir a clase xd (Ignorar cruces)</span>
-            </div>
-          </div>
-
-          <button
-            onclick="executeOptimizer()"
-            style="
-              width: 100%;
-              margin: 0;
-              padding: 12px;
-              font-weight: bold;
-              background: #28a745;
-              font-size: 1.1em;
-              letter-spacing: 1px;
-              box-sizing: border-box;
-            ">
-            GENERAR HORARIOS
-          </button>
-
-          <div
-            id="optLoading"
-            style="display: none; text-align: center; margin: 20px 0">
-            <div class="spinner"></div>
-            <p style="font-weight: bold; color: var(--btn-bg)">
-              Calculando rutas optimas...
-            </p>
-          </div>
-
-          <div
-            id="optResults"
-            style="
-              display: flex;
-              flex-direction: column;
-              gap: 10px;
-              max-height: var(--max-height-opt);
-              overflow-y: auto;
-              margin-top: 15px;
-              padding-right: 5px;
-            "></div>
+        <div class="cart-container">
+          <h3>Cursos en Horario (<span id="credit-counter">0</span> cred)</h3>
+          <div id="selected-courses-list"></div>
         </div>
+
+        <!-- <div class="optimizer-trigger">
+          <button
+            id="btn-open-optimizer"
+            style="width: 100%; background: #6f42c1; color: white"
+          >
+            Autogenerador de Horario Ideal
+          </button>
+        </div> -->
+      </aside>
+
+      <section class="schedule-container">
+        <div id="calendar-grid" class="calendar">
+          <div class="grid-header time-col">hora</div>
+          <div class="grid-header">
+            <span class="desktop-day">lunes</span
+            ><span class="mobile-day">l</span>
+          </div>
+          <div class="grid-header">
+            <span class="desktop-day">martes</span
+            ><span class="mobile-day">m</span>
+          </div>
+          <div class="grid-header">
+            <span class="desktop-day">miercoles</span
+            ><span class="mobile-day">x</span>
+          </div>
+          <div class="grid-header">
+            <span class="desktop-day">jueves</span
+            ><span class="mobile-day">j</span>
+          </div>
+          <div class="grid-header">
+            <span class="desktop-day">viernes</span
+            ><span class="mobile-day">v</span>
+          </div>
+          <div class="grid-header">
+            <span class="desktop-day">sábado</span
+            ><span class="mobile-day">s</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="modal-overlay" class="overlay"></div>
+    <div id="section-modal" class="popup">
+      <h3 id="modal-title"></h3>
+      <div id="modal-sections-list"></div>
+      <div
+        class="modal-actions"
+        style="margin-top: 15px; display: flex; gap: 10px"
+      >
+        <button id="btn-add-section" class="success">Añadir al Horario</button>
+        <button id="btn-close-modal" style="background: var(--border-grid)">
+          Cancelar
+        </button>
       </div>
-		</div>
-		<div class="popup" id="teacherModal" style="width: 95%; max-width: 600px; top: 5%; z-index: 1002;">
-    <h3 style="color: var(--btn-bg); margin-top: 0;">Ranking de Docentes</h3>
-    
-    <div class="opt-tabs" id="teacherTabs"></div>
-
-    <div id="teacherTabContent" style="max-height: 45vh; overflow-y: auto; padding-right: 5px; margin-bottom: 15px;">
-        </div>
-
-    <div style="background: var(--surface-color); padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 15px;">
-        <h5 style="margin: 0 0 10px 0; font-size: 0.9em;">Herramienta de Clonacion de Orden</h5>
-        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;">
-            <div style="display: flex; flex-direction: column; gap: 5px; align-items: center;">
-                <span style="font-size: 0.75em; opacity: 0.8; font-weight: bold;">ORIGEN</span>
-                <div id="copySrcChips" style="display: flex; flex-direction: column; gap: 4px;"></div>
-            </div>
-            
-            <span style="font-size: 1.5em; color: var(--btn-bg);">➔</span>
-            
-            <div style="display: flex; flex-direction: column; gap: 5px; align-items: center;">
-                <span style="font-size: 0.75em; opacity: 0.8; font-weight: bold;">DESTINO</span>
-                <div id="copyDstChips" style="display: flex; flex-direction: column; gap: 4px;"></div>
-            </div>
-
-            <button id="btnExecuteCopy" onclick="executeTeacherCopy()" style="background: #6f42c1; font-weight: bold; font-size: 0.85em; padding: 10px;">
-                Copiar orden
-            </button>
-        </div>
     </div>
-    
-    <button onclick="closeTeacherModal()" style="width: 100%; background: #28a745; font-weight: bold; padding: 12px;">
-        Guardar Configuracion
-    </button>
-</div>
-		<script src="index.js"></script>
-	</body>
+
+    <div id="notification-toast" class="toast"></div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
