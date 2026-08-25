@@ -276,6 +276,10 @@ input[type="text"]:focus {
   gap: 2px;
   text-align: center;
   container-type: size;
+
+
+  /* flex-wrap: wrap; */
+  /* max-height: 2.5rem; */
 }
 
 .class-block:hover {
@@ -285,7 +289,7 @@ input[type="text"]:focus {
 }
 
 .class-title {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 800;
   line-height: 1.1;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
@@ -294,12 +298,15 @@ input[type="text"]:focus {
   -webkit-line-clamp: 3;
   line-clamp: 3;
   overflow: visible;
+  /* order: 2; */
 }
 
-.class-meta {
-  font-size: 0.65rem;
-  font-weight: 500;
-  opacity: 0.8;
+.class-code {
+  font-size: 0.6rem;
+  font-weight: 700;
+  opacity: 0.85;
+  flex-shrink: 0;
+  /* order: 1; */
 }
 
 .toast {
@@ -335,13 +342,6 @@ input[type="text"]:focus {
   background-color: var(--bg-grid-cell);
 }
 
-.class-code {
-  font-size: 0.7rem;
-  font-weight: 700;
-  opacity: 0.85;
-  flex-shrink: 0;
-}
-
 .pill-container {
   display: flex;
   flex-wrap: wrap;
@@ -354,6 +354,7 @@ input[type="text"]:focus {
   border: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   flex-shrink: 0;
+  /* order: 3; */
 }
 
 .pill-room {
@@ -472,10 +473,6 @@ input[type="text"]:focus {
 
 @container (max-height: 40px) {
   .pill-container {
-    display: none;
-  }
-
-  .class-code {
     display: none;
   }
 }
