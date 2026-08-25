@@ -637,7 +637,7 @@ input[type="text"]:focus {
   max-width: 95%;
   max-height: 80vh;
   overflow-y: auto;
-  display: none;
+  /* display: none; */
   z-index: 1000;
   border: 1px solid var(--border-color);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
