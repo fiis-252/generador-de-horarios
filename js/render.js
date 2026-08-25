@@ -161,7 +161,7 @@ export const rendersectionmodal = (
   document.getElementById("btn-close-modal").onclick = onclose;
 
   document.getElementById("modal-overlay").style.display = "block";
-  document.getElementById("section-modal").style.display = "block";
+  document.getElementById("section-modal").showModal();
 };
 
 export const rendercart = (schedule, onremove) => {
