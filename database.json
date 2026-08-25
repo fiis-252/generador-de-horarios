@@ -2997,8 +2997,7 @@
           "start": "08:00:00",
           "end": "10:00:00",
           "teacher": "CUEVA HUANUCO, EDDIE DANNY",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         },
@@ -3367,8 +3366,7 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "VILLANUEVA HERRERA, JOSÉ ALBERTO",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 21
         }
@@ -4322,8 +4320,7 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "VALLE SANTOS, JOHN CLERK",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         },
@@ -4333,8 +4330,7 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "VALLE SANTOS, JOHN CLERK",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         }
@@ -4806,8 +4802,7 @@
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "AUDANTE RAMOS, NESTOR RAFAEL",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         },
@@ -4817,8 +4812,7 @@
           "start": "12:00:00",
           "end": "14:00:00",
           "teacher": "AUDANTE RAMOS, NESTOR RAFAEL",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         }
@@ -4925,8 +4919,7 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "LUJÁN CAMPOS, LUIS ALBERTO",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         },
@@ -5145,8 +5138,7 @@
           "start": "08:00:00",
           "end": "10:00:00",
           "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         },
@@ -5156,8 +5148,7 @@
           "start": "10:00:00",
           "end": "12:00:00",
           "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         }
@@ -5433,8 +5424,7 @@
           "start": "08:00:00",
           "end": "10:00:00",
           "teacher": "CORDOVA NERI, TEODORO LUCIANO",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 39
         }
@@ -5446,8 +5436,7 @@
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         },
@@ -5457,8 +5446,7 @@
           "start": "16:00:00",
           "end": "18:00:00",
           "teacher": "CORONEL CASTILLO, ERIC GUSTAVO",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         }
@@ -6275,8 +6263,7 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         },
@@ -6286,8 +6273,7 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "TORRE CAMONES, ANIVAL ALFREDO",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         }
@@ -6299,8 +6285,7 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         },
@@ -6310,8 +6295,7 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "COSSA CABANILLAS, JESUS ALBERTO",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         }
@@ -6467,8 +6451,7 @@
           "start": "18:00:00",
           "end": "20:00:00",
           "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 37
         },
@@ -6478,8 +6461,7 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "SANCHEZ ESPINOZA, JAVIER CONCEPCIÓN",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 37
         }
@@ -6666,8 +6648,7 @@
           "start": "20:00:00",
           "end": "22:00:00",
           "teacher": "ARADIEL CASTAÑEDA, HILARIO",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 40
         }
@@ -6988,8 +6969,7 @@
           "start": "14:00:00",
           "end": "16:00:00",
           "teacher": "MEDIANERO ACOSTA, JORGE",
-          "room": "S1-327",
-          "short-room": "329",
+          "room": "S1-327/329",
           "short-room": "LAB G",
           "vacantes": 28
         },

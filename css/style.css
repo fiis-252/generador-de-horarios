@@ -474,7 +474,6 @@ input[type="text"]:focus {
   border: 1px solid var(--border-grid);
   position: relative;
   border-radius: 6px;
-  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 .grid-header {
@@ -519,7 +518,7 @@ input[type="text"]:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 2px;
   overflow: hidden;
   color: var(--block-text);
   box-shadow:
@@ -553,7 +552,7 @@ input[type="text"]:focus {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   line-clamp: 3;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .pill-container {
@@ -784,20 +783,23 @@ input[type="text"]:focus {
     font-size: 0.6rem;
     padding: 2px 4px;
   }
-  @container (max-height: 60px) {
-    .class-title {
-      display: none;
-    }
-
-    .pill-room-short {
-      display: none;
-    }
-    .pill-type {
-      display: none;
-    }
-  }
+  
 
   .section-radio-block table {
     font-size: 0.65rem;
+  }
+}
+
+@container (max-height: 60px) {
+  .class-title {
+    display: none;
+    /* overflow: visible; */
+  }
+
+  .pill-room-short {
+    display: none;
+  }
+  .pill-type {
+    display: none;
   }
 }
