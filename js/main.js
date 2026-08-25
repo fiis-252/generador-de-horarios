@@ -3,7 +3,7 @@ import {
     addcourse,
     removecourse,
     generatespatialmatrix,
-    calculatetotalcredits,
+    calculatetotalcredits
 } from "./state.js";
 import { encodepayload, decodepayload } from "./url.js";
 import {
@@ -11,7 +11,7 @@ import {
     rendersearchresults,
     rendersectionmodal,
     rendercart,
-    shownotification,
+    shownotification
 } from "./render.js";
 
 let appstate = createstate();
@@ -101,7 +101,11 @@ const updateui = () => {
 };
 
 const closemodal = () => {
-    document.getElementById("modal-overlay").style.display = "none";
+
+    if (!document.getElementById('sidebar').className.split(' ').includes('open')) {
+        document.getElementById("modal-overlay").style.display = "none";
+    }
+    
     document.getElementById("section-modal").close();
 };
 
@@ -146,14 +150,14 @@ const bindevents = () => {
                         appstate.schedule,
                         appstate.database,
                         selectedcode,
-                        section,
+                        section
                     );
                     searchinput.value = "";
                     rendersearchresults([], appstate.database, null);
                     closemodal();
                     updatestate();
                 },
-                closemodal,
+                closemodal
             );
         });
     });
