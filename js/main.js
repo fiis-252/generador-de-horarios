@@ -94,10 +94,10 @@ const updateui = () => {
     });
 
     const creditsdb = {};
-    document.getElementById("credit-counter").textContent = calculatetotalcredits(
-        appstate.schedule,
-        creditsdb,
-    );
+    // document.getElementById("credit-counter").textContent = calculatetotalcredits(
+    //     appstate.schedule,
+    //     creditsdb,
+    // );
 };
 
 const closemodal = () => {
