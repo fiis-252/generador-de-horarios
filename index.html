@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="top-nav">
-    <div id="modal-overlay" class="overlay"></div>
+      <div id="modal-overlay" class="overlay"></div>
       <div style="display: flex; align-items: center; gap: 1rem">
         <button id="btn-menu-toggle" class="hamburger-btn">
           <svg
@@ -82,7 +82,7 @@
           <div id="search-results" class="results-box"></div>
         </div>
 
-        <div class="cart-container">
+        <div class="cart-container hide-scrollbar">
           <h3>Cursos en Horario</h3>
           <!-- <h3>Cursos en Horario (<span id="credit-counter">0</span> cred)</h3> -->
           <div id="selected-courses-list"></div>
@@ -129,7 +129,7 @@
       </section>
     </main>
 
-    <dialog id="section-modal" class="popup">
+    <dialog id="section-modal" class="popup hide-scrollbar">
       <h3 id="modal-title"></h3>
       <div id="modal-sections-list"></div>
       <div
@@ -141,6 +141,40 @@
           Cancelar
         </button>
       </div>
+    </dialog>
+
+    <dialog id="color-modal" class="popup" style="width: 320px">
+      <h3
+        style="
+          margin-top: 0;
+          margin-bottom: 15px;
+          border-bottom: 1px solid var(--border-grid);
+          padding-bottom: 10px;
+          font-size: 1.1em;
+          color: var(--text-primary);
+        "
+      >
+        seleccionar color
+      </h3>
+      <div
+        id="color-swatches"
+        style="
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 10px;
+          margin-bottom: 15px;
+        "
+      ></div>
+      <button
+        id="btn-close-color-modal"
+        style="
+          width: 100%;
+          background: var(--border-grid);
+          color: var(--text-primary);
+        "
+      >
+        cancelar
+      </button>
     </dialog>
 
     <div id="notification-toast" class="toast"></div>

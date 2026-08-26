@@ -10,7 +10,7 @@ export const shownotification = (message, type = "success") => {
   );
 };
 
-export const renderschedule = (spatialmatrix) => {
+export const renderschedule = (spatialmatrix, oncolorclick, onsectionclick) => {
   const calendar = document.getElementById("calendar-grid");
   if (!calendar) return;
 
@@ -19,11 +19,10 @@ export const renderschedule = (spatialmatrix) => {
       ".class-block, .time-slot-label, .grid-cell-bg, .grid-horizontal-line",
     )
     .forEach((e) => e.remove());
-
   const fragment = document.createDocumentFragment();
 
   for (let col = 2; col <= 7; col++) {
-    for (let row = 2; row <= 60; row += 2) {
+    for (let row = 2; row <= 56; row += 2) {
       const cell = document.createElement("div");
       cell.className = "grid-cell-bg";
       cell.style.gridArea = `${row} / ${col} / ${row + 2} / ${col + 1}`;
@@ -54,6 +53,7 @@ export const renderschedule = (spatialmatrix) => {
     block.style.width = session.width;
     block.style.marginLeft = session.left;
     block.style.backgroundColor = session.color;
+    block.style.cursor = "pointer";
 
     const code = document.createElement("div");
     code.className = "class-code";
@@ -61,7 +61,6 @@ export const renderschedule = (spatialmatrix) => {
 
     const title = document.createElement("div");
     title.className = "class-title";
-    // title.textContent = session.name;
     title.textContent = session.name;
 
     const pills = document.createElement("div");
@@ -71,6 +70,15 @@ export const renderschedule = (spatialmatrix) => {
           ${session["short-room"] ? `<div class="pill-room pill-room-short" title="${session["short-room"] || "∅"}">${session["short-room"] || "∅"}</div>` : ""}
           <div class="pill-type">${session.type}</div>
       `;
+
+    block.addEventListener("click", () => {
+      oncolorclick(session.code, session.color);
+    });
+
+    pills.addEventListener("click", (e) => {
+      e.stopPropagation();
+      onsectionclick(session.code);
+    });
 
     block.appendChild(code);
     block.appendChild(title);
@@ -170,11 +178,17 @@ export const rendersectionmodal = (
 
   document.getElementById("btn-close-modal").onclick = onclose;
 
+  document.getElementById("modal-overlay").style.zIndex = "999";
   document.getElementById("modal-overlay").style.display = "block";
   document.getElementById("section-modal").showModal();
 };
 
-export const rendercart = (schedule, onremove) => {
+export const rendercart = (
+  schedule,
+  onremove,
+  oncolorclick,
+  onsectionclick,
+) => {
   const container = document.getElementById("selected-courses-list");
   if (!container) return;
   container.innerHTML = "";
@@ -201,32 +215,70 @@ export const rendercart = (schedule, onremove) => {
     wrapper.style.border = "1px solid var(--border-color)";
     wrapper.style.borderRadius = "8px";
     wrapper.style.boxShadow = "0 2px 4px rgba(0,0,0,0.05)";
+    wrapper.style.cursor = "pointer";
+    wrapper.style.transition = "transform ease 0.1s";
 
-    wrapper.innerHTML = `
-          <div style="width: 16px; border-radius: 4px; background-color: ${course.color}; flex-shrink: 0; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);"></div>
-          <div style="flex: 1; display: flex; flex-direction: column; gap: 8px;">
-              <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                  <strong style="font-size: 0.95em; color: var(--text-primary); line-height: 1.2;">
-                      ${course.code} - ${course.name} <span style="opacity: 0.7;">(${course.section})</span>
-                  </strong>
-              </div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                  <span style="font-size: 0.75em; font-weight: 700; background: var(--border-grid); padding: 2px 8px; border-radius: 4px; color: var(--text-primary); border: 1px solid var(--border-color);">VACANTES: ${vacantes}</span>
-              </div>
-              <div style="display: flex; flex-direction: column; gap: 4px; margin-top: 4px;">
-                  ${profs
-                    .map(
-                      (p) => `
-                      <div style="font-size: 0.8em; color: var(--text-secondary); display: flex; align-items: center; gap: 6px;">
-                          <span style="width: 4px; height: 4px; border-radius: 50%; background: var(--text-secondary);"></span>
-                          ${p}
-                      </div>
-                  `,
-                    )
-                    .join("")}
-              </div>
-          </div>
-      `;
+    wrapper.addEventListener("mouseenter", () => {
+      wrapper.classList.add("is-hovered");
+    });
+
+    wrapper.addEventListener("mouseleave", () => {
+      wrapper.classList.remove("is-hovered");
+    });
+
+    wrapper.addEventListener("click", () => {
+      onsectionclick(course.code);
+    });
+
+    const colordiv = document.createElement("div");
+    colordiv.style.width = "16px";
+    colordiv.style.borderRadius = "4px";
+    colordiv.style.backgroundColor = course.color;
+    colordiv.style.flexShrink = "0";
+    colordiv.style.boxShadow = "inset 0 0 0 1px rgba(0,0,0,0.1)";
+    colordiv.style.transition = "transform ease 0.1s";
+
+    colordiv.addEventListener("mouseenter", () => {
+      colordiv.classList.add("is-hovered");
+    });
+
+    colordiv.addEventListener("mouseleave", () => {
+      colordiv.classList.remove("is-hovered");
+    });
+
+    colordiv.addEventListener("click", (e) => {
+      e.stopPropagation();
+      oncolorclick(course.code, course.color);
+    });
+
+    const infodiv = document.createElement("div");
+    infodiv.style.flex = "1";
+    infodiv.style.display = "flex";
+    infodiv.style.flexDirection = "column";
+    infodiv.style.gap = "8px";
+
+    infodiv.innerHTML = `
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <strong style="font-size: 0.95em; color: var(--text-primary); line-height: 1.2;">
+                ${course.code} - ${course.name} <span style="opacity: 0.7;">(${course.section})</span>
+            </strong>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 0.75em; font-weight: 700; background: var(--border-grid); padding: 2px 8px; border-radius: 4px; color: var(--text-primary); border: 1px solid var(--border-color);">VACANTES: ${vacantes}</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px; margin-top: 4px;">
+            ${profs
+              .map(
+                (p) => `
+                <div style="font-size: 0.8em; color: var(--text-secondary); display: flex; align-items: center; gap: 6px;">
+                    <span style="width: 4px; height: 4px; border-radius: 50%; background: var(--text-secondary);"></span>
+                    ${p}
+                </div>
+            `,
+              )
+              .join("")}
+        </div>
+    `;
 
     const btnContainer = document.createElement("div");
     const btn = document.createElement("button");
@@ -246,13 +298,43 @@ export const rendercart = (schedule, onremove) => {
       btn.style.color = "var(--danger-color)";
     });
 
-    btn.onclick = () => onremove(course.code);
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      onremove(course.code);
+    });
+
     btnContainer.appendChild(btn);
+    infodiv.querySelector("strong").parentNode.appendChild(btnContainer);
 
-    wrapper.querySelector("strong").parentNode.appendChild(btnContainer);
-
+    wrapper.appendChild(colordiv);
+    wrapper.appendChild(infodiv);
     fragment.appendChild(wrapper);
   });
 
   container.appendChild(fragment);
+};
+
+export const rendercolormodal = (currentcolor, palette, onselect) => {
+  const container = document.getElementById("color-swatches");
+  container.innerHTML = "";
+
+  palette.forEach((color) => {
+    const swatch = document.createElement("div");
+    swatch.style.width = "100%";
+    swatch.style.aspectRatio = "1";
+    swatch.style.backgroundColor = color;
+    swatch.style.borderRadius = "4px";
+    swatch.style.cursor = "pointer";
+    swatch.style.boxShadow =
+      color === currentcolor
+        ? "0 0 0 2px var(--bg-surface), 0 0 0 4px var(--text-primary)"
+        : "inset 0 0 0 1px rgba(0,0,0,0.1)";
+
+    swatch.addEventListener("click", () => onselect(color));
+    container.appendChild(swatch);
+  });
+
+  document.getElementById("modal-overlay").style.zIndex = "999";
+  document.getElementById("modal-overlay").style.display = "block";
+  document.getElementById("color-modal").showModal();
 };

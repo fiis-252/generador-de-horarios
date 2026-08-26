@@ -25,7 +25,7 @@ export const timetogridrow = (timestr, basehour = 8) => {
   return houroffset * 4 + Math.floor(minutes / 15) + 2;
 };
 
-const catppuccin_palette = [
+export const catppuccin_palette = [
   "var(--cat-1)",
   "var(--cat-2)",
   "var(--cat-3)",
@@ -47,6 +47,19 @@ export const assigncolor = (currentschedule) => {
   const available = catppuccin_palette.filter((c) => !usedcolors.includes(c));
   if (available.length > 0) return available[0];
   return catppuccin_palette[currentschedule.length % catppuccin_palette.length];
+};
+
+export const changecoursecolor = (currentschedule, coursecode, newcolor) => {
+  return currentschedule.map((course) => {
+    if (course.code === coursecode) {
+      return {
+        ...course,
+        color: newcolor,
+        sessions: course.sessions.map((sess) => ({ ...sess, color: newcolor })),
+      };
+    }
+    return course;
+  });
 };
 
 export const calculateoverlaps = (sessions) => {
@@ -114,13 +127,13 @@ export const calculateoverlaps = (sessions) => {
   return processed;
 };
 
-export const addcourse = (currentschedule, db, coursecode, sectionid) => {
+export const addcourse = (currentschedule, db, coursecode, sectionid, preservedcolor = null) => {
   if (!db[coursecode] || !db[coursecode].sections[sectionid]) {
     throw new Error("invalid course or section");
   }
 
   const filtered = currentschedule.filter((s) => s.code !== coursecode);
-  const color = assigncolor(filtered);
+  const color = preservedcolor || assigncolor(filtered);
 
   const sessionsraw = JSON.parse(
     JSON.stringify(db[coursecode].sections[sectionid]),
