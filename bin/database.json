@@ -7287,34 +7287,6 @@
         },
         "short-name": "REDES Y COMUNICACIONES"
     },
-    "SW-603": {
-        "name": "DISEÑO DE SOFTWARE",
-        "sections": {
-            "U": [
-                {
-                    "type": "P",
-                    "day": 1,
-                    "start": "18:00:00",
-                    "end": "20:00:00",
-                    "teacher": "CABALLERO ORTIZ, JOSE ALBERTO",
-                    "room": "S1-126",
-                    "short-room": "LAB B",
-                    "vacantes": 32
-                },
-                {
-                    "type": "T",
-                    "day": 1,
-                    "start": "16:00:00",
-                    "end": "18:00:00",
-                    "teacher": "CABALLERO ORTIZ, JOSE ALBERTO",
-                    "room": "S1-126",
-                    "short-room": "LAB B",
-                    "vacantes": 32
-                }
-            ]
-        },
-        "short-name": "DISEÑO DE SOFTWARE"
-    },
     "SW605": {
         "name": "INGENIERIA DE REQUERIMIENTOS II",
         "sections": {
@@ -7340,82 +7312,6 @@
             ]
         },
         "short-name": "ING. DE REQ II"
-    },
-    "SW-608": {
-        "name": "LENGUAJE DE DOMINIO ESPECIFICO",
-        "sections": {
-            "U": [
-                {
-                    "type": "P",
-                    "day": 5,
-                    "start": "16:00:00",
-                    "end": "18:00:00",
-                    "teacher": "MEDIANERO ACOSTA, JORGE",
-                    "room": "S1-126",
-                    "short-room": "LAB B",
-                    "vacantes": 32
-                },
-                {
-                    "type": "P",
-                    "day": 5,
-                    "start": "18:00:00",
-                    "end": "20:00:00",
-                    "teacher": "MEDIANERO ACOSTA, JORGE",
-                    "room": "S1-126",
-                    "short-room": "LAB B",
-                    "vacantes": 32
-                },
-                {
-                    "type": "T",
-                    "day": 2,
-                    "start": "20:00:00",
-                    "end": "22:00:00",
-                    "teacher": "MEDIANERO ACOSTA, JORGE",
-                    "room": "S1-126",
-                    "short-room": "LAB B",
-                    "vacantes": 32
-                }
-            ]
-        },
-        "short-name": "LENGUAJE DE DOMINIO ESPECIFICO"
-    },
-    "SW-609": {
-        "name": "SISTEMAS DE GESTION DE BASE DE DATOS",
-        "sections": {
-            "U": [
-                {
-                    "type": "P",
-                    "day": 4,
-                    "start": "18:00:00",
-                    "end": "20:00:00",
-                    "teacher": "BERROCAL NAVARRO, RICHARD LEONARDO",
-                    "room": "S1-126",
-                    "short-room": "LAB B",
-                    "vacantes": 32
-                },
-                {
-                    "type": "P",
-                    "day": 4,
-                    "start": "20:00:00",
-                    "end": "22:00:00",
-                    "teacher": "BERROCAL NAVARRO, RICHARD LEONARDO",
-                    "room": "S1-126",
-                    "short-room": "LAB B",
-                    "vacantes": 32
-                },
-                {
-                    "type": "T",
-                    "day": 4,
-                    "start": "16:00:00",
-                    "end": "18:00:00",
-                    "teacher": "BERROCAL NAVARRO, RICHARD LEONARDO",
-                    "room": "S1-126",
-                    "short-room": "LAB B",
-                    "vacantes": 32
-                }
-            ]
-        },
-        "short-name": "SIST. DE GEST. DE BD"
     },
     "SW701": {
         "name": "GESTION DEL MANTENIMIENTO, CONFIGURACION Y CAMBIOS DEL SOFTWARE",
@@ -8599,8 +8495,8 @@
         "sections": {}
     },
     "SW603": {
-        "name": "SW603",
-        "short-name": "ERR-NO-SHORTHAND-NAME-APPLIED-HUMAN-ATTENTION-REQUIRED",
+        "name": "DISEÑO DE SOFTWARE",
+        "short-name": "DISEÑO DE SOFTWARE",
         "sections": {
             "U": [
                 {
@@ -8625,8 +8521,8 @@
         }
     },
     "SW608": {
-        "name": "SW608",
-        "short-name": "ERR-NO-SHORTHAND-NAME-APPLIED-HUMAN-ATTENTION-REQUIRED",
+        "name": "LENGUAJES DE DOMINIO ESPECIFICO",
+        "short-name": "LENGUAJES DOM. ESP.",
         "sections": {
             "U": [
                 {
@@ -8660,8 +8556,8 @@
         }
     },
     "SW609": {
-        "name": "SW609",
-        "short-name": "ERR-NO-SHORTHAND-NAME-APPLIED-HUMAN-ATTENTION-REQUIRED",
+        "name": "SISTEMAS DE GESTION DE BASE DE DATOS",
+        "short-name": "SIST. DE GESTION DE DB.",
         "sections": {
             "U": [
                 {
