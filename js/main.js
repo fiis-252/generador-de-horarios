@@ -21,7 +21,7 @@ let appstate = createstate();
 
 const initializeapp = async () => {
   try {
-    const response = await fetch("./bin/database.json");
+    const response = await fetch("./database.json");
     if (!response.ok) throw new Error("database.json fetch failed");
     appstate.database = await response.json();
 
