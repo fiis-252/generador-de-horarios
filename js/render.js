@@ -22,10 +22,10 @@ export const renderschedule = (spatialmatrix, oncolorclick, onsectionclick) => {
   const fragment = document.createDocumentFragment();
 
   for (let col = 2; col <= 7; col++) {
-    for (let row = 2; row <= 56; row += 2) {
+    for (let row = 2; row <= 58; row += 2) {
       const cell = document.createElement("div");
       cell.className = "grid-cell-bg";
-      cell.style.gridArea = `${row} / ${col} / ${row + 2} / ${col + 1}`;
+      cell.style.gridArea = `${row + 2} / ${col} / ${row + 4} / ${col + 1}`;
 
       if ((row - 2) % 4 === 0) {
         cell.style.borderTop = "1px solid var(--border-color)";
@@ -43,7 +43,7 @@ export const renderschedule = (spatialmatrix, oncolorclick, onsectionclick) => {
     label.className = "time-slot-label";
     label.style.gridArea = `${rowstart} / 1 / ${rowstart + 4} / 2`;
     label.textContent = `${hour}:00`;
-    fragment.appendChild(label);
+    fragment.appendChild(label);  
   }
 
   spatialmatrix.forEach((session) => {

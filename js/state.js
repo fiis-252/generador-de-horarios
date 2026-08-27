@@ -168,8 +168,8 @@ export const generatespatialmatrix = (currentschedule) => { // blocks
 
   return overlapped.map((session) => {
     const gridcolumn = session.day + 1;
-    const gridrowstart = timetogridrow(session.start);
-    const gridrowend = timetogridrow(session.end);
+    const gridrowstart = timetogridrow(session.start) + 2;
+    const gridrowend = timetogridrow(session.end) + 2;
 
     const width = 100 / session.totalcolumns;
     const left = session.subcolumn * width;
