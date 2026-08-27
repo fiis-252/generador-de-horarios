@@ -246,3 +246,15 @@ const bindevents = () => {
 };
 
 document.addEventListener("DOMContentLoaded", initializeapp);
+
+// ensures overlay is closed when closing dialogs without buttons (esc, or back for mobile)
+
+document.getElementById('section-modal').addEventListener('close', () => {
+  overlay.style.display = "none";
+  overlay.style.zIndex = "999";
+});
+
+document.getElementById('color-modal').addEventListener('close', () => {
+  overlay.style.display = "none";
+  overlay.style.zIndex = "999";
+});
