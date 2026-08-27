@@ -43,7 +43,7 @@ export const renderschedule = (spatialmatrix, oncolorclick, onsectionclick) => {
     label.className = "time-slot-label";
     label.style.gridArea = `${rowstart} / 1 / ${rowstart + 4} / 2`;
     label.textContent = `${hour}:00`;
-    fragment.appendChild(label);  
+    fragment.appendChild(label);
   }
 
   spatialmatrix.forEach((session) => {

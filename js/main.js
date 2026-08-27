@@ -155,10 +155,11 @@ const closemodal = () => {
   const overlay = document.getElementById("modal-overlay");
   // const overlay = document.getElementById("modal-overlay");
 
-  document.getElementById("section-modal").close();
+  const sectionmodal = document.getElementById("section-modal");
+  if (sectionmodal.open) sectionmodal.close();
 
   const colormodal = document.getElementById("color-modal");
-  if (colormodal.open) colormodal.close();
+  if (colormodal && colormodal.open) colormodal.close();
 
   // console.log(activemodalcode)
   activemodalcode = null;
@@ -186,19 +187,26 @@ overlay.onclick = () => {
 const bindevents = () => {
   const sidebar = document.getElementById("sidebar");
   const overlay = document.getElementById("modal-overlay");
+  const colormodal = document.getElementById("color-modal");
+  const sectionmodal = document.getElementById("section-modal");
 
   overlay.addEventListener("click", () => {
-    const sectionmodal = document.getElementById("section-modal");
-    const colormodal = document.getElementById("color-modal");
-
-    if (sectionmodal.open || colormodal.open) {
-      closemodal();
-    } else if (sidebar.classList.contains("open")) {
+    if (sidebar.classList.contains("open")) {
       sidebar.classList.remove("open");
       overlay.style.display = "none";
       overlay.style.zIndex = "999";
     }
   });
+
+  sectionmodal.addEventListener("click", (e) => {
+    if (e.target === sectionmodal) closemodal();
+  });
+
+  if (colormodal) {
+    colormodal.addEventListener("click", (e) => {
+      if (e.target === colormodal) closemodal();
+    });
+  }
 
   document.getElementById("btn-menu-toggle").addEventListener("click", () => {
     sidebar.classList.add("open");
@@ -208,7 +216,7 @@ const bindevents = () => {
 
   document
     .getElementById("btn-close-color-modal")
-    .addEventListener("click", closemodal);
+    .addEventListener("click", closemodal); // should really check if the element exists first
 
   const searchinput = document.getElementById("search-input");
   searchinput.addEventListener("input", (e) => {
@@ -249,12 +257,12 @@ document.addEventListener("DOMContentLoaded", initializeapp);
 
 // ensures overlay is closed when closing dialogs without buttons (esc, or back for mobile)
 
-document.getElementById('section-modal').addEventListener('close', () => {
+document.getElementById("section-modal").addEventListener("close", () => {
   overlay.style.display = "none";
   overlay.style.zIndex = "999";
 });
 
-document.getElementById('color-modal').addEventListener('close', () => {
+document.getElementById("color-modal").addEventListener("close", () => {
   overlay.style.display = "none";
   overlay.style.zIndex = "999";
 });

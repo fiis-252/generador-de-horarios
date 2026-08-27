@@ -127,7 +127,13 @@ export const calculateoverlaps = (sessions) => {
   return processed;
 };
 
-export const addcourse = (currentschedule, db, coursecode, sectionid, preservedcolor = null) => {
+export const addcourse = (
+  currentschedule,
+  db,
+  coursecode,
+  sectionid,
+  preservedcolor = null,
+) => {
   if (!db[coursecode] || !db[coursecode].sections[sectionid]) {
     throw new Error("invalid course or section");
   }
@@ -162,9 +168,30 @@ export const removecourse = (currentschedule, coursecode) => {
   return currentschedule.filter((s) => s.code !== coursecode);
 };
 
-export const generatespatialmatrix = (currentschedule) => { // blocks
+export const generatespatialmatrix = (currentschedule) => {
+  // blocks
   const allsessions = currentschedule.flatMap((course) => course.sessions);
-  const overlapped = calculateoverlaps(allsessions);
+
+  const mergedmap = new Map();
+
+  allsessions.forEach((session) => {
+    const key = `${session.code}-${session.section}-${session.day}-${session.start}-${session.end}`;
+
+    if (mergedmap.has(key)) {
+      const existing = mergedmap.get(key);
+
+      if (!existing.type.includes(session.type))
+        existing.type = `${existing.type} / ${session.type}`;
+      if (session.room && session.room != existing.room && session.room != "") {
+        if (!existing["short-room"]) existing["short-room"] = session.room;
+        else if (!existing["short-room"].includes(session.room))
+          existing["short-room"] += `/${session.room}`;
+      }
+    } else mergedmap.set(key, { ...session });
+  });
+  
+  const mergedsessions = Array.from(mergedmap.values());
+  const overlapped = calculateoverlaps(mergedsessions);
 
   return overlapped.map((session) => {
     const gridcolumn = session.day + 1;
