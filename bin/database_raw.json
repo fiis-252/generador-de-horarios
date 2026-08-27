@@ -4,8 +4,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 36,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 36,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 35,
         "horario": [
           {
             "dia": "Sábado",
@@ -27,9 +27,9 @@
       },
       {
         "seccion": "V",
-        "vacantesMaximas": 5,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 5,
+        "vacantesMaximas": 36,
+        "vacantesOcupadas": 28,
+        "vacantesDisponibles": 8,
         "horario": [
           {
             "dia": "Sábado",
@@ -51,9 +51,9 @@
       },
       {
         "seccion": "W",
-        "vacantesMaximas": 5,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 5,
+        "vacantesMaximas": 36,
+        "vacantesOcupadas": 29,
+        "vacantesDisponibles": 7,
         "horario": [
           {
             "dia": "Viernes",
@@ -76,8 +76,8 @@
       {
         "seccion": "X",
         "vacantesMaximas": 36,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 35,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 36,
         "horario": [
           {
             "dia": "Viernes",
@@ -152,8 +152,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 15,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 14,
+        "vacantesOcupadas": 2,
+        "vacantesDisponibles": 13,
         "horario": [
           {
             "dia": "Miércoles",
@@ -176,8 +176,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 35,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 35,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 34,
         "horario": [
           {
             "dia": "Martes",
@@ -248,8 +248,8 @@
       {
         "seccion": "Y",
         "vacantesMaximas": 35,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 35,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 34,
         "horario": [
           {
             "dia": "Martes",
@@ -340,8 +340,8 @@
       {
         "seccion": "B",
         "vacantesMaximas": 33,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 33,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 32,
         "horario": [
           {
             "dia": "Lunes",
@@ -379,8 +379,8 @@
       },
       {
         "seccion": "C",
-        "vacantesMaximas": 3,
-        "vacantesOcupadas": 3,
+        "vacantesMaximas": 33,
+        "vacantesOcupadas": 33,
         "vacantesDisponibles": 0,
         "horario": [
           {
@@ -420,8 +420,8 @@
       {
         "seccion": "D",
         "vacantesMaximas": 33,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 32,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 33,
         "horario": [
           {
             "dia": "Martes",
@@ -460,8 +460,8 @@
       {
         "seccion": "E",
         "vacantesMaximas": 33,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 32,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 33,
         "horario": [
           {
             "dia": "Lunes",
@@ -500,8 +500,8 @@
       {
         "seccion": "F",
         "vacantesMaximas": 33,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 33,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 32,
         "horario": [
           {
             "dia": "Lunes",
@@ -579,9 +579,9 @@
       },
       {
         "seccion": "U",
-        "vacantesMaximas": 3,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 2,
+        "vacantesMaximas": 33,
+        "vacantesOcupadas": 30,
+        "vacantesDisponibles": 3,
         "horario": [
           {
             "dia": "Lunes",
@@ -620,8 +620,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 33,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 32,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 33,
         "horario": [
           {
             "dia": "Lunes",
@@ -740,8 +740,8 @@
       {
         "seccion": "Y",
         "vacantesMaximas": 33,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 33,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 32,
         "horario": [
           {
             "dia": "Lunes",
@@ -780,8 +780,8 @@
       {
         "seccion": "Z",
         "vacantesMaximas": 33,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 33,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 32,
         "horario": [
           {
             "dia": "Lunes",
@@ -823,9 +823,9 @@
     "secciones": [
       {
         "seccion": "A",
-        "vacantesMaximas": 2,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 2,
+        "vacantesMaximas": 32,
+        "vacantesOcupadas": 28,
+        "vacantesDisponibles": 4,
         "horario": [
           {
             "dia": "Sábado",
@@ -871,9 +871,9 @@
       },
       {
         "seccion": "C",
-        "vacantesMaximas": 17,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 17,
+        "vacantesMaximas": 48,
+        "vacantesOcupadas": 28,
+        "vacantesDisponibles": 20,
         "horario": [
           {
             "dia": "Jueves",
@@ -895,9 +895,9 @@
       },
       {
         "seccion": "U",
-        "vacantesMaximas": 3,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 3,
+        "vacantesMaximas": 26,
+        "vacantesOcupadas": 22,
+        "vacantesDisponibles": 4,
         "horario": [
           {
             "dia": "Sábado",
@@ -919,9 +919,9 @@
       },
       {
         "seccion": "V",
-        "vacantesMaximas": 0,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 0,
+        "vacantesMaximas": 26,
+        "vacantesOcupadas": 25,
+        "vacantesDisponibles": 1,
         "horario": [
           {
             "dia": "Sábado",
@@ -967,9 +967,9 @@
       },
       {
         "seccion": "X",
-        "vacantesMaximas": 2,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 1,
+        "vacantesMaximas": 32,
+        "vacantesOcupadas": 30,
+        "vacantesDisponibles": 2,
         "horario": [
           {
             "dia": "Martes",
@@ -991,9 +991,9 @@
       },
       {
         "seccion": "Y",
-        "vacantesMaximas": 5,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 4,
+        "vacantesMaximas": 48,
+        "vacantesOcupadas": 43,
+        "vacantesDisponibles": 5,
         "horario": [
           {
             "dia": "Jueves",
@@ -1043,9 +1043,9 @@
     "secciones": [
       {
         "seccion": "U",
-        "vacantesMaximas": 14,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 13,
+        "vacantesMaximas": 45,
+        "vacantesOcupadas": 29,
+        "vacantesDisponibles": 16,
         "horario": [
           {
             "dia": "Miércoles",
@@ -1075,9 +1075,9 @@
       },
       {
         "seccion": "V",
-        "vacantesMaximas": 16,
-        "vacantesOcupadas": 2,
-        "vacantesDisponibles": 14,
+        "vacantesMaximas": 45,
+        "vacantesOcupadas": 30,
+        "vacantesDisponibles": 15,
         "horario": [
           {
             "dia": "Miércoles",
@@ -1107,9 +1107,9 @@
       },
       {
         "seccion": "W",
-        "vacantesMaximas": 14,
-        "vacantesOcupadas": 6,
-        "vacantesDisponibles": 8,
+        "vacantesMaximas": 45,
+        "vacantesOcupadas": 36,
+        "vacantesDisponibles": 9,
         "horario": [
           {
             "dia": "Martes",
@@ -1139,8 +1139,8 @@
       },
       {
         "seccion": "X",
-        "vacantesMaximas": 15,
-        "vacantesOcupadas": 3,
+        "vacantesMaximas": 45,
+        "vacantesOcupadas": 33,
         "vacantesDisponibles": 12,
         "horario": [
           {
@@ -1171,9 +1171,9 @@
       },
       {
         "seccion": "Y",
-        "vacantesMaximas": 15,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 15,
+        "vacantesMaximas": 45,
+        "vacantesOcupadas": 28,
+        "vacantesDisponibles": 17,
         "horario": [
           {
             "dia": "Lunes",
@@ -1203,8 +1203,8 @@
       },
       {
         "seccion": "Z",
-        "vacantesMaximas": 13,
-        "vacantesOcupadas": 0,
+        "vacantesMaximas": 45,
+        "vacantesOcupadas": 32,
         "vacantesDisponibles": 13,
         "horario": [
           {
@@ -1336,8 +1336,8 @@
       {
         "seccion": "X",
         "vacantesMaximas": 40,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 40,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 39,
         "horario": [
           {
             "dia": "Martes",
@@ -1428,8 +1428,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 42,
-        "vacantesOcupadas": 3,
-        "vacantesDisponibles": 39,
+        "vacantesOcupadas": 9,
+        "vacantesDisponibles": 33,
         "horario": [
           {
             "dia": "Martes",
@@ -1500,8 +1500,8 @@
       {
         "seccion": "Y",
         "vacantesMaximas": 42,
-        "vacantesOcupadas": 2,
-        "vacantesDisponibles": 40,
+        "vacantesOcupadas": 4,
+        "vacantesDisponibles": 38,
         "horario": [
           {
             "dia": "Martes",
@@ -1524,8 +1524,8 @@
       {
         "seccion": "Z",
         "vacantesMaximas": 42,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 41,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 42,
         "horario": [
           {
             "dia": "Jueves",
@@ -1551,8 +1551,8 @@
     "secciones": [
       {
         "seccion": "A",
-        "vacantesMaximas": 0,
-        "vacantesOcupadas": 0,
+        "vacantesMaximas": 32,
+        "vacantesOcupadas": 32,
         "vacantesDisponibles": 0,
         "horario": [
           {
@@ -1631,9 +1631,9 @@
       },
       {
         "seccion": "C",
-        "vacantesMaximas": 2,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 2,
+        "vacantesMaximas": 29,
+        "vacantesOcupadas": 29,
+        "vacantesDisponibles": 0,
         "horario": [
           {
             "dia": "Lunes",
@@ -1671,8 +1671,8 @@
       },
       {
         "seccion": "U",
-        "vacantesMaximas": 1,
-        "vacantesOcupadas": 0,
+        "vacantesMaximas": 29,
+        "vacantesOcupadas": 28,
         "vacantesDisponibles": 1,
         "horario": [
           {
@@ -1711,9 +1711,9 @@
       },
       {
         "seccion": "V",
-        "vacantesMaximas": 4,
-        "vacantesOcupadas": 2,
-        "vacantesDisponibles": 2,
+        "vacantesMaximas": 29,
+        "vacantesOcupadas": 29,
+        "vacantesDisponibles": 0,
         "horario": [
           {
             "dia": "Lunes",
@@ -1751,8 +1751,8 @@
       },
       {
         "seccion": "W",
-        "vacantesMaximas": 3,
-        "vacantesOcupadas": 1,
+        "vacantesMaximas": 29,
+        "vacantesOcupadas": 27,
         "vacantesDisponibles": 2,
         "horario": [
           {
@@ -1791,9 +1791,9 @@
       },
       {
         "seccion": "X",
-        "vacantesMaximas": 4,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 3,
+        "vacantesMaximas": 30,
+        "vacantesOcupadas": 30,
+        "vacantesDisponibles": 0,
         "horario": [
           {
             "dia": "Lunes",
@@ -1872,8 +1872,8 @@
       {
         "seccion": "Z",
         "vacantesMaximas": 29,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 28,
+        "vacantesOcupadas": 2,
+        "vacantesDisponibles": 27,
         "horario": [
           {
             "dia": "Miércoles",
@@ -1939,8 +1939,8 @@
       },
       {
         "seccion": "V",
-        "vacantesMaximas": 4,
-        "vacantesOcupadas": 3,
+        "vacantesMaximas": 36,
+        "vacantesOcupadas": 35,
         "vacantesDisponibles": 1,
         "horario": [
           {
@@ -1963,9 +1963,9 @@
       },
       {
         "seccion": "W",
-        "vacantesMaximas": 5,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 4,
+        "vacantesMaximas": 36,
+        "vacantesOcupadas": 30,
+        "vacantesDisponibles": 6,
         "horario": [
           {
             "dia": "Lunes",
@@ -1987,9 +1987,9 @@
       },
       {
         "seccion": "X",
-        "vacantesMaximas": 7,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 7,
+        "vacantesMaximas": 35,
+        "vacantesOcupadas": 27,
+        "vacantesDisponibles": 8,
         "horario": [
           {
             "dia": "Jueves",
@@ -2011,9 +2011,9 @@
       },
       {
         "seccion": "Y",
-        "vacantesMaximas": 5,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 4,
+        "vacantesMaximas": 35,
+        "vacantesOcupadas": 29,
+        "vacantesDisponibles": 6,
         "horario": [
           {
             "dia": "Jueves",
@@ -2078,7 +2078,7 @@
           {
             "dia": "Jueves",
             "horaInicio": "14:00",
-            "horaFin": "18:00",
+            "horaFin": "16:00",
             "aula": "S7-105",
             "docente": "LEÓN ZÁRATE ANA MERCEDES",
             "concepto": "T"
@@ -2092,9 +2092,9 @@
         "vacantesDisponibles": 45,
         "horario": [
           {
-            "dia": "Martes",
-            "horaInicio": "10:00",
-            "horaFin": "12:00",
+            "dia": "Viernes",
+            "horaInicio": "08:00",
+            "horaFin": "10:00",
             "aula": "S7-106",
             "docente": "FISFALEN HUERTA MARIO HEINRICH",
             "concepto": "T"
@@ -2139,8 +2139,8 @@
     "secciones": [
       {
         "seccion": "A",
-        "vacantesMaximas": 13,
-        "vacantesOcupadas": 1,
+        "vacantesMaximas": 42,
+        "vacantesOcupadas": 30,
         "vacantesDisponibles": 12,
         "horario": [
           {
@@ -2163,8 +2163,8 @@
       },
       {
         "seccion": "U",
-        "vacantesMaximas": 13,
-        "vacantesOcupadas": 1,
+        "vacantesMaximas": 43,
+        "vacantesOcupadas": 31,
         "vacantesDisponibles": 12,
         "horario": [
           {
@@ -2187,9 +2187,9 @@
       },
       {
         "seccion": "V",
-        "vacantesMaximas": 14,
-        "vacantesOcupadas": 5,
-        "vacantesDisponibles": 9,
+        "vacantesMaximas": 43,
+        "vacantesOcupadas": 32,
+        "vacantesDisponibles": 11,
         "horario": [
           {
             "dia": "Miércoles",
@@ -2211,9 +2211,9 @@
       },
       {
         "seccion": "W",
-        "vacantesMaximas": 12,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 11,
+        "vacantesMaximas": 42,
+        "vacantesOcupadas": 30,
+        "vacantesDisponibles": 12,
         "horario": [
           {
             "dia": "Lunes",
@@ -2235,9 +2235,9 @@
       },
       {
         "seccion": "X",
-        "vacantesMaximas": 12,
-        "vacantesOcupadas": 2,
-        "vacantesDisponibles": 10,
+        "vacantesMaximas": 42,
+        "vacantesOcupadas": 30,
+        "vacantesDisponibles": 12,
         "horario": [
           {
             "dia": "Lunes",
@@ -2260,8 +2260,8 @@
       {
         "seccion": "Y",
         "vacantesMaximas": 43,
-        "vacantesOcupadas": 5,
-        "vacantesDisponibles": 38,
+        "vacantesOcupadas": 4,
+        "vacantesDisponibles": 39,
         "horario": [
           {
             "dia": "Lunes",
@@ -2283,9 +2283,9 @@
       },
       {
         "seccion": "Z",
-        "vacantesMaximas": 11,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 11,
+        "vacantesMaximas": 42,
+        "vacantesOcupadas": 32,
+        "vacantesDisponibles": 10,
         "horario": [
           {
             "dia": "Miércoles",
@@ -2344,8 +2344,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 29,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 28,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 29,
         "horario": [
           {
             "dia": "Lunes",
@@ -2412,8 +2412,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 41,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 41,
+        "vacantesOcupadas": 2,
+        "vacantesDisponibles": 39,
         "horario": [
           {
             "dia": "Lunes",
@@ -2536,8 +2536,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 45,
-        "vacantesOcupadas": 2,
-        "vacantesDisponibles": 43,
+        "vacantesOcupadas": 3,
+        "vacantesDisponibles": 42,
         "horario": [
           {
             "dia": "Viernes",
@@ -2632,8 +2632,8 @@
       {
         "seccion": "X",
         "vacantesMaximas": 45,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 45,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 44,
         "horario": [
           {
             "dia": "Lunes",
@@ -2716,8 +2716,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 44,
-        "vacantesOcupadas": 12,
-        "vacantesDisponibles": 32,
+        "vacantesOcupadas": 18,
+        "vacantesDisponibles": 26,
         "horario": [
           {
             "dia": "Viernes",
@@ -3072,7 +3072,7 @@
             "horaInicio": "14:00",
             "horaFin": "16:00",
             "aula": "S4-208",
-            "docente": "VALDIVIA MENDOZA HECTOR GIOVANNY",
+            "docente": "HUALLPA GUTIERREZ WALTER ANTONIO",
             "concepto": "PRA"
           },
           {
@@ -3080,7 +3080,7 @@
             "horaInicio": "14:00",
             "horaFin": "16:00",
             "aula": "LAB-FISI",
-            "docente": "VALDIVIA MENDOZA HECTOR GIOVANNY",
+            "docente": "HUALLPA GUTIERREZ WALTER ANTONIO",
             "concepto": "LAB"
           },
           {
@@ -3104,8 +3104,8 @@
       {
         "seccion": "Z",
         "vacantesMaximas": 32,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 32,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 31,
         "horario": [
           {
             "dia": "Martes",
@@ -3176,8 +3176,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 40,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 40,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 39,
         "horario": [
           {
             "dia": "Martes",
@@ -3208,8 +3208,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 40,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 40,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 39,
         "horario": [
           {
             "dia": "Martes",
@@ -3340,8 +3340,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 42,
-        "vacantesOcupadas": 5,
-        "vacantesDisponibles": 37,
+        "vacantesOcupadas": 9,
+        "vacantesDisponibles": 33,
         "horario": [
           {
             "dia": "Viernes",
@@ -3364,8 +3364,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 42,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 41,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 42,
         "horario": [
           {
             "dia": "Martes",
@@ -3388,8 +3388,8 @@
       {
         "seccion": "W",
         "vacantesMaximas": 40,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 40,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 39,
         "horario": [
           {
             "dia": "Martes",
@@ -3416,8 +3416,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 39,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 38,
+        "vacantesOcupadas": 2,
+        "vacantesDisponibles": 37,
         "horario": [
           {
             "dia": "Martes",
@@ -3440,8 +3440,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 39,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 39,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 38,
         "horario": [
           {
             "dia": "Martes",
@@ -3492,8 +3492,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 19,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 19,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 18,
         "horario": [
           {
             "dia": "Lunes",
@@ -3691,9 +3691,9 @@
     "secciones": [
       {
         "seccion": "U",
-        "vacantesMaximas": 5,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 5,
+        "vacantesMaximas": 35,
+        "vacantesOcupadas": 28,
+        "vacantesDisponibles": 7,
         "horario": [
           {
             "dia": "Lunes",
@@ -3715,9 +3715,9 @@
       },
       {
         "seccion": "V",
-        "vacantesMaximas": 5,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 4,
+        "vacantesMaximas": 35,
+        "vacantesOcupadas": 30,
+        "vacantesDisponibles": 5,
         "horario": [
           {
             "dia": "Martes",
@@ -3960,8 +3960,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 37,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 37,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 36,
         "horario": [
           {
             "dia": "Jueves",
@@ -4192,8 +4192,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 40,
-        "vacantesOcupadas": 2,
-        "vacantesDisponibles": 38,
+        "vacantesOcupadas": 3,
+        "vacantesDisponibles": 37,
         "horario": [
           {
             "dia": "Miércoles",
@@ -4552,8 +4552,8 @@
       {
         "seccion": "W",
         "vacantesMaximas": 20,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 20,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 19,
         "horario": [
           {
             "dia": "Sábado",
@@ -4836,8 +4836,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 39,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 39,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 38,
         "horario": [
           {
             "dia": "Jueves",
@@ -4940,8 +4940,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 40,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 40,
+        "vacantesOcupadas": 2,
+        "vacantesDisponibles": 38,
         "horario": [
           {
             "dia": "Martes",
@@ -5016,8 +5016,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 46,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 46,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 45,
         "horario": [
           {
             "dia": "Martes",
@@ -5091,9 +5091,9 @@
       },
       {
         "seccion": "W",
-        "vacantesMaximas": 12,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 12,
+        "vacantesMaximas": 41,
+        "vacantesOcupadas": 28,
+        "vacantesDisponibles": 13,
         "horario": [
           {
             "dia": "Viernes",
@@ -5108,8 +5108,8 @@
       {
         "seccion": "X",
         "vacantesMaximas": 41,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 40,
+        "vacantesOcupadas": 3,
+        "vacantesDisponibles": 38,
         "horario": [
           {
             "dia": "Viernes",
@@ -5123,9 +5123,9 @@
       },
       {
         "seccion": "Y",
-        "vacantesMaximas": 9,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 9,
+        "vacantesMaximas": 40,
+        "vacantesOcupadas": 32,
+        "vacantesDisponibles": 8,
         "horario": [
           {
             "dia": "Martes",
@@ -5140,8 +5140,8 @@
       {
         "seccion": "Z",
         "vacantesMaximas": 41,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 41,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 40,
         "horario": [
           {
             "dia": "Viernes",
@@ -5334,9 +5334,9 @@
     "secciones": [
       {
         "seccion": "U",
-        "vacantesMaximas": 6,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 6,
+        "vacantesMaximas": 32,
+        "vacantesOcupadas": 27,
+        "vacantesDisponibles": 5,
         "horario": [
           {
             "dia": "Lunes",
@@ -5363,8 +5363,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 14,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 14,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 13,
         "horario": [
           {
             "dia": "Viernes",
@@ -5395,8 +5395,8 @@
       {
         "seccion": "W",
         "vacantesMaximas": 14,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 14,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 13,
         "horario": [
           {
             "dia": "Viernes",
@@ -5455,8 +5455,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 20,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 19,
+        "vacantesOcupadas": 2,
+        "vacantesDisponibles": 18,
         "horario": [
           {
             "dia": "Miércoles",
@@ -5563,8 +5563,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 33,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 33,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 32,
         "horario": [
           {
             "dia": "Sábado",
@@ -5667,8 +5667,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 40,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 39,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 40,
         "horario": [
           {
             "dia": "Lunes",
@@ -5722,9 +5722,9 @@
     "secciones": [
       {
         "seccion": "U",
-        "vacantesMaximas": 4,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 4,
+        "vacantesMaximas": 35,
+        "vacantesOcupadas": 28,
+        "vacantesDisponibles": 7,
         "horario": [
           {
             "dia": "Martes",
@@ -5746,9 +5746,9 @@
       },
       {
         "seccion": "V",
-        "vacantesMaximas": 4,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 4,
+        "vacantesMaximas": 35,
+        "vacantesOcupadas": 29,
+        "vacantesDisponibles": 6,
         "horario": [
           {
             "dia": "Martes",
@@ -5775,8 +5775,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 45,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 44,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 45,
         "horario": [
           {
             "dia": "Martes",
@@ -5892,7 +5892,7 @@
             "horaFin": "10:00",
             "aula": "S1-124 (LAB C)",
             "docente": "LINAREZ COLOMA HUMBERTO VICTOR",
-            "concepto": "T"
+            "concepto": "PRA"
           },
           {
             "dia": "Martes",
@@ -5900,15 +5900,15 @@
             "horaFin": "12:00",
             "aula": "S1-124 (LAB C)",
             "docente": "LINAREZ COLOMA HUMBERTO VICTOR",
-            "concepto": "PRA"
+            "concepto": "T"
           }
         ]
       },
       {
         "seccion": "B",
         "vacantesMaximas": 39,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 39,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 38,
         "horario": [
           {
             "dia": "Martes",
@@ -5916,7 +5916,7 @@
             "horaFin": "10:00",
             "aula": "S1-129 (LAB A)",
             "docente": "RUIZ ADARMES MIGUEL ANGEL",
-            "concepto": "T"
+            "concepto": "PRA"
           },
           {
             "dia": "Martes",
@@ -5924,15 +5924,15 @@
             "horaFin": "12:00",
             "aula": "S1-129 (LAB A)",
             "docente": "RUIZ ADARMES MIGUEL ANGEL",
-            "concepto": "PRA"
+            "concepto": "T"
           }
         ]
       },
       {
         "seccion": "U",
         "vacantesMaximas": 48,
-        "vacantesOcupadas": 5,
-        "vacantesDisponibles": 43,
+        "vacantesOcupadas": 8,
+        "vacantesDisponibles": 40,
         "horario": [
           {
             "dia": "Martes",
@@ -5940,7 +5940,7 @@
             "horaFin": "10:00",
             "aula": "CIBER (LAB O)",
             "docente": "SOTELO VILLENA JUAN CARLOS",
-            "concepto": "T"
+            "concepto": "PRA"
           },
           {
             "dia": "Miércoles",
@@ -5948,7 +5948,7 @@
             "horaFin": "16:00",
             "aula": "CIBER (LAB O)",
             "docente": "SOTELO VILLENA JUAN CARLOS",
-            "concepto": "PRA"
+            "concepto": "T"
           }
         ]
       },
@@ -5988,7 +5988,7 @@
             "horaFin": "10:00",
             "aula": "S1-327/329 (LAB G)",
             "docente": "COSSA CABANILLAS JESUS ALBERTO",
-            "concepto": "T"
+            "concepto": "PRA"
           },
           {
             "dia": "Martes",
@@ -5996,15 +5996,15 @@
             "horaFin": "12:00",
             "aula": "S1-327/329 (LAB G)",
             "docente": "COSSA CABANILLAS JESUS ALBERTO",
-            "concepto": "PRA"
+            "concepto": "T"
           }
         ]
       },
       {
         "seccion": "X",
         "vacantesMaximas": 32,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 32,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 31,
         "horario": [
           {
             "dia": "Martes",
@@ -6036,7 +6036,7 @@
             "horaFin": "10:00",
             "aula": "S1-227 (LAB A1)",
             "docente": "TORRE CAMONES ANIVAL ALFREDO",
-            "concepto": "T"
+            "concepto": "PRA"
           },
           {
             "dia": "Martes",
@@ -6044,7 +6044,7 @@
             "horaFin": "12:00",
             "aula": "S1-227 (LAB A1)",
             "docente": "TORRE CAMONES ANIVAL ALFREDO",
-            "concepto": "PRA"
+            "concepto": "T"
           }
         ]
       },
@@ -6060,7 +6060,7 @@
             "horaFin": "10:00",
             "aula": "S1-224 (LAB A2)",
             "docente": "JANJACHI TORIBIO CARLOS ALBERTO",
-            "concepto": "T"
+            "concepto": "PRA"
           },
           {
             "dia": "Martes",
@@ -6068,7 +6068,7 @@
             "horaFin": "12:00",
             "aula": "S1-224 (LAB A2)",
             "docente": "JANJACHI TORIBIO CARLOS ALBERTO",
-            "concepto": "PRA"
+            "concepto": "T"
           }
         ]
       }
@@ -6079,8 +6079,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 26,
-        "vacantesOcupadas": 3,
-        "vacantesDisponibles": 23,
+        "vacantesOcupadas": 5,
+        "vacantesDisponibles": 21,
         "horario": [
           {
             "dia": "Martes",
@@ -6311,8 +6311,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 40,
-        "vacantesOcupadas": 15,
-        "vacantesDisponibles": 25,
+        "vacantesOcupadas": 18,
+        "vacantesDisponibles": 22,
         "horario": [
           {
             "dia": "Lunes",
@@ -6395,8 +6395,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 43,
-        "vacantesOcupadas": 2,
-        "vacantesDisponibles": 41,
+        "vacantesOcupadas": 4,
+        "vacantesDisponibles": 39,
         "horario": [
           {
             "dia": "Martes",
@@ -6467,8 +6467,8 @@
       {
         "seccion": "X",
         "vacantesMaximas": 41,
-        "vacantesOcupadas": 6,
-        "vacantesDisponibles": 35,
+        "vacantesOcupadas": 7,
+        "vacantesDisponibles": 34,
         "horario": [
           {
             "dia": "Lunes",
@@ -6643,8 +6643,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 45,
-        "vacantesOcupadas": 2,
-        "vacantesDisponibles": 43,
+        "vacantesOcupadas": 4,
+        "vacantesDisponibles": 41,
         "horario": [
           {
             "dia": "Lunes",
@@ -6655,10 +6655,10 @@
             "concepto": "T"
           },
           {
-            "dia": "Viernes",
+            "dia": "Martes",
             "horaInicio": "12:00",
             "horaFin": "14:00",
-            "aula": "S4-216",
+            "aula": "S4-206",
             "docente": "LINAREZ COLOMA HUMBERTO VICTOR",
             "concepto": "PRA"
           }
@@ -6719,8 +6719,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 23,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 22,
+        "vacantesOcupadas": 2,
+        "vacantesDisponibles": 21,
         "horario": [
           {
             "dia": "Lunes",
@@ -6791,8 +6791,8 @@
       {
         "seccion": "Y",
         "vacantesMaximas": 22,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 21,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 22,
         "horario": [
           {
             "dia": "Lunes",
@@ -6895,8 +6895,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 43,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 43,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 42,
         "horario": [
           {
             "dia": "Viernes",
@@ -7370,169 +7370,13 @@
       }
     ]
   },
-  "SI707": {
-    "secciones": [
-      {
-        "seccion": "U",
-        "vacantesMaximas": 37,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 37,
-        "horario": [
-          {
-            "dia": "Viernes",
-            "horaInicio": "18:00",
-            "horaFin": "20:00",
-            "aula": "S1-327/329 (LAB G)",
-            "docente": "SANCHEZ ESPINOZA JAVIER CONCEPCIÓN",
-            "concepto": "T"
-          },
-          {
-            "dia": "Viernes",
-            "horaInicio": "20:00",
-            "horaFin": "22:00",
-            "aula": "S1-327/329 (LAB G)",
-            "docente": "SANCHEZ ESPINOZA JAVIER CONCEPCIÓN",
-            "concepto": "PRA"
-          }
-        ]
-      },
-      {
-        "seccion": "V",
-        "vacantesMaximas": 26,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 26,
-        "horario": [
-          {
-            "dia": "Viernes",
-            "horaInicio": "18:00",
-            "horaFin": "20:00",
-            "aula": "S1-229 (LAB D)",
-            "docente": "COSSA CABANILLAS JESUS ALBERTO",
-            "concepto": "T"
-          },
-          {
-            "dia": "Viernes",
-            "horaInicio": "20:00",
-            "horaFin": "22:00",
-            "aula": "S1-229 (LAB D)",
-            "docente": "COSSA CABANILLAS JESUS ALBERTO",
-            "concepto": "PRA"
-          }
-        ]
-      }
-    ]
-  },
-  "SI801": {
-    "secciones": [
-      {
-        "seccion": "U",
-        "vacantesMaximas": 30,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 30,
-        "horario": [
-          {
-            "dia": "Viernes",
-            "horaInicio": "18:00",
-            "horaFin": "20:00",
-            "aula": "S4-110",
-            "docente": "RODRÍGUEZ ULLOA RICARDO AURELIO",
-            "concepto": "T"
-          },
-          {
-            "dia": "Viernes",
-            "horaInicio": "20:00",
-            "horaFin": "22:00",
-            "aula": "S4-110",
-            "docente": "RODRÍGUEZ ULLOA RICARDO AURELIO",
-            "concepto": "PRA"
-          }
-        ]
-      },
-      {
-        "seccion": "V",
-        "vacantesMaximas": 30,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 30,
-        "horario": [
-          {
-            "dia": "Martes",
-            "horaInicio": "18:00",
-            "horaFin": "20:00",
-            "aula": "AUDIOVI",
-            "docente": "CANCHANO CARO JAVIER TOLENTINO",
-            "concepto": "T"
-          },
-          {
-            "dia": "Martes",
-            "horaInicio": "20:00",
-            "horaFin": "22:00",
-            "aula": "AUDIOVI",
-            "docente": "CANCHANO CARO JAVIER TOLENTINO",
-            "concepto": "PRA"
-          }
-        ]
-      }
-    ]
-  },
-  "SI805": {
-    "secciones": [
-      {
-        "seccion": "U",
-        "vacantesMaximas": 24,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 23,
-        "horario": [
-          {
-            "dia": "Sábado",
-            "horaInicio": "08:00",
-            "horaFin": "10:00",
-            "aula": "S4-110",
-            "docente": "HUAPAYA CIRIACO ALBERTO JESUS",
-            "concepto": "T"
-          },
-          {
-            "dia": "Sábado",
-            "horaInicio": "10:00",
-            "horaFin": "12:00",
-            "aula": "S4-110",
-            "docente": "HUAPAYA CIRIACO ALBERTO JESUS",
-            "concepto": "PRA"
-          }
-        ]
-      },
-      {
-        "seccion": "V",
-        "vacantesMaximas": 23,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 22,
-        "horario": [
-          {
-            "dia": "Jueves",
-            "horaInicio": "18:00",
-            "horaFin": "20:00",
-            "aula": "AUDIOVI",
-            "docente": "ESPINAL LAU MIGUEL EDUARDO",
-            "concepto": "PRA"
-          },
-          {
-            "dia": "Jueves",
-            "horaInicio": "20:00",
-            "horaFin": "22:00",
-            "aula": "AUDIOVI",
-            "docente": "ESPINAL LAU MIGUEL EDUARDO",
-            "concepto": "PRA"
-          }
-        ]
-      }
-    ]
-  },
   "SI806": {
     "secciones": [
       {
         "seccion": "U",
         "vacantesMaximas": 32,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 32,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 31,
         "horario": [
           {
             "dia": "Sábado",
@@ -7691,8 +7535,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 26,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 26,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 25,
         "horario": [
           {
             "dia": "Martes",
@@ -7810,9 +7654,9 @@
     "secciones": [
       {
         "seccion": "U",
-        "vacantesMaximas": 13,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 12,
+        "vacantesMaximas": 45,
+        "vacantesOcupadas": 32,
+        "vacantesDisponibles": 13,
         "horario": [
           {
             "dia": "Lunes",
@@ -8223,17 +8067,17 @@
         "vacantesDisponibles": 32,
         "horario": [
           {
-            "dia": "Lunes",
+            "dia": "Martes",
             "horaInicio": "16:00",
             "horaFin": "18:00",
-            "aula": "S1-126 (LAB B)",
+            "aula": "S1-224 (LAB A 2)",
             "docente": "CABALLERO ORTIZ JOSE ALBERTO",
             "concepto": "T"
           },
           {
-            "dia": "Lunes",
-            "horaInicio": "18:00",
-            "horaFin": "20:00",
+            "dia": "Miércoles",
+            "horaInicio": "20:00",
+            "horaFin": "22:00",
             "aula": "S1-126 (LAB B)",
             "docente": "CABALLERO ORTIZ JOSE ALBERTO",
             "concepto": "PRA"
@@ -8515,8 +8359,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 45,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 44,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 45,
         "horario": [
           {
             "dia": "Jueves",
@@ -8703,8 +8547,8 @@
       {
         "seccion": "W",
         "vacantesMaximas": 32,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 32,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 31,
         "horario": [
           {
             "dia": "Lunes",
@@ -8831,8 +8675,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 21,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 21,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 20,
         "horario": [
           {
             "dia": "Lunes",
@@ -8879,8 +8723,8 @@
       {
         "seccion": "W",
         "vacantesMaximas": 30,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 30,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 29,
         "horario": [
           {
             "dia": "Miércoles",
@@ -8931,8 +8775,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 28,
-        "vacantesOcupadas": 2,
-        "vacantesDisponibles": 26,
+        "vacantesOcupadas": 4,
+        "vacantesDisponibles": 24,
         "horario": [
           {
             "dia": "Martes",
@@ -8979,8 +8823,8 @@
       {
         "seccion": "W",
         "vacantesMaximas": 27,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 27,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 26,
         "horario": [
           {
             "dia": "Lunes",
@@ -9007,8 +8851,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 32,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 32,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 31,
         "horario": [
           {
             "dia": "Lunes",
@@ -9049,134 +8893,6 @@
             "aula": "S4-212",
             "docente": "BENITES YARLEQUÉ JOSÉ VALERIO",
             "concepto": "T"
-          }
-        ]
-      }
-    ]
-  },
-  "TE503": {
-    "secciones": [
-      {
-        "seccion": "U",
-        "vacantesMaximas": 30,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 30,
-        "horario": [
-          {
-            "dia": "Lunes",
-            "horaInicio": "08:00",
-            "horaFin": "10:00",
-            "aula": "S4-210",
-            "docente": "PARRA OSORIO HERNAN JULIO",
-            "concepto": "T"
-          },
-          {
-            "dia": "Viernes",
-            "horaInicio": "08:00",
-            "horaFin": "12:00",
-            "aula": "S4-111",
-            "docente": "RONDINEL PINEDA PETRA ELINE",
-            "concepto": "PRA"
-          }
-        ]
-      },
-      {
-        "seccion": "V",
-        "vacantesMaximas": 30,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 30,
-        "horario": [
-          {
-            "dia": "Miércoles",
-            "horaInicio": "08:00",
-            "horaFin": "12:00",
-            "aula": "S4-110",
-            "docente": "OSORIO MARUJO BILMA ELIZABETH",
-            "concepto": "PRA"
-          },
-          {
-            "dia": "Viernes",
-            "horaInicio": "10:00",
-            "horaFin": "12:00",
-            "aula": "S4-109",
-            "docente": "OSORIO MARUJO BILMA ELIZABETH",
-            "concepto": "T"
-          }
-        ]
-      }
-    ]
-  },
-  "TE601": {
-    "secciones": [
-      {
-        "seccion": "U",
-        "vacantesMaximas": 22,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 21,
-        "horario": [
-          {
-            "dia": "Martes",
-            "horaInicio": "14:00",
-            "horaFin": "16:00",
-            "aula": "S4-210",
-            "docente": "CRUZ FIGUEROA GUILLERMO ROLDAN",
-            "concepto": "T"
-          },
-          {
-            "dia": "Miércoles",
-            "horaInicio": "12:00",
-            "horaFin": "14:00",
-            "aula": "S4-112",
-            "docente": "CRUZ FIGUEROA GUILLERMO ROLDAN",
-            "concepto": "PRA"
-          }
-        ]
-      },
-      {
-        "seccion": "V",
-        "vacantesMaximas": 22,
-        "vacantesOcupadas": 1,
-        "vacantesDisponibles": 21,
-        "horario": [
-          {
-            "dia": "Miércoles",
-            "horaInicio": "12:00",
-            "horaFin": "14:00",
-            "aula": "S4-207",
-            "docente": "AGUERO MAURICIO ALFREDO ROLANDO",
-            "concepto": "T"
-          },
-          {
-            "dia": "Viernes",
-            "horaInicio": "12:00",
-            "horaFin": "14:00",
-            "aula": "S4-105",
-            "docente": "AGUERO MAURICIO ALFREDO ROLANDO",
-            "concepto": "PRA"
-          }
-        ]
-      },
-      {
-        "seccion": "W",
-        "vacantesMaximas": 22,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 22,
-        "horario": [
-          {
-            "dia": "Martes",
-            "horaInicio": "12:00",
-            "horaFin": "14:00",
-            "aula": "S4-105",
-            "docente": "CRUZ FIGUEROA GUILLERMO ROLDAN",
-            "concepto": "T"
-          },
-          {
-            "dia": "Jueves",
-            "horaInicio": "12:00",
-            "horaFin": "14:00",
-            "aula": "S4-214",
-            "docente": "CRUZ FIGUEROA GUILLERMO ROLDAN",
-            "concepto": "PRA"
           }
         ]
       }
@@ -9235,8 +8951,8 @@
       {
         "seccion": "W",
         "vacantesMaximas": 30,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 30,
+        "vacantesOcupadas": 4,
+        "vacantesDisponibles": 26,
         "horario": [
           {
             "dia": "Jueves",
@@ -9263,8 +8979,8 @@
       {
         "seccion": "U",
         "vacantesMaximas": 32,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 32,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 31,
         "horario": [
           {
             "dia": "Lunes",
@@ -9287,8 +9003,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 31,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 31,
+        "vacantesOcupadas": 2,
+        "vacantesDisponibles": 29,
         "horario": [
           {
             "dia": "Miércoles",
@@ -9595,8 +9311,8 @@
       {
         "seccion": "W",
         "vacantesMaximas": 25,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 25,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 24,
         "horario": [
           {
             "dia": "Lunes",
@@ -9647,8 +9363,8 @@
       {
         "seccion": "V",
         "vacantesMaximas": 38,
-        "vacantesOcupadas": 0,
-        "vacantesDisponibles": 38,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 37,
         "horario": [
           {
             "dia": "Sábado",
@@ -9664,6 +9380,214 @@
             "horaFin": "22:00",
             "aula": "S4-207",
             "docente": "GARCIA CORZO JUAN CARLOS",
+            "concepto": "PRA"
+          }
+        ]
+      }
+    ]
+  },
+    "SI801": {
+    "secciones": [
+      {
+        "seccion": "U",
+        "vacantesMaximas": 30,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 30,
+        "horario": [
+          {
+            "dia": "Viernes",
+            "horaInicio": "18:00",
+            "horaFin": "20:00",
+            "aula": "S4-110",
+            "docente": "RODRÍGUEZ ULLOA RICARDO AURELIO",
+            "concepto": "T"
+          },
+          {
+            "dia": "Viernes",
+            "horaInicio": "20:00",
+            "horaFin": "22:00",
+            "aula": "S4-110",
+            "docente": "RODRÍGUEZ ULLOA RICARDO AURELIO",
+            "concepto": "PRA"
+          }
+        ]
+      },
+      {
+        "seccion": "V",
+        "vacantesMaximas": 30,
+        "vacantesOcupadas": 2,
+        "vacantesDisponibles": 28,
+        "horario": [
+          {
+            "dia": "Martes",
+            "horaInicio": "18:00",
+            "horaFin": "20:00",
+            "aula": "AUDIOVI",
+            "docente": "CANCHANO CARO JAVIER TOLENTINO",
+            "concepto": "T"
+          },
+          {
+            "dia": "Martes",
+            "horaInicio": "20:00",
+            "horaFin": "22:00",
+            "aula": "AUDIOVI",
+            "docente": "CANCHANO CARO JAVIER TOLENTINO",
+            "concepto": "PRA"
+          }
+        ]
+      }
+    ]
+  },
+  "SI805": {
+    "secciones": [
+      {
+        "seccion": "U",
+        "vacantesMaximas": 24,
+        "vacantesOcupadas": 1,
+        "vacantesDisponibles": 23,
+        "horario": [
+          {
+            "dia": "Sábado",
+            "horaInicio": "08:00",
+            "horaFin": "10:00",
+            "aula": "S4-110",
+            "docente": "HUAPAYA CIRIACO ALBERTO JESUS",
+            "concepto": "T"
+          },
+          {
+            "dia": "Sábado",
+            "horaInicio": "10:00",
+            "horaFin": "12:00",
+            "aula": "S4-110",
+            "docente": "HUAPAYA CIRIACO ALBERTO JESUS",
+            "concepto": "PRA"
+          }
+        ]
+      },
+      {
+        "seccion": "V",
+        "vacantesMaximas": 23,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 23,
+        "horario": [
+          {
+            "dia": "Jueves",
+            "horaInicio": "18:00",
+            "horaFin": "20:00",
+            "aula": "AUDIOVI",
+            "docente": "ESPINAL LAU MIGUEL EDUARDO",
+            "concepto": "PRA"
+          },
+          {
+            "dia": "Jueves",
+            "horaInicio": "20:00",
+            "horaFin": "22:00",
+            "aula": "AUDIOVI",
+            "docente": "ESPINAL LAU MIGUEL EDUARDO",
+            "concepto": "PRA"
+          }
+        ]
+      }
+    ]
+  },
+  "TE503": {
+    "secciones": [
+      {
+        "seccion": "U",
+        "vacantesMaximas": 30,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 30,
+        "horario": [
+          {
+            "dia": "Lunes",
+            "horaInicio": "08:00",
+            "horaFin": "10:00",
+            "aula": "S4-210",
+            "docente": "PARRA OSORIO HERNAN JULIO",
+            "concepto": "T"
+          },
+          {
+            "dia": "Viernes",
+            "horaInicio": "08:00",
+            "horaFin": "12:00",
+            "aula": "S4-111",
+            "docente": "RONDINEL PINEDA PETRA ELINE",
+            "concepto": "PRA"
+          }
+        ]
+      },
+      {
+        "seccion": "V",
+        "vacantesMaximas": 30,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 30,
+        "horario": [
+          {
+            "dia": "Miércoles",
+            "horaInicio": "08:00",
+            "horaFin": "12:00",
+            "aula": "S4-110",
+            "docente": "OSORIO MARUJO BILMA ELIZABETH",
+            "concepto": "PRA"
+          },
+          {
+            "dia": "Viernes",
+            "horaInicio": "10:00",
+            "horaFin": "12:00",
+            "aula": "S4-109",
+            "docente": "OSORIO MARUJO BILMA ELIZABETH",
+            "concepto": "T"
+          }
+        ]
+      }
+    ]
+  },
+    "SI707": {
+    "secciones": [
+      {
+        "seccion": "U",
+        "vacantesMaximas": 37,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 37,
+        "horario": [
+          {
+            "dia": "Viernes",
+            "horaInicio": "18:00",
+            "horaFin": "20:00",
+            "aula": "S1-327/329 (LAB G)",
+            "docente": "SANCHEZ ESPINOZA JAVIER CONCEPCIÓN",
+            "concepto": "T"
+          },
+          {
+            "dia": "Viernes",
+            "horaInicio": "20:00",
+            "horaFin": "22:00",
+            "aula": "S1-327/329 (LAB G)",
+            "docente": "SANCHEZ ESPINOZA JAVIER CONCEPCIÓN",
+            "concepto": "PRA"
+          }
+        ]
+      },
+      {
+        "seccion": "V",
+        "vacantesMaximas": 26,
+        "vacantesOcupadas": 0,
+        "vacantesDisponibles": 26,
+        "horario": [
+          {
+            "dia": "Viernes",
+            "horaInicio": "18:00",
+            "horaFin": "20:00",
+            "aula": "S1-229 (LAB D)",
+            "docente": "COSSA CABANILLAS JESUS ALBERTO",
+            "concepto": "T"
+          },
+          {
+            "dia": "Viernes",
+            "horaInicio": "20:00",
+            "horaFin": "22:00",
+            "aula": "S1-229 (LAB D)",
+            "docente": "COSSA CABANILLAS JESUS ALBERTO",
             "concepto": "PRA"
           }
         ]

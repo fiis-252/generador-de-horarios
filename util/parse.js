@@ -1,7 +1,7 @@
-// modifies 'database.json' (at root) with new section values from 'database_raw.json' (at util) 
+// modifies 'database.json' (at bin) with new section values from 'database_raw.json' (at bin) 
 
-import raw from './database_raw.json' with { type: 'json' } ;
-import old from '../database.json' with { type: 'json' };
+import raw from '../bin/database_raw.json' with { type: 'json' } ;
+import old from '../bin/database.json' with { type: 'json' };
 
 import fs from 'fs'; 
 const DAY_MAP = {
@@ -74,7 +74,7 @@ async function modifyData() {
         }
     }
     
-    fs.writeFile('database.json', JSON.stringify(old_db), (err) => {
+    fs.writeFile('bin/database.json', JSON.stringify(old_db, null, 2), (err) => {
         if (err) {
             console.error('couldn\'t parse data');
         } 
