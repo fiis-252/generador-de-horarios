@@ -21,11 +21,10 @@ let appstate = createstate();
 
 const initializeapp = async () => {
   try {
-    const response = await fetch("./database.json");
-    if (!response.ok) throw new Error("database.json fetch failed");
-    appstate.database = await response.json();
+    await loaddatabase();
 
     initsettings();
+    formatdatabase();
     bindevents();
 
     await loadstatefromurl();
@@ -33,6 +32,31 @@ const initializeapp = async () => {
   } catch (error) {
     shownotification("error fatal: fallo al cargar database.json", "error");
   }
+};
+
+const loaddatabase = async () => {
+  const response = await fetch("./database.json");
+  if (!response.ok) throw new Error("database.json fetch failed");
+  appstate.database = await response.json();
+};
+
+const formatdatabase = () => {
+  const db = appstate.database;
+  for (let course in db) {
+    for (let section in db[course].sections) {
+      for (let i = 0; i < db[course].sections[section].length; i++) {
+        let roomstr = db[course].sections[section][i].room;
+        if (!roomstr) continue;
+
+        const match = roomstr.match(/^(.*?)\s*\((.*?)\)$/);
+        if (match && match[1] && match[2]) {
+          db[course].sections[section][i].room = match[1].trim();
+          db[course].sections[section][i]["short-room"] = match[2].trim();
+        }
+      }
+    }
+  }
+  appstate.database = db;
 };
 
 const initsettings = () => {
@@ -250,6 +274,81 @@ const bindevents = () => {
       } catch (err) {
         shownotification("error al copiar enlace", "error");
       }
+    });
+  
+    document
+      .getElementById("btn-export-img")
+      .addEventListener("click", async () => {
+        try {
+          shownotification("generando imagen...", "success");
+          const element = document.getElementById("calendar-grid");
+          const bgcolor = getComputedStyle(document.documentElement)
+            .getPropertyValue("--bg-surface")
+            .trim();
+
+          const canvas = await html2canvas(element, {
+            scale: 2,
+            backgroundColor: bgcolor,
+            logging: false,
+          });
+
+          canvas.toBlob(async (blob) => {
+            if (!blob) throw new Error("blob failed");
+            const item = new ClipboardItem({ "image/png": blob });
+            await navigator.clipboard.write([item]);
+            shownotification("imagen copiada al portapapeles", "success");
+          }, "image/png");
+        } catch (error) {
+          shownotification("error al generar imagen", "error");
+        }
+      });
+
+    document.getElementById("btn-export-ics").addEventListener("click", () => {
+      if (appstate.schedule.length === 0) {
+        shownotification("el horario está vacío.", "error");
+        return;
+      }
+
+      let icsmsg = "BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//FIIS//ES\n";
+      const d = new Date();
+      const day = (d.getDay() + 6) % 7;
+      d.setHours(0, 0, 0, 0);
+      d.setDate(d.getDate() - day);
+
+      const fmt = (date) =>
+        date.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
+
+      appstate.schedule.forEach((sec) => {
+        sec.sessions.forEach((sess) => {
+          const dstart = new Date(d);
+          dstart.setDate(d.getDate() + (sess.day - 1));
+          const [sh, sm] = sess.start.split(":");
+          dstart.setHours(sh, sm, 0);
+
+          const dend = new Date(d);
+          dend.setDate(d.getDate() + (sess.day - 1));
+          const [eh, em] = sess.end.split(":");
+          dend.setHours(eh, em, 0);
+
+          icsmsg += "BEGIN:VEVENT\n";
+          icsmsg += `SUMMARY:${sec.name} | ${sec.code}-${sec.section} (${sess.room})\n`;
+          icsmsg += `DESCRIPTION:profesor: ${sess.teacher}\\nsección: ${sec.section}\n`;
+          icsmsg += `DTSTART:${fmt(dstart)}\n`;
+          icsmsg += `DTEND:${fmt(dend)}\n`;
+          icsmsg += `RRULE:FREQ=WEEKLY;UNTIL=20261231T000000Z\n`;
+          icsmsg += "END:VEVENT\n";
+        });
+      });
+
+      icsmsg += "END:VCALENDAR";
+
+      const blob = new Blob([icsmsg], { type: "text/calendar;charset=utf-8" });
+      const link = document.createElement("a");
+      link.href = window.URL.createObjectURL(blob);
+      link.download = "horario.ics";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     });
 };
 

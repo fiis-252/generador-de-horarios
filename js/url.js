@@ -32,7 +32,7 @@ const base64urlencode = (buffer) => {
 };
 
 const base64urldecode = (str) => {
-  console.log(str)
+  // console.log(str)
   let base64 = str.replace(/-/g, "+").replace(/_/g, "/");
   while (base64.length % 4) {
     base64 += "=";
@@ -67,7 +67,7 @@ export const decodepayload = async (base64url) => {
   }
 
   const buffer = base64urldecode(base64url);
-  console.log(base64urlencode(buffer))
+  // console.log(base64urlencode(buffer))
   const stream = new Blob([buffer]).stream();
   // console.log(stream)
   const decompressedstream = stream.pipeThrough(
