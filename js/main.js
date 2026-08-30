@@ -275,81 +275,88 @@ const bindevents = () => {
         shownotification("error al copiar enlace", "error");
       }
     });
-  
-    document
-      .getElementById("btn-export-img")
-      .addEventListener("click", async () => {
-        try {
-          shownotification("generando imagen...", "success");
-          const element = document.getElementById("calendar-grid");
-          const bgcolor = getComputedStyle(document.documentElement)
-            .getPropertyValue("--bg-surface")
-            .trim();
 
-          const canvas = await html2canvas(element, {
-            scale: 2,
-            backgroundColor: bgcolor,
-            logging: false,
-          });
+  document
+    .getElementById("btn-export-img")
+    .addEventListener("click", async () => {
+      try {
+        shownotification("generando imagen...", "success");
+        const element = document.getElementById("calendar-grid");
+        const bgcolor = getComputedStyle(document.documentElement)
+          .getPropertyValue("--bg-surface")
+          .trim();
 
-          canvas.toBlob(async (blob) => {
-            if (!blob) throw new Error("blob failed");
-            const item = new ClipboardItem({ "image/png": blob });
-            await navigator.clipboard.write([item]);
-            shownotification("imagen copiada al portapapeles", "success");
-          }, "image/png");
-        } catch (error) {
-          shownotification("error al generar imagen", "error");
-        }
-      });
-
-    document.getElementById("btn-export-ics").addEventListener("click", () => {
-      if (appstate.schedule.length === 0) {
-        shownotification("el horario está vacío.", "error");
-        return;
-      }
-
-      let icsmsg = "BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//FIIS//ES\n";
-      const d = new Date();
-      const day = (d.getDay() + 6) % 7;
-      d.setHours(0, 0, 0, 0);
-      d.setDate(d.getDate() - day);
-
-      const fmt = (date) =>
-        date.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
-
-      appstate.schedule.forEach((sec) => {
-        sec.sessions.forEach((sess) => {
-          const dstart = new Date(d);
-          dstart.setDate(d.getDate() + (sess.day - 1));
-          const [sh, sm] = sess.start.split(":");
-          dstart.setHours(sh, sm, 0);
-
-          const dend = new Date(d);
-          dend.setDate(d.getDate() + (sess.day - 1));
-          const [eh, em] = sess.end.split(":");
-          dend.setHours(eh, em, 0);
-
-          icsmsg += "BEGIN:VEVENT\n";
-          icsmsg += `SUMMARY:${sec.name} | ${sec.code}-${sec.section} (${sess.room})\n`;
-          icsmsg += `DESCRIPTION:profesor: ${sess.teacher}\\nsección: ${sec.section}\n`;
-          icsmsg += `DTSTART:${fmt(dstart)}\n`;
-          icsmsg += `DTEND:${fmt(dend)}\n`;
-          icsmsg += `RRULE:FREQ=WEEKLY;UNTIL=20261231T000000Z\n`;
-          icsmsg += "END:VEVENT\n";
+        const canvas = await html2canvas(element, {
+          scale: 2,
+          backgroundColor: bgcolor,
+          logging: false,
         });
-      });
 
-      icsmsg += "END:VCALENDAR";
-
-      const blob = new Blob([icsmsg], { type: "text/calendar;charset=utf-8" });
-      const link = document.createElement("a");
-      link.href = window.URL.createObjectURL(blob);
-      link.download = "horario.ics";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+        canvas.toBlob(async (blob) => {
+          if (!blob) throw new Error("blob failed");
+          const item = new ClipboardItem({ "image/png": blob });
+          await navigator.clipboard.write([item]);
+          shownotification("imagen copiada al portapapeles", "success");
+        }, "image/png");
+      } catch (error) {
+        shownotification("error al generar imagen", "error");
+      }
     });
+
+  document.getElementById("btn-export-ics").addEventListener("click", () => {
+    if (appstate.schedule.length === 0) {
+      shownotification("el horario está vacío.", "error");
+      return;
+    }
+
+    let icsmsg = "BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//FIIS//ES\n";
+    const d = new Date();
+    const day = (d.getDay() + 6) % 7;
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() - day);
+
+    const fmt = (date) =>
+      date.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
+
+    appstate.schedule.forEach((sec) => {
+      sec.sessions.forEach((sess) => {
+        const dstart = new Date(d);
+        dstart.setDate(d.getDate() + (sess.day - 1));
+        const [sh, sm] = sess.start.split(":");
+        dstart.setHours(sh, sm, 0);
+
+        const dend = new Date(d);
+        dend.setDate(d.getDate() + (sess.day - 1));
+        const [eh, em] = sess.end.split(":");
+        dend.setHours(eh, em, 0);
+
+        const istheory = sess.type === "T";
+        const typeprefix = istheory ? "[T]" : `[${sess.type}]`;
+        const binarycolor = istheory ? "#3788d8" : "#dc2626";
+
+        icsmsg += "BEGIN:VEVENT\n";
+        icsmsg += `SUMMARY:${typeprefix} ${sec.name} | ${sec.code}-${sec.section} (${sess.room})\n`;
+        icsmsg += `DESCRIPTION:profesor: ${sess.teacher}\\nsección: ${sec.section}\n`;
+        icsmsg += `DTSTART:${fmt(dstart)}\n`;
+        icsmsg += `DTEND:${fmt(dend)}\n`;
+        icsmsg += `COLOR:${binarycolor}\n`;
+        icsmsg += `RRULE:FREQ=WEEKLY;UNTIL=20261231T000000Z\n`;
+        icsmsg += "END:VEVENT\n";
+      });
+    });
+
+    icsmsg += "END:VCALENDAR";
+
+    const blob = new Blob([icsmsg], {
+      type: "text/calendar;charset=utf-8",
+    });
+    const link = document.createElement("a");
+    link.href = window.URL.createObjectURL(blob);
+    link.download = "horario.ics";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
 };
 
 document.addEventListener("DOMContentLoaded", initializeapp);
